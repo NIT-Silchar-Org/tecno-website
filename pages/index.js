@@ -1,7 +1,8 @@
+import Parallax from "../style-guide/sections/Parallax"
 export default function Home() {
   return (
-    <div className="flex w-screen h-screen items-center justify-center">
-      New Project
+    <div className=" w-screen">
+      <Parallax />
     </div>
   )
 }
