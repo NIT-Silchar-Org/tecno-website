@@ -9,8 +9,8 @@ module.exports = {
         'bgPrimary':'#00132D',
         'fontColor':'#FEFFFF',
         'neon1':'#4EDFFF',
-        'neon2':'#D03CAB'
-
+        'neon2':'#D03CAB',
+        'offWhite': '#E7E7E7'
       },
       fontFamily:{
         lemonMilk:['lemonMilk'],
