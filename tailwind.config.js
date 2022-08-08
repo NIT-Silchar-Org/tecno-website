@@ -12,7 +12,13 @@ module.exports = {
         'neon2':'#D03CAB'
 
       },
-      
+      fontFamily:{
+        lemonMilk:['lemonMilk'],
+        roadRage:['roadRage'],
+        mokotoGlitch:['mokotoGlitch'],
+        babaPro:['babaPro']
+      }
+
     },
   },
   plugins: [],
