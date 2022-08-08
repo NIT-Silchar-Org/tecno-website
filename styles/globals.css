@@ -5,11 +5,64 @@
 @tailwind utilities;
 
 
+
+/* custom fonts */
+
+@layer base{
+  @font-face {
+    font-family: 'lemonMilk';
+    src: url('/Fonts/LemonMilk.otf') ;
+    font-weight:400;
+    font-display:swap;
+    font-style:normal;
+
+
+  }
+}
+@layer base{
+  @font-face {
+    font-family: 'roadRage';
+    src: url('/Fonts/Road_Rage.otf') ;
+    font-weight:400;
+    font-display:swap;
+    font-style:normal;
+
+
+  }
+}
+
+@layer base{
+  @font-face {
+    font-family: 'mokotoGlitch';
+    src: url('/Fonts/MokotoGlitch.otf') ;
+    font-weight:400;
+    font-display:swap;
+    font-style:normal;
+
+
+  }
+}
+
+@layer base{
+  @font-face {
+    font-family: 'babaPro';
+    src: url('/Fonts/BabaPro-Bold.ttf') ;
+    font-weight:400;
+    font-display:swap;
+    font-style:normal;
+
+
+  }
+}
+
 /* default font */
 
 body{
   font-family: 'Montserrat', sans-serif;
 }
+ 
+
+
 
 /* Box sizing rules */
 *,
