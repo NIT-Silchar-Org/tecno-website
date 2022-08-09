@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import BGFIRST from '../../../public/assests/landingPage/parallaxbg.png'
 import BGBOTTOM from '../../../public/assests/landingPage/parallaxpng.png'
+import BGBOTTOMSM from '../../../public/assests/landingPage/parallaxpng-crop.png'
 import Header from './Header'
 import Socials from './Socials'
 
@@ -25,8 +26,16 @@ function Parallax() {
       <div className="absolute relative w-screen h-screen top-0 left-0 invisible">
         <Image src={BGFIRST} layout="fill" objectFit="cover" />
       </div>
-      <div className="absolute relative z-10 w-screen -top-[42vh] left-0 h-[80vh]">
+      <div className="absolute relative z-10 w-screen -top-[42vh] left-0 h-[80vh] hidden md:block">
         <Image src={BGBOTTOM} layout="fill" objectFit="cover" priority="true" />
+      </div>
+      <div className="absolute relative z-10 w-screen -top-[42vh] left-0 h-[80vh] md:hidden">
+        <Image
+          src={BGBOTTOMSM}
+          layout="fill"
+          objectFit="cover"
+          priority="true"
+        />
       </div>
     </div>
   )
