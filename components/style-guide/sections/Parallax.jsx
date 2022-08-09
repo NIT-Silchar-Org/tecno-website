@@ -20,8 +20,10 @@ function Parallax() {
       <div className="absolute top-[15vh] w-full z-20 text-white">
         <Header />
       </div>
+      <div className='absolute hidden md:block   md:top-48 right-8  md:left-8 z-40'>
 
-      <Socials />
+        <Socials />
+      </div>
 
       <div className="absolute relative w-screen h-screen top-0 left-0 invisible">
         <Image src={BGFIRST} layout="fill" objectFit="cover" />
