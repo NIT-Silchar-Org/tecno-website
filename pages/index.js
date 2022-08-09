@@ -5,7 +5,10 @@ import AboutNIT from '../components/style-guide/sections/AboutNIT'
 export default function Home() {
   return (
 
-    <div className="">
+    <div className="relative">
+      <div className='bg-black  bg-opacity-20 inset-0 absolute z-20'>
+
+      </div>
       <Parallax />
       <AboutUs />
       <AboutNIT />

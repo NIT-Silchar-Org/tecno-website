@@ -7,7 +7,7 @@ import Header from './Header';
 function Parallax() {
   return (
     <div className="relative h-screen w-screen overflow-y-hidden bg-fixed" style={{backgroundImage: "url(assests/landingPage/parallaxbg.png)"}}>
-      <div className='absolute top-[15vh] w-full z-20 text-white'>
+      <div className='absolute top-[14vh] w-full z-20 text-white'>
         <Header/>
 
       </div>
