@@ -23,13 +23,13 @@ function Parallax() {
 
       <Socials />
 
-      <div className="absolute relative w-screen h-screen top-0 left-0 invisible">
+      <div className="absolute relative z-10 w-screen h-screen top-0 left-0 invisible">
         <Image src={BGFIRST} layout="fill" objectFit="cover" />
       </div>
       <div className="absolute relative z-10 w-screen -top-[42vh] left-0 h-[80vh] hidden md:block">
         <Image src={BGBOTTOM} layout="fill" objectFit="cover" priority="true" />
       </div>
-      <div className="absolute relative z-10 w-screen -top-[42vh] left-0 h-[80vh] md:hidden">
+      <div className="absolute relative z-10 w-screen -top-[41vh] left-0 h-[80vh] md:hidden">
         <Image
           src={BGBOTTOMSM}
           layout="fill"
