@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutNIT() {
   return (
-    <div class="h-screen w-screen flex flex-col justify-center items-center bg-black text-white">
+    <div className="h-screen w-screen flex flex-col justify-center items-center bg-black text-white">
       <div className="w-4/5 md:w-[60vw] text-center">
         <h1 className="text-lg md:text-[3rem] mb-[2rem] tracking-wider font-light font-lemonMilk">
           ABOUT NIT SILCHAR
