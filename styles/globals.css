@@ -243,3 +243,48 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background-image: linear-gradient(-180deg, #1fd1f9, #b621fe);
 }
+
+/* glitch effect */
+#bgerror{
+  animation-name: bodyLight;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+}
+
+#error{
+  animation-name: bodyLight;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+
+}
+
+
+
+@keyframes bodyLight{
+  30%{
+    filter: invert(14%);
+  }
+  40%{
+    filter: invert(10%);
+  }
+  50%{
+    filter: invert(7%);
+  }
+  60%{
+    filter: invert(10%);
+  }
+  70%{
+    filter: invert(12%);
+  }
+  80%{
+    filter: invert(9%);
+  }
+  90%{
+    filter: invert(14%);
+  }
+  100%{
+    filter: invert(11%);
+  }
+}
