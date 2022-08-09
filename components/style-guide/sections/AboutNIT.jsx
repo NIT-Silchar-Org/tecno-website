@@ -14,7 +14,7 @@ export default function AboutNIT() {
           expanded it’s horizon to become one of India’s prominent
           Techno-management Festival.
         </p>
-        <button className=" uppercase text-sm md:ext-[1.25rem] border border-white p-[1rem]">
+        <button className=" uppercase text-sm md:ext-[1.25rem] border border-white p-[1rem] hover:bg-white hover:text-black hover:font-semibold transition-all">
           Download Bronchure
         </button>
       </div>

@@ -20,7 +20,11 @@ module.exports = {
       },
       boxShadow: {
         gradient: ['-3px -3px 8px 4px #D03CAB, 3px 3px 8px 4px #4EDFFF']
+      },
+      backgroundImage:{
+        '404bg':"url('/assests/Error404/404bg.png')"
       }
+      
 
     },
   },
