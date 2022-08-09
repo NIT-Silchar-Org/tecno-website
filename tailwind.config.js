@@ -17,7 +17,11 @@ module.exports = {
         roadRage:['roadRage'],
         mokotoGlitch:['mokotoGlitch'],
         babaPro:['babaPro']
+      },
+      backgroundImage:{
+        '404bg':"url('/assests/Error404/404bg.png')"
       }
+      
 
     },
   },
