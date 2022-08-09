@@ -7,9 +7,17 @@ import Socials from './Socials'
 
 function Parallax() {
   return (
-    <div className="relative h-screen w-screen overflow-y-hidden" style={{background: "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(assests/landingPage/parallaxbg.png)", backgroundAttachment: "fixed", backgroundSize: 'cover'}}>
-      <div className='absolute top-[15vh] w-full z-20 text-white'>
-        <Header/>
+    <div
+      className="relative h-screen w-screen overflow-y-hidden"
+      style={{
+        background:
+          'linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(assests/landingPage/parallaxbg.png)',
+        backgroundAttachment: 'fixed',
+        backgroundSize: 'cover',
+      }}
+    >
+      <div className="absolute top-[15vh] w-full z-20 text-white">
+        <Header />
       </div>
 
       <Socials />
@@ -21,7 +29,7 @@ function Parallax() {
         <Image src={BGBOTTOM} layout="fill" objectFit="cover" priority="true" />
       </div>
     </div>
-  );
+  )
 }
 
-export default Parallax;
+export default Parallax
