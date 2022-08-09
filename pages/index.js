@@ -4,11 +4,10 @@ import AboutNIT from '../components/style-guide/sections/AboutNIT'
 
 export default function Home() {
   return (
-
     <div className="">
       <Parallax />
       <AboutUs />
       <AboutNIT />
     </div>
   )
-};
+}

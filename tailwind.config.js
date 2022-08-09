@@ -17,6 +17,9 @@ module.exports = {
         roadRage:['roadRage'],
         mokotoGlitch:['mokotoGlitch'],
         babaPro:['babaPro']
+      },
+      boxShadow: {
+        gradient: ['-3px -3px 8px 4px #D03CAB, 3px 3px 8px 4px #4EDFFF']
       }
 
     },

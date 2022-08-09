@@ -3,8 +3,8 @@ import React from 'react'
 function InstagramCircledIcon({ color, width, height }) {
   return (
     <svg
-    width={width ? width : '100%'}
-    height={height ? height : '100%'}
+      width={width ? width : '100%'}
+      height={height ? height : '100%'}
       viewBox="0 0 23 23"
       fill={color ? color : 'none'}
       xmlns="http://www.w3.org/2000/svg"
