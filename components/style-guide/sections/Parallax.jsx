@@ -6,10 +6,9 @@ import Header from './Header';
 
 function Parallax() {
   return (
-    <div className="relative h-screen w-screen overflow-y-hidden bg-fixed" style={{backgroundImage: "url(assests/landingPage/parallaxbg.png)"}}>
+    <div className="relative h-screen w-screen overflow-y-hidden" style={{background: "linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url(assests/landingPage/parallaxbg.png)", backgroundAttachment: "fixed"}}>
       <div className='absolute top-[15vh] w-full z-20 text-white'>
         <Header/>
-
       </div>
 
       <div className="absolute relative w-screen h-screen top-0 left-0 invisible">
