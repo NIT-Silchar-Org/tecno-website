@@ -11,6 +11,7 @@ function Parallax() {
         <Header/>
 
       </div>
+
       <div className="absolute relative w-screen h-screen top-0 left-0 invisible">
         <Image
           src={BGFIRST}
@@ -18,7 +19,7 @@ function Parallax() {
           objectFit='cover'
       />
       </div>
-      <div className="absolute relative z-10 md:w-screen -top-[43vh] right-0 md:left-0 h-[80vh]">
+      <div className="absolute relative z-10 w-screen -top-[42vh] left-0 h-[80vh]">
         <Image
           src={BGBOTTOM}
           layout="fill"
