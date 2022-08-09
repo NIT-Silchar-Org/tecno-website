@@ -11,7 +11,7 @@ library.add(faFacebook, faLinkedin, faTwitter, faInstagram)
 
 const Socials = () => {
   return (
-    <div className="absolute h-[50vh] md:h-[60vh] w-[3rem] text-white top-[48vh] md:top-48 left-4 md:left-8 z-20">
+    <div className=" h-[50vh] md:h-[60vh] w-[3rem] text-white  z-20">
       <div className="my-8 p-2 border-gray-500 border-[4px] rounded-full cursor-pointer hover:shadow-gradient">
         <a
           href="https://www.facebook.com/tecnoesis.nits"
