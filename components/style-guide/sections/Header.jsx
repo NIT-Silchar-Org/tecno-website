@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 // import Logo from '../../../style-guide/utils/Icons/Logo'
 import Image from 'next/dist/client/image'
 import LogoPng from '../../../public/assests/landingPage/tecnoesis.png'
 
 function Header() {
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => {
+    setOffsetY(window.pageYOffset)
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => { window.removeEventListener('scroll', handleScroll) };
+  }, [])
   return (
     <div className="block">
       <h1
         className="flex justify-center items-center font-roadRage text-4xl drop-shadow-[30px_30px_50px_50px_#FFFFFF]"
-        style={{ filter: 'drop-shadow(0px 4px 20px rgba(78, 223, 255, 0.5))' }}
+        style={{ filter: 'drop-shadow(0px 4px 20px rgba(78, 223, 255, 0.5))', transform: `translateY(${offsetY*0.2}px)` }}
       >
         Coming Soon
       </h1>
