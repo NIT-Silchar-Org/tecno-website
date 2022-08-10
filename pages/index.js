@@ -17,7 +17,10 @@ library.add(faFacebook, faLinkedin, faTwitter, faInstagram)
 export default function Home() {
   return (
     <>
-      <Head>Tecnoesis 2022</Head>
+      <Head>
+        <title>Tecnoesis 2022</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="bg-black">
         <Parallax />
         <AboutUs />
