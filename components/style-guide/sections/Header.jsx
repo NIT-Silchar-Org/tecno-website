@@ -14,6 +14,7 @@ function Header() {
     return () => { window.removeEventListener('scroll', handleScroll) };
   }, [])
   return (
+
     <div className="block">
       <h1
         className="flex justify-center items-center font-roadRage text-4xl drop-shadow-[30px_30px_50px_50px_#FFFFFF]"
@@ -62,6 +63,7 @@ function Header() {
       <h1 className="text-center text-2xl md:text-4xl font-lemonMilk my-2">
         October
       </h1>
+
     </div>
   )
 }

@@ -17,12 +17,15 @@ function Parallax() {
     return () => { window.removeEventListener('scroll', handleScroll) };
   }, [])
   return (
+
+
     <div
       className="relative h-screen w-screen overflow-y-hidden bg-black">
       <div className="absolute top-[15vh] w-full z-20 text-white">
         <Header />
       </div>
       <div className='absolute hidden md:block   md:top-48 right-8  md:left-8 z-40'>
+
 
         <Socials />
       </div>
