@@ -14,6 +14,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 library.add(faFacebook, faLinkedin, faTwitter, faInstagram)
 
+
+
 export default function Home() {
   return (
     <>
