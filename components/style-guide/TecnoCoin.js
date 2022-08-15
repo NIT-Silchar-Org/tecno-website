@@ -4,7 +4,7 @@ import tecnoCoin from '../../style-guide/utils/Icons/TecnoCoins.svg'
 
 const TecnoCoin = ({ noOfCoins }) => {
   return (
-    <div className="w-2/5 flex flex-col items-center justify-center">
+    <div className="w-2/5 flex flex-col items-center justify-center cursor-pointer">
       <div className="relative w-[60px] h-[60px]">
         <Image
           src={tecnoCoin}

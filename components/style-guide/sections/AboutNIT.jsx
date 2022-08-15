@@ -20,7 +20,7 @@ export default function AboutNIT() {
           rel="noreferrer"
         >
           <button className=" uppercase text-sm md:ext-[1.25rem] border border-white p-[1rem] hover:bg-white hover:text-black hover:font-semibold transition-all">
-            Download Bronchure
+            Download Brochure
           </button>
         </a>
       </div>
