@@ -3,7 +3,6 @@ import Parallax from '../components/style-guide/sections/Parallax'
 import AboutUs from '../components/style-guide/sections/AboutUs'
 import AboutNIT from '../components/style-guide/sections/AboutNIT'
 import Head from 'next/head'
-import Socials from '../components/style-guide/sections/Socials'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
