@@ -15,7 +15,7 @@ export default function AboutNIT() {
           Techno-management Festival.
         </p>
         <a
-          href="https://drive.google.com/file/d/1P7MVYNq2I0SEke0-NSclAhSBnbQUoMd2/view"
+          href="https://drive.google.com/file/d/1YuYYSWZmTqof0k43ZkPqJQXrFzmky9MK/view"
           target="_blank"
           rel="noreferrer"
         >
