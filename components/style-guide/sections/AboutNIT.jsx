@@ -8,21 +8,14 @@ export default function AboutNIT() {
           ABOUT NIT SILCHAR
         </h1>
         <p className="text-sm text-offWhite md:text-[1.25rem] mb-[1.5rem] uppercase leading-10">
-          TECNOESIS is the annual techno-management Festival of NIT Silchar.
-          Started with the aim of providing a platform for the student community
-          to develop and showcase their technical prowess, Tecnoesis has
-          expanded it’s horizon to become one of India’s prominent
-          Techno-management Festival.
+          A bright future requires a bright start. NITS abides by this mantra.
+          The institute believes in equipping students with the knowledge and
+          skills in their chosen streams, inculcate values, identify hidden
+          talents, and provide opportunities for students to realize their full
+          potential. It facilitates the requisite support and encouragement via
+          various cultural and academic activities to shape the body and soul.
+          It has transformed into a sought out centre of learning.{' '}
         </p>
-        <a
-          href="https://drive.google.com/file/d/1P7MVYNq2I0SEke0-NSclAhSBnbQUoMd2/view"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className=" uppercase text-sm md:ext-[1.25rem] border border-white p-[1rem] hover:bg-white hover:text-black hover:font-semibold transition-all">
-            Download Bronchure
-          </button>
-        </a>
       </div>
     </div>
   )
