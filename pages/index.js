@@ -14,8 +14,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 library.add(faFacebook, faLinkedin, faTwitter, faInstagram)
 
-
-
 export default function Home() {
   return (
     <>
@@ -25,8 +23,8 @@ export default function Home() {
       </Head>
       <div className="bg-black">
         <Parallax />
-        <AboutUs />
         <AboutNIT />
+        <AboutUs />
 
         {/* footer on phone view */}
 
