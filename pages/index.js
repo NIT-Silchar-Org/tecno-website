@@ -13,6 +13,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 library.add(faFacebook, faLinkedin, faTwitter, faInstagram)
 
+
+
 export default function Home() {
   return (
     <>
@@ -22,22 +24,20 @@ export default function Home() {
       </Head>
       <div className="bg-black">
         <Parallax />
-        <AboutUs />
         <AboutNIT />
+        <AboutUs />
 
         {/* footer on phone view */}
 
         <div className="flex justify-center items-center  md:hidden text-white">
-         
-            <a
-              href="https://www.facebook.com/tecnoesis.nits"
-              target="_blank"
-              rel="noreferrer"
-              className="my-8 p-2 border-gray-500 border-[4px] mx-2 w-[3rem] rounded-full cursor-pointer hover:shadow-gradient"
-            >
-              <FontAwesomeIcon icon={['fab', 'facebook']} />
-            </a>
-     
+          <a
+            href="https://www.facebook.com/tecnoesis.nits"
+            target="_blank"
+            rel="noreferrer"
+            className="my-8 p-2 border-gray-500 border-[4px] mx-2 w-[3rem] rounded-full cursor-pointer hover:shadow-gradient"
+          >
+            <FontAwesomeIcon icon={['fab', 'facebook']} />
+          </a>
 
           <a
             href="https://www.linkedin.com/company/tecnoesis-nit-silchar/about/"
@@ -45,9 +45,7 @@ export default function Home() {
             rel="noreferrer"
             className="my-8 p-2 border-gray-500 border-[4px] mx-2 w-[3rem] rounded-full cursor-pointer hover:shadow-gradient"
           >
-            
-              <FontAwesomeIcon icon={['fab', 'linkedin']} />
-          
+            <FontAwesomeIcon icon={['fab', 'linkedin']} />
           </a>
 
           <a
@@ -56,9 +54,7 @@ export default function Home() {
             rel="noreferrer"
             className="my-8 p-2 border-gray-500 border-[4px] mx-2 w-[3rem] rounded-full cursor-pointer hover:shadow-gradient"
           >
-            
-              <FontAwesomeIcon icon={['fab', 'twitter']} />
-   
+            <FontAwesomeIcon icon={['fab', 'twitter']} />
           </a>
 
           <a
@@ -67,9 +63,7 @@ export default function Home() {
             rel="noreferrer"
             className="my-8 p-2 border-gray-500 border-[4px] mx-2 w-[3rem] rounded-full cursor-pointer hover:shadow-gradient"
           >
-           
-              <FontAwesomeIcon icon={['fab', 'instagram']} />
-  
+            <FontAwesomeIcon icon={['fab', 'instagram']} />
           </a>
         </div>
       </div>
