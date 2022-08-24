@@ -21,6 +21,9 @@ function Parallax() {
 
     <div
       className="relative h-screen w-screen overflow-y-hidden bg-black">
+        <div className='bg-black bg-opacity-30 z-20  absolute inset-0'>
+
+        </div>
       <div className="absolute top-[15vh] w-full z-20 text-white">
         <Header />
       </div>
