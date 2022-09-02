@@ -1,0 +1,30 @@
+@mixin iconsDesign {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 100%;
+    border-color: #6B7280;
+    cursor: pointer;
+    width: 3rem;
+}
+
+.main {
+    background-color: black;
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        .anchorDesign {
+            @include iconsDesign;
+        }
+    }
+}
