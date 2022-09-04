@@ -129,7 +129,7 @@
 @media only screen and (min-width: 1700px) {
   .container {
     width: 22rem;
-    .head{
+    .head {
       padding: 2rem;
       .text {
         font-size: 2.2rem;
@@ -177,13 +177,19 @@
       margin-top: -6rem;
       .cont {
         .item_cnt {
-          margin: 1rem auto;
+          margin: 1.4rem auto;
           .item {
-            padding: 0.6rem;
-            font-size: 1.2rem;
+            padding: 0.8rem;
+            font-size: 1.4rem;
           }
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    left: 0;
   }
 }

@@ -1,6 +1,7 @@
 .container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
     .main{
         grid-column: span 6 / span 6;
     }
@@ -18,7 +19,7 @@
             top: 50vh;
             left: 50vw;
             transform: translate(-50%, -50%);
-            animation: sm 3s linear 2s infinite;
+            animation: sm 3s linear infinite;
         }
         #two{
             width: 30rem;
@@ -29,7 +30,7 @@
             top: 50vh;
             left: 50vw;
             transform: translate(-50%, -50%);
-            animation: md 3s linear 5s infinite;
+            animation: md 3s linear infinite;
         }
         #three{
             width: 40rem;
@@ -40,7 +41,7 @@
             top: 50vh;
             left: 50vw;
             transform: translate(-50%, -50%);
-            animation: lg 2s linear 7s infinite;
+            animation: lg 2s linear infinite;
         }
     }
 }
@@ -50,24 +51,25 @@
         width: 40rem;
         height: 40rem;
         opacity: 0;
+        border-width: 6px;
     }
     33%{
         width: 30rem;
         height: 30rem;
         opacity: 0.25;
-        border-width: 1px;
+        border-width: 4px;
     }
     67%{
         width: 20rem;
         height: 20rem;
         opacity: 0.5;
-        border-width: 1.5;
+        border-width: 2px;
     }
     100%{
         width: 30rem;
         height: 30rem;
         opacity: 0.25;
-        border-width:1;
+        border-width:4px;
     }
 }
 
@@ -81,25 +83,25 @@
         width: 40rem;
         height: 40rem;
         opacity: 1;
-        border-width: 1px;
+        border-width: 2px;
     }
     50%{
         width: 50rem;
         height: 50rem;
         opacity: 0.5;
-        border-width: 1.5;
+        border-width: 8px;
     }
     75%{
         width: 40rem;
         height: 40rem;
         opacity: 0.25;
-        border-width:1;
+        border-width: 4px;
     }
     100%{
         width: 30rem;
         height: 30rem;
         opacity: 0;
-        border-width:1;
+        border-width:2px;
     }
 }
 
@@ -113,18 +115,18 @@
         width: 50rem;
         height: 50rem;
         opacity: 1;
-        border-width: 2px;
+        border-width: 6px;
     }
     67%{
         width: 60rem;
         height: 60rem;
         opacity: 0.5;
-        border-width: 1.5;
+        border-width: 12px;
     }
     100%{
         width: 70rem;
         height: 70rem;
         opacity: 0;
-        border-width:1;
+        border-width:18px;
     }
 }

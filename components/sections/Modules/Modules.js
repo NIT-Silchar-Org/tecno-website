@@ -5,9 +5,22 @@ import Image from 'next/image'
 import logo from '../../../public/assests/modules/Logo.svg'
 import profile from '../../../public/assests/modules/ProfileDefault.svg'
 
-const modules = ['Robotron', 'Robotron', 'Robotron', 'Robotron']
+const modules = [
+  'robotron',
+  'vWarz',
+  'showcase',
+  'amazers',
+  'conferenza',
+  'cyberwrap',
+  'mindsnare',
+  'asme',
+  'sae',
+  'smartcity',
+  'empresaario',
+]
 
 const Modules = () => {
+
   return (
     <div className={styles.container}>
       <div className={styles.head}>
@@ -24,7 +37,11 @@ const Modules = () => {
         </div>
       </div>
       {modules.map((module, index) => {
-        return <Module key={index} name={module} />
+        return (
+          <div id={module} key={index}>
+            <Module name={module} />
+          </div>
+        )
       })}
     </div>
   )
