@@ -29,7 +29,12 @@ const Module = ({ name }) => {
       <div className={styles.head}>
         <div className={styles.image_cnt}>
           <div className={styles.image}>
-            {/* <Image layout="fill" objectFit="contain" priority="true" /> */}
+            <Image
+              src="https://placehold.jp/150x150.png"
+              layout="fill"
+              objectFit="contain"
+              priority="true"
+            />
           </div>
         </div>
         <div>{name}</div>

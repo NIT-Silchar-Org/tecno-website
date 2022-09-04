@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   margin: 4rem auto;
+  position: relative;
   .head {
     color: white;
     font-family: $mokotoGlitch;
@@ -105,6 +106,37 @@
     }
     .active{
       background-color: white;
+    }
+  }
+}
+@media only screen and (min-width: 1700px) {
+.container{
+    .slider{
+      .left {
+        margin-left: 4rem;
+      }
+      .right{
+        margin-right: 6rem;
+      }
+      .carousel{
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .container{
+    .slider{
+      .left {
+        margin-left: 8rem;
+      }
+      .right{
+        margin-right: 10rem;
+      }
+      .carousel{
+        width: 67%;
+      }
     }
   }
 }
