@@ -6,7 +6,6 @@ const Modules = () => {
   return (
     <div className="relative">
       {/* <Sidebar /> */}
-
       <Modal/>
 
 
