@@ -1,4 +1,4 @@
-.container{
+.mod_container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: black;
@@ -13,35 +13,35 @@
         #one{
             width: 40rem;
             height: 40rem;
-            border: 2px solid rgba(251, 251, 251, 0.532);
+            border: 2px solid rgba(251, 251, 251, 0.272);
             border-radius: 50%;
             position: absolute;
             top: 50vh;
             left: 50vw;
             transform: translate(-50%, -50%);
-            animation: sm 3s linear infinite;
+            animation: sm 4s linear infinite;
         }
         #two{
             width: 30rem;
             height: 30rem;
-            border: 1px solid rgba(251, 251, 251, 0.532);
+            border: 1px solid rgba(109, 109, 109, 0.336);
             border-radius: 50%;
             position: absolute;
             top: 50vh;
             left: 50vw;
             transform: translate(-50%, -50%);
-            animation: md 3s linear infinite;
+            animation: md 4s linear infinite;
         }
         #three{
             width: 40rem;
             height: 40rem;
-            border: 1px solid rgba(99, 99, 99, 0.505);
+            border: 1px solid rgba(99, 99, 99, 0.285);
             border-radius: 50%;
             position: absolute;
             top: 50vh;
             left: 50vw;
             transform: translate(-50%, -50%);
-            animation: lg 2s linear infinite;
+            animation: lg 3s linear infinite;
         }
     }
 }

@@ -19,8 +19,7 @@ const modules = [
   'empresaario',
 ]
 
-const Modules = () => {
-
+const Modules = ({setSelectedItem}) => {
   return (
     <div className={styles.container}>
       <div className={styles.head}>
@@ -36,13 +35,15 @@ const Modules = () => {
           />
         </div>
       </div>
-      {modules.map((module, index) => {
-        return (
-          <div id={module} key={index}>
-            <Module name={module} />
-          </div>
-        )
-      })}
+      <div>
+        {modules.map((module, index) => {
+          return (
+            <section id={module} key={index}>
+              <Module name={module} setSelectedItem={setSelectedItem} ind={index} />
+            </section>
+          )
+        })}
+      </div>
     </div>
   )
 }

@@ -19,8 +19,7 @@ const modules = [
   'empresaario',
 ]
 
-const Sidebar = () => {
-  const [selectedItem, setSelectedItem] = useState(0)
+const Sidebar = ({ selectedItem }) => {
   return (
     <div className={styles.container}>
       <div className={styles.head}>
@@ -35,18 +34,17 @@ const Sidebar = () => {
         <div className={styles.cont}>
           {modules.map((item, index) => {
             return (
-              <div className={styles.item_cnt} key={index}>
-                <Link href={`#${item}`} replace>
+              <Link href={`#${item}`} replace>
+                <div className={styles.item_cnt} key={index}>
                   <div
                     className={`${styles.item} ${
                       selectedItem === index ? styles.selected : ''
                     }`}
-                    onClick={() => setSelectedItem(index)}
                   >
                     {item}
                   </div>
-                </Link>
-              </div>
+                </div>
+              </Link>
             )
           })}
         </div>
