@@ -1,0 +1,79 @@
+@import "/styles/variables.scss";
+
+@mixin cont {
+    padding: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 0.75rem;
+    border: solid;
+    border-radius: 50%;
+    border-color: #6B7280;
+    cursor: pointer;
+    align-items: center;
+}
+
+@mixin onHover {
+    box-shadow: $gradient1;
+}
+
+.main {
+    z-index: 20;
+    color: #ffffff;
+    height: 50vh;
+    width: 3rem;
+
+    .iconSize {
+        @media (min-width: 772px) {
+            height: 1.25rem;
+            width: 1.25rem;
+        }
+
+        @media (min-width: 2000px) {
+            margin: 1.25rem;
+            height: 4rem;
+            width: 4rem;
+        }
+    }
+
+
+    @media (min-width: 772px) {
+        height: 50vh;
+    }
+
+    @media (min-width: 2000px) {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .fb {
+        @include cont;
+    }
+
+    .fb:hover {
+        @include onHover;
+    }
+
+    .linkedIN {
+        @include cont;
+    }
+
+    .linkedIN:hover {
+        @include onHover;
+    }
+
+    .twitter {
+        @include cont;
+    }
+
+    .twitter:hover {
+        @include onHover;
+    }
+
+    .insta {
+        @include cont;
+    }
+
+    .insta:hover {
+        @include onHover;
+    }
+}

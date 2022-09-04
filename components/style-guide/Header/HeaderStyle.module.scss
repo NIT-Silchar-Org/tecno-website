@@ -1,0 +1,196 @@
+@font-face {
+    font-family: LemonMilk;
+    src: url("/public/Fonts/LemonMilk.otf");
+}
+
+@font-face {
+    font-family: roadRage;
+    src: url("/public/Fonts/Road_Rage.otf");
+}
+
+@font-face {
+    font-family: mokotoGlitch;
+    src: url("/public/Fonts/MokotoGlitch.otf");
+}
+
+.main {
+    display: block;
+
+    .h1 {
+        display: flex;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        filter: drop-shadow(0px 4px 20px rgba(78, 223, 255, 0.5));
+        font-family: roadRage;
+
+        @media (min-width: 2000px) {
+            font-size: 4rem;
+            line-height: 3.8rem;
+        }
+    }
+
+    .tecnoesisText {
+        overflow: hidden;
+        position: relative;
+        margin-top: 2.5rem;
+
+
+        @media (min-width: 772px) {
+            margin-top: -1%;
+        }
+
+        .textAndLogo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            @media (min-width: 772px) {
+                flex-direction: row;
+            }
+
+            .logo {
+                position: relative;
+                width: 100px;
+                height: 100px;
+
+
+                @media (min-width: 772px) {
+                    margin-bottom: 4rem;
+                    width: 250px;
+                    height: 250px;
+                }
+
+                @media (min-width: 2000px) {
+                    margin-bottom: 5rem;
+                    width: 450px;
+                    height: 450px;
+                }
+            }
+
+            .headingText {
+                display: flex;
+                margin-top: 1.5rem;
+                letter-spacing: 0.1em;
+                justify-content: center;
+                align-items: center;
+                font-size: 3rem;
+                filter: drop-shadow(2px 8px 20px rgba(78, 223, 255, 0.5));
+                font-family: lemonMilk;
+
+                @media (min-width: 772px) {
+                    margin-left: -1.5rem;
+                    font-size: 8.5rem;
+                }
+
+                @media (min-width: 2000px) {
+                    font-size: 14.5rem;
+                }
+
+            }
+        }
+
+        .year {
+            display: flex;
+            position: absolute;
+            bottom: -0.5rem;
+            justify-content: flex-end;
+            width: 100vw;
+
+
+            @media (min-width: 772px) {
+                bottom: 3rem;
+                // margin-left: 70%;
+            }
+
+            @media (min-width: 2000px) {
+                bottom: 3rem;
+                left: 3%;
+            }
+
+            .yearH1 {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                width: 25%;
+                filter: drop-shadow(0px 4px 20px rgba(78, 223, 255, 0.5));
+                font-family: roadRage;
+
+                @media (min-width: 772px) {
+                    font-size: 1.875rem;
+                    line-height: 2.25rem;
+                }
+
+                @media (min-width: 2000px) {
+                    font-size: 3.875rem;
+                    line-height: 3.25rem;
+                }
+
+            }
+        }
+    }
+
+    .backToTheFuture {
+        margin-top: 0rem;
+        margin-bottom: 1.75rem;
+        text-align: center;
+        opacity: 0.7;
+        font-size: 1.3rem;
+        text-shadow: 0.05em 0 0 rgb(255, 0, 0, 0.75), -0.025em -.05em 0 rgb(0, 255, 0, 0.75), -0.025em 0.05em 0 rgb(0, 0, 255, 0.75);
+        font-family: mokotoGlitch;
+
+        @media (min-width: 772px) {
+            margin-top: -5rem;
+            font-size: 2.25rem;
+            left: 50%;
+        }
+
+        @media (min-width: 2000px) {
+            margin-top: -7rem;
+            margin-left: 5rem;
+            font-size: 4rem;
+            right: 50%;
+        }
+    }
+
+    .dates {
+        margin-top: 0rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+        font-family: LemonMilk;
+
+
+        @media (min-width: 772px) {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        @media (min-width: 2000px) {
+            font-size: 3.4rem;
+            line-height: 3.5rem;
+        }
+    }
+
+    .month {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: center;
+        font-family: LemonMilk;
+
+
+        @media (min-width: 772px) {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+
+        @media (min-width: 2000px) {
+            font-size: 3.4rem;
+            line-height: 3.5rem;
+        }
+    }
+}

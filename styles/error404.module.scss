@@ -19,7 +19,7 @@
         width: 70%;
         height: auto;
 
-        @media (min-width: 768px) {
+        @media (min-width: 772px) {
             width: 60%;
         }
     }
@@ -35,7 +35,7 @@
         align-items: center;
 
 
-        @media (min-width: 768px) {
+        @media (min-width: 772px) {
             flex-direction: row;
         }
 
@@ -45,7 +45,7 @@
             height: 100px;
 
 
-            @media (min-width: 768px) {
+            @media (min-width: 772px) {
                 margin-bottom: 1rem;
                 width: 100px;
                 height: 100px;
@@ -74,7 +74,7 @@
             font-family: LemonMilk;
 
 
-            @media (min-width: 768px) {
+            @media (min-width: 772px) {
                 font-size: 3.5rem;
             }
 
