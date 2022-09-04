@@ -3,19 +3,20 @@ import styles from './Sidebar.module.scss'
 import svg1 from '../../../public/assests/modules/Vector14.svg'
 import svg2 from '../../../public/assests/modules/Vector15.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const modules = [
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
+  'robotron',
+  'vWarz',
+  'showcase',
+  'amazers',
+  'conferenza',
+  'cyberwrap',
+  'mindsnare',
+  'asme',
+  'sae',
+  'smartcity',
+  'empresaario',
 ]
 
 const Sidebar = () => {
@@ -34,16 +35,17 @@ const Sidebar = () => {
         <div className={styles.cont}>
           {modules.map((item, index) => {
             return (
-              <div className={styles.item_cnt}>
-                <div
-                  className={`${styles.item} ${
-                    selectedItem === index ? styles.selected : ''
-                  }`}
-                  onClick={() => setSelectedItem(index)}
-                  key={index}
-                >
-                  {item}
-                </div>
+              <div className={styles.item_cnt} key={index}>
+                <Link href={`#${item}`} replace>
+                  <div
+                    className={`${styles.item} ${
+                      selectedItem === index ? styles.selected : ''
+                    }`}
+                    onClick={() => setSelectedItem(index)}
+                  >
+                    {item}
+                  </div>
+                </Link>
               </div>
             )
           })}

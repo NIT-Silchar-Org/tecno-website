@@ -8,7 +8,12 @@ const EventCard = ({ name }) => {
       <div className={styles.wrapper_outline}>
         <div className={styles.wrapper}>
           <div className={styles.image}>
-            <Image layout="fill" objectFit="contain" priority="true" />
+            <Image
+              src="https://placehold.jp/150x150.png"
+              layout="fill"
+              objectFit="cover"
+              priority="true"
+            />
           </div>
           <div className={styles.overlay}>{name}</div>
         </div>
