@@ -1,0 +1,54 @@
+$height: 15rem;
+// Multiply width by 1.07 to keep the svg proportional
+$width: $height * 1.07;
+
+@media screen and (min-width: 600px) {
+    .surround {
+        display: flex;
+        width: $width;
+        height: $height;
+        justify-content: center;
+        align-items: center;
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        background-size: cover;
+        margin-left: 37px;
+        margin-top: 55px;
+        z-index: -1;
+        .profile {
+            position: absolute;
+            left: 147px;
+            top: 138px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+//css for screen widths less than 600px
+$mheight: 6rem;
+$mwidth: $mheight * 1.02;
+@media screen and (max-width: 600px) {
+    .surround {
+        display: flex;
+        width: $mwidth;
+        height: $mheight;
+        justify-content: center;
+        align-items: center;
+        background: url('../../../public/assests/Navbar/ProfileSurround-mobile.svg');
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 55px;
+        z-index: -1;
+        .profile {
+            position: absolute;
+            top: 73px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+    }
+}
