@@ -6,7 +6,7 @@ import NavButton from '../Navbar/NavButton'
 
 const navLinks = [
     {text: "ABOUT", route: "/"},
-    {text: "MODULES", route: "/"},
+    {text: "MODULES", route: "/modules"},
     {text: "SPONSORS", route: "/"},
     {text: "TEAM", route: "/"},
     {text: "GALLERY", route: "/"},
