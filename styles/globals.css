@@ -8,48 +8,49 @@
 
 /* custom fonts */
 
-@layer base{
+@layer base {
   @font-face {
     font-family: 'lemonMilk';
-    src: url('/Fonts/LemonMilk.otf') ;
-    font-weight:400;
-    font-display:swap;
-    font-style:normal;
+    src: url('/Fonts/LemonMilk.otf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 
 
   }
 }
-@layer base{
+
+@layer base {
   @font-face {
     font-family: 'roadRage';
-    src: url('/Fonts/Road_Rage.otf') ;
-    font-weight:400;
-    font-display:swap;
-    font-style:normal;
+    src: url('/Fonts/Road_Rage.otf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 
 
   }
 }
 
-@layer base{
+@layer base {
   @font-face {
     font-family: 'mokotoGlitch';
-    src: url('/Fonts/MokotoGlitch.otf') ;
-    font-weight:400;
-    font-display:swap;
-    font-style:normal;
+    src: url('/Fonts/MokotoGlitch.otf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 
 
   }
 }
 
-@layer base{
+@layer base {
   @font-face {
     font-family: 'babaPro';
-    src: url('/Fonts/BabaPro-Bold.ttf') ;
-    font-weight:400;
-    font-display:swap;
-    font-style:normal;
+    src: url('/Fonts/BabaPro-Bold.ttf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 
 
   }
@@ -57,10 +58,10 @@
 
 /* default font */
 
-body{
+body {
   font-family: 'Montserrat', sans-serif;
 }
- 
+
 
 
 
@@ -84,6 +85,7 @@ dl,
 dd {
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -155,13 +157,16 @@ header {
   background: #040404;
   color: #fff;
 }
+
 header h1 {
   font-size: 7em;
   font-weight: 100;
 }
+
 header h2 {
   font-size: 2em;
 }
+
 header span.animated {
   position: absolute;
   margin: auto;
@@ -204,16 +209,20 @@ header span::after {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 header .animated p {
   color: gray;
 }
+
 header .image1 {
   size: 10vh;
 }
+
 header .animated {
   justify-content: space-between;
   align-content: space-evenly;
 }
+
 @media (max-width: 475px) {
   header h1 {
     font-size: 3.2em;
@@ -222,6 +231,8 @@ header .animated {
   header h2 {
     font-size: 1.5em;
   }
+
+
 }
 
 body::-webkit-scrollbar {
@@ -245,14 +256,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* glitch effect */
-#bgerror{
+#bgerror {
   animation-name: bodyLight;
   animation-duration: 1s;
   animation-iteration-count: infinite;
   transition-timing-function: linear;
 }
 
-#error{
+#error {
   animation-name: bodyLight;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
@@ -262,79 +273,256 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-@keyframes bodyLight{
-  30%{
+@keyframes bodyLight {
+  30% {
     filter: invert(14%);
   }
-  40%{
+
+  40% {
     filter: invert(10%);
   }
-  50%{
+
+  50% {
     filter: invert(7%);
   }
-  60%{
+
+  60% {
     filter: invert(10%);
   }
-  70%{
+
+  70% {
     filter: invert(12%);
   }
-  80%{
+
+  80% {
     filter: invert(9%);
   }
-  90%{
+
+  90% {
     filter: invert(14%);
   }
-  100%{
+
+  100% {
     filter: invert(11%);
   }
 }
 
 
-.relative{
+.relative {
   position: relative;
+
 }
 
 
 
 
-.justify-start{
+.justify-start {
   display: flex;
   justify-items: start;
-} 
+}
 
-.px-2{
-  padding-left:2rem;
+.px-2 {
+  padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.py-2{
+.py-2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.text-3xl{
+.text-3xl {
   font-size: 4rem;
   color: #ffffff;
+  font-family: 'mokotoGlitch';
+
 
 }
-.modal-wrapper{
+
+.modal-wrapper {
 
   display: block;
   position: relative;
   width: 100vw;
   height: 100vh;
+  background: url('../public/assests/modal/modalbg.png');
   /* opacity: 0.5; */
+
+
+
+
+
+
+
 }
 
-.modal{
+.modal {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  background-color: #040404;
-  
+  /* background-color: #040404; */
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* -webkit-backdrop-filter: blur(40px); */
+  backdrop-filter: blur(40px);
+
 
 }
 
+/*bikram   */
+
+.modal .title {
+  position: absolute;
+  width: 408px;
+  height: 29px;
+  left: 300px;
+  top: 220px;
+
+  font-family: 'mokotoGlitch';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* .modalDes{
+  position: relative;
+
+  margin-left: 10vw;
+  word-wrap: normal;
+  width: 30vw;
+  background-color: #040404;
+  color: #ffffff;
+} */
+.modalDes {
+  position: absolute;
+  width: 587px;
+  height: 236px;
+  left: 233px;
+  top: 357px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+.modalImg {
+  position: absolute;
+  width: 685px;
+  height: 811px;
+  /* left: 755px; */
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(89.69deg, #000000 -25.41%, rgba(0, 0, 0, 0) 102.25%), url(../public/assests/Modal/heroimg.png);
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), 92%, rgba(0, 0, 0, 0));
+  backdrop-filter: blur(40px);
+  /* box-shadow: 60px 0 60px 0 black inset; */
+  /* box-shadow: 13px 13px, -1em 0 1.4em black; */
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+/*responsive mobile view*/
+@media screen and (max-width:600px) {
+
+  .modal-wrapper {
+    background: url(../public/assests/Modal/module-phn\ view.png);
+
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    width: 360px;
+  }
+
+  .modal {
+    position: absolute;
+    width: 360.27px;
+    height: 800px;
+    left: -6px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* -webkit-backdrop-filter: blur(40px); */
+    backdrop-filter: blur(40px);
+  }
+
+  .text-3xl {
+    position: absolute;
+    width: 22.02px;
+    height: 22px;
+    left: 40px;
+    top: 390px;
 
 
+  }
+
+
+  .modal .title {
+    position: absolute;
+    width: max-content;
+    height: 29px;
+    left: 35%;
+    top: 480px;
+
+    font-family: 'mokotoGlitch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+  }
+
+  .modalDes {
+    position: absolute;
+    width: 302.23px;
+    height: 271px;
+    left: 29.03px;
+    top: 530px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    /* or 200% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+  }
+
+
+
+
+  .modalImg {
+    position: absolute;
+    width: 360.27px;
+    height: 517px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(359.36deg, #000000 4.48%, rgba(0, 0, 0, 0.666513) 39.52%, rgba(0, 0, 0, 0) 99.43%), url(../public/assests/Modal/image_processing20210216-13027-ie4jq4\ 1\ \(1\).png);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), 92%, rgba(0, 0, 0, 0));
+
+    backdrop-filter: blur(40px);
+  }
+}

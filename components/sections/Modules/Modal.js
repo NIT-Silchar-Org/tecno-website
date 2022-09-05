@@ -1,4 +1,5 @@
 import React from 'react'
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { IoMdClose } from 'react-icons/io'
 function Modal() {
@@ -7,6 +8,7 @@ function Modal() {
       <div className="modal">
         {/* <FontAwesomeIcon  icon="fa-xmark"/> */}
 
+        <div className="justify-start modalImg"></div>
         <div className="justify-start">
           <div className="text-3xl px-2 py-2">
             <IoMdClose />
@@ -15,15 +17,24 @@ function Modal() {
 
         <div className="justify-start">
 
+          {/* <div className='modalImg'>
 
-          <div >
-            <h1 className="text-3xl">RoboTron</h1>
+          </div> */}
+          <div className='desPop'>
+            <h1 className="text-3xl title">RoboTron</h1>
+            <div className='modalDes'>
+              <p className='modalpara'>
+                Robotronix Engineering Tech. Private Limited is a client-serving company based in Indore.Robotronix Engineering Tech. Private Limited is a client-serving company based in Indore.
+                Robotronix Engineering Tech. Private Limited is a client-serving company based in Indore.
+                Robotronix Engineering Tech. Private Limited is a client-serving company based in Indore.
 
+              </p>
+            </div>
           </div>
 
-        </div>
 
-        <h1 className="text-xl">Module Name</h1>
+
+        </div>
       </div>
     </div>
   )
