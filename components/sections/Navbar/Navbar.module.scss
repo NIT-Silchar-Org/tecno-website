@@ -1,79 +1,61 @@
 $navbar-height: 100vh;
-$navbar-width: $navbar-height * 1.434;
+$navbar-width: $navbar-height * 1.407;
 
-@media screen and (min-width: 600px) {
-    .navbar {
-        position: fixed;
-        overflow: hidden;
-        width: $navbar-width;
-        height: $navbar-height;
-        background: url('../../../public/assests/Navbar/navbarbg-web.svg');
-        transform: translateX(-100%);
-        transition: transform 500ms ease-in-out;
-        z-index: 50;
-    }
-
-    .navbarshow {
-        position: fixed;
-        overflow: hidden;
-        width: $navbar-width;
-        height: $navbar-height;
-        background: url('../../../public/assests/Navbar/navbarbg-web.svg');
-        transform: translateX(0%);
-        transition: transform 500ms ease-in-out;
-        z-index: 50;
-    }
-
-    .hambtn {
-        position: fixed;
-        overflow: hidden;
-        margin-left: 2rem;
-        margin-top: 2.4rem;
-        z-index: 51;
-    }
-
-    .navitemcontainer {
-        position: absolute;
-        left: $navbar-width * 0.25;
-        top: $navbar-height * 0.05;
-        transform: rotate(30deg);
+.navbar {
+    position: fixed;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform 500ms ease-in-out;
+    z-index: 50;
+    background: url('../../../public/assests/Navbar/navbarbg-web.svg');
+    width: $navbar-width;
+    height: $navbar-height;
+    @media screen and (max-width: 1600px) {
+      background: url('../../../public/assests/Navbar/navbarbg-mobile.svg');
+      height: 100vh;
+      width: 100vw;
     }
 }
 
-// css for screen widths less than 600px
-@media screen and (max-width: 600px) {
-    .navbar{
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        background: url('../../../public/assests/Navbar/navbarbg-mobile.svg');
-        overflow: hidden;
-        transform: translateX(-100%);
-        transition: transform 500ms ease-in-out;
-        z-index: 50;
+.navbarshow {
+    position: fixed;
+    overflow: hidden;
+    transform: translateX(0%);
+    transition: transform 500ms ease-in-out;
+    z-index: 50;
+    background: url('../../../public/assests/Navbar/navbarbg-web.svg');
+    width: $navbar-width;
+    height: $navbar-height;
+    @media screen and (max-width: 1600px) {
+      background: url('../../../public/assests/Navbar/navbarbg-mobile.svg');
+      height: 100vh;
+      width: 100vw;
     }
+}
 
-    .navbarshow {
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        background: url('../../../public/assests/Navbar/navbarbg-mobile.svg');
-        overflow: hidden;
-        transform: translateX(0%);
-        transition: transform 500ms ease-in-out;
-        z-index: 50;
+.hambtn {
+    position: fixed;
+    overflow: hidden;
+    z-index: 51;
+    margin-left: 2rem;
+    margin-top: 2.4rem;
+    @media screen and (max-width: 1600px) {
+      margin-left: 1.5rem;
+      margin-top: 1.5rem;
     }
+}
 
-   .hambtn {
-        position: fixed;
-        overflow: hidden;
-        margin-left: 1.5rem;
-        margin-top: 1.5rem;
-        z-index: 51;
-   }
+@media screen and (min-width: 1601px) {
+    .navitemcontainer {
+      position: absolute;
+      left: $navbar-width * 0.25;
+      top: $navbar-height * 0.05;
+      transform: rotate(30deg);
+  }
+}
 
+@media screen and (max-width: 1600px) {
    .navitemcontainer {
-        margin-top: 10vh;
-   }
-
+      margin-top: 10vh;
+    }
 }
