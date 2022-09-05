@@ -10,6 +10,7 @@
   background-color: black;
   z-index: 2;
   // box-shadow: -8px 0px 12px 4px rgb(46, 46, 46);
+  transition: all 0.3s ease-in;
 
   &::-webkit-scrollbar {
     display: none;
@@ -51,7 +52,7 @@
     .svg2 {
       position: absolute;
       position: relative;
-      bottom: 1.8rem;
+      bottom: 0rem;
       width: 100%;
       height: 6rem;
       margin: -3.5rem auto;
@@ -195,6 +196,28 @@
 @media only screen and (max-width: 700px){
   .container{
     width: 0;
+    position: absolute;
+    z-index: 10;
+    top:0;
+    right: 0;
+    .svg_cnt{
+      .svg {
+        display: none;
+      }
+      .svg2{
+        height: 4rem;
+        margin-bottom: -1rem;
+      }
+    }
+    .head {
+      margin-bottom: 6.5rem;
+      .text {
+        font-size: 1.4rem;
+        position: relative;
+        margin-top: 1.5rem;
+        text-shadow: 0 -10px 20px #d03cab, 0 10px 20px #4edfff;
+      }
+    }
     .button{
       position: absolute;
       display: block;
@@ -203,4 +226,10 @@
       transform: translate(-680%);
     }
   }
+  .active{
+    width: 16rem;
+  }
+  // .inactive{
+  //   width: 0 !important;
+  // }
 }

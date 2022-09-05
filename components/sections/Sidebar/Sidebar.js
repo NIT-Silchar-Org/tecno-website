@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './Sidebar.module.scss'
 import svg1 from '../../../public/assests/modules/Vector14.svg'
 import svg2 from '../../../public/assests/modules/Vector15.svg'
@@ -22,12 +22,9 @@ const modules = [
   'empresaario',
 ]
 
-const Sidebar = ({ selectedItem }) => {
+const Sidebar = ({ selectedItem, setActive, active }) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.button} onClick={()=>setActive(true)}>
-        <Image src={Right}/>
-      </div>
+    <div className={`${styles.container} ${active?styles.active:""}`}>
       <div className={styles.head}>
         <div className={styles.text}>Modules</div>
       </div>
@@ -40,8 +37,8 @@ const Sidebar = ({ selectedItem }) => {
         <div className={styles.cont}>
           {modules.map((item, index) => {
             return (
-              <Link href={`#${item}`} replace>
-                <div className={styles.item_cnt} key={index}>
+              <Link href={`#${item}`} replace key={index}>
+                <div className={styles.item_cnt} >
                   <div
                     className={`${styles.item} ${
                       selectedItem === index ? styles.selected : ''

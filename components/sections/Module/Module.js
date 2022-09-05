@@ -26,14 +26,14 @@ const Module = ({ name, setSelectedItem, ind }) => {
     else setActiveIndex(index)
   }
 
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 1,
   })
 
   useEffect(() => {
     if(inView) setSelectedItem(ind)
-  }, [inView])
+  }, [inView, ind, setSelectedItem])
 
   return (
     <div
