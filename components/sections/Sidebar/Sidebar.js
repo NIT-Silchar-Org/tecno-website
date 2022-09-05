@@ -4,6 +4,9 @@ import svg1 from '../../../public/assests/modules/Vector14.svg'
 import svg2 from '../../../public/assests/modules/Vector15.svg'
 import Image from 'next/image'
 import Link from 'next/link'
+import Right from '../../../public/assests/modules/Right.svg'
+
+// const [active, setActive] = useState(true);
 
 const modules = [
   'robotron',
@@ -23,6 +26,9 @@ const Sidebar = () => {
   const [selectedItem, setSelectedItem] = useState(0)
   return (
     <div className={styles.container}>
+      <div className={styles.button} onClick={()=>setActive(true)}>
+        <Image src={Right}/>
+      </div>
       <div className={styles.head}>
         <div className={styles.text}>Modules</div>
       </div>

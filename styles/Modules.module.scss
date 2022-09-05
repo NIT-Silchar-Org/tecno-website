@@ -1,5 +1,5 @@
 .container{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: black;
     .main{
@@ -128,5 +128,10 @@
         height: 70rem;
         opacity: 0;
         border-width:18px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .container{
+        display: block;
     }
 }
