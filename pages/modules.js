@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import Sidebar from '../components/sections/Sidebar/Sidebar'
 import Main from "../components/sections/Modules/Modules"
 import styles from '../styles/Modules.module.scss'
+import Slider from '../components/style-guide/Slider/Slider'
 
 
 const Modules = () => {
+  const [selectedItem, setSelectedItem] = useState(0)
   const [active, setActive] = useState(false);
   return (
-    <div className={styles.container}>
+    <div className={styles.mod_container}>
       <div className={styles.bg}>
         <div id={styles.one}></div>
         <div id={styles.two}></div>
@@ -15,11 +17,12 @@ const Modules = () => {
         <div id={styles.four}></div>
       </div>
       <div className={styles.main}>
-        <Main />
+        <Main setSelectedItem={setSelectedItem} setActive={setActive} active={active} />
       </div>
       <div>
-        <Sidebar />
+        <Sidebar selectedItem={selectedItem} active={active} setActive={setActive} />
       </div>
+      <Slider setActive={setActive} active={active}/>
     </div>
   )
 }
