@@ -16,7 +16,7 @@ const AboutUs = () => {
           Techno-management Festival.
         </div>
         <a
-          href="https://drive.google.com/file/d/1YuYYSWZmTqof0k43ZkPqJQXrFzmky9MK/view"
+          href="https://drive.google.com/file/d/1nHvHkXth8eRyE1ewcfL_0xKki3gG822U/view"
           target="_blank"
           rel="noreferrer"
         >
