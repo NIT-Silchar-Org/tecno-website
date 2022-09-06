@@ -33,7 +33,7 @@
     }
     margin-bottom: 0.5rem;
   }
-  .button{
+  .button {
     position: absolute;
     display: none;
   }
@@ -192,19 +192,29 @@
     }
   }
 }
+@media only screen and (max-width: 1300px) {
+  .container {
+    .body {
+      height: 78vh;
+    }
+    .svg_cnt {
+        margin-top: 1rem;
+      }
+    }
+  }
 
-@media only screen and (max-width: 700px){
-  .container{
+@media only screen and (max-width: 800px) {
+  .container {
     width: 0;
     position: absolute;
     z-index: 10;
-    top:0;
+    top: 0;
     right: 0;
-    .svg_cnt{
+    .svg_cnt {
       .svg {
         display: none;
       }
-      .svg2{
+      .svg2 {
         height: 4rem;
         margin-bottom: -1rem;
       }
@@ -218,7 +228,7 @@
         text-shadow: 0 -10px 20px #d03cab, 0 10px 20px #4edfff;
       }
     }
-    .button{
+    .button {
       position: absolute;
       display: block;
       top: 50vh;
@@ -226,7 +236,7 @@
       transform: translate(-680%);
     }
   }
-  .active{
+  .active {
     width: 16rem;
   }
   // .inactive{

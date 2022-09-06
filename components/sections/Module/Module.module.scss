@@ -112,7 +112,7 @@
 
 @media only screen and (min-width: 1700px) {
   .container {
-    .head{
+    .head {
       font-size: 4rem;
     }
     .slider {
@@ -135,7 +135,6 @@
 
 @media only screen and (min-width: 2200px) {
   .container {
-    
     .slider {
       .left {
         margin-left: 8rem;
@@ -149,20 +148,44 @@
     }
   }
 }
-@media only screen and (max-width: 700px) {
-  .container{
-    .head{
+@media only screen and (max-width: 1300px) {
+  .container {
+    .head {
+      font-size: 2rem;
+    }
+    .slider {
+      width: 100%;
+      margin: 0 auto;
+      .carousel {
+        width: 85%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .container {
+    .slider {
+      width: 90%;
+      .carousel {
+        width: 80%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    .head {
       font-size: 1.35rem;
     }
     .slider {
-      .carousel{
+      .carousel {
         width: 100%;
         margin-left: 1rem;
       }
       .left {
         display: none;
       }
-      .right{
+      .right {
         display: none;
       }
     }

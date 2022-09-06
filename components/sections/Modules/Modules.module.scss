@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .text{
+    .text {
       //   text-align: center;
       display: none;
       font-family: $mokotoGlitchMark;
@@ -42,12 +42,12 @@
       cursor: pointer;
     }
   }
-  .bg{
+  .bg {
     display: none;
   }
-  .button{
+  .button {
     position: absolute;
-    right:0;
+    right: 0;
   }
 }
 
@@ -65,17 +65,21 @@
     }
   }
 }
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 800px) {
   .container {
     position: relative;
-    .head{
+    .head {
       display: flex;
       justify-content: center;
       align-items: center;
       // position: absolute;
       // z-index: 2;
-      .text{
+      .text {
         //   text-align: center;
         display: block;
         font-family: $mokotoGlitchMark;
@@ -83,13 +87,13 @@
         position: relative;
         margin: 2rem;
       }
-      .logo{
+      .logo {
         display: none;
       }
       .hamburger {
         position: absolute;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         width: 2rem;
         height: 2rem;
         margin: 2rem;
@@ -97,7 +101,7 @@
         cursor: pointer;
         display: block;
       }
-      .slider{
+      .slider {
         position: relative;
         width: 2rem;
         height: 2rem;
@@ -105,13 +109,13 @@
         margin-top: 3rem;
       }
     }
-    .bg{
+    .bg {
       display: block;
       // justify-content: center;
       position: relative;
-      height: 14em;
+      height: 12em;
       width: 90vw;
-      margin: 0 auto;
+      margin: -2rem auto;
       margin-bottom: -12rem;
     }
     &::-webkit-scrollbar {
