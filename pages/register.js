@@ -1,0 +1,43 @@
+import React from 'react'
+import {useEffect, useState} from 'react'
+import {useAuth} from '../providers/authContext'
+import {userBackendRegister} from '../utils/auth_handlers'
+
+function register() {
+    const {user} = useAuth()
+
+    const [name, setName] = useState("hello")
+    const [email, setEmail] = useState("")
+    const [collegeName, setCollegeName] = useState("")
+    const [regID, setRegID] = useState(null)
+    const [userName, setUserName] = useState("")
+
+    const handleSignup =  ()=>{
+        userBackendRegister({user, name, collegeName, regID, userName})
+    }
+     
+
+
+  return (
+    <div>
+
+        <div>
+            <h1>Name</h1>
+            <input value={name} onChange={(e)=>setName(e.target.value)}/>
+            <h1>Email</h1>
+            <input value={email} onChange={(e)=>setEmail(e.target.value)} />
+            <h1>College Name</h1>
+            <input value={collegeName} onChange={(e) => setCollegeName(e.target.value)}/>
+            <h1>Reg ID</h1>
+            <input value={regID} onChange={(e)=>setRegID(e.target.value)} />
+            <h1>Username</h1>
+            <input value={userName}  onChange={(e)=> setUserName(e.target.value)} />
+
+            <button onClick={handleSignup}>CLock</button>
+
+        </div>
+    </div>
+  )
+}
+
+export default register
