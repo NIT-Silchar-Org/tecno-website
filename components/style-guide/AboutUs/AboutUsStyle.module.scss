@@ -44,6 +44,10 @@
             @media (min-width: 2000px) {
                 font-size: 6rem;
             }
+
+            @media (min-width: 3600px) {
+                font-size: 7.5rem;
+            }
         }
 
         .aboutUsContent {
@@ -67,6 +71,12 @@
                 margin-top: 5%;
                 line-height: 3rem;
             }
+
+            @media (min-width: 3600px) {
+                font-size: 3rem;
+                margin-top: 7%;
+                line-height: 3.75rem;
+            }
         }
 
         .btn {
@@ -83,6 +93,12 @@
             @media (min-width: 2000px) {
                 font-size: 1.75rem;
                 line-height: 2.2rem;
+            }
+
+            @media (min-width: 3600px) {
+                font-size: 2.9rem;
+                margin-top: 2%;
+                line-height: 2.75rem;
             }
 
 

@@ -35,7 +35,15 @@
         @media (min-width: 772px) {
             display: block;
             left: 2rem;
-            top: 12rem;
+            top: 10rem;
+        }
+
+        @media (min-width: 2000px) {
+            top: 20rem;
+        }
+
+        @media (min-width: 3600px) {
+            top: 25rem;
         }
 
         // @media (min-width: 2000px) {

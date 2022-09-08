@@ -33,6 +33,12 @@
             height: 4rem;
             width: 4rem;
         }
+
+        @media (min-width: 3600px) {
+            margin: 1.5rem;
+            height: 4.5rem;
+            width: 4.5rem;
+        }
     }
 
 
@@ -43,6 +49,11 @@
     @media (min-width: 2000px) {
         width: 8rem;
         height: 8rem;
+    }
+
+    @media (min-width: 3600px) {
+        width: 9rem;
+        height: 9rem;
     }
 
     .fb {
