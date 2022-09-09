@@ -43,6 +43,12 @@ $navbar-width: $navbar-height * 1.407;
       margin-left: 1.5rem;
       margin-top: 1.5rem;
     }
+
+  @media screen and (min-width: 3500px) {
+      margin-left: 5rem;
+      margin-top: 5rem;
+      transform: scale(2);
+  }
 }
 
 @media screen and (min-width: 1601px) {
@@ -57,5 +63,24 @@ $navbar-width: $navbar-height * 1.407;
 @media screen and (max-width: 1600px) {
    .navitemcontainer {
       margin-top: 10vh;
+    }
+}
+
+
+@media screen and (min-width: 2500px) {
+    .navitemcontainer {
+      position: absolute;
+      left: $navbar-width * 0.32;
+      top: $navbar-height * 0.2;
+      transform: rotate(30deg) scale(1.2);
+    }
+}
+
+@media screen and (min-width: 3500px) {
+    .navitemcontainer {
+      position: absolute;
+      left: $navbar-width * 0.35;
+      top: $navbar-height * 0.3;
+      transform: rotate(30deg) scale(2);
     }
 }
