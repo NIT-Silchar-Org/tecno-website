@@ -31,7 +31,7 @@ export default function Navbar(props) {
 
             <div className={open ? styles.navbarshow : styles.navbar}>
                 <Profile href={props.profile} pfp={props.pfp} />
-                <div className={styles.navitemcontainer}>
+                <div className={ styles.navitemcontainer }>
                     {
                         navLinks.map((links, index) => {
                             return(
