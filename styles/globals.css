@@ -358,6 +358,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .modal {
   position: absolute;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap;
+
   inset: 0;
   width: 100%;
   height: 100%;
@@ -372,11 +376,17 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*bikram   */
 
+.content-part {
+  display: flex;
+  flex-direction: column;
+}
+
 .modal .title {
   position: absolute;
   width: 408px;
   height: 29px;
-  left: 300px;
+  /* left: 300px; */
+  left: 18.75rem;
   top: 220px;
 
   font-family: 'mokotoGlitch';
@@ -403,11 +413,13 @@ body::-webkit-scrollbar-thumb:hover {
   background-color: #040404;
   color: #ffffff;
 } */
+
 .modalDes {
   position: absolute;
   width: 587px;
   height: 236px;
-  left: 233px;
+  /* left: 233px; */
+  left: 14.563rem;
   top: 357px;
 
   font-family: 'Montserrat';
@@ -438,19 +450,24 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /*responsive mobile view*/
-@media screen and (max-width:600px) {
+
+@media screen and (max-width:500px) {
 
   .modal-wrapper {
     background: url(../public/assests/Modal/module-phn\ view.png);
 
     background-repeat: no-repeat;
     overflow-x: hidden;
-    width: 360px;
+    width: 100vw;
   }
 
   .modal {
     position: absolute;
-    width: 360.27px;
+    /* width: 360.27px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100vw;
     height: 800px;
     left: -6px;
     top: 0px;
@@ -459,12 +476,12 @@ body::-webkit-scrollbar-thumb:hover {
     backdrop-filter: blur(40px);
   }
 
-  .text-3xl {
+  .cross {
     position: absolute;
     width: 22.02px;
     height: 22px;
-    left: 40px;
-    top: 390px;
+    left: 1px;
+    top: 1px;
 
 
   }
@@ -472,9 +489,9 @@ body::-webkit-scrollbar-thumb:hover {
 
   .modal .title {
     position: absolute;
-    width: max-content;
+    width: 70vw;
     height: 29px;
-    left: 35%;
+    left: 20vw;
     top: 480px;
 
     font-family: 'mokotoGlitch';
@@ -485,6 +502,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
     text-transform: capitalize;
 
     color: #FFFFFF;
@@ -492,9 +510,11 @@ body::-webkit-scrollbar-thumb:hover {
 
   .modalDes {
     position: absolute;
-    width: 302.23px;
+    /* width: 302.23px; */
+    width: 80vw;
     height: 271px;
-    left: 29.03px;
+    /* left: 29.03px; */
+    left: 10vw;
     top: 530px;
 
     font-family: 'Montserrat';
@@ -505,6 +525,7 @@ body::-webkit-scrollbar-thumb:hover {
     /* or 200% */
 
     text-align: center;
+    justify-content: center;
     letter-spacing: 0.05em;
 
     color: #FFFFFF;
@@ -515,14 +536,333 @@ body::-webkit-scrollbar-thumb:hover {
 
   .modalImg {
     position: absolute;
-    width: 360.27px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80vw;
     height: 517px;
-    left: 0px;
+    left: 10vw;
+
     top: 0px;
 
     background: linear-gradient(359.36deg, #000000 4.48%, rgba(0, 0, 0, 0.666513) 39.52%, rgba(0, 0, 0, 0) 99.43%), url(../public/assests/Modal/image_processing20210216-13027-ie4jq4\ 1\ \(1\).png);
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), 92%, rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), 90%, rgba(0, 0, 0, 0));
 
-    backdrop-filter: blur(40px);
+
+
+    background-repeat: no-repeat;
+    background-size: auto;
+    backdrop-filter: blur(30px);
+  }
+
+}
+
+
+
+/* ==================Profile CSS====================== */
+
+.backDiv {
+  position: absolute;
+  width: 100vw;
+  /* height: 820px; */
+  /* left: 0px; */
+  /* top: 0px; */
+  /* The image used */
+  background-image: url('../public/assests/profile/background.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profileCard {
+  border: 2px solid #FFFFFF;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-right-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* width: 1208px; */
+  /* height: 652px; */
+  width: 79%;
+  height: 86%;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(30px);
+  background-image: url('../public/assests/profile/rect259.png');
+}
+
+.profDetail {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  /* background-color: #000000; */
+}
+
+.profImg {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* margin-top:2.1875rem; */
+  width: 100%;
+  height: 50%;
+  /* background-color: #1fd1f9; */
+}
+
+.profPhoto {
+
+  width: 20vw;
+  height: 20vw;
+  left: 2rem;
+  top: 5rem;
+}
+
+.tecnoLogo {
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+.eventDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Attended {
+  color: #FFFFFF;
+}
+
+.Tecnocoins {
+  color: #FFFFFF;
+}
+
+Image {
+  margin-right: 10px;
+}
+
+.personalDetail {
+  margin-left: 30px;
+  font-family: 'Montserrat';
+
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  /* line-height: 40px; */
+  /* padding-bottom: 30px; */
+  line-height: 2.5rem;
+  padding-bottom: 1.875rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.personalDetail::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.personalDetailIcon {
+  padding-right: 0.625rem;
+}
+
+.personalDetail .reg {
+  border: 1px solid #2AE768;
+  width: 190px;
+  height: 27px;
+  float: right;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 16px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #2AE768;
+
+}
+
+.personalDetail .logout {
+  border: 1px solid #FF1B41;
+  width: 190px;
+  height: 27px;
+  float: right;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FF1B41;
+
+}
+
+.TransactionDetail {
+  border-radius: 16px;
+  /* /box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  background: linear-gradient(89.66deg, rgba(0, 0, 0, 0.048) 0.29%, rgba(0, 0, 0, 0.057) 0.3%, rgba(0, 0, 0, 0.027) 44.62%, rgba(0, 0, 0, 0.048) 99.71%);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  overflow-y: scroll;
+  border-radius: 8px;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  margin: 20px;
+  width: 34.5rem;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.eventName span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.EarnCoin {
+  color: #2AE768;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.TransactionDetail::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.transHeading {
+  text-align: center;
+  padding: 20px;
+ 
+}
+
+/* hr{
+  height: 0.5px;
+  background-color: white;
+} */
+.eventName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+span {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  margin-bottom: 5px;
+
+}
+
+.EventListLi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+
+/* Profile Section Responsiveness */
+@media screen and (max-width:850px) {
+
+  .backDiv {
+    position: absolute;
+    width: 26.75rem;
+    height: 18.75rem;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    background-image: url('../public/assests/profile/bgMobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .profileCard {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    border-top-right-radius:0;
+    border-bottom-left-radius:0;
+    left: 0px;
+    top: 40%;
+    width: 100vw;
+    height: max-content;
+    overflow-y: scroll;
+    background: black;
+    background-image: none;
+  }
+
+  .eventDetail {
+    margin-bottom: 30px;
+  }
+
+  .profDetail {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: max-content;
+    /* background-color: #000000; */
+  }
+
+  .profImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top:2.1875rem; */
+    width: 100vw;
+    height: max-content;
+    /* background-color: #1fd1f9; */
+  }
+
+  .profPhoto {
+    top: 3rem;
+    width: 10.875rem;
+    height: 10.875rem;
+    left: 7.938rem;
+    top: 7.438rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .tecnoLogo {
+display: none;
+  }
+  .personalDetail {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .TransactionDetail {
+    width: 90vw;
+    backdrop-filter:blur(0px);
+    background: #000000;
+    border: 1px solid rgb(255, 255, 255);
   }
 }

@@ -1,0 +1,20 @@
+/* ==================Profile CSS====================== */
+
+.backDiv{
+ 
+  
+
+
+
+
+    /* Background */
+    
+    
+    }
+    
+    .profileCard{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    
