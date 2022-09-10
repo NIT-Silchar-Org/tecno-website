@@ -8,8 +8,8 @@ function Modal() {
         {/*<FontAwesomeIcon  icon="fa-xmark"/>*/}
         <div className="justify-start heroimg"></div>
         <div className="justify-start">
-          <div className="text-3xl px-2 py-2">
-            <IoMdClose />
+          <div className="text-3xl px-2 py-2 cross">
+            <IoMdClose/>
           </div>
         </div>
         <div className="justify-start">

@@ -394,3 +394,90 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0
   /* box-shadow: 13px 13px, -1em 0 1.4em black; */
   /* Note: backdrop-filter has minimal browser support */
 }
+
+/*responsive mobile view*/
+@media screen and (max-width:600px){
+
+  .modal-wrapper {
+    background: url(../public/assests/Modal/module-phn-view.png) #000000;;
+    /* background-repeat: no-repeat; */
+    /* overflow-x: hidden; */
+    position: relative;
+    width: 360px;
+    height: 800px;
+  }
+
+  .modal {
+    position: absolute;
+    width: 366px;
+    height: 800px;
+    left: -6px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+  }
+
+  .cross{
+  position: absolute;
+  width: 22.02px;
+  height: 22px;
+  left: 1px;
+  top: 1px;
+  }
+
+  .modal .title {
+    position: absolute;
+    width: max-content;
+    height: 29px;
+    left: 35%;
+    top: 480px;
+
+    font-family: 'mokotoGlitch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+  }
+
+  .heropara{
+    position: absolute;
+    width: 302.23px;
+    height: 271px;
+    left: 29.03px;
+    top: 530px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    /* or 200% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+  }
+
+
+
+
+  .heroimg {
+    position: absolute;
+    width: 360.27px;
+    height: 517px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(359.36deg, #000000 4.48%, rgba(0, 0, 0, 0.666513) 39.52%, rgba(0, 0, 0, 0) 99.43%), url(../public/assests/Modal/heromob.png);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), 95%, rgba(0,0,0,0));
+    backdrop-filter: blur(40px);
+  }
+}
