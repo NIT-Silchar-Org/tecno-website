@@ -7,35 +7,32 @@ import Header from './Header'
 import Socials from './Socials'
 
 function Parallax() {
-  const [offsetY, setOffsetY] = useState(0);
+  const [offsetY, setOffsetY] = useState(0)
   const handleScroll = () => {
     setOffsetY(window.pageYOffset)
   }
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
-    return () => { window.removeEventListener('scroll', handleScroll) };
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
   return (
+    <div className="relative h-screen w-screen overflow-y-hidden bg-black">
+      <div className="bg-black bg-opacity-30 z-20  absolute inset-0"></div>
 
-
-    <div
-      className="relative h-screen w-screen overflow-y-hidden bg-black">
-        <div className='bg-black bg-opacity-30 z-20  absolute inset-0'>
-
-        </div>
       <div className="absolute top-[15vh] w-full z-20 text-white">
         <Header />
       </div>
-      <div className='absolute hidden md:block   md:top-48 right-8  md:left-8 z-40'>
-
-
+      <div className="absolute hidden md:block   md:top-48 right-8  md:left-8 z-40">
         <Socials />
       </div>
 
-
-      <div className="absolute relative w-screen h-screen top-0 left-0" style={{transform: `translateY(${offsetY*0.5}px)`}}>
-
+      <div
+        className="absolute relative w-screen h-screen top-0 left-0"
+        style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+      >
         <Image src={BGFIRST} layout="fill" objectFit="cover" />
       </div>
       <div className="absolute relative z-10 w-screen -top-[42vh] left-0 h-[80vh] hidden md:block">

@@ -1,0 +1,33 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  background-color: $bgDark;
+  width: 100%;
+  height: 100vh !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      position: relative;
+      width: 4.5rem;
+      height: 4.5rem;
+      margin: 2rem;
+      cursor: pointer;
+    }
+    .profile {
+      position: relative;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin: 2rem;
+      margin-right: 4rem;
+      border: 2px solid white;
+      border-radius: 50%;
+      padding: 1rem;
+      cursor: pointer;
+    }
+  }
+}
