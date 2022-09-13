@@ -483,18 +483,29 @@ body::-webkit-scrollbar-thumb:hover {
   padding-top: 6rem;
 }
 
+.back-button {
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+  margin-left: 1.4rem;
+  color: #ffffff;
+}
+
+.poster {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .section-second {
-    display: none;
+    display: none;   
   }
+
   .input-wrapper {
-    
     display: grid;
     grid-template-columns: 1fr;
     gap: 10%;
   }
 
-  .input-field{
+  .input-field {
     margin-top: 2rem;
   }
   .text-3xl {
@@ -507,6 +518,7 @@ body::-webkit-scrollbar-thumb:hover {
   .text-lg {
     font-size: 1rem;
   }
+
   .section-one {
     width: 100%;
     padding: 1.4rem;
@@ -520,13 +532,13 @@ body::-webkit-scrollbar-thumb:hover {
     scrollbar-width: 0;
     /* padding-top: 6rem; */
     /* padding-bottom: 5rem; */
-    margin-top: 4rem;
+    margin-top: 1.4rem;
   }
   .event-logo {
     /* margin-top: 15px; */
-    margin-bottom: 15px;
-  
-    margin-right: 0.4rem;
+    margin-bottom: 0.1rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
   }
   .btn {
     width: 6rem;
@@ -538,8 +550,29 @@ body::-webkit-scrollbar-thumb:hover {
   .form-bg {
     background: black;
   }
-  .form-section{
+  .form-section {
     width: 80%;
     padding-top: 1rem;
+  }
+
+  .details-section-wrapper {
+    margin-top: 2rem;
+  }
+
+  .poster {
+    display: grid;
+    height: 15rem;
+    width: 15rem;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 0.6rem;
+    background: gray;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .back-button {
+    display: none;
   }
 }

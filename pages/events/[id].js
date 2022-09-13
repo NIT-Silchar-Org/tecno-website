@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
 import DummyLogo from '../../public/assests/stash/dummylogo.png'
-import { useEffect, useState, useRef } from 'react'
+import Header from '../../components/Header';
+
 function Event() {
   const [isFormHidden, setIsFormHidden] = useState(true)
   const scrollToRef = useRef()
@@ -15,21 +16,23 @@ function Event() {
     <>
       <div className="justify-center bg-black w-full h-screen">
         <div className="section-one">
+        <Header/>
           <div className="details-section-wrapper">
             <div className="text-3xl text-center justify-start relative items-center">
               {/* <h2>Logo</h2>
                */}
               <div className="event-logo">
-                <Image src={DummyLogo} />
+                <Image src={DummyLogo}/>
               </div>
               <div>
                 <h1 className="text-start">RoboWars</h1>
                 <h1 className="text-white text-lg mokoto-glitch-font">Module : Robotron</h1>
               </div>
             </div>
-
+               <div className='poster'>
+               </div>
             <div className="details scrollbar-hidden">
-              <p className="text-white">
+              <p className="text-white text-center">
                 Id dolor Lorem dolore veniam ad cupidatat aliqua deserunt. Sunt
                 sit commodo tempor mollit do deserunt aute non enim esse
                 incididunt. Eiusmod Lorem non ipsum adipisicing id dolore
