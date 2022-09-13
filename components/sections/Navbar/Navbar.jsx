@@ -5,8 +5,9 @@ import Profile from './Profile';
 import NavButton from '../Navbar/NavButton'
 
 const navLinks = [
+    /* Set navlinks to different routes */
     {text: "ABOUT", route: "/"},
-    {text: "MODULES", route: "/modules"},
+    {text: "MODULES", route: "/"},
     {text: "SPONSORS", route: "/"},
     {text: "TEAM", route: "/"},
     {text: "GALLERY", route: "/"},
