@@ -34,13 +34,12 @@ const Sidebar = () => {
         <div className={styles.cont}>
           {modules.map((item, index) => {
             return (
-              <div className={styles.item_cnt}>
+              <div className={styles.item_cnt} key={index}>
                 <div
                   className={`${styles.item} ${
                     selectedItem === index ? styles.selected : ''
                   }`}
                   onClick={() => setSelectedItem(index)}
-                  key={index}
                 >
                   {item}
                 </div>
