@@ -1,0 +1,114 @@
+@font-face {
+    font-family: LemonMilk;
+    src: url("/public/Fonts/LemonMilk.otf");
+}
+
+.main {
+    display: flex;
+    overflow-y: hidden;
+    position: relative;
+    background-color: #000000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .section {
+        text-align: center;
+        width: 80%;
+        position: relative;
+        z-index: 20;
+
+
+        @media (min-width: 772px) {
+            width: 60vw;
+        }
+
+        .aboutUs {
+            margin-bottom: 4rem;
+            color: #ffffff;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            text-align: center;
+            width: 100%;
+            font-family: LemonMilk;
+
+
+            @media (min-width: 772px) {
+                font-size: 3rem;
+            }
+
+            @media (min-width: 2000px) {
+                font-size: 6rem;
+            }
+
+            @media (min-width: 3600px) {
+                font-size: 7.5rem;
+            }
+        }
+
+        .aboutUsContent {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            line-height: 1.75rem;
+            text-align: center;
+            text-transform: uppercase;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            color: white;
+
+
+            @media (min-width: 772px) {
+                font-size: 1.25rem;
+                line-height: 2rem;
+            }
+
+            @media (min-width: 2000px) {
+                font-size: 2.5rem;
+                margin-top: 5%;
+                line-height: 3rem;
+            }
+
+            @media (min-width: 3600px) {
+                font-size: 3rem;
+                margin-top: 7%;
+                line-height: 3.75rem;
+            }
+        }
+
+        .btn {
+            transition-property: all;
+            color: #ffffff;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            text-transform: uppercase;
+            border-width: 1px;
+            border-color: #ffffff;
+            padding: 1rem;
+            cursor: pointer;
+
+            @media (min-width: 2000px) {
+                font-size: 1.75rem;
+                line-height: 2.2rem;
+            }
+
+            @media (min-width: 3600px) {
+                font-size: 2.9rem;
+                margin-top: 2%;
+                line-height: 2.75rem;
+            }
+
+
+            // @media (min-width: 768px) {}
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+            font-weight: 600;
+        }
+    }
+}
