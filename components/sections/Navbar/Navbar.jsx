@@ -15,14 +15,14 @@ const navLinks = [
 ]
 
 export default function Navbar(props) {
-    const [open, ToggleNavbar] = useState(false);
+    const [open, toggleNavbar] = useState(false);
 
     return(
         <div className={styles.nav}>
             <div className={styles.hambtn}>
                 <button className={` ${ham.hamburger} ${ham.hamburger_glitch} 
                     ${open ? ham.is_active : null} ` }
-                    onClick={()=>{ToggleNavbar(!open)}}
+                    onClick={()=>{toggleNavbar(!open)}}
                 >
                     <span className={ham.hamburger_box}>
                        <span className={ham.hamburger_inner}></span>
