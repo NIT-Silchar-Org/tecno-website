@@ -625,7 +625,13 @@ body::-webkit-scrollbar-thumb:hover {
   left: 2rem;
   top: 5rem;
 }
-
+.profPhoto2{
+  z-index: 999;
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+ 
+}
 .tecnoLogo {
   margin-top: 1.25rem;
   margin-left: 1.25rem;
@@ -795,11 +801,11 @@ span {
   .backDiv {
     position: absolute;
     width: 26.75rem;
-    height: 18.75rem;
+    height: 20.75rem;
     left: 0px;
     top: 0px;
     width: 100vw;
-    background-image: url('../public/assests/profile/bgMobile.png');
+    /* background-image: url('../public/assests/profile/bgMobile.png'); */
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -812,7 +818,7 @@ span {
     border-top-right-radius:0;
     border-bottom-left-radius:0;
     left: 0px;
-    top: 40%;
+    top: 45%;
     width: 100vw;
     height: max-content;
     overflow-y: scroll;
@@ -821,6 +827,7 @@ span {
   }
 
   .eventDetail {
+    margin-top: 100px;
     margin-bottom: 30px;
   }
 
@@ -831,7 +838,13 @@ span {
     height: max-content;
     /* background-color: #000000; */
   }
-
+.userIcon{
+  width: 20rem;
+  border: 2px solid red;
+  position: absolute !important;
+  top:-10px !important;
+  z-index: 1000 !important;
+}
   .profImg {
     display: flex;
     flex-direction: column;
@@ -844,12 +857,28 @@ span {
   }
 
   .profPhoto {
-    top: 3rem;
+    position: absolute;
+    top: 10vh;
     width: 10.875rem;
     height: 10.875rem;
     left: 7.938rem;
-    top: 7.438rem;
+    display: none;
     margin-bottom: 3.125rem;
+    /* top: 7.438rem; */
+  }
+
+  .profPhoto2{
+    z-index: 999;
+    position: absolute;
+    top: 7%;
+    width: 10.875rem;
+    height: 10.875rem;
+    /* left: 7.938rem; */
+    /* left:  5.937999999999999rem; */
+    left: 48%;
+  transform: translateX(-50%);
+    opacity: 10;
+   
   }
 
   .tecnoLogo {

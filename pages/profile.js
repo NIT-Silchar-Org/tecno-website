@@ -9,20 +9,25 @@ import Name from "../public/assests/profile/nameIcon.png"
 import Institute from "../public/assests/profile/InstiIcon.png"
 import Phone from "../public/assests/profile/phone.png"
 import Location from "../public/assests/profile/location.png"
+import backgrd from "../public/assests/profile/bgMobile.png"
 // import CamIcon from "../public/assests/profile/cam.svg"
 
 function Profile1() {
   return (
+    <div>
+      <div className="profPhoto2">
+              <Image src={UserIcon} />
+            </div>
     <div className="backDiv">
+      
       <div className="profileCard">
         <div className="profDetail">
             <div className='tecnoLogo'>
             <Image src={Tecnologo} />
             </div>
           <div className="profImg">
-            <div className="profPhoto">
+          <div className="profPhoto">
               <Image src={UserIcon} />
-              {/* <Image src={CamIcon} /> */}
             </div>
             <div className="eventDetail">
                 <div className='Attended'>
@@ -54,7 +59,7 @@ function Profile1() {
           <h2 className="transHeading">Transactions</h2>
           <hr />
           <br />
-          <ul>
+          <ul className='TransactionList'>
             <li className='EventListLi'>
               <div className="eventName">
                 <div>
@@ -160,6 +165,7 @@ function Profile1() {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   )
 }
