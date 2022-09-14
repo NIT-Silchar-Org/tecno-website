@@ -559,7 +559,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-/* ==================Profile CSS====================== */
+/* ==================Profile PAGE CSS====================== */
 
 .backDiv {
   position: absolute;
@@ -625,13 +625,15 @@ body::-webkit-scrollbar-thumb:hover {
   left: 2rem;
   top: 5rem;
 }
-.profPhoto2{
+
+.profPhoto2 {
   z-index: 999;
   position: absolute;
   top: 20px;
   opacity: 0;
- 
+
 }
+
 .tecnoLogo {
   margin-top: 1.25rem;
   margin-left: 1.25rem;
@@ -761,7 +763,7 @@ Image {
 .transHeading {
   text-align: center;
   padding: 20px;
- 
+
 }
 
 /* hr{
@@ -795,7 +797,8 @@ span {
 }
 
 
-/* Profile Section Responsiveness */
+/* =======Profile PAGE Section Responsiveness(MOBILE VIEW)=========== */
+
 @media screen and (max-width:850px) {
 
   .backDiv {
@@ -815,8 +818,8 @@ span {
     display: flex;
     flex-direction: column;
     transform: none;
-    border-top-right-radius:0;
-    border-bottom-left-radius:0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
     left: 0px;
     top: 45%;
     width: 100vw;
@@ -838,13 +841,15 @@ span {
     height: max-content;
     /* background-color: #000000; */
   }
-.userIcon{
-  width: 20rem;
-  border: 2px solid red;
-  position: absolute !important;
-  top:-10px !important;
-  z-index: 1000 !important;
-}
+
+  .userIcon {
+    width: 20rem;
+    border: 2px solid red;
+    position: absolute !important;
+    top: -10px !important;
+    z-index: 1000 !important;
+  }
+
   .profImg {
     display: flex;
     flex-direction: column;
@@ -867,7 +872,7 @@ span {
     /* top: 7.438rem; */
   }
 
-  .profPhoto2{
+  .profPhoto2 {
     z-index: 999;
     position: absolute;
     top: 7%;
@@ -876,22 +881,26 @@ span {
     /* left: 7.938rem; */
     /* left:  5.937999999999999rem; */
     left: 48%;
-  transform: translateX(-50%);
+    transform: translateX(-50%);
     opacity: 10;
-   
+
   }
 
   .tecnoLogo {
-display: none;
+    display: none;
   }
+
   .personalDetail {
     font-weight: 400;
     font-size: 14px;
   }
+
   .TransactionDetail {
     width: 90vw;
-    backdrop-filter:blur(0px);
+    backdrop-filter: blur(0px);
     background: #000000;
     border: 1px solid rgb(255, 255, 255);
   }
 }
+
+/*=============== PROFILE PAGE CSS END HERE============== */
