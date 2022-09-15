@@ -32,13 +32,15 @@ function Profile1() {
               <div className="eventDetail">
                 <div className='Attended'>
                   <Image src={Attended} /><br />
-                  <span>Attended<br /></span>
-                  <span>6 Events<br /></span>
+                 <span className='attendedAlign'>Attended<br/></span>
+                  {/* <span>6 Events<br /></span> */}
+                 <span className='attendedAlign'>6 Events</span>
                 </div>
                 <div className='Tecnocoins'>
                   <Image src={TecnoCoin} /><br />
-                  <span>Earned<br /></span>
-                  <span>300 Coins<br /></span>
+                 <span className='attendedAlign'>Earned<br/></span>
+                  <span className='attendedAlign'>300 Coins<br/></span>
+                 
                 </div>
               </div>
             </div>

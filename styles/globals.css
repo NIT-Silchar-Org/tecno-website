@@ -832,6 +832,8 @@ span {
   .eventDetail {
     margin-top: 100px;
     margin-bottom: 30px;
+    width: 100%;
+    justify-content: space-evenly;
   }
 
   .profDetail {
@@ -841,7 +843,15 @@ span {
     height: max-content;
     /* background-color: #000000; */
   }
-
+  .Attended {
+    color: #FFFFFF;
+    text-align: center;
+  }
+  
+  .Tecnocoins {
+    color: #FFFFFF;
+    text-align: center;
+  }
   .userIcon {
     width: 20rem;
     border: 2px solid red;
@@ -880,7 +890,7 @@ span {
     height: 10.875rem;
     /* left: 7.938rem; */
     /* left:  5.937999999999999rem; */
-    left: 48%;
+    left: 50%;
     transform: translateX(-50%);
     opacity: 10;
 
@@ -900,6 +910,13 @@ span {
     backdrop-filter: blur(0px);
     background: #000000;
     border: 1px solid rgb(255, 255, 255);
+  }
+  button{
+    margin-right: 0.625rem;
+  }
+  .attendedAlign{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
