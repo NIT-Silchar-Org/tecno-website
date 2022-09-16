@@ -62,7 +62,7 @@ function Header() {
         BACK TO THE FUTURE
       </h1>
       <h1 className="text-center text-2xl md:text-4xl font-lemonMilk mt-4">
-        14. 15. 16. 17
+        20. 21. 22. 23
       </h1>
       <h1 className="text-center text-2xl md:text-4xl font-lemonMilk my-2">
         October
