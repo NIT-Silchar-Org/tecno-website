@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 // import { useHistory } from "react-router-dom"
 import { useRouter } from 'next/router'
+import { async } from "@firebase/util";
 
 
 const AuthContext = React.createContext();
@@ -45,17 +46,26 @@ export function AuthProvider({ children }) {
 		await signOut(auth);
 		history.push("/home");  // sends the user to home after logout
 	}
+	const getAccessToken = async () =>{
+
+		let token = auth.currentUser.getIdToken()
+		return token
+
+	}
 	async function signInBackend(user) {
 		console.log(user);
 		try {
 			let backendUser;
 			if (user) {
-				const credential = GoogleAuthProvider.credentialFromResult(user);
-				const res = await axios.post(
+				// const credential = GoogleAuthProvider.credentialFromResult(user);
+				// const credential = user?.accessToken
+				// console.log(credential);
+				let token = await getAccessToken()
+				const res = await axios.get(
 					api_url, // send token back
 					{
 						headers: {
-							authorisation: `Bearer ${credential.accessToken}`,
+							Authorization: `Bearer ${token}`,
 						},
 					}
 				);
@@ -72,8 +82,9 @@ export function AuthProvider({ children }) {
 			setFirebaseUser(user);
 			signInBackend(user).then((bcUser) => {
 				setLoading(false);
+				console.log("bc: ", bcUser);
 				if (user && bcUser) {
-					history.push("/home") // if user exists in backend send to home
+					// history.push("/") // if user exists in backend send to home
 				} else if (user && !bcUser) {
 					history.push("/register"); // if user does not exist in backend send to register
 				}

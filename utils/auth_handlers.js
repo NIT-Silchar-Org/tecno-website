@@ -10,7 +10,7 @@ export const userBackendRegister = async ({
   token,
 }) => {
 //   console.log({ name })
-  let url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}auth/signup`
+  let url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/auth/signup`
   let body = {
     name: name,
     email: email,

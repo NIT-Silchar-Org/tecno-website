@@ -1,0 +1,100 @@
+@import '../../../styles/variables.scss';
+.container {
+  color: white;
+  width: 22rem;
+  height: 16rem;
+  background-image: url('../../../public/assests/modules/CardBg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 1rem 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper_outline {
+    width: 90%;
+    height: 95%;
+    background: linear-gradient(to bottom, #4edfff, #ff00bf);
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: polygon(
+      10% 2%,
+      100% 2%,
+      100% 72%,
+      89% 100%,
+      0% 100%,
+      0% 27%,
+      12% 0%
+    );
+    clip-path: polygon(
+      10% 2%,
+      100% 2%,
+      100% 72%,
+      89% 100%,
+      0% 100%,
+      0% 27%,
+      12% 0%
+    );
+    .wrapper {
+      width: 98%;
+      height: 98%;
+      background: linear-gradient(to bottom, #1b13ff7a, #ec1d69);
+      position: relative;
+      border-bottom-left-radius: 20px;
+      border-top-right-radius: 25px;
+      -webkit-clip-path: polygon(
+        10% 2%,
+        100% 2%,
+        100% 72%,
+        89% 100%,
+        0% 100%,
+        0% 27%,
+        12% 0%
+      );
+      clip-path: polygon(
+        10% 2%,
+        100% 2%,
+        100% 72%,
+        89% 100%,
+        0% 100%,
+        0% 27%,
+        12% 0%
+      );
+
+      .overlay {
+        position: absolute;
+        bottom: -1px;
+        height: 61%;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+        background-color: aliceblue;
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        text-align: center;
+        font-family: $mokotoGlitchMark;
+        padding-top: 3rem;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    .wrapper_outline {
+      .wrapper {
+        .overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

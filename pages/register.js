@@ -4,7 +4,7 @@ import {useAuth} from '../providers/authContext'
 import {userBackendRegister} from '../utils/auth_handlers'
 
 function Register() {
-    const {firebaseUser} = useAuth()
+    const {firebaseToken} = useAuth()
 
     const [name, setName] = useState("hello")
     const [email, setEmail] = useState("")
@@ -12,8 +12,8 @@ function Register() {
     const [regID, setRegID] = useState(null)
     const [userName, setUserName] = useState("")
     const [imageUrl, setImageUrl] = useState("")
-    console.log(firebaseUser?.accessToken);
-    let token = firebaseUser?.accessToken
+    // console.log(firebaseUser?.accessToken);
+    let token = firebaseToken
     const handleSignup =  ()=>{
         userBackendRegister({ name,email,  collegeName, regID, userName,imageUrl, token })
     }
