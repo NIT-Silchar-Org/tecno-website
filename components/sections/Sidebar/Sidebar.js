@@ -37,7 +37,6 @@ const Sidebar = ({ selectedItem, setActive, active }) => {
         <div className={styles.cont}>
           {modules.map((item, index) => {
             return (
-              <Link>
                 <div className={styles.item_cnt} key={index}>
                   <div
                     className={`${styles.item} ${
@@ -48,7 +47,6 @@ const Sidebar = ({ selectedItem, setActive, active }) => {
                     {item}
                   </div>
                 </div>
-              </Link>
             )
           })}
         </div>
