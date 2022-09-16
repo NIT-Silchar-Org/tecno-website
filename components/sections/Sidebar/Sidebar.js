@@ -1,27 +1,28 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './Sidebar.module.scss'
 import svg1 from '../../../public/assests/modules/Vector14.svg'
 import svg2 from '../../../public/assests/modules/Vector15.svg'
 import Image from 'next/image'
 
+// const [active, setActive] = useState(true);
+
 const modules = [
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
+  'robotron',
+  'vWarz',
+  'showcase',
+  'amazers',
+  'conferenza',
+  'cyberwrap',
+  'mindsnare',
+  'asme',
+  'sae',
+  'smartcity',
+  'empresaario',
 ]
 
-const Sidebar = () => {
-  const [selectedItem, setSelectedItem] = useState(0)
+const Sidebar = ({ selectedItem, setActive, active }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${active ? styles.active : ''}`}>
       <div className={styles.head}>
         <div className={styles.text}>Modules</div>
       </div>
