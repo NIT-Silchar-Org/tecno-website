@@ -1,38 +1,41 @@
-import axios from "axios";
+import axios from 'axios'
 
+export const userBackendRegister = async ({
+  name,
+  email,
+  collegeName,
+  regID,
+  userName,
+  imageUrl,
+  token,
+}) => {
+//   console.log({ name })
+  let url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}auth/signup`
+  let body = {
+    name: name,
+    email: email,
+    collegeName: collegeName,
+    registrationId: regID,
+    username: userName,
+    imageUrl: imageUrl,
+  }
 
-export const userBackendRegister = async ({name, email, collegeName, regID, userName, imageUrl, token}) =>{
+  let headers = {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${token}`,
+  }
 
-    console.log({name});
-    let url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/auth/signup`
-    let body = {
-        name:name,
-        email: email,
-        collegeName:collegeName,
-        regID:regID,
-        userName:userName,
-        imageUrl:imageUrl
+  let resp
+
+  try {
+    resp = await axios.post(url, body, { headers })
+  
+  } catch (err) {
+    console.log(err)
+    resp = {
+      error:err
     }
-    
-
-    let config ={
-        headers:{
-            
-                Authorization:`Bearer ${token}`
-            
-        }
-    }
-
-    let resp;
-
-    try{
-
-        resp = await axios.post()
-
-    }catch(err){
-
-    }
-
-
-
+  }
+  console.log({ resp })
+  return resp;
 }

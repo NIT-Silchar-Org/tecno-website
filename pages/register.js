@@ -1,19 +1,21 @@
 import React from 'react'
-import {useEffect, useState} from 'react'
+import { useState} from 'react'
 import {useAuth} from '../providers/authContext'
 import {userBackendRegister} from '../utils/auth_handlers'
 
-function register() {
-    const {user} = useAuth()
+function Register() {
+    const {firebaseUser} = useAuth()
 
     const [name, setName] = useState("hello")
     const [email, setEmail] = useState("")
     const [collegeName, setCollegeName] = useState("")
     const [regID, setRegID] = useState(null)
     const [userName, setUserName] = useState("")
-
+    const [imageUrl, setImageUrl] = useState("")
+    console.log(firebaseUser?.accessToken);
+    let token = firebaseUser?.accessToken
     const handleSignup =  ()=>{
-        userBackendRegister({user, name, collegeName, regID, userName})
+        userBackendRegister({ name,email,  collegeName, regID, userName,imageUrl, token })
     }
      
 
@@ -33,11 +35,11 @@ function register() {
             <h1>Username</h1>
             <input value={userName}  onChange={(e)=> setUserName(e.target.value)} />
 
-            <button onClick={handleSignup}>CLock</button>
+            <button onClick={handleSignup}>Click</button>
 
         </div>
     </div>
   )
 }
 
-export default register
+export default Register

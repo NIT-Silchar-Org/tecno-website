@@ -2,14 +2,13 @@ import { initializeApp } from 'firebase/app';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyAnTYyTe1o7pz0D8xDzB_73MNBcXq4agSQ",
-  authDomain: "third-extension-325709.firebaseapp.com",
-  databaseURL: "https://third-extension-325709-default-rtdb.firebaseio.com",
-  projectId: "third-extension-325709",
-  storageBucket: "third-extension-325709.appspot.com",
-  messagingSenderId: "427076930682",
-  appId: "1:427076930682:web:d5566f3bebe1caf0207fc3",
-  measurementId: "G-05BMM4GTVP"
+  apiKey: "AIzaSyAoOMu1xZXV881ocvNrRG_hx_KfO1uSYxo",
+  authDomain: "tecno-app-dev.firebaseapp.com",
+  projectId: "tecno-app-dev",
+  storageBucket: "tecno-app-dev.appspot.com",
+  messagingSenderId: "345426299777",
+  appId: "1:345426299777:web:22c476791b91cb30d2b680",
+  measurementId: "G-QXRLHLZGMW"
 };
 
 export const app = initializeApp(firebaseConfig);

@@ -4,15 +4,15 @@ import {useEffect} from 'react'
 import {useAuth} from '../../providers/authContext'
 function ProtectedRoute({children}) {
 
-    const {user} = useAuth()
+    const {firebaseUser} = useAuth()
     const router = useRouter()
 
     useEffect(()=>{
-        if(!user){
+        if(!firebaseUser){
             router.push('/login')
         }
-    }, [router.push, user])
-  return <>{user?children:null}</>
+    }, [router.push, firebaseUser])
+  return <>{firebaseUser?children:null}</>
   
 }
 

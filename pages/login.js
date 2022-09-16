@@ -1,8 +1,8 @@
 import React from 'react'
 import {useAuth} from '../providers/authContext'
-function login() {
+function Login() {
 
-    const {user, signup} = useAuth()
+    const { signup} = useAuth()
     const handleLogin = async () =>{
         try{
             await signup()
@@ -15,4 +15,4 @@ function login() {
   )
 }
 
-export default login
+export default Login
