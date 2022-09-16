@@ -24,7 +24,7 @@ const modules = [
 
 const Sidebar = ({ selectedItem, setActive, active }) => {
   return (
-    <div className={`${styles.container} ${active?styles.active:""}`}>
+    <div className={`${styles.container} ${active ? styles.active : ''}`}>
       <div className={styles.head}>
         <div className={styles.text}>Modules</div>
       </div>
@@ -37,12 +37,13 @@ const Sidebar = ({ selectedItem, setActive, active }) => {
         <div className={styles.cont}>
           {modules.map((item, index) => {
             return (
-              <Link href={`#${item}`} replace key={index}>
-                <div className={styles.item_cnt} >
+              <Link>
+                <div className={styles.item_cnt} key={index}>
                   <div
                     className={`${styles.item} ${
                       selectedItem === index ? styles.selected : ''
                     }`}
+                    onClick={() => setSelectedItem(index)}
                   >
                     {item}
                   </div>
