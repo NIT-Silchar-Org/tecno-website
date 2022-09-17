@@ -1,7 +1,8 @@
 import React from 'react'
-import Parallax from "../components/style-guide/Parallax/Parallax"
-import AboutUs from '../components/style-guide/AboutUs/AboutUs'
-import AboutNIT from '../components/style-guide/AboutNIT/AboutNIT'
+import Parallax from '../components/style-guide/sections/Parallax'
+import AboutUs from '../components/style-guide/sections/AboutUs'
+import AboutNIT from '../components/style-guide/sections/AboutNIT'
+import Navbar from '../components/sections/Navbar/Navbar'
 import Head from 'next/head'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -13,6 +14,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 library.add(faFacebook, faLinkedin, faTwitter, faInstagram)
 import indexStyle from "../styles/index.module.scss"
+
 
 // export default function Home() {
 //   return (
@@ -70,6 +72,7 @@ import indexStyle from "../styles/index.module.scss"
 //   )
 // }
 
+
 export default function Home() {
   return (
     <>
@@ -78,6 +81,8 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <div className={indexStyle.main}>
+        {/* route to /profile when clicked and provide an url for profile pic. When not set, pfp is set to a default pic. */}
+        <Navbar profile="/profile" pfp=""/>
         <Parallax />
         <AboutNIT />
         <AboutUs />
