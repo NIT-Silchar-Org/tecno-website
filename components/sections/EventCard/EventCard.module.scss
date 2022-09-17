@@ -98,3 +98,22 @@
     }
   }
 }
+
+@media only screen and (min-width: 2200px) {
+  .container {
+    width: 30rem;
+    height: 22rem;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 17rem;
+    height: 12.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 16rem;
+    height: 12rem;
+  }
+}
