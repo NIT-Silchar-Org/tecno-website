@@ -373,6 +373,13 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: medium;
 }
 
+.btn2 {
+  width: 12rem;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: medium;
+}
+
 .mokoto-glitch-font {
   font-family: 'mokotoGlitch';
   src: url('/Fonts/MokotoGlitch.otf');
