@@ -3,8 +3,6 @@ import styles from './Sidebar.module.scss'
 import svg1 from '../../../public/assests/modules/Vector14.svg'
 import svg2 from '../../../public/assests/modules/Vector15.svg'
 import Image from 'next/image'
-import Link from 'next/link'
-import Right from '../../../public/assests/modules/Right.svg'
 
 // const [active, setActive] = useState(true);
 
@@ -37,16 +35,16 @@ const Sidebar = ({ selectedItem, setActive, active }) => {
         <div className={styles.cont}>
           {modules.map((item, index) => {
             return (
-                <div className={styles.item_cnt} key={index}>
-                  <div
-                    className={`${styles.item} ${
-                      selectedItem === index ? styles.selected : ''
-                    }`}
-                    onClick={() => setSelectedItem(index)}
-                  >
-                    {item}
-                  </div>
+              <div className={styles.item_cnt} key={index}>
+                <div
+                  className={`${styles.item} ${
+                    selectedItem === index ? styles.selected : ''
+                  }`}
+                  onClick={() => setSelectedItem(index)}
+                >
+                  {item}
                 </div>
+              </div>
             )
           })}
         </div>
