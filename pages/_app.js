@@ -1,10 +1,11 @@
 import '../styles/globals.css'
+import React from 'react';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
-      <Component {...pageProps} />
-    </div>
+      <div>
+        <Component {...pageProps} />
+      </div>
   )
 }
 

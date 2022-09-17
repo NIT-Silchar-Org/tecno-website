@@ -18,8 +18,8 @@
   }
 
   .card {
-    width: 26em;
-    height: 18em;
+    width: 30em;
+    height: 20em;
     display: flex;
     margin: 0 1rem;
     align-items: center;
@@ -39,14 +39,16 @@
       margin: 0 0.5rem;
     }
 
-    @media (min-width: 767px) and (max-width: 1000px) {
-      margin: 0 1.75em;
+    @media (max-width: 400px) {
+      width: 12em;
+      height: 9em;
+      margin: 0 1rem
     }
 
-    @media (max-width: 400px) {
-      width: 13em;
-      height: 9.5em;
-      margin: 0 1rem
+    @media (min-width: 767px) and (max-width: 1000px) {
+      margin: 0 1.75em;
+      width: 26em;
+      height: 14em;
     }
   }
 }

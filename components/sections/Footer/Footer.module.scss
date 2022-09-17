@@ -70,6 +70,15 @@
           }
 
           background: url('../../../public/assests/landingPage/Border.svg') no-repeat center;
+
+          @media (max-width: 768px) {
+            background: none;
+            border: 5px solid;
+            border-radius: 10%;
+            opacity: 60%;
+            width: 15rem;
+          }
+
         }
       }
     }

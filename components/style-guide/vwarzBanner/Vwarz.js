@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
-import useAnimate from '../../../hooks/useAnimate'
+import React from 'react'
 import styles from './styles.module.scss'
 
-const Vwarz = () => {
-  const [vis, setVis] = useState(false)
-  useAnimate(vis, setVis)
+const Vwarz = ({active}) => {
   return (
     <svg
-      className={`${styles.svg} ${vis ? '' : styles.hide}`}
+      className={`${styles.svg} ${active ? '' : styles.hide}`}
       width="71"
       height="184"
       viewBox="0 0 71 184"

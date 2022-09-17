@@ -3,6 +3,10 @@
   position: relative;
   scroll-snap-type: y mandatory;
 
+  .blank {
+    opacity: 0;
+  }
+
   .hero {
     height: 100vh;
     width: 100vw;
@@ -28,6 +32,10 @@
       position: absolute;
       top: 0;
       z-index: 30;
+    }
+
+    .blank {
+      opacity: 0;
     }
 
     #right {
@@ -140,3 +148,5 @@
   overflow: hidden;
   height: 100vh;
 }
+
+// .container
