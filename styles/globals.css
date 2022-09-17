@@ -64,6 +64,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.monte {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -390,6 +395,32 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: medium;
 }
 
+.btn2 {
+  width: 12rem;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: medium;
+}
+
+.btn3{
+  width: 12rem;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: medium;
+  margin-top: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.member{
+  display: inline-block;
+  border-color:#00f0ff;
+  border-radius: 10%;
+  border-width: 0.1px;
+  padding: 1px;
+  margin-bottom: 1rem;
+  
+}
+
 .mokoto-glitch-font {
   font-family: 'mokotoGlitch';
   src: url('/Fonts/MokotoGlitch.otf');
@@ -416,11 +447,16 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section-one {
+  overflow-y: scroll;
   width: 60%;
   padding-left: 5rem;
   background: url('/assests/events/event-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section-one::-webkit-scrollbar{
+  display: none;
 }
 
 .section-second {
@@ -450,12 +486,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .form-section {
+  overflow-y: scroll;
   width: 60%;
   padding-top: 5rem;
 }
-.form {
-  width: 100%;
+.form-section::-webkit-scrollbar{
+  display: none;
 }
+/* .form {
+  width: 46%;
+} */
+
 .form-input {
   border: 0;
   outline: 0;
@@ -466,7 +507,21 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   color: white;
   font-size: large;
+  text-align: center;
 }
+
+.bt3 {
+  white-space: nowrap;
+  border: none;
+  
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
+  border-bottom-right-radius: 6px;
+  
+  font-size: large;
+  color: white;
+  
+  }
+
 .input-wrapper {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -490,9 +545,14 @@ body::-webkit-scrollbar-thumb:hover {
   /* width: 50%;  */
   /* padding-left: 1rem; */
   width: 100%;
-  font-size: large;
+  font-size: larger;
   color: white;
 }
+
+.gap {
+  margin-top: 1rem;
+}
+
 .form-bg {
   background-image: url('/assests/events/form-bg.png');
   background-repeat: no-repeat;
@@ -502,19 +562,33 @@ body::-webkit-scrollbar-thumb:hover {
 .input-field{
   margin-top: 2.4rem;
 }
+
+.back-button {
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+  margin-left: 1.4rem;
+  color: #ffffff;
+}
+
+.poster {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .section-second {
-    display: none;
+    display: none;   
   }
+
   .input-wrapper {
-    
     display: grid;
     grid-template-columns: 1fr;
     gap: 10%;
   }
 
-  .input-field{
+  .input-field {
     margin-top: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
   }
   .text-3xl {
     font-size: 2rem;
@@ -526,6 +600,7 @@ body::-webkit-scrollbar-thumb:hover {
   .text-lg {
     font-size: 1rem;
   }
+
   .section-one {
     width: 100%;
     padding: 1.4rem;
@@ -539,13 +614,13 @@ body::-webkit-scrollbar-thumb:hover {
     scrollbar-width: 0;
     /* padding-top: 6rem; */
     /* padding-bottom: 5rem; */
-    margin-top: 4rem;
+    margin-top: 1.4rem;
   }
   .event-logo {
     /* margin-top: 15px; */
-    margin-bottom: 15px;
-  
-    margin-right: 0.4rem;
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .btn {
     width: 6rem;
@@ -557,8 +632,29 @@ body::-webkit-scrollbar-thumb:hover {
   .form-bg {
     background: black;
   }
-  .form-section{
+  .form-section {
     width: 80%;
     padding-top: 1rem;
+  }
+
+  .details-section-wrapper {
+    margin-top: 2rem;
+  }
+
+  .poster {
+    display: grid;
+    height: 15rem;
+    width: 15rem;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 0.6rem;
+    background: gray;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .back-button {
+    display: none;
   }
 }

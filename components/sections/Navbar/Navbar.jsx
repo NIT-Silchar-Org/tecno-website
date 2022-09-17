@@ -3,6 +3,7 @@ import ham from '../Navbar/Hamburger.module.scss'
 import React, { useState } from 'react';
 import Profile from './Profile';
 import NavButton from '../Navbar/NavButton'
+import Link from 'next/link';
 
 const navLinks = [
     /* Set navlinks to different routes */
@@ -38,7 +39,9 @@ export default function Navbar(props) {
                     {
                         navLinks.map((links, index) => {
                             return(
-                                <NavButton text={links.text} href={links.route} key={index}/>
+                                <Link href={links.route} key={index}>
+                                    <NavButton text={links.text} href={links.route} key={index}/>
+                                </Link>
                             )
                        })
                     }

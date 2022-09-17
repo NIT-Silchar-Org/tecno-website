@@ -7,7 +7,11 @@ import { userBackendRegister } from '../utils/auth_handlers'
 function Register() {
   const { auth } = useAuth()
 
-  const [name, setName] = useState('hello')
+  // const [name, setName] = useState('hello')
+  const [firstName, setFirstName] = useState('')
+  const [secondName, setSecondName] = useState('')
+  const [phone, setPhone] = useState(null)
+
   const [email, setEmail] = useState('')
   const [collegeName, setCollegeName] = useState('')
   const [regID, setRegID] = useState(null)
@@ -19,7 +23,9 @@ function Register() {
     e.preventDefault()
     let token = await auth.currentUser.getIdToken()
     await userBackendRegister({
-      name,
+      firstName,
+      secondName,
+      phone,
       email,
       collegeName,
       regID,
@@ -50,17 +56,39 @@ function Register() {
       <div className="bg-black w-full h-screen justify-center form-bg ">
         <div className="form-section">
           <h1 className="text-lg text-white mokoto-glitch-font">Signup Form</h1>
-          <form className="form" onSubmit={(e)=>handleSignup(e)}>
+          <form className="form" onSubmit={(e) => handleSignup(e)}>
             <div className=" input-wrapper">
-              <Input placeholder={'Name'} val={name} setVal={setName} req={true}/>
+              {/* <Input placeholder={'Name'} val={name} setVal={setName} req={true}/> */}
+              <Input
+                placeholder={'First Name'}
+                val={firstName}
+                setVal={setFirstName}
+                req={true}
+              />
+              <Input
+                placeholder={'Last Name'}
+                val={secondName}
+                setVal={setSecondName}
+                req={true}
+              />
+              <Input
+                placeholder={'Phone'}
+                val={phone}
+                setVal={setPhone}
+                req={true}
+              />
               <Input
                 placeholder={'Username'}
                 val={userName}
                 setVal={setUserName}
                 req={true}
               />
-              <Input placeholder={'Email'} val={email} setVal={setEmail}
-              req={true} />
+              <Input
+                placeholder={'Email'}
+                val={email}
+                setVal={setEmail}
+                req={true}
+              />
               <Input
                 placeholder={'Collge Name'}
                 val={collegeName}
@@ -73,19 +101,18 @@ function Register() {
                 setVal={setRegID}
                 req={true}
               />
+              <div>
+                
+              </div>
+            <div className="my-4">
+              <button className="btn secondary-solid text-xl" type="submit">
+                Register
+              </button>
+            </div>
               {/* <Input placeholder={"Name"}/> */}
             </div>
-            <div className="my-4">
-            <button
-              
-              className="btn secondary-solid text-xl"
-              type='submit'
-            >
-              Register
-            </button>
-          </div>
+            
           </form>
-          
         </div>
       </div>
     </div>

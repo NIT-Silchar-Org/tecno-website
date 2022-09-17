@@ -2,8 +2,8 @@ import axios from "axios";
 
 export const team_register = async (id, body, token) => {
 
-    let url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/event/${id}/team/add`
-
+    let url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/team/event/${id}/add`
+    console.log(body);
     let resp ;
     
     

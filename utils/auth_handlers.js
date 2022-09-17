@@ -1,7 +1,9 @@
 import axios from 'axios'
 
 export const userBackendRegister = async ({
-  name,
+  firstName,
+  secondName,
+  phone,
   email,
   collegeName,
   regID,
@@ -12,7 +14,9 @@ export const userBackendRegister = async ({
 //   console.log({ name })
   let url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/auth/signup`
   let body = {
-    name: name,
+    firstName:firstName,
+    lastName:secondName,
+    phoneNumber:phone,
     email: email,
     collegeName: collegeName,
     registrationId: regID,
