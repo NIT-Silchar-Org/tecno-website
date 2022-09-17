@@ -4,8 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* custom fonts */
 
 @layer base {
@@ -27,8 +25,6 @@
     font-weight: 400;
     font-display: swap;
     font-style: normal;
-
-
   }
 }
 
@@ -77,6 +73,10 @@ body {
 
 
 
+.monte {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
 
 /* Box sizing rules */
 *,
@@ -115,8 +115,8 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -198,7 +198,7 @@ header span::before,
 header span::after {
   position: absolute;
   top: -23px;
-  content: "";
+  content: '';
   height: 30px;
   width: 4px;
   border-radius: 2px;
@@ -281,7 +281,6 @@ body::-webkit-scrollbar-thumb:hover {
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   transition-timing-function: linear;
-
 }
 
 
@@ -320,18 +319,41 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 
-
+.hidden {
+  display: none !important;
+}
 .relative {
   position: relative;
 
 }
 
+.bg-black {
+  background-color: #040404;
+}
 
+.text-center {
+  text-align: center;
+}
+.w-full {
+  width: 100%;
+}
 
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
 
 .justify-start {
   display: flex;
   justify-items: start;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
 }
 
 .px-2 {
@@ -352,8 +374,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
-.modal-wrapper {
 
+.my-2 {
+  margin-top: 2.4rem;
+}
+
+.text-start{
+  text-align: start;
+}
+.modal-wrapper {
   display: block;
   position: relative;
   width: 100vw;
@@ -570,7 +599,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
+.items-center {
+  align-items: center;
+}
 
+.text-white {
+  color: #ffffff;
+}
+.text-lg {
+  font-size: 1.5rem;
+}
 
 /* ==================Profile PAGE CSS====================== */
 
@@ -584,6 +622,79 @@ body::-webkit-scrollbar-thumb:hover {
   background-image: url('../public/assests/profile/background.png');
   height: 100%;
   background-position: center;
+}
+.text-xl {
+  font-size: 2rem;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 6rem;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: medium;
+}
+
+.btn2 {
+  width: 12rem;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: medium;
+}
+
+.btn3{
+  width: 12rem;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: medium;
+  margin-top: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.member{
+  display: inline-block;
+  border-color:#00f0ff;
+  border-radius: 10%;
+  border-width: 0.1px;
+  padding: 1px;
+  margin-bottom: 1rem;
+  
+}
+
+.mokoto-glitch-font {
+  font-family: 'mokotoGlitch';
+  src: url('/Fonts/MokotoGlitch.otf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* events page */
+
+.details-section-wrapper {
+  margin-top: 10rem;
+}
+
+.event-logo {
+  /* margin-top: 15px; */
+  margin-bottom: 15px;
+
+  margin-right: 1rem;
+}
+
+.bg-purple {
+  background-color: #b621fe;
+}
+
+.section-one {
+  overflow-y: scroll;
+  width: 60%;
+  padding-left: 5rem;
+  background: url('/assests/events/event-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1253,4 +1364,205 @@ th, td { min-width: 12.5rem; }
     width: max-content;
   height: max-content;
   }
+.section-one::-webkit-scrollbar{
+  display: none;
+}
+
+.section-second {
+  width: 40%;
+}
+
+.details {
+  height: 200px;
+  overflow-y: scroll;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 5rem;
+  scrollbar-width: 0;
+  /* padding-top: 6rem; */
+  /* padding-bottom: 5rem; */
+  margin-top: 4rem;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.form-section {
+  overflow-y: scroll;
+  width: 60%;
+  padding-top: 5rem;
+}
+.form-section::-webkit-scrollbar{
+  display: none;
+}
+.form {
+  width: 46%;
+}
+
+.form-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  /* border-bottom: 1px solid white; */
+  /* width: 50%;  */
+  padding-left: 0rem;
+  width: 100%;
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+.bt3 {
+  white-space: nowrap;
+  border: none;
+  
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
+  border-bottom-right-radius: 6px;
+  
+  font-size: large;
+  color: white;
+  
+  }
+
+.input-wrapper {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%;
+}
+.input-border {
+  height: 1px;
+  width: 100%;
+  background: rgb(255, 0, 191);
+  background: linear-gradient(90deg, #00f0ff 0%, #ff00bfed 100%);
+  margin-top: 4px;
+}
+
+.text-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid white;
+  /* width: 50%;  */
+  /* padding-left: 1rem; */
+  width: 100%;
+  font-size: larger;
+  color: white;
+}
+
+.gap {
+  margin-top: 1rem;
+}
+
+.form-bg {
+  background-image: url('/assests/events/form-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6rem;
+}
+
+.back-button {
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+  margin-left: 1.4rem;
+  color: #ffffff;
+}
+
+.poster {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .section-second {
+    display: none;   
+  }
+
+  .input-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10%;
+  }
+
+  .input-field {
+    margin-top: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+  }
+  .text-3xl {
+    font-size: 2rem;
+  }
+  .text-xl {
+    font-size: 1.4rem;
+  }
+
+  .text-lg {
+    font-size: 1rem;
+  }
+
+  .section-one {
+    width: 100%;
+    padding: 1.4rem;
+  }
+
+  .details{
+    height: 200px;
+    overflow-y: scroll;
+    width: 100%;
+    padding: 1rem;
+    scrollbar-width: 0;
+    /* padding-top: 6rem; */
+    /* padding-bottom: 5rem; */
+    margin-top: 1.4rem;
+  }
+  .event-logo {
+    /* margin-top: 15px; */
+    margin-bottom: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .btn {
+    width: 6rem;
+    padding: 0.5rem;
+    background-color: white;
+    font-size: medium;
+    font-size: small;
+  }
+  .form-bg {
+    background: black;
+  }
+  .form-section {
+    width: 80%;
+    padding-top: 1rem;
+  }
+
+  .details-section-wrapper {
+    margin-top: 2rem;
+  }
+
+  .poster {
+    display: grid;
+    height: 15rem;
+    width: 15rem;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 0.6rem;
+    background: gray;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  
+  .back-button {
+    display: none;
+  }
+
 }
