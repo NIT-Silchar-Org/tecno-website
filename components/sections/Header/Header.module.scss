@@ -14,8 +14,15 @@
 }
 
 .main {
-  display: block;
-
+  display: flex;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 5;
   .h1 {
     display: flex;
     font-size: 2rem;
@@ -58,8 +65,17 @@
 
       .logo {
         position: relative;
-        width: 80px;
-        height: 80px;
+        width: 200px;
+        height: 200px;
+        @media (min-width: 2000px) {
+          width: 200px;
+          height: 200px;
+        }
+
+        @media (min-width: 3600px) {
+          width: 200px;
+          height: 200px;
+        }
       }
 
       .headingText {
@@ -68,7 +84,7 @@
         letter-spacing: 0.1em;
         justify-content: center;
         align-items: center;
-        font-size: 3.3rem;
+        font-size: 7rem;
         filter: drop-shadow(2px 8px 20px rgba(78, 223, 255, 0.5));
         font-family: lemonMilk;
       }
@@ -82,7 +98,7 @@
       width: 100%;
       color: white;
       .yearH1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 2rem;
         text-align: center;
         width: 25%;
@@ -97,7 +113,22 @@
     margin-bottom: 1.75rem;
     text-align: center;
     opacity: 0.9;
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-family: mokotoGlitch;
+  }
+  .foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: lemonMilk;
+    letter-spacing: 0.2em;
+    .date {
+      font-size: 2rem;
+      letter-spacing: 0.25em;
+    }
+    .month {
+      font-size: 1.5rem;
+    }
   }
 }

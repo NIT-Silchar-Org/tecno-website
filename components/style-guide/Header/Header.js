@@ -18,14 +18,6 @@ function Header() {
     }, [])
     return (
         <div className={headerStyle.main}>
-            <h1
-                className={headerStyle.h1}
-                style={{
-                    transform: `translateY(${offsetY * 0.2}px)`,
-                }}
-            >
-                Coming Soon
-            </h1>
             <div className={headerStyle.tecnoesisText}>
                 <div className={headerStyle.textAndLogo}>
                     <div className={headerStyle.logo}>
@@ -50,12 +42,6 @@ function Header() {
                 className={headerStyle.backToTheFuture}
             >
                 BACK TO THE FUTURE
-            </h1>
-            <h1 className={headerStyle.dates}>
-                20. 21. 22. 23
-            </h1>
-            <h1 className={headerStyle.month}>
-                October
             </h1>
         </div>
     )
