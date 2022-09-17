@@ -19,7 +19,7 @@ export const icons = {
       <path
         d="M19 30C19 32.4477 19.1325 34.3463 19.4615 35.827C19.7881 37.2963 20.2948 38.2921 21.0014 38.9986C21.7079 39.7052 22.7037 40.2119 24.173 40.5385C25.6537 40.8675 27.5523 41 30 41C32.4477 41 34.3463 40.8675 35.827 40.5385C37.2963 40.2119 38.2921 39.7052 38.9986 38.9986C39.7052 38.2921 40.2119 37.2963 40.5385 35.827C40.8675 34.3463 41 32.4477 41 30C41 27.5523 40.8675 25.6537 40.5385 24.173C40.2119 22.7037 39.7052 21.7079 38.9986 21.0014C38.2921 20.2948 37.2963 19.7881 35.827 19.4615C34.3463 19.1325 32.4477 19 30 19C27.5523 19 25.6537 19.1325 24.173 19.4615C22.7037 19.7881 21.7079 20.2948 21.0014 21.0014C20.2948 21.7079 19.7881 22.7037 19.4615 24.173C19.1325 25.6537 19 27.5523 19 30Z"
         stroke="#FD566D"
-        stroke-width="2"
+        strokeWidth="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -32,8 +32,8 @@ export const icons = {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(30 30) rotate(90) scale(30)"
         >
-          <stop offset="0.357292" stop-color="#FD566D" />
-          <stop offset="1" stop-color="#FD566D" stop-opacity="0" />
+          <stop offset="0.357292" stopColor="#FD566D" />
+          <stop offset="1" stopColor="#FD566D" stopOpacity="0" />
         </radialGradient>
       </defs>
     </svg>
@@ -84,9 +84,9 @@ export const icons = {
             y2="0.497768"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#C4C4C4" stop-opacity="0.24" />
-            <stop offset="0.513542" stop-color="#C4C4C4" />
-            <stop offset="1" stop-color="#C4C4C4" stop-opacity="0.24" />
+            <stop stopColor="#C4C4C4" stopOpacity="0.24" />
+            <stop offset="0.513542" stopColor="#C4C4C4" />
+            <stop offset="1" stopColor="#C4C4C4" stopOpacity="0.24" />
           </linearGradient>
         </defs>
       </svg>

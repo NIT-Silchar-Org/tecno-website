@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.svg {
+  //   box-shadow: 0px 0px 90px 120px #d03cab;
+  animation: $animation;
+  transform: translate(90vw, -240%);
+  animation-delay: 100ms;
+  width: 10vw;
+}
+.hide {
+  opacity: 0;
+}
