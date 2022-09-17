@@ -5,7 +5,9 @@ $width: $height * 1.07;
 /* mobile view */
 $mheight: 6rem;
 $mwidth: $mheight * 1.02;
-
+.profile{
+    cursor: pointer;
+}
 .surround {
     display: flex;
     justify-content: center;
@@ -24,6 +26,7 @@ $mwidth: $mheight * 1.02;
             left: 147px;
             top: 138px;
             border-radius: 100%;
+            cursor: pointer;
             .image {
                 border-radius: 100%;
             }
@@ -40,6 +43,7 @@ $mwidth: $mheight * 1.02;
         .profile {
             position: absolute;
             top: 73px;
+            cursor: pointer;
             border-radius: 100%;
             .image {
                 border-radius: 100%;
@@ -57,6 +61,7 @@ $mwidth: $mheight * 1.02;
             position: absolute;
             left: 110px;
             top: 80px;
+            cursor: pointer;
             border-radius: 100%;
             .image {
                 border-radius: 100%;
@@ -73,6 +78,7 @@ $mwidth: $mheight * 1.02;
         margin-left: 200px;
         .profile {
             position: absolute;
+            cursor: pointer;
             left: 110px;
             top: 80px;
             border-radius: 100%;

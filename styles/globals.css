@@ -339,6 +339,10 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 2.4rem;
 }
 
+.my-4{
+  margin-top: 6rem;
+}
+
 .text-start{
   text-align: start;
 }
@@ -494,7 +498,9 @@ body::-webkit-scrollbar-thumb:hover {
   background-size: cover;
   padding-top: 6rem;
 }
-
+.input-field{
+  margin-top: 2.4rem;
+}
 @media only screen and (max-width: 600px) {
   .section-second {
     display: none;

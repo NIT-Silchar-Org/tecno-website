@@ -1,6 +1,6 @@
 import styles from '../Navbar/Navbar.module.scss'
 import ham from '../Navbar/Hamburger.module.scss'
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Profile from './Profile';
 import NavButton from '../Navbar/NavButton'
 
@@ -16,18 +16,20 @@ const navLinks = [
 
 export default function Navbar(props) {
     const [open, toggleNavbar] = useState(false);
+    console.log(open);
+
 
     return(
         <div className={styles.nav}>
-            <div className={styles.hambtn}>
-                <button className={` ${ham.hamburger} ${ham.hamburger_glitch} 
-                    ${open ? ham.is_active : null} ` }
-                    onClick={()=>{toggleNavbar(!open)}}
-                >
-                    <span className={ham.hamburger_box}>
-                       <span className={ham.hamburger_inner}></span>
-                    </span>
-                </button>
+            <div onClick={()=>{
+                console.log("click");
+                toggleNavbar(!open)
+            }}>
+            {/* {props?.hamburger}
+             */}
+             {React.cloneElement(props.hamburger, {
+                open:open
+             })}
             </div>
 
             <div className={open ? styles.navbarshow : styles.navbar}>

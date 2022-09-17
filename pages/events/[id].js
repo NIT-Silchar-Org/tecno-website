@@ -117,7 +117,7 @@ export default Event
 export const getServerSideProps = async ({ params }) => {
 
   let resp = await fetch_event_by_id(params?.id)
-  // console.log(resp);
+  console.log(resp);
   let data = resp?.data?.msg
 
   return {

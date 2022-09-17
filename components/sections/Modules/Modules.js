@@ -6,7 +6,7 @@ import logo from '../../../public/assests/modules/Logo.svg'
 import hamburger from '../../../public/assests/modules/hamburger.svg'
 import bg from '../../../public/assests/modules/Vector14.svg'
 import LoginButton from '../../AuthLayer/LoginButton'
-
+import LogoHamburger from '../Navbar/LogoHamburger'
 // const modules = [
 //   'robotron',
 //   'vWarz',
@@ -27,7 +27,8 @@ const Modules = ({setSelectedItem, setActive, active,modules}) => {
   return (
     <div className={styles.container} onClick={()=>setActive(false)}>
       <div className={styles.head}>
-        <LoginButton/>
+        {/* <LoginButton/> */}
+        
         <div className={styles.hamburger}>
           <Image src={hamburger} layout="fill" objectFit="contain" priority="true" />
         </div>
