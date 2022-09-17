@@ -1,10 +1,11 @@
 import React from 'react'
 // import ReactDOM from 'react-dom';
-// import Image from 'next/image'
+import Image from 'next/image'
 import { useState } from 'react'
 
 // import TeamLogo from "../public/assests/TeamStat/Ellipse_2168.png"
 // import downArr from "../public/assests/TeamStat/vector.png"
+import TopDesign from "../public/assests/TeamStat/Group_5204.png"
 import Registered from "../components/sections/TeamRegist/Registered"
 import Pending from "../components/sections/TeamRegist/Pending"
 import Rejected from "../components/sections/TeamRegist/Rejected"
@@ -18,13 +19,14 @@ function Team() {
     return (
         <div className='teamBack'>
             <div className='registration1'>
+           <div className='designTop'><Image src={TopDesign}/></div>
                 <div className='regStatus'>
-                 <div><button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>Pending</button></div>
+                <div><button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>Pending</button></div>
                  <div><button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(2)}>Registered</button></div>
                  <div><button className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(3)}>Rejected</button></div>
                 </div>
             </div>
-            <hr/>
+            <hr className='teamhr'/>
             <div className="content-tabs">
                 {toggleState === 1 && (
                     <Pending/>

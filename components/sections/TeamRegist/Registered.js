@@ -130,6 +130,211 @@ function TeamReg() {
                         </div>
                     </div>
                 </li>
+                <li className='Teamdetail'>
+                    <div className='hshow'>
+                        <div className="teamName">
+                            <div>
+                                <Image src={TeamLogo} />
+                            </div>
+                            <div>
+                                <span className='registered'>
+                                    NITS Hacks 4.0
+                                    <br />
+                                </span>
+                                <span className='registeredteam'>Team Name: Bonkers</span>
+                            </div>
+                        </div>
+                        <div className="viewTeam">
+                            <div className="viewTeamSize" style={styles1}>View Team</div>
+                            <div onClick={handleExpand} className='downArr'><Image src={arr} /></div>
+                        </div>
+                    </div>
+                    <div className='regcontent' style={styles}>
+                        <div className="table-content">
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                </tr>
+                                {data.map((val, key) => {
+                                    return (
+                                        <tr key={key}>
+                                            <td>{val.name}</td>
+                                            <td>{val.username}</td>
+                                            <td> <Image src={accept} /></td>
+                                        </tr>
+                                    )
+                                })}
+                            </table>
+
+                        </div>
+                    </div>
+                </li>
+                <li className='Teamdetail'>
+                    <div className='hshow'>
+                        <div className="teamName">
+                            <div>
+                                <Image src={TeamLogo} />
+                            </div>
+                            <div>
+                                <span className='registered'>
+                                    NITS Hacks 4.0
+                                    <br />
+                                </span>
+                                <span className='registeredteam'>Team Name: Bonkers</span>
+                            </div>
+                        </div>
+                        <div className="viewTeam">
+                            <div className="viewTeamSize" style={styles1}>View Team</div>
+                            <div onClick={handleExpand} className='downArr'><Image src={arr} /></div>
+                        </div>
+                    </div>
+                    <div className='regcontent' style={styles}>
+                        <div className="table-content">
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                </tr>
+                                {data.map((val, key) => {
+                                    return (
+                                        <tr key={key}>
+                                            <td>{val.name}</td>
+                                            <td>{val.username}</td>
+                                            <td> <Image src={accept} /></td>
+                                        </tr>
+                                    )
+                                })}
+                            </table>
+
+                        </div>
+                    </div>
+                </li>
+                <li className='Teamdetail'>
+                    <div className='hshow'>
+                        <div className="teamName">
+                            <div>
+                                <Image src={TeamLogo} />
+                            </div>
+                            <div>
+                                <span className='registered'>
+                                    NITS Hacks 4.0
+                                    <br />
+                                </span>
+                                <span className='registeredteam'>Team Name: Bonkers</span>
+                            </div>
+                        </div>
+                        <div className="viewTeam">
+                            <div className="viewTeamSize" style={styles1}>View Team</div>
+                            <div onClick={handleExpand} className='downArr'><Image src={arr} /></div>
+                        </div>
+                    </div>
+                    <div className='regcontent' style={styles}>
+                        <div className="table-content">
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                </tr>
+                                {data.map((val, key) => {
+                                    return (
+                                        <tr key={key}>
+                                            <td>{val.name}</td>
+                                            <td>{val.username}</td>
+                                            <td> <Image src={accept} /></td>
+                                        </tr>
+                                    )
+                                })}
+                            </table>
+
+                        </div>
+                    </div>
+                </li>
+                <li className='Teamdetail'>
+                    <div className='hshow'>
+                        <div className="teamName">
+                            <div>
+                                <Image src={TeamLogo} />
+                            </div>
+                            <div>
+                                <span className='registered'>
+                                    NITS Hacks 4.0
+                                    <br />
+                                </span>
+                                <span className='registeredteam'>Team Name: Bonkers</span>
+                            </div>
+                        </div>
+                        <div className="viewTeam">
+                            <div className="viewTeamSize" style={styles1}>View Team</div>
+                            <div onClick={handleExpand} className='downArr'><Image src={arr} /></div>
+                        </div>
+                    </div>
+                    <div className='regcontent' style={styles}>
+                        <div className="table-content">
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                </tr>
+                                {data.map((val, key) => {
+                                    return (
+                                        <tr key={key}>
+                                            <td>{val.name}</td>
+                                            <td>{val.username}</td>
+                                            <td> <Image src={accept} /></td>
+                                        </tr>
+                                    )
+                                })}
+                            </table>
+
+                        </div>
+                    </div>
+                </li>
+                <li className='Teamdetail'>
+                    <div className='hshow'>
+                        <div className="teamName">
+                            <div>
+                                <Image src={TeamLogo} />
+                            </div>
+                            <div>
+                                <span className='registered'>
+                                    NITS Hacks 4.0
+                                    <br />
+                                </span>
+                                <span className='registeredteam'>Team Name: Bonkers</span>
+                            </div>
+                        </div>
+                        <div className="viewTeam">
+                            <div className="viewTeamSize" style={styles1}>View Team</div>
+                            <div onClick={handleExpand} className='downArr'><Image src={arr} /></div>
+                        </div>
+                    </div>
+                    <div className='regcontent' style={styles}>
+                        <div className="table-content">
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Status</th>
+                                </tr>
+                                {data.map((val, key) => {
+                                    return (
+                                        <tr key={key}>
+                                            <td>{val.name}</td>
+                                            <td>{val.username}</td>
+                                            <td> <Image src={accept} /></td>
+                                        </tr>
+                                    )
+                                })}
+                            </table>
+
+                        </div>
+                    </div>
+                </li>
                 </ul>
 
         </div>
