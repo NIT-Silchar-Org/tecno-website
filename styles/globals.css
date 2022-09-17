@@ -727,7 +727,6 @@ Image {
   line-height: 20px;
   text-align: center;
   color: #FF1B41;
-
 }
 
 .TransactionDetail {
@@ -941,24 +940,34 @@ span {
 /* ================Registration Page================= */
 .teamBack {
   background: #000000;
+  height: 100%;
+  background-size: cover;
+  width: 100%;
+  /* overflow: hidden; */
 }
 
 .registration1 {
   display: flex;
-  height: 100%;
+
   flex-direction: column;
   color: white;
 }
 
 .regStatus {
+  position: fixed;
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100px;
   justify-content: space-between;
-
+  z-index: 20;
+  background-color: #040404;
 }
 
-.TeamName {
+.Team {
+
+  top: 101px;
+  width: 90%;
   overflow-y: scroll;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
@@ -971,9 +980,11 @@ span {
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
+  z-index: 10;
+  margin-bottom: 100px;
 }
 
-.TeamName::-webkit-scrollbar {
+.Team::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */
 }
@@ -986,6 +997,16 @@ span {
   align-items: center;
   margin-bottom: 30px;
   padding-left: 20px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.TeamList::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
 }
 
 .Teamdetail {
@@ -996,16 +1017,92 @@ span {
   border: 0.5px solid #4992FF;
   border-radius: 6px;
   padding: 0.625rem;
+  margin: 0.625rem;
 }
 
 .viewTeam {
   color: #ffffff;
   display: flex;
   flex-direction: row;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   justify-content: center;
   text-align: center;
   align-items: center;
+}
+
+.registered {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Neon Blue */
+
+  color: #4EDFFF;
+}
+
+.registeredteam {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.teamName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.downArr {
+  margin-left: .565rem;
+}
+
+.viewTeam .reg {
+  border: 1px solid #2AE768;
+
+  width: 190px;
+  height: 27px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 16px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #2AE768;
+  margin-right: 0.565rem;
+
+}
+
+.viewTeam .logout {
+  border: 1px solid #FF1B41;
+  width: 190px;
+  height: 27px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FF1B41;
+}
+
+.rejected{
+  color: #D03CAB;
 }

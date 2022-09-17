@@ -9,7 +9,7 @@ import Name from "../public/assests/profile/nameIcon.png"
 import Institute from "../public/assests/profile/InstiIcon.png"
 import Phone from "../public/assests/profile/phone.png"
 import Location from "../public/assests/profile/location.png"
-import backgrd from "../public/assests/profile/bgMobile.png"
+// import backgrd from "../public/assests/profile/bgMobile.png"
 // import CamIcon from "../public/assests/profile/cam.svg"
 
 function Profile1() {

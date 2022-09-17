@@ -1,5 +1,5 @@
 import React from 'react'
-import Modal from '../components/sections/Modules/Modal'
+// import Modal from '../components/sections/Modules/Modal'
 import Sidebar from '../components/sections/Sidebar/Sidebar'
 import Main from "../components/sections/Modules/Modules"
 import styles from '../styles/Modules.module.scss'
