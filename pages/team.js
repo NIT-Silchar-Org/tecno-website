@@ -19,11 +19,12 @@ function Team() {
         <div className='teamBack'>
             <div className='registration1'>
                 <div className='regStatus'>
-                    <button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>Pending</button>
-                    <button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(2)}>Registered</button>
-                    <button className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(3)}>Rejected</button>
+                 <div><button className={toggleState === 1 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(1)}>Pending</button></div>
+                 <div><button className={toggleState === 2 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(2)}>Registered</button></div>
+                 <div><button className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(3)}>Rejected</button></div>
                 </div>
             </div>
+            <hr/>
             <div className="content-tabs">
                 {toggleState === 1 && (
                     <Pending/>
@@ -34,20 +35,6 @@ function Team() {
                 {toggleState === 3 && (
                     <Rejected/>
                 )}
-                {/* <div
-                    className={toggleState === 1 ? "content  active-content" : "content"}>
-                        <Pending/>
-                </div>
-
-                <div
-                    className={toggleState === 2 ? "content  active-content" : "content"}>
-                        <Registered/>
-                </div>
-
-                <div
-                    className={toggleState === 3 ? "content  active-content" : "content"}>
-                        <Rejected/>
-                </div> */}
             </div>
         </div>
     )

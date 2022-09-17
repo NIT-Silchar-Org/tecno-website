@@ -8,24 +8,29 @@ function TeamPend() {
     return (
         <div className="Team">
             <ul className='TeamList'>
-                <li className='Teamdetail'>
-                    <div className="teamName">
-                        <div>
-                            <Image src={TeamLogo} />
+                <li className='Teamdetail penBorder'>
+                    <div className='hshow'>
+                        <div className="teamName">
+                            <div>
+                                <Image src={TeamLogo} />
+                            </div>
+                            <div>
+                                <span className='registered'>
+                                    NITS Hacks 4.0
+                                    <br />
+                                </span>
+                                <span className='registeredteam'>Team Name: Bonkers</span>
+                            </div>
                         </div>
-                        <div>
-                            <span className='registered'>
-                                Nits Hack 4.0
-                                <br />
-                            </span>
-                            <span className='registeredteam'>Team Name:Bonkers</span>
-                        </div>
+                        <div className="StatBtn">
+                        <button className='reg'><Image src={Accept}/>&nbsp; Accept</button>
+                        <button className='logout'><Image src={Reject}/>&nbsp; Reject</button>
                     </div>
-                    <div className="viewTeam">
-                        <button className='reg'><Image src={Accept}/>&nbsp; Accept</button><br />
-                        <button className='logout'><Image src={Reject}/>&nbsp; Reject</button><br />
                     </div>
+                   
                 </li>
+                
+             
 
             </ul>
 
@@ -34,3 +39,4 @@ function TeamPend() {
 }
 
 export default TeamPend
+

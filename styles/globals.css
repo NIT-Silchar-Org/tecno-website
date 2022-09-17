@@ -68,6 +68,7 @@
   }
 }
 
+
 /* default font */
 
 body {
@@ -940,10 +941,8 @@ span {
 /* ================Registration Page================= */
 .teamBack {
   background: #000000;
-  height: 100%;
-  background-size: cover;
-  width: 100%;
-  /* overflow: hidden; */
+  height: 100vh;
+ 
 }
 
 .registration1 {
@@ -954,20 +953,29 @@ span {
 }
 
 .regStatus {
+  margin-top: 10px;
   position: fixed;
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100px;
-  justify-content: space-between;
+  height: 3.125rem;
+  justify-content: space-around;
   z-index: 20;
   background-color: #040404;
 }
+hr{
+  position: absolute;
+  top: 50px;
+  height: 2px;
+  color: white;
+  z-index: 50;
+  width: 100vw;
+}
 
 .Team {
-
+  position: relative;
   top: 101px;
-  width: 90%;
+  /* width: 90%; */
   overflow-y: scroll;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
@@ -977,11 +985,12 @@ span {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
   color: #FFFFFF;
   z-index: 10;
-  margin-bottom: 100px;
+  margin-bottom: 6.25rem;
+  height: 72vh;
 }
 
 .Team::-webkit-scrollbar {
@@ -996,7 +1005,23 @@ span {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
-  padding-left: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.PenTeamList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   overflow-y: scroll;
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
@@ -1011,16 +1036,50 @@ span {
 
 .Teamdetail {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #4992FF;
+  border-radius: 6px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  margin: 0.625rem;
+  overflow: hidden;
+}
+.hshow{
+  display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  border: 0.5px solid #4992FF;
+  /* border: 0.5px solid #4992FF; */
   border-radius: 6px;
-  padding: 0.625rem;
-  margin: 0.625rem;
+  height: 88px;
+  /* padding: 0.625rem; */
+  /* margin: 0.625rem; */
+}
+
+.regcontent{
+  box-sizing: border-box;
+  background:black;
+  /* border: 1px solid #4992FF; */
+  border-radius: 6px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .viewTeam {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.StatBtn{
   color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -1071,7 +1130,7 @@ span {
   margin-left: .565rem;
 }
 
-.viewTeam .reg {
+.StatBtn .reg {
   border: 1px solid #2AE768;
 
   width: 190px;
@@ -1084,11 +1143,11 @@ span {
   line-height: 20px;
   text-align: center;
   color: #2AE768;
-  margin-right: 0.565rem;
+  margin-right: 0.965rem;
 
 }
 
-.viewTeam .logout {
+.StatBtn .logout {
   border: 1px solid #FF1B41;
   width: 190px;
   height: 27px;
@@ -1105,4 +1164,89 @@ span {
 
 .rejected{
   color: #D03CAB;
+}
+.rejectedBorder{
+  border: 1px solid  #D03CAB;
+}
+
+.penBorder{
+  border: 1px solid  #FFE166;
+}
+
+.active-tabs{
+  color: #4EDFFF;
+  border-bottom: 2px solid #4EDFFF;
+}
+
+.tabs{
+font-style: normal;
+font-weight: 600;
+font-size: 1.25rem;
+line-height: 28px;
+/* padding-left: 100px;
+padding-right: 100px; */
+padding-bottom: 10px;
+}
+
+
+
+
+
+/* .downArr{
+  margin-left: .565rem;
+}
+.downArr:hover{
+  cursor: pointer;
+} */
+
+table {
+  /* height: 122px; */
+  /* border: 2px solid forestgreen; */
+  width: 50vw;
+  height: 12.5rem;
+  margin: 0 auto;
+  /* margin-top: 11.5vh; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+  
+th {
+  border-bottom: 0.4px solid #FFFFFF;
+  text-align: center;
+  color: #4EDFFF;
+}
+  
+td {
+  text-align: center;
+}
+
+.table-container { 
+  width: 100% !important;
+  overflow-x: scroll; 
+}
+
+th, td { min-width: 12.5rem; }
+
+
+/*================================ registration status responsive========================= */
+@media (max-width: 700px) {
+
+  .table{
+    width: 50vw;
+  }
+  .table-container { 
+      width: 100% !important;
+      overflow-x: scroll; 
+  }
+
+  th, td {min-width: max-content; }
+
+  .viewTeamSize{
+    display: none;
+  }
+  .registeredteam{
+    font-size: 0.625rem;
+  }
 }
