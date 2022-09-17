@@ -15,7 +15,7 @@ function Event() {
   }, [isFormHidden])
 
 
-  const [members, addMembers] = useState([{ member: '' }]);
+  // const [members, addMembers] = useState([{ member: '' }]);
 
 
 

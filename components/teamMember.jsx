@@ -8,7 +8,7 @@ function TeamMember() {
     const [members, setMembers] = useState([])
     const addMember = () => {
         if (!username) return
-        let temp = [...members, username]
+        const temp = [...members, username]
         setMembers(temp)
         setMemberCount(memberCount + 1)
 
@@ -36,7 +36,7 @@ function TeamMember() {
                     {members.map((val, index) => {
 
                         return (
-                            <div className="member text-xl">
+                            <div className="member text-xl" key={index}>
                                 <input className="form-input " value={val} disabled />
                             </div>
                         )

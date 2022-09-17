@@ -37,7 +37,7 @@ export default function Navbar(props) {
                     {
                         navLinks.map((links, index) => {
                             return(
-                                <Link href={links.route}>
+                                <Link href={links.route} key={index}>
                                     <NavButton text={links.text} href={links.route} key={index}/>
                                 </Link>
                             )
