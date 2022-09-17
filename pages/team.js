@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import ReactDOM from 'react-dom';
 import Image from 'next/image'
 import { useState } from 'react'
-
 // import TeamLogo from "../public/assests/TeamStat/Ellipse_2168.png"
 // import downArr from "../public/assests/TeamStat/vector.png"
 import TopDesign from "../public/assests/TeamStat/Group_5204.png"
@@ -16,6 +15,10 @@ function Team() {
         setToggleState(index);
         console.log("clicked!")
     };
+
+    useEffect(() => {
+
+    })
     return (
         <div className='teamBack'>
             <div className='registration1'>

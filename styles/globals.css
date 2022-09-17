@@ -1317,7 +1317,9 @@ padding-bottom: 10px;
 
 
 
-
+.hide{
+  display: none;
+}
 
 /* .downArr{
   margin-left: .565rem;
