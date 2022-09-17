@@ -11,7 +11,7 @@ const EventCard = ({ data }) => {
           <div className={styles.image}>
 
             <Image
-              src="https://placehold.jp/150x150.png"
+              src={data?.posterImage? data?.posterImage:"https://placehold.jp/150x150.png"}
               layout="fill"
               objectFit="cover"
               priority="true"

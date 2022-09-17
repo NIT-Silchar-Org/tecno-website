@@ -25,7 +25,7 @@ function Event({data, id}) {
   const [members, setMembers] = useState([])
 
   const {auth} = useAuth()
-  console.log({id});
+  console.log(data.module);
   const handleReg = async () =>{
     const token = await auth.currentUser.getIdToken()
     let body ={
@@ -48,8 +48,10 @@ function Event({data, id}) {
             <div className="text-3xl text-center justify-start relative items-center">
               {/* <h2>Logo</h2>
                */}
-              <div className="event-logo">
-                <Image src={DummyLogo} />
+              <div className="event-logo relative">
+                <Image src={data?.module?.iconImage} width={80} height={80}
+           
+              />
               </div>
               <div>
                 <h1 className="text-start">{data?.name}</h1>
@@ -77,7 +79,18 @@ function Event({data, id}) {
         </div>
 
         <div className="section-second">
-          <div className="bg-purple w-full h-full"></div>
+          <div className="bg-purple w-full h-full relative">
+            {data?.posterImage &&(
+              <Image
+              src={data?.posterImage}
+              layout="fill"
+              // width="100%"
+              // height="100%"
+              objectFit="cover"
+              priority="true"/>
+            )}
+
+          </div>
         </div>
       </div>
       <div

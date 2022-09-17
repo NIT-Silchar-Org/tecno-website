@@ -1,7 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
+import Button from '../components/button'
 import Alert from '../components/Form/Alert'
 import Input from '../components/Form/Input'
+import HamBurger from '../components/sections/Navbar/HamBurger'
+import Navbar from '../components/sections/Navbar/Navbar'
 import { useAuth } from '../providers/authContext'
 import { userBackendRegister } from '../utils/auth_handlers'
 function Register() {
@@ -37,6 +40,7 @@ function Register() {
 
   return (
     <div>
+      <Navbar profile={"/profile"} hamburger={<HamBurger/>} />
       {/* <Alert text={"Hello"} /> */}
       {/* <div>
             <h1>Name</h1>
@@ -55,7 +59,7 @@ function Register() {
         </div> */}
       <div className="bg-black w-full h-screen justify-center form-bg ">
         <div className="form-section">
-          <h1 className="text-lg text-white mokoto-glitch-font">Signup Form</h1>
+          <h1 className="text-lg text-center text-white mokoto-glitch-font">Signup Form</h1>
           <form className="form" onSubmit={(e) => handleSignup(e)}>
             <div className=" input-wrapper">
               {/* <Input placeholder={'Name'} val={name} setVal={setName} req={true}/> */}
@@ -105,9 +109,12 @@ function Register() {
                 
               </div>
             <div className="my-4">
-              <button className="btn secondary-solid text-xl" type="submit">
-                Register
-              </button>
+              <Button>
+                <button  type="submit">
+                  Register
+                </button>
+              </Button>
+              
             </div>
               {/* <Input placeholder={"Name"}/> */}
             </div>
