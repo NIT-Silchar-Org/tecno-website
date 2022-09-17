@@ -1249,4 +1249,8 @@ th, td { min-width: 12.5rem; }
   .registeredteam{
     font-size: 0.625rem;
   }
+  .StatBtn .reg{
+    width: max-content;
+  height: max-content;
+  }
 }
