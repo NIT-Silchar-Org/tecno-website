@@ -2,8 +2,8 @@
   background-color: black;
   position: relative;
   scroll-snap-type: y mandatory;
-  .black {
-    background-color: black;
+  .blank {
+    opacity: 0;
   }
   .hero {
     height: 100vh;
@@ -30,6 +30,9 @@
       position: absolute;
       top: 0;
       z-index: 30;
+    }
+    .blank {
+      opacity: 0;
     }
     #right {
       left: 100vw;

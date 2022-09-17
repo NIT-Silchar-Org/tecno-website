@@ -2,12 +2,10 @@ import React, { useState } from 'react'
 import useAnimate from '../../../hooks/useAnimate'
 import styles from './styles.module.scss'
 
-const Tecno = () => {
-  const [vis, setVis] = useState(false)
-  useAnimate(vis, setVis)
+const Tecno = ({active}) => {
   return (
     <svg
-      className={`${styles.svg} ${vis ? '' : styles.hide}`}
+      className={`${styles.svg} ${active ? '' : styles.hide}`}
       width="189"
       height="529"
       viewBox="0 0 189 529"

@@ -2,12 +2,10 @@ import React, { useState } from 'react'
 import useAnimate from '../../../hooks/useAnimate'
 import styles from './styles.module.scss'
 
-const Spark = () => {
-  const [vis, setVis] = useState(false)
-  useAnimate(vis, setVis)
+const Spark = ({active}) => {
   return (
     <svg
-      className={`${styles.svg} ${vis ? '' : styles.hide}`}
+      className={`${styles.svg} ${active ? '' : styles.hide}`}
       width="73"
       height="228"
       viewBox="0 0 73 228"

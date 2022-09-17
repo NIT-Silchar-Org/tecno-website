@@ -4,11 +4,13 @@ $invisible: 0;
 
 .svg {
   //   box-shadow: 0px 0px 90px 120px #d03cab;
-  animation: anime 4000ms ease-in-out infinite;
+  animation: anime 8000ms ease-in-out infinite;
+  animation-delay: 300ms;
+  opacity: 0;
 }
 .static {
   //   box-shadow: 0px 0px 90px 120px #d03cab;
-  animation: animeStatic 3000ms ease-in-out;
+  animation: animeStatic 1000ms ease-in-out;
   opacity: 0;
 }
 @keyframes anime {
@@ -90,7 +92,7 @@ $invisible: 0;
 }
 @keyframes animeStatic {
   0% {
-    opacity: $high;
+    opacity: $invisible;
   }
   9% {
     opacity: $high;

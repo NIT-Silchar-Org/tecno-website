@@ -62,6 +62,7 @@ const MainLanding = () => {
   // const [isScrollable, setIsScrollable] = useState(false)
   // const [startRoll, setStartRoll] = useState(false)
   // const [isAnimationComplete, setIsAnimationComplete] = useState(false)
+  const [activeInd, setActiveind] = useState([0, 1])
   const divRef = useRef(null)
   const { ref, inView: heroInView } = useInView({
     threshold: 0.1,
@@ -83,14 +84,14 @@ const MainLanding = () => {
     dispatch(ACTION_SCROLL)
     setTimeout(() => {
       dispatch(ACTION_EXIT_ANIMATION_COMPLETE)
-    }, 4000)
+    }, 1200)
   }
 
   useEffect(() => {
     if (state.scrollable)
       setTimeout(() => {
         divRef.current?.scrollIntoView({ behavior: 'smooth' })
-      }, 100)
+      }, 10)
   }, [state.scrollable])
 
   useEffect(() => {
@@ -107,7 +108,19 @@ const MainLanding = () => {
       window.removeEventListener('mousewheel', handleAnimation)
     }
   }, [heroInView])
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const index = [0, 1, 2, 3, 4, 5]
+      const shuffled = index.sort(() => 0.5 - Math.random())
 
+      // Get sub-array of first n elements after shuffled
+      let selected = shuffled.slice(0, 2)
+      setActiveind(selected)
+      console.log(selected)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [])
   return (
     <div
       className={`${styles.container} ${
@@ -115,14 +128,17 @@ const MainLanding = () => {
       }`}
     >
       <div className={`${styles.hero}`} ref={ref}>
-        <div className={styles.bgEle}>
+        <div className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}>
           <LeftBg state={state.animation} />
         </div>
-        <div className={styles.bgEle} id={styles.right}>
+        <div
+          className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}
+          id={styles.right}
+        >
           <RightBg state={state.animation} />
         </div>
         <div className={styles.overlay}>
-          <Header />
+          <Header state={state.animation} view={ heroInView} />
         </div>
       </div>
       <div className={styles.main} ref={divRef}>
@@ -164,12 +180,12 @@ const MainLanding = () => {
           </div>
         </div>
         <div className={`${styles.back} ${!heroInView ? '' : styles.off}`}>
-          <Hacks />
-          <Robotron />
-          <Modules />
-          <Vwarz />
-          <Spark />
-          <Tecno />
+          <Hacks active={activeInd.includes(0)} />
+          <Robotron active={activeInd.includes(1)} />
+          <Modules active={activeInd.includes(2)} />
+          <Vwarz active={activeInd.includes(3)} />
+          <Spark active={activeInd.includes(4)} />
+          <Tecno active={activeInd.includes(5)} />
         </div>
         <div className={styles.sections}>
           <About />
