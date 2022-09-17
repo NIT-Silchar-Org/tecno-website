@@ -1053,7 +1053,7 @@ span {
 .teamBack {
   background: #000000;
   height: 100vh;
- 
+ overflow: hidden;
 }
 
 .registration1 {
@@ -1068,6 +1068,7 @@ span {
   position: fixed;
   display: flex;
   flex-direction: row;
+  top: 159px;
   width: 100%;
   height: 3.125rem;
   justify-content: space-around;
@@ -1076,7 +1077,7 @@ span {
 }
 hr{
   position: absolute;
-  top: 50px;
+  top: 209px;
   height: 2px;
   color: white;
   z-index: 50;
@@ -1101,6 +1102,7 @@ hr{
   color: #FFFFFF;
   z-index: 10;
   margin-bottom: 6.25rem;
+  margin-top: 6.25rem;
   height: 72vh;
 }
 
@@ -1110,6 +1112,7 @@ hr{
 }
 
 .TeamList {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1297,6 +1300,19 @@ line-height: 28px;
 /* padding-left: 100px;
 padding-right: 100px; */
 padding-bottom: 10px;
+
+}
+
+.topgrad{
+  position: absolute;
+  width: 320px;
+  height: 374px;
+  left: 1171px;
+  top: 221px;
+  
+  background: #D03CAB;
+  filter: blur(250px);
+  transform: rotate(-90deg);
 }
 
 
@@ -1340,6 +1356,13 @@ td {
 
 th, td { min-width: 12.5rem; }
 
+.designTop{
+  position: fixed;
+  width: 100vw;
+  right: 0px;
+  text-align: right;
+  z-index: 100;
+}
 
 /*================================ registration status responsive========================= */
 @media (max-width: 700px) {
@@ -1363,7 +1386,25 @@ th, td { min-width: 12.5rem; }
   .StatBtn .reg{
     width: max-content;
   height: max-content;
+  padding: 5px;
+  margin-bottom: 5px;
   }
+  .StatBtn .logout{
+    width: max-content;
+  height: max-content;
+  padding: 5px;
+
+  }
+  .StatBtn{
+    flex-direction: column;
+  }
+  .TeamList{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+
 .section-one::-webkit-scrollbar{
   display: none;
 }

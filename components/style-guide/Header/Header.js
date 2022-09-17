@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// import React, { useEffect } from 'react'
-=======
 import React from 'react'
->>>>>>> 5d32fc8a39b46c2aeb87dafced18b1e6118da9fa
 // import Logo from '../../../style-guide/utils/Icons/Logo'
 import Image from 'next/dist/client/image'
 import LogoPng from '../../../public/assests/landingPage/tecnoesis.png'
