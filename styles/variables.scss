@@ -1,4 +1,6 @@
 // colors
+$low: 0.2;
+$high: 0.4;
 
 $bgDark: #120118;
 $bgPrimary: #00132D;
@@ -15,6 +17,86 @@ $mokotoGlitch: 'mokotoGlitch';
 $mokotoGlitchMark: 'mokotoGlitchMark';
 $babaPro: 'babaPro';
 
+
 // box Shadow
 $gradient1: -3px -3px 8px 4px #D03CAB, 3px 3px 8px 4px #4EDFFF;
 $gradient2: -3px -3px 8px 4px #4edfff79, 3px 3px 8px 4px #ff26c266;
+
+$animation: anime 4000ms ease-in-out infinite;
+@keyframes anime {
+  0% {
+    opacity: $high;
+  }
+  9% {
+    opacity: $high;
+  }
+  10% {
+    opacity: $low;
+  }
+  14% {
+    opacity: $low;
+  }
+  15% {
+    opacity: $high;
+  }
+  26% {
+    opacity: $high;
+  }
+  27% {
+    opacity: $low;
+  }
+  33% {
+    opacity: $low;
+  }
+  34% {
+    opacity: $high;
+  }
+  47% {
+    opacity: $high;
+  }
+  48% {
+    opacity: $low;
+  }
+  51% {
+    opacity: $low;
+  }
+  52% {
+    opacity: $high;
+  }
+  55% {
+    opacity: $high;
+  }
+  56% {
+    opacity: $low;
+  }
+  72% {
+    opacity: $low;
+  }
+  73% {
+    opacity: $high;
+  }
+  82% {
+    opacity: $high;
+  }
+  83% {
+    opacity: $low;
+  }
+  85% {
+    opacity: $low;
+  }
+  86% {
+    opacity: $high;
+  }
+  92% {
+    opacity: $high;
+  }
+  93% {
+    opacity: $low;
+  }
+  99% {
+    opacity: $low;
+  }
+  100% {
+    opacity: $high;
+  }
+}
