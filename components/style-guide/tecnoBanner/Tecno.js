@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import useAnimate from '../../../hooks/useAnimate'
+import React from 'react'
 import styles from './styles.module.scss'
 
 const Tecno = ({active}) => {
