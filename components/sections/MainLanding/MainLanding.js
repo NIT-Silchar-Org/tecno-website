@@ -19,22 +19,32 @@ import Modules from '../../style-guide/modulesBanner/Modules'
 import Vwarz from '../../style-guide/vwarzBanner/Vwarz'
 import Spark from '../../style-guide/sparkBanner/Spark'
 import Tecno from '../../style-guide/tecnoBanner/Tecno'
+import { useInView } from 'react-intersection-observer'
 
 const MainLanding = () => {
   const [offsetY, setOffsetY] = useState(0)
+  const [animation, setAnimation] = useState(false)
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  })
   const handleScroll = () => {
     setOffsetY(window.pageYOffset)
   }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-
+    if (inView) {
+      setAnimation(false)
+    }
+    else {
+      setAnimation(true)
+    }
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [inView])
   return (
     <div className={styles.container}>
-      <div className={styles.hero}>
+      <div className={styles.hero} ref={ref}>
         <div className={styles.bgEle}>
           <LeftBg />
         </div>
@@ -50,40 +60,40 @@ const MainLanding = () => {
           <div
             className={styles.ele}
             id={styles.eclipse}
-            style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
           >
             <Image src={eclipse} />
           </div>
           <div
             className={styles.sphere}
             id={styles.sp1}
-            style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
           >
             <Image src={sphere} />
           </div>
           <div
             className={styles.ele}
             id={styles.ball}
-            style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
           >
             <Image src={ball} />
           </div>
           <div
             className={styles.ele}
             id={styles.ring}
-            style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
           >
             <Image src={ring} />
           </div>
           <div
             className={styles.sphere}
             id={styles.sp2}
-            style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.2}px)` }}
           >
             <Image src={sphere} />
           </div>
         </div>
-        <div className={styles.back}>
+        <div className={`${styles.back} ${animation?"":styles.off}`}>
           <Hacks />
           <Robotron />
           <Modules />

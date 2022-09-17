@@ -15,12 +15,17 @@
     // opacity: 0.6;
     position: relative;
     top: 0;
+    .overlay{
+      position: absolute;
+      z-index: 50;
+    }
     .bgEle {
       height: 100vh;
       width: 35vw;
       position: relative;
       position: absolute;
       top: 0;
+      z-index: 30;
     }
     #right {
       left: 100vw;
@@ -39,13 +44,13 @@
         width: 12rem;
         height: 12rem;
         position: relative;
-        top: 6rem;
+        top: 20rem;
       }
       #ball {
         width: 14rem;
         height: 14rem;
         position: relative;
-        top: 10rem;
+        top: 14rem;
         left: 90vw;
       }
       #ring {
@@ -60,11 +65,11 @@
       }
       #sp1 {
         position: relative;
-        top: 6rem;
+        top: 20rem;
       }
       #sp2 {
         position: relative;
-        top: 12rem;
+        top: 20rem;
         left: 92vw;
       }
     }
@@ -72,6 +77,12 @@
       background-color: rgba(0, 0, 0, 0);
       position: fixed;
       top: -10em;
+    }
+    .off{
+      display: none;
+    }
+    .hide{
+      opacity: 0;
     }
   }
 }

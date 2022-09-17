@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 @font-face {
   font-family: LemonMilk;
   src: url('/public/Fonts/LemonMilk.otf');
@@ -114,7 +116,7 @@
     text-align: center;
     opacity: 0.9;
     font-size: 2rem;
-    font-family: mokotoGlitch;
+    font-family: $mokotoGlitchMark;
   }
   .foot {
     display: flex;
