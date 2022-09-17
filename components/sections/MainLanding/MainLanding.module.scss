@@ -1,6 +1,7 @@
 .container {
   background-color: black;
   position: relative;
+  scroll-snap-type: y mandatory;	
   .hero {
     height: 100vh;
     width: 100vw;
@@ -85,4 +86,8 @@
       opacity: 0;
     }
   }
+}
+.static{
+  overflow: hidden;
+  height: 100vh;
 }

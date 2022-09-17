@@ -24,26 +24,37 @@ import { useInView } from 'react-intersection-observer'
 const MainLanding = () => {
   const [offsetY, setOffsetY] = useState(0)
   const [animation, setAnimation] = useState(false)
+  const [animationState, setAnimationState] = useState(1)
   const { ref, inView } = useInView({
     threshold: 0.1,
   })
   const handleScroll = () => {
     setOffsetY(window.pageYOffset)
   }
+  // const handleAnimation = () => {
+  //   setTimeout(() => {
+  //     if (inView) setAnimationState(1)
+  //   }, 3000)
+  // }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
+    // window.addEventListener('mousewheel', handleAnimation)
     if (inView) {
       setAnimation(false)
-    }
-    else {
+    } else {
       setAnimation(true)
     }
     return () => {
       window.removeEventListener('scroll', handleScroll)
+      // window.removeEventListener('mouseeheel', handleAnimation)
     }
   }, [inView])
   return (
-    <div className={styles.container}>
+    <div
+      className={`${styles.container} ${
+        animationState === 0 ? styles.static : ''
+      }`}
+    >
       <div className={styles.hero} ref={ref}>
         <div className={styles.bgEle}>
           <LeftBg />
@@ -93,7 +104,7 @@ const MainLanding = () => {
             <Image src={sphere} />
           </div>
         </div>
-        <div className={`${styles.back} ${animation?"":styles.off}`}>
+        <div className={`${styles.back} ${animation ? '' : styles.off}`}>
           <Hacks />
           <Robotron />
           <Modules />
