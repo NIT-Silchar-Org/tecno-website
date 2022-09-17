@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
+import Alert from '../components/Alert'
 import Button from '../components/button'
-import Alert from '../components/Form/Alert'
+// import Alert from '../components/Form/Alert'
 import Input from '../components/Form/Input'
 import HamBurger from '../components/sections/Navbar/HamBurger'
 import Navbar from '../components/sections/Navbar/Navbar'
@@ -38,10 +39,13 @@ function Register() {
     })
   }
 
+  const [message, setMessage] = useState("Hello")
+
   return (
     <div>
       <Navbar profile={"/profile"} hamburger={<HamBurger/>} />
       {/* <Alert text={"Hello"} /> */}
+     
       {/* <div>
             <h1>Name</h1>
             <input value={name} onChange={(e)=>setName(e.target.value)}/>

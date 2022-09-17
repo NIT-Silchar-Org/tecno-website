@@ -7,6 +7,9 @@ import Button from '../../components/button';
 import { fetch_event_by_id } from '../../utils/events_fetch';
 import { useAuth } from '../../providers/authContext';
 import { team_register } from '../../utils/event_register';
+import alert from '../../components/Alert';
+import Alert from '../../components/Alert';
+
 function Event({data, id}) {
   const [isFormHidden, setIsFormHidden] = useState(true)
   const scrollToRef = useRef()
@@ -44,10 +47,14 @@ function Event({data, id}) {
       <div className="justify-center bg-black w-full h-screen">
         <div className="section-one">
           <Header />
+          
           <div className="details-section-wrapper">
+       
+          
             <div className="text-3xl text-center justify-start relative items-center">
               {/* <h2>Logo</h2>
                */}
+               
               <div className="event-logo relative">
                 <Image src={data?.module?.iconImage} width={80} height={80}
            
@@ -58,7 +65,14 @@ function Event({data, id}) {
                 <h1 className="text-white text-lg mokoto-glitch-font">Module : Robotron</h1>
               </div>
             </div>
-            <div className='poster'>
+            <div className='poster relative'>
+              <Image
+              src={data?.posterImage}
+              layout="fill"
+              // width="100%"
+              // height="100%"
+              objectFit="cover"
+              priority="true"/>
             </div>
             <div className="details scrollbar-hidden">
               <p className="text-white">
@@ -98,6 +112,7 @@ function Event({data, id}) {
           } `}
         ref={scrollToRef}
       >
+           <Alert text="hello" />
         <div className="form-section">
           <h1 className="text-lg text-white mokoto-glitch-font">Registration Form</h1>
           <div className=" input-wrapper">
