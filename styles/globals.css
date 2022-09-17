@@ -56,13 +56,13 @@
   }
 }
 
-@layer base{
+@layer base {
   @font-face {
     font-family: 'mokotoGlitchMark';
-    src: url('/Fonts/MokotoGlitchMark.otf') ;
-    font-weight:400;
-    font-display:swap;
-    font-style:normal;
+    src: url('/Fonts/MokotoGlitchMark.otf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 
 
   }
@@ -855,15 +855,17 @@ span {
     height: max-content;
     /* background-color: #000000; */
   }
+
   .Attended {
     color: #FFFFFF;
     text-align: center;
   }
-  
+
   .Tecnocoins {
     color: #FFFFFF;
     text-align: center;
   }
+
   .userIcon {
     width: 20rem;
     border: 2px solid red;
@@ -923,13 +925,87 @@ span {
     background: #000000;
     border: 1px solid rgb(255, 255, 255);
   }
-  button{
+
+  button {
     margin-right: 0.625rem;
   }
-  .attendedAlign{
+
+  .attendedAlign {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
 
 /*=============== PROFILE PAGE CSS END HERE============== */
+
+/* ================Registration Page================= */
+.teamBack {
+  background: #000000;
+}
+
+.registration1 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: white;
+}
+
+.regStatus {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.TeamName {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  margin: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.TeamName::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.TeamList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.Teamdetail {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border: 0.5px solid #4992FF;
+  border-radius: 6px;
+  padding: 0.625rem;
+}
+
+.viewTeam {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}

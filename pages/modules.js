@@ -5,15 +5,6 @@ import Main from "../components/sections/Modules/Modules"
 
 const Modules = () => {
   return (
-<<<<<<< HEAD
-    <div className="relative">
-      {/* <Sidebar /> */}
-
-      <Modal/>
-
-
-
-=======
     <div className="grid grid-cols-7">
       <div className="col-span-6">
         <Main />
@@ -21,7 +12,6 @@ const Modules = () => {
       <div>
         <Sidebar />
       </div>
->>>>>>> 7ef0d8a88a2b6748ecb84d71882ee6b9e0d2352a
     </div>
   )
 }
