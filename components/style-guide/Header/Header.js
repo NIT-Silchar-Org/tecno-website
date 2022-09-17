@@ -5,16 +5,6 @@ import LogoPng from '../../../public/assests/landingPage/tecnoesis.png'
 import headerStyle from "../Header/HeaderStyle.module.scss"
 
 function Header() {
-    const handleScroll = () => {
-        setOffsetY(window.pageYOffset)
-    }
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
     return (
         <div className={headerStyle.main}>
             <div className={headerStyle.tecnoesisText}>
