@@ -1075,7 +1075,7 @@ span {
   z-index: 20;
   background-color: #040404;
 }
-hr{
+.teamhr{
   position: absolute;
   top: 209px;
   height: 2px;
@@ -1605,5 +1605,5 @@ th, td { min-width: 12.5rem; }
   .back-button {
     display: none;
   }
-
 }
+

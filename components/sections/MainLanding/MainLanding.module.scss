@@ -1,7 +1,10 @@
 .container {
   background-color: black;
   position: relative;
-  scroll-snap-type: y mandatory;	
+  scroll-snap-type: y mandatory;
+  .blank {
+    opacity: 0;
+  }
   .hero {
     height: 100vh;
     width: 100vw;
@@ -16,7 +19,7 @@
     // opacity: 0.6;
     position: relative;
     top: 0;
-    .overlay{
+    .overlay {
       position: absolute;
       z-index: 50;
     }
@@ -27,6 +30,9 @@
       position: absolute;
       top: 0;
       z-index: 30;
+    }
+    .blank {
+      opacity: 0;
     }
     #right {
       left: 100vw;
@@ -79,15 +85,16 @@
       position: fixed;
       top: -10em;
     }
-    .off{
+    .off {
       display: none;
     }
-    .hide{
+    .hide {
       opacity: 0;
     }
   }
 }
-.static{
+.static {
   overflow: hidden;
   height: 100vh;
 }
+// .container

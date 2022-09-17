@@ -26,7 +26,7 @@ function Team() {
                  <div><button className={toggleState === 3 ? "tabs active-tabs" : "tabs"} onClick={() => toggleTab(3)}>Rejected</button></div>
                 </div>
             </div>
-            <hr/>
+            <hr className='teamhr'/>
             <div className="content-tabs">
                 {toggleState === 1 && (
                     <Pending/>

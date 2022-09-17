@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useReducer, useRef, useState } from 'react'
 import AboutNITS from '../AboutNITS/AboutNITS'
 import About from '../AboutUs/About'
 import Footer from '../Footer/Footer'
@@ -21,60 +21,127 @@ import Spark from '../../style-guide/sparkBanner/Spark'
 import Tecno from '../../style-guide/tecnoBanner/Tecno'
 import { useInView } from 'react-intersection-observer'
 
+/*
+
+entire container will be non-scrollable, meanwhile hero animation runs
+When hero observes a scroll, the hero animation stops and the main section comes into view
+flicker animation starts
+
+IsScrollable
+IsInView
+Animation
+
+*/
+export const ANIMATION_NORMAL = 0
+export const ANIMATION_EXIT = 1
+export const ANIMATION_STOP = 2
+const initialState = { animation: ANIMATION_NORMAL, scrollable: false }
+
+const ACTION_SCROLL = 'scroll'
+const ACTION_EXIT_ANIMATION_COMPLETE = 'exit-animation-complete'
+
+const reducer = (state, action) => {
+  switch (action) {
+    case ACTION_SCROLL: {
+      return {
+        ...state,
+        animation: ANIMATION_EXIT,
+      }
+    }
+    case ACTION_EXIT_ANIMATION_COMPLETE: {
+      return {
+        ...state,
+        animation: ANIMATION_STOP,
+        scrollable: true,
+      }
+    }
+  }
+}
 const MainLanding = () => {
   const [offsetY, setOffsetY] = useState(0)
-  const [animation, setAnimation] = useState(false)
-  const [animationState, setAnimationState] = useState(1)
-  const [startRoll, setStartRoll] = useState(false)
+  // const [isScrollable, setIsScrollable] = useState(false)
+  // const [startRoll, setStartRoll] = useState(false)
+  // const [isAnimationComplete, setIsAnimationComplete] = useState(false)
+  const [activeInd, setActiveind] = useState([0, 1])
   const divRef = useRef(null)
-  const { ref, inView } = useInView({
+  const { ref, inView: heroInView } = useInView({
     threshold: 0.1,
   })
+
+  const [state, dispatch] = useReducer(reducer, initialState)
   const handleScroll = () => {
     setOffsetY(window.pageYOffset)
   }
   const handleAnimation = () => {
-    setStartRoll(true)
+    // setStartRoll(true)
+
+    // setTimeout(() => {
+    //   if (heroInView && !isScrollable && !isAnimationComplete) {
+    //     setIsScrollable(true)
+    //     setIsAnimationComplete(true)
+    //   }
+    // }, 3999)
+    dispatch(ACTION_SCROLL)
     setTimeout(() => {
-      if (inView) {
-        setAnimationState(1)
-      }
-    }, 4000)
-    setTimeout(() => {
-      if (inView && animationState===0) divRef.current?.scrollIntoView({ behavior: 'smooth' })
-    }, 3999)
+      dispatch(ACTION_EXIT_ANIMATION_COMPLETE)
+    }, 1200)
   }
+
+  useEffect(() => {
+    if (state.scrollable)
+      setTimeout(() => {
+        divRef.current?.scrollIntoView({ behavior: 'smooth' })
+      }, 10)
+  }, [state.scrollable])
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-    window.addEventListener('mousewheel', handleAnimation)
-    if (inView) {
-      setAnimation(false)
-    } else {
-      setAnimation(true)
-    }
     return () => {
       window.removeEventListener('scroll', handleScroll)
-      window.removeEventListener('mouseeheel', handleAnimation)
     }
-  }, [inView])
+  })
+  useEffect(() => {
+    if (heroInView) {
+      window.addEventListener('mousewheel', handleAnimation)
+    }
+    return () => {
+      window.removeEventListener('mousewheel', handleAnimation)
+    }
+  }, [heroInView])
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const index = [0, 1, 2, 3, 4, 5]
+      const shuffled = index.sort(() => 0.5 - Math.random())
+
+      // Get sub-array of first n elements after shuffled
+      const selected = shuffled.slice(0, 2)
+      setActiveind(selected)
+      console.log(selected)
+    }, 4000)
+
+    return () => clearInterval(interval)
+  }, [])
   return (
     <div
       className={`${styles.container} ${
-        animationState === 0 ? styles.static : ''
+        !state.scrollable ? styles.static : ''
       }`}
     >
-      <div className={styles.hero} ref={ref}>
-        <div className={styles.bgEle}>
-          <LeftBg state={startRoll} />
+      <div className={`${styles.hero}`} ref={ref}>
+        <div className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}>
+          <LeftBg state={state.animation} />
         </div>
-        <div className={styles.bgEle} id={styles.right}>
-          <RightBg />
+        <div
+          className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}
+          id={styles.right}
+        >
+          <RightBg state={state.animation} />
         </div>
         <div className={styles.overlay}>
-          <Header />
+          <Header state={state.animation} view={ heroInView} />
         </div>
       </div>
-      <div className={styles.main}>
+      <div className={styles.main} ref={divRef}>
         <div className={styles.bg}>
           <div
             className={styles.ele}
@@ -112,13 +179,13 @@ const MainLanding = () => {
             <Image src={sphere} />
           </div>
         </div>
-        <div className={`${styles.back} ${animation ? '' : styles.off}`}>
-          <Hacks />
-          <Robotron />
-          <Modules />
-          <Vwarz />
-          <Spark />
-          <Tecno />
+        <div className={`${styles.back} ${!heroInView ? '' : styles.off}`}>
+          <Hacks active={activeInd.includes(0)} />
+          <Robotron active={activeInd.includes(1)} />
+          <Modules active={activeInd.includes(2)} />
+          <Vwarz active={activeInd.includes(3)} />
+          <Spark active={activeInd.includes(4)} />
+          <Tecno active={activeInd.includes(5)} />
         </div>
         <div className={styles.sections}>
           <About />
