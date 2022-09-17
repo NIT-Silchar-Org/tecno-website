@@ -13,8 +13,11 @@
     font-weight: 400;
     font-display: swap;
     font-style: normal;
+
+
   }
 }
+
 @layer base {
   @font-face {
     font-family: 'roadRage';
@@ -32,6 +35,8 @@
     font-weight: 400;
     font-display: swap;
     font-style: normal;
+
+
   }
 }
 
@@ -42,16 +47,18 @@
     font-weight: 400;
     font-display: swap;
     font-style: normal;
+
+
   }
 }
 
-@layer base{
+@layer base {
   @font-face {
     font-family: 'mokotoGlitchMark';
-    src: url('/Fonts/MokotoGlitchMark.otf') ;
-    font-weight:400;
-    font-display:swap;
-    font-style:normal;
+    src: url('/Fonts/MokotoGlitchMark.otf');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
 
 
   }
@@ -63,6 +70,8 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+
 
 .monte {
   font-family: 'Montserrat';
@@ -89,6 +98,7 @@ dl,
 dd {
   margin: 0;
 }
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -160,13 +170,16 @@ header {
   background: #040404;
   color: #fff;
 }
+
 header h1 {
   font-size: 7em;
   font-weight: 100;
 }
+
 header h2 {
   font-size: 2em;
 }
+
 header span.animated {
   position: absolute;
   margin: auto;
@@ -209,16 +222,20 @@ header span::after {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 header .animated p {
   color: gray;
 }
+
 header .image1 {
   size: 10vh;
 }
+
 header .animated {
   justify-content: space-between;
   align-content: space-evenly;
 }
+
 @media (max-width: 475px) {
   header h1 {
     font-size: 3.2em;
@@ -227,6 +244,8 @@ header .animated {
   header h2 {
     font-size: 1.5em;
   }
+
+
 }
 
 body::-webkit-scrollbar {
@@ -264,28 +283,37 @@ body::-webkit-scrollbar-thumb:hover {
   transition-timing-function: linear;
 }
 
+
+
 @keyframes bodyLight {
   30% {
     filter: invert(14%);
   }
+
   40% {
     filter: invert(10%);
   }
+
   50% {
     filter: invert(7%);
   }
+
   60% {
     filter: invert(10%);
   }
+
   70% {
     filter: invert(12%);
   }
+
   80% {
     filter: invert(9%);
   }
+
   90% {
     filter: invert(14%);
   }
+
   100% {
     filter: invert(11%);
   }
@@ -296,6 +324,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .relative {
   position: relative;
+
 }
 
 .bg-black {
@@ -340,7 +369,12 @@ body::-webkit-scrollbar-thumb:hover {
 .text-3xl {
   font-size: 4rem;
   color: #ffffff;
+  font-family: 'mokotoGlitch';
+
+
 }
+
+
 .my-2 {
   margin-top: 2.4rem;
 }
@@ -353,15 +387,216 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background: url('../public/assests/modal/modalbg.png');
   /* opacity: 0.5; */
+
+
+
+
+
+
+
 }
 
 .modal {
   position: absolute;
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap;
+
   inset: 0;
   width: 100%;
   height: 100%;
+  /* background-color: #040404; */
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* -webkit-backdrop-filter: blur(40px); */
+  backdrop-filter: blur(40px);
+
+
+}
+
+/*bikram   */
+
+.content-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .title {
+  position: absolute;
+  width: 408px;
+  height: 29px;
+  /* left: 300px; */
+  left: 18.75rem;
+  top: 220px;
+
+  font-family: 'mokotoGlitch';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* .modalDes{
+  position: relative;
+
+  margin-left: 10vw;
+  word-wrap: normal;
+  width: 30vw;
   background-color: #040404;
+  color: #ffffff;
+} */
+
+.modalDes {
+  position: absolute;
+  width: 587px;
+  height: 236px;
+  /* left: 233px; */
+  left: 14.563rem;
+  top: 357px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  letter-spacing: 0.05em;
+
+  color: #FFFFFF;
+}
+
+.modalImg {
+  position: absolute;
+  width: 685px;
+  height: 811px;
+  /* left: 755px; */
+  right: 0px;
+  top: 0px;
+  background: linear-gradient(89.69deg, #000000 -25.41%, rgba(0, 0, 0, 0) 102.25%), url(../public/assests/Modal/heroimg.png);
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), 92%, rgba(0, 0, 0, 0));
+  backdrop-filter: blur(40px);
+  /* box-shadow: 60px 0 60px 0 black inset; */
+  /* box-shadow: 13px 13px, -1em 0 1.4em black; */
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+/*responsive mobile view*/
+
+@media screen and (max-width:500px) {
+
+  .modal-wrapper {
+    background: url(../public/assests/Modal/module-phn\ view.png);
+
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  .modal {
+    position: absolute;
+    /* width: 360.27px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 800px;
+    left: -6px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* -webkit-backdrop-filter: blur(40px); */
+    backdrop-filter: blur(40px);
+  }
+
+  .cross {
+    position: absolute;
+    width: 22.02px;
+    height: 22px;
+    left: 1px;
+    top: 1px;
+
+
+  }
+
+
+  .modal .title {
+    position: absolute;
+    width: 70vw;
+    height: 29px;
+    left: 20vw;
+    top: 480px;
+
+    font-family: 'mokotoGlitch';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+  }
+
+  .modalDes {
+    position: absolute;
+    /* width: 302.23px; */
+    width: 80vw;
+    height: 271px;
+    /* left: 29.03px; */
+    left: 10vw;
+    top: 530px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    /* or 200% */
+
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+  }
+
+
+
+
+  .modalImg {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80vw;
+    height: 517px;
+    left: 10vw;
+
+    top: 0px;
+
+    background: linear-gradient(359.36deg, #000000 4.48%, rgba(0, 0, 0, 0.666513) 39.52%, rgba(0, 0, 0, 0) 99.43%), url(../public/assests/Modal/image_processing20210216-13027-ie4jq4\ 1\ \(1\).png);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), 90%, rgba(0, 0, 0, 0));
+
+
+
+    background-repeat: no-repeat;
+    background-size: auto;
+    backdrop-filter: blur(30px);
+  }
+
 }
 
 .items-center {
@@ -375,6 +610,19 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 1.5rem;
 }
 
+/* ==================Profile PAGE CSS====================== */
+
+.backDiv {
+  position: absolute;
+  width: 100vw;
+  /* height: 820px; */
+  /* left: 0px; */
+  /* top: 0px; */
+  /* The image used */
+  background-image: url('../public/assests/profile/background.png');
+  height: 100%;
+  background-position: center;
+}
 .text-xl {
   font-size: 2rem;
 }
@@ -451,6 +699,671 @@ body::-webkit-scrollbar-thumb:hover {
   background-size: cover;
 }
 
+.profileCard {
+  border: 2px solid #FFFFFF;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top-right-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* width: 1208px; */
+  /* height: 652px; */
+  width: 79%;
+  height: 86%;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(30px);
+  background-image: url('../public/assests/profile/rect259.png');
+}
+
+.profDetail {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  /* background-color: #000000; */
+}
+
+.profImg {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* margin-top:2.1875rem; */
+  width: 100%;
+  height: 50%;
+  /* background-color: #1fd1f9; */
+}
+
+.profPhoto {
+
+  width: 20vw;
+  height: 20vw;
+  left: 2rem;
+  top: 5rem;
+}
+
+.profPhoto2 {
+  z-index: 999;
+  position: absolute;
+  top: 20px;
+  opacity: 0;
+
+}
+
+.tecnoLogo {
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+.eventDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Attended {
+  color: #FFFFFF;
+}
+
+.Tecnocoins {
+  color: #FFFFFF;
+}
+
+Image {
+  margin-right: 10px;
+}
+
+.personalDetail {
+  margin-left: 30px;
+  font-family: 'Montserrat';
+
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  /* line-height: 40px; */
+  /* padding-bottom: 30px; */
+  line-height: 2.5rem;
+  padding-bottom: 1.875rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.personalDetail::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.personalDetailIcon {
+  padding-right: 0.625rem;
+}
+
+.personalDetail .reg {
+  border: 1px solid #2AE768;
+  width: 190px;
+  height: 27px;
+  float: right;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 16px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #2AE768;
+
+}
+
+.personalDetail .logout {
+  border: 1px solid #FF1B41;
+  width: 190px;
+  height: 27px;
+  float: right;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FF1B41;
+}
+
+.TransactionDetail {
+  border-radius: 16px;
+  /* /box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  background: linear-gradient(89.66deg, rgba(0, 0, 0, 0.048) 0.29%, rgba(0, 0, 0, 0.057) 0.3%, rgba(0, 0, 0, 0.027) 44.62%, rgba(0, 0, 0, 0.048) 99.71%);
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(25px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  overflow-y: scroll;
+  border-radius: 8px;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  margin: 20px;
+  width: 34.5rem;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.eventName span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.EarnCoin {
+  color: #2AE768;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.TransactionDetail::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.transHeading {
+  text-align: center;
+  padding: 20px;
+
+}
+
+/* hr{
+  height: 0.5px;
+  background-color: white;
+} */
+.eventName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+span {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+  margin-bottom: 5px;
+
+}
+
+.EventListLi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+
+/* =======Profile PAGE Section Responsiveness(MOBILE VIEW)=========== */
+
+@media screen and (max-width:850px) {
+
+  .backDiv {
+    position: absolute;
+    width: 26.75rem;
+    height: 20.75rem;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    /* background-image: url('../public/assests/profile/bgMobile.png'); */
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .profileCard {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    transform: none;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    left: 0px;
+    top: 45%;
+    width: 100vw;
+    height: max-content;
+    overflow-y: scroll;
+    background: black;
+    background-image: none;
+  }
+
+  .eventDetail {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .profDetail {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: max-content;
+    /* background-color: #000000; */
+  }
+
+  .Attended {
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .Tecnocoins {
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .userIcon {
+    width: 20rem;
+    border: 2px solid red;
+    position: absolute !important;
+    top: -10px !important;
+    z-index: 1000 !important;
+  }
+
+  .profImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top:2.1875rem; */
+    width: 100vw;
+    height: max-content;
+    /* background-color: #1fd1f9; */
+  }
+
+  .profPhoto {
+    position: absolute;
+    top: 10vh;
+    width: 10.875rem;
+    height: 10.875rem;
+    left: 7.938rem;
+    display: none;
+    margin-bottom: 3.125rem;
+    /* top: 7.438rem; */
+  }
+
+  .profPhoto2 {
+    z-index: 999;
+    position: absolute;
+    top: 7%;
+    width: 10.875rem;
+    height: 10.875rem;
+    /* left: 7.938rem; */
+    /* left:  5.937999999999999rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 10;
+
+  }
+
+  .tecnoLogo {
+    display: none;
+  }
+
+  .personalDetail {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .TransactionDetail {
+    width: 90vw;
+    backdrop-filter: blur(0px);
+    background: #000000;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  button {
+    margin-right: 0.625rem;
+  }
+
+  .attendedAlign {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/*=============== PROFILE PAGE CSS END HERE============== */
+
+/* ================Registration Page================= */
+.teamBack {
+  background: #000000;
+  height: 100vh;
+ 
+}
+
+.registration1 {
+  display: flex;
+
+  flex-direction: column;
+  color: white;
+}
+
+.regStatus {
+  margin-top: 10px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 3.125rem;
+  justify-content: space-around;
+  z-index: 20;
+  background-color: #040404;
+}
+hr{
+  position: absolute;
+  top: 50px;
+  height: 2px;
+  color: white;
+  z-index: 50;
+  width: 100vw;
+}
+
+.Team {
+  position: relative;
+  top: 101px;
+  /* width: 90%; */
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  margin: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  color: #FFFFFF;
+  z-index: 10;
+  margin-bottom: 6.25rem;
+  height: 72vh;
+}
+
+.Team::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.TeamList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+.PenTeamList {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.TeamList::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+.Teamdetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px solid #4992FF;
+  border-radius: 6px;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  margin: 0.625rem;
+  overflow: hidden;
+}
+.hshow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  /* border: 0.5px solid #4992FF; */
+  border-radius: 6px;
+  height: 88px;
+  /* padding: 0.625rem; */
+  /* margin: 0.625rem; */
+}
+
+.regcontent{
+  box-sizing: border-box;
+  background:black;
+  /* border: 1px solid #4992FF; */
+  border-radius: 6px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.viewTeam {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.StatBtn{
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.registered {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Neon Blue */
+
+  color: #4EDFFF;
+}
+
+.registeredteam {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.teamName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.downArr {
+  margin-left: .565rem;
+}
+
+.StatBtn .reg {
+  border: 1px solid #2AE768;
+
+  width: 190px;
+  height: 27px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 16px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  line-height: 20px;
+  text-align: center;
+  color: #2AE768;
+  margin-right: 0.965rem;
+
+}
+
+.StatBtn .logout {
+  border: 1px solid #FF1B41;
+  width: 190px;
+  height: 27px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  border-top-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FF1B41;
+}
+
+.rejected{
+  color: #D03CAB;
+}
+.rejectedBorder{
+  border: 1px solid  #D03CAB;
+}
+
+.penBorder{
+  border: 1px solid  #FFE166;
+}
+
+.active-tabs{
+  color: #4EDFFF;
+  border-bottom: 2px solid #4EDFFF;
+}
+
+.tabs{
+font-style: normal;
+font-weight: 600;
+font-size: 1.25rem;
+line-height: 28px;
+/* padding-left: 100px;
+padding-right: 100px; */
+padding-bottom: 10px;
+}
+
+
+
+
+
+/* .downArr{
+  margin-left: .565rem;
+}
+.downArr:hover{
+  cursor: pointer;
+} */
+
+table {
+  /* height: 122px; */
+  /* border: 2px solid forestgreen; */
+  width: 50vw;
+  height: 12.5rem;
+  margin: 0 auto;
+  /* margin-top: 11.5vh; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+  
+th {
+  border-bottom: 0.4px solid #FFFFFF;
+  text-align: center;
+  color: #4EDFFF;
+}
+  
+td {
+  text-align: center;
+}
+
+.table-container { 
+  width: 100% !important;
+  overflow-x: scroll; 
+}
+
+th, td { min-width: 12.5rem; }
+
+
+/*================================ registration status responsive========================= */
+@media (max-width: 700px) {
+
+  .table{
+    width: 50vw;
+  }
+  .table-container { 
+      width: 100% !important;
+      overflow-x: scroll; 
+  }
+
+  th, td {min-width: max-content; }
+
+  .viewTeamSize{
+    display: none;
+  }
+  .registeredteam{
+    font-size: 0.625rem;
+  }
+  .StatBtn .reg{
+    width: max-content;
+  height: max-content;
+  }
 .section-one::-webkit-scrollbar{
   display: none;
 }
@@ -647,7 +1560,9 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @media only screen and (min-width: 600px) {
+  
   .back-button {
     display: none;
   }
+}
 }
