@@ -3,6 +3,7 @@ import Image from 'next/image'
 import DummyLogo from '../../public/assests/stash/dummylogo.png'
 import Header from '../../components/Header';
 import TeamMember from '../../components/teamMember';
+import Button from '../../components/button';
 
 function Event() {
   const [isFormHidden, setIsFormHidden] = useState(true)
@@ -14,13 +15,7 @@ function Event() {
   }, [isFormHidden])
 
 
-  const [count, setCount] = useState(1);
-
-  const memberArray = [];
-
-  const addMember = () => {
-    memberArray.push(1);
-  }
+  const [members, addMembers] = useState([{ member: '' }]);
 
 
 
@@ -105,17 +100,13 @@ function Event() {
             </div>
 
             <div className="my-2">
-              <button
-                className="btn secondary-solid text-xl"
-                onClick={() => {
+              
+                <Button onClick={() => {
                   setIsFormHidden(false)
                   scrollToRef.current.scrollIntoView()
-
-
-                }}
-              >
-                Register
-              </button>
+                }}>
+                  Register
+                </Button>
             </div>
           </div>
         </div>
@@ -142,11 +133,10 @@ function Event() {
               </div> */}
           </div>
           <TeamMember />
-          {/* <button
-            className="btn2 secondary-solid text-xl"
-          >
-            + Add Member
-          </button> */}
+  
+          <Button>Submit</Button>
+          
+
         </div>
       </div>
     </>
@@ -154,8 +144,3 @@ function Event() {
 }
 
 export default Event
-export const getServerSideProps = async ({ params }) => {
-  return {
-    props: {},
-  }
-}

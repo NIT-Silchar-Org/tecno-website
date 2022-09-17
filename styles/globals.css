@@ -63,6 +63,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.monte {
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -392,6 +397,25 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: medium;
 }
 
+.btn3{
+  width: 12rem;
+  padding: 0.5rem;
+  background-color: white;
+  font-size: medium;
+  margin-top: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.member{
+  display: inline-block;
+  border-color:#00f0ff;
+  border-radius: 10%;
+  border-width: 0.1px;
+  padding: 1px;
+  margin-bottom: 1rem;
+  
+}
+
 .mokoto-glitch-font {
   font-family: 'mokotoGlitch';
   src: url('/Fonts/MokotoGlitch.otf');
@@ -418,11 +442,16 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .section-one {
+  overflow-y: scroll;
   width: 60%;
   padding-left: 5rem;
   background: url('/assests/events/event-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.section-one::-webkit-scrollbar{
+  display: none;
 }
 
 .section-second {
@@ -452,12 +481,17 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .form-section {
+  overflow-y: scroll;
   width: 60%;
   padding-top: 5rem;
 }
-.form {
-  width: 100%;
+.form-section::-webkit-scrollbar{
+  display: none;
 }
+.form {
+  width: 46%;
+}
+
 .form-input {
   border: 0;
   outline: 0;
@@ -468,7 +502,21 @@ body::-webkit-scrollbar-thumb:hover {
   width: 100%;
   color: white;
   font-size: large;
+  text-align: center;
 }
+
+.bt3 {
+  white-space: nowrap;
+  border: none;
+  
+  clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
+  border-bottom-right-radius: 6px;
+  
+  font-size: large;
+  color: white;
+  
+  }
+
 .input-wrapper {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -492,9 +540,14 @@ body::-webkit-scrollbar-thumb:hover {
   /* width: 50%;  */
   /* padding-left: 1rem; */
   width: 100%;
-  font-size: large;
+  font-size: larger;
   color: white;
 }
+
+.gap {
+  margin-top: 1rem;
+}
+
 .form-bg {
   background-image: url('/assests/events/form-bg.png');
   background-repeat: no-repeat;
@@ -526,6 +579,8 @@ body::-webkit-scrollbar-thumb:hover {
 
   .input-field {
     margin-top: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
   }
   .text-3xl {
     font-size: 2rem;
