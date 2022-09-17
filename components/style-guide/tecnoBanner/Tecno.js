@@ -18,9 +18,9 @@ const Tecno = () => {
       <path
         d="M180.693 13.6349L7.32422 245.763V504.065L180.693 369.139V13.6349Z"
         fill="url(#paint0_linear_2146_1920)"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
         stroke="#4EDFFF"
-        stroke-width="7"
+        strokeWidth="7"
       />
       <rect
         y="239.536"
@@ -55,14 +55,14 @@ const Tecno = () => {
         <path
           d="M144.217 255.316C143.33 281.725 136.992 309.849 127.525 333.92C118.05 358.01 105.548 377.805 92.2966 388.06C79.045 398.314 67.2416 397.329 58.924 387.008C50.6129 376.694 45.8776 357.139 46.7654 330.73C47.6531 304.321 53.9912 276.197 63.4582 252.125C72.9326 228.035 85.4345 208.241 98.6861 197.986C111.938 187.731 123.741 188.717 132.059 199.038C140.37 209.352 145.105 228.907 144.217 255.316Z"
           stroke="url(#paint1_angular_2146_1920)"
-          stroke-width="3"
-          shape-rendering="crispEdges"
+          strokeWidth="3"
+          shapeRendering="crispEdges"
         />
       </g>
       <path
         d="M155.112 246.884C154.01 279.649 146.151 314.466 134.482 344.15C122.796 373.879 107.536 397.907 91.5477 410.279C75.5596 422.652 61.1431 421.589 50.8843 408.843C40.6408 396.116 34.7655 371.928 35.8669 339.163C36.9684 306.397 44.8272 271.581 56.4964 241.897C68.1829 212.168 83.4429 188.14 99.431 175.768C115.419 163.395 129.836 164.458 140.094 177.203C150.338 189.93 156.213 214.118 155.112 246.884Z"
         stroke="url(#paint2_angular_2146_1920)"
-        stroke-width="7"
+        strokeWidth="7"
       />
       <path
         d="M155.048 247.262C153.971 279.317 146.301 313.495 134.792 342.825C123.281 372.16 107.965 396.564 91.5841 409.241C75.2032 421.917 60.7539 420.547 50.6527 407.937C40.5538 395.329 34.8333 371.513 35.9109 339.457C36.9885 307.402 44.6585 273.224 56.1671 243.894C67.6784 214.559 82.9941 190.155 99.375 177.478C115.756 164.802 130.205 166.172 140.306 178.782C150.405 191.39 156.126 215.206 155.048 247.262Z"
@@ -75,22 +75,22 @@ const Tecno = () => {
           y2="-5"
           transform="matrix(-0.489081 1.16872 -0.37263 -0.550242 133.721 200.21)"
           stroke="white"
-          stroke-width="10"
+          strokeWidth="10"
         />
       </g>
       <g filter="url(#filter2_d_2146_1920)">
         <path
           d="M133.483 263.295C132.773 284.411 127.721 306.872 120.189 326.067C112.649 345.281 102.732 360.982 92.2585 369.088C81.7845 377.193 72.4218 376.412 65.8058 368.152C59.1964 359.901 55.4247 344.268 56.1345 323.152C56.8443 302.037 61.8966 279.575 69.4286 260.38C76.9682 241.166 86.885 225.465 97.3589 217.36C107.833 209.254 117.196 210.035 123.812 218.295C130.421 226.547 134.193 242.18 133.483 263.295Z"
           stroke="url(#paint4_angular_2146_1920)"
-          stroke-width="3"
-          shape-rendering="crispEdges"
+          strokeWidth="3"
+          shapeRendering="crispEdges"
         />
       </g>
       <g filter="url(#filter3_d_2146_1920)">
         <path
           d="M110.153 272.717L106.701 265.205L121.019 254.125L110.153 272.717Z"
           fill="#4EDFFF"
-          fill-opacity="0.73"
+          fillOpacity="0.73"
         />
         <path
           d="M121.02 254.125L110.098 272.646L103.095 307.689L121.02 254.125Z"
@@ -159,9 +159,9 @@ const Tecno = () => {
           width="108.039"
           height="216.008"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -194,9 +194,9 @@ const Tecno = () => {
           width="161.566"
           height="271.508"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -215,9 +215,9 @@ const Tecno = () => {
           width="87.8945"
           height="174.616"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -250,9 +250,9 @@ const Tecno = () => {
           width="62.5684"
           height="148.578"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -286,9 +286,9 @@ const Tecno = () => {
           y2="173.818"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6400CA" />
-          <stop offset="2.4e-07" stop-color="#6400CA" />
-          <stop offset="1" stop-color="#4778EA" />
+          <stop stopColor="#6400CA" />
+          <stop offset="2.4e-07" stopColor="#6400CA" />
+          <stop offset="1" stopColor="#4778EA" />
         </linearGradient>
         <radialGradient
           id="paint1_angular_2146_1920"
@@ -298,11 +298,11 @@ const Tecno = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(95.4914 293.023) rotate(91.9253) scale(96.5903 48.5864)"
         >
-          <stop stop-color="white" stop-opacity="0.4" />
-          <stop offset="0.254601" stop-color="#00A3FF" />
-          <stop offset="0.50245" stop-color="white" stop-opacity="0.96" />
-          <stop offset="0.744987" stop-color="#4EDFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.64" />
+          <stop stopColor="white" stopOpacity="0.4" />
+          <stop offset="0.254601" stopColor="#00A3FF" />
+          <stop offset="0.50245" stopColor="white" stopOpacity="0.96" />
+          <stop offset="0.744987" stopColor="#4EDFFF" />
+          <stop offset="1" stopColor="white" stopOpacity="0.64" />
         </radialGradient>
         <radialGradient
           id="paint2_angular_2146_1920"
@@ -312,11 +312,11 @@ const Tecno = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(95.4893 293.023) rotate(91.9253) scale(120.822 60.733)"
         >
-          <stop stop-color="white" stop-opacity="0.4" />
-          <stop offset="0.254601" stop-color="#4EDFFF" />
-          <stop offset="0.50245" stop-color="white" stop-opacity="0.96" />
-          <stop offset="0.744987" stop-color="#4EDFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.64" />
+          <stop stopColor="white" stopOpacity="0.4" />
+          <stop offset="0.254601" stopColor="#4EDFFF" />
+          <stop offset="0.50245" stopColor="white" stopOpacity="0.96" />
+          <stop offset="0.744987" stopColor="#4EDFFF" />
+          <stop offset="1" stopColor="white" stopOpacity="0.64" />
         </radialGradient>
         <radialGradient
           id="paint3_angular_2146_1920"
@@ -326,11 +326,11 @@ const Tecno = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(95.4795 293.36) rotate(91.9253) scale(116.447 58.3712)"
         >
-          <stop stop-color="#9A9A9A" />
-          <stop offset="0.27824" stop-color="#0047FF" />
-          <stop offset="0.495571" stop-color="#9A9A9A" />
-          <stop offset="0.747816" stop-color="white" />
-          <stop offset="1" stop-color="#B4B4B4" />
+          <stop stopColor="#9A9A9A" />
+          <stop offset="0.27824" stopColor="#0047FF" />
+          <stop offset="0.495571" stopColor="#9A9A9A" />
+          <stop offset="0.747816" stopColor="white" />
+          <stop offset="1" stopColor="#B4B4B4" />
         </radialGradient>
         <radialGradient
           id="paint4_angular_2146_1920"
@@ -340,11 +340,11 @@ const Tecno = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(94.8087 293.224) rotate(91.9253) scale(77.4069 38.8017)"
         >
-          <stop stop-color="white" stop-opacity="0.4" />
-          <stop offset="0.254601" stop-color="#4EDFFF" />
-          <stop offset="0.50245" stop-color="white" stop-opacity="0.96" />
-          <stop offset="0.744987" stop-color="#4EDFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.64" />
+          <stop stopColor="white" stopOpacity="0.4" />
+          <stop offset="0.254601" stopColor="#4EDFFF" />
+          <stop offset="0.50245" stopColor="white" stopOpacity="0.96" />
+          <stop offset="0.744987" stopColor="#4EDFFF" />
+          <stop offset="1" stopColor="white" stopOpacity="0.64" />
         </radialGradient>
         <linearGradient
           id="paint5_linear_2146_1920"
@@ -354,8 +354,8 @@ const Tecno = () => {
           y2="273.673"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.164314" stop-color="white" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop offset="0.164314" stopColor="white" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint6_linear_2146_1920"
@@ -365,8 +365,8 @@ const Tecno = () => {
           y2="313.937"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint7_linear_2146_1920"
@@ -376,8 +376,8 @@ const Tecno = () => {
           y2="237.117"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint8_linear_2146_1920"
@@ -387,8 +387,8 @@ const Tecno = () => {
           y2="254.848"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1BBAF8" />
-          <stop offset="1" stop-color="#8AE2F5" />
+          <stop stopColor="#1BBAF8" />
+          <stop offset="1" stopColor="#8AE2F5" />
         </linearGradient>
         <image
           id="image0_2146_1920"

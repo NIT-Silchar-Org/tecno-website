@@ -17,7 +17,7 @@ const Modules = () => {
       <path
         d="M6.77148 160.397H55.9166V1.00029H6.77148V160.397Z"
         stroke="white"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <path
         d="M56.9141 161.397L60.9226 158.211L59.9208 0.950897L56.9141 4.57764e-05V161.397Z"
@@ -36,10 +36,10 @@ const Modules = () => {
           y2="169.006"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.440625" stop-color="#FF00BF" />
-          <stop offset="0.753125" stop-color="#2DD9FF" />
-          <stop offset="1" stop-color="#00CEFB" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.440625" stopColor="#FF00BF" />
+          <stop offset="0.753125" stopColor="#2DD9FF" />
+          <stop offset="1" stopColor="#00CEFB" />
         </linearGradient>
       </defs>
     </svg>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import AboutNITS from '../AboutNITS/AboutNITS'
 import About from '../AboutUs/About'
 import Footer from '../Footer/Footer'
@@ -24,21 +24,24 @@ import { useInView } from 'react-intersection-observer'
 const MainLanding = () => {
   const [offsetY, setOffsetY] = useState(0)
   const [animation, setAnimation] = useState(false)
-  const [animationState, setAnimationState] = useState(1)
+  const [animationState, setAnimationState] = useState(0)
+  const divRef = useRef(null)
   const { ref, inView } = useInView({
     threshold: 0.1,
   })
   const handleScroll = () => {
     setOffsetY(window.pageYOffset)
   }
-  // const handleAnimation = () => {
-  //   setTimeout(() => {
-  //     if (inView) setAnimationState(1)
-  //   }, 3000)
-  // }
+  const handleAnimation = () => {
+    setTimeout(() => {
+      if (inView) {
+        setAnimationState(1)
+      }
+    }, 1500)
+  }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-    // window.addEventListener('mousewheel', handleAnimation)
+    window.addEventListener('mousewheel', handleAnimation)
     if (inView) {
       setAnimation(false)
     } else {
@@ -46,7 +49,7 @@ const MainLanding = () => {
     }
     return () => {
       window.removeEventListener('scroll', handleScroll)
-      // window.removeEventListener('mouseeheel', handleAnimation)
+      window.removeEventListener('mousewheel', handleAnimation)
     }
   }, [inView])
   return (
@@ -66,7 +69,7 @@ const MainLanding = () => {
           <Header />
         </div>
       </div>
-      <div className={styles.main}>
+      <div className={styles.main} ref={divRef}>
         <div className={styles.bg}>
           <div
             className={styles.ele}

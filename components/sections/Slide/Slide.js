@@ -9,7 +9,7 @@ const cards = ['lorem', 'hi', 'hello']
 
 const Slide = () => {
   const [activeIndex, setActiveIndex] = useState(0)
-  let len = cards.length
+  const len = cards.length
   const toggle = (mult) => {
     const index = activeIndex + 1 * mult
     if (index < 0) setActiveIndex(len - 1)

@@ -109,7 +109,7 @@ const RightBg = () => {
           width="26.2831"
           height="108.575"
           stroke="url(#paint8_linear_2132_1657)"
-          stroke-width="3"
+          strokeWidth="3"
         />
       </g>
       <path
@@ -119,7 +119,7 @@ const RightBg = () => {
       <path
         d="M145.143 477.519L145.143 477.519L133.797 483.145L133.797 483.146L116.717 491.63V630.071L229.386 687.545V435.703L147.398 476.4L145.143 477.519Z"
         fill="url(#paint10_linear_2132_1657)"
-        fill-opacity="0.1"
+        fillOpacity="0.1"
         stroke="#00D1FF"
       />
       <path
@@ -133,7 +133,7 @@ const RightBg = () => {
       <path
         d="M148.065 474.964V638.23L208.241 666.12V446.204L148.062 474.964H148.065Z"
         fill="url(#paint12_linear_2132_1657)"
-        fill-opacity="0.4"
+        fillOpacity="0.4"
       />
       <path
         d="M101.289 490.315H116.239L234.294 433.892V422.617L101.289 490.315Z"
@@ -150,9 +150,9 @@ const RightBg = () => {
       <path
         d="M225.352 62.3824L104.289 304.053V453.95L225.517 360.716L225.352 62.3824Z"
         fill="url(#paint15_linear_2132_1657)"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
         stroke="url(#paint16_linear_2132_1657)"
-        stroke-width="6"
+        strokeWidth="6"
       />
       <path
         d="M101.289 460.042H113.61L228.517 379.453V362.193L101.289 460.042Z"
@@ -191,12 +191,12 @@ const RightBg = () => {
       <path
         d="M207.068 459.352L186.223 468.391V623.325L207.068 629.773V459.352Z"
         stroke="#00D1FF"
-        stroke-width="3"
+        strokeWidth="3"
       />
       <path
         d="M178.28 471.836L156.426 481.315V614.106L178.28 620.868V471.836Z"
         stroke="#00D1FF"
-        stroke-width="3"
+        strokeWidth="3"
       />
       <g opacity="0.5">
         <path
@@ -259,9 +259,9 @@ const RightBg = () => {
       <path
         d="M181.836 -3.62711H133.34L98.3691 120.889V291.715L181.836 106.582V-3.62711Z"
         fill="url(#paint28_linear_2132_1657)"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
         stroke="url(#paint29_linear_2132_1657)"
-        stroke-width="5"
+        strokeWidth="5"
       />
       <path
         d="M184.326 107.12H199.582V-6.12636H184.326V107.12Z"
@@ -270,7 +270,7 @@ const RightBg = () => {
       <path
         d="M124.711 171.115C124.985 169.149 125.112 168.12 125.493 164.929C126.219 158.825 126.433 156.664 126.97 150.852L124.395 153.637C123.559 162.564 122.604 170.273 121.68 175.513L124.374 173.587C124.543 172.352 124.585 172.043 124.711 171.115ZM105.148 199.115L109.39 186.884V189.081L105.131 201.311L105.148 199.115ZM105.148 191.187L114.571 163.608V166.095L105.148 193.553V191.187ZM114.116 189.934V192.783L107.978 209.857V207.1L114.116 189.934ZM103.174 230.89C104.36 222.015 104.821 216.32 105.045 207.336L109.39 194.996V197.371L106.745 204.85C105.961 207.068 105.786 207.558 105.389 208.595C105.423 209.462 105.441 209.984 105.441 211.695V220.293C105.441 222.047 105.423 223.104 105.372 224.517L107.978 217.374V215.817L114.116 198.939V200.547L117.038 192.539C116.978 191.441 116.959 190.282 116.959 188.418V179.327C116.959 177.927 116.978 176.8 117.017 175.664C116.609 176.913 116.221 178.056 115.527 180.018L112.149 189.57V187.159L116.066 176.034C116.784 173.997 117.389 172.324 117.997 170.737V164.127C117.408 166.007 116.978 167.288 116.086 169.852L112.149 181.157V178.928L115.163 170.238C116.105 167.521 116.882 165.331 117.487 163.678C117.428 162.54 117.408 161.427 117.408 159.137V153.53C117.408 151.381 117.428 150.061 117.487 148.532C116.803 150.741 116.086 152.91 115.049 155.981L104.907 185.986C103.85 189.116 103.106 191.228 102.503 192.841C102.586 194.192 102.62 195.432 102.62 197.592C102.62 208.175 102.487 214.731 102.153 220.029C101.92 223.868 101.622 226.722 101.012 230.948C101.87 230.288 102.387 230.244 103.174 230.89ZM127.315 137.754C125.813 139.239 125.133 140.131 123.517 142.633L121.619 153.82C123.039 151.615 123.976 150.478 125.493 149.259L127.315 137.754ZM130.565 135.456V126.927L131.664 123.764C131.596 128.47 131.416 130.537 130.565 135.456ZM134.126 117.234V116.676L135.077 113.941V121.023C135.077 123.979 135.825 122.935 137.933 116.98C138.076 116.575 138.172 116.303 138.725 114.69V116.97L132.501 134.492L130.565 139.944V135.705C131.304 134.711 131.777 134.376 132.501 134.492C133.712 127.639 134.126 123.219 134.126 117.234ZM134.126 107.747L135.077 104.972V107.826L134.126 110.588V107.747ZM137.55 106.822L138.725 103.444V108.626L138.411 109.519C137.622 111.773 137.55 111.873 137.55 110.791V106.822ZM138.725 125.47L130.565 148.124V146.03L138.725 123.293V125.47ZM127.056 128.641C128.03 125.599 128.599 123.892 129.632 120.872L131.192 116.319V119.121L129.588 123.781C128.227 127.737 127.943 128.561 127.358 130.116C127.423 131.597 127.423 132.384 127.423 135.233V158.468C127.423 160.924 127.38 163.106 127.315 165.543L130.565 156.653V154.608L138.748 132.142V134.267L142.398 124.282C142.298 122.658 142.274 120.986 142.274 117.3V93.0165C142.274 90.0673 142.298 88.0989 142.373 86.4065C141.777 88.298 141.037 90.5023 139.936 93.7041L138.124 98.9707V96.0758L140.033 90.5016C141.037 87.5697 141.826 85.3156 142.873 82.4727V74.6557C142.025 77.3697 141.233 79.8123 139.813 84.0061L129.743 113.744C128.446 117.575 127.792 119.457 127.034 121.448V124.782C126.069 125.862 125.451 126.708 124.144 128.779L122.152 140.18C123.725 137.784 124.417 136.927 125.919 135.567L127.056 128.641ZM161.567 43.8015L163.915 37.1039C164.697 36.3221 164.818 36.2106 165.212 35.9045C163.945 39.6807 162.423 44.06 160.658 49.1902C161.038 47.0235 161.185 46.2063 161.567 43.8015ZM159.843 60.0936L156.047 70.7423C154.374 75.4352 153.986 76.5208 153.217 78.5141V85.1497C154.07 82.6695 154.901 80.3053 156.019 77.2L159.843 66.5771V68.9654L154.595 83.4904C152.97 87.9881 152.261 89.8947 151.475 91.9053C152.207 84.8708 152.614 77.6659 152.833 68.7158L157.034 56.7321C156.751 58.6062 156.553 59.7861 156.188 61.9474L155.123 64.9698C154.041 68.0426 153.766 68.7709 153.134 70.4L153.463 76.3278C154.152 74.2237 155.57 70.1241 158.431 61.851C158.86 60.5829 158.86 60.5829 159.843 57.7619V60.0936ZM169.063 34.2324L164.306 47.5777V44.7385C165.243 41.9831 165.243 41.9831 167.756 34.4917C168.16 34.4141 168.16 34.4141 169.063 34.2324ZM152.942 52.058L168.533 6.48114V8.77974L152.942 54.2119V52.058ZM170.448 39.6159L164.306 56.616V54.1824L169.189 40.6185C170.386 37.2969 171.274 34.8868 172.266 32.252V25.0704C171.753 26.6295 171.243 28.1214 170.386 30.5255L169.252 33.7047L173.233 18.4528C171.657 19.3168 170.892 19.8784 169.503 21.1638L170.322 18.8268C171.817 14.562 172.362 13.0663 173.46 10.1156V2.78033C172.491 5.75214 171.689 8.12086 169.817 13.5119L152.915 62.1872L152.942 60.1758L169.659 11.8925C171.274 7.229 172.266 4.42455 173.298 1.56506C173.2 0.222397 173.2 -0.678497 173.2 -3.02081V-9.26749C173.2 -11.9106 173.2 -12.9321 173.298 -15.0799C172.233 -11.698 171.243 -8.71114 169.628 -3.94583L152.697 46.0458C150.963 51.1639 149.946 54.0581 148.912 56.8957C149.07 58.708 149.097 60.0416 149.097 65.309C149.097 75.8988 148.78 85.8637 148.227 92.6743C147.835 97.6107 147.417 101.039 146.56 106.372C147.835 105.117 148.622 104.683 149.813 104.624C150.614 99.5369 150.963 96.8817 151.421 92.5484V99.2964C152.452 96.2567 153.408 93.5262 155.068 88.9818L169.785 48.6791C171.946 42.7664 173.039 39.83 174.208 36.9313V28.9703C173.266 31.7596 172.459 34.0522 170.448 39.6159Z"
         fill="#9EE7F8"
-        fill-opacity="0.63"
+        fillOpacity="0.63"
       />
       <g opacity="0.75">
         <rect
@@ -279,9 +279,9 @@ const RightBg = () => {
           width="58.4945"
           height="169.639"
           fill="url(#pattern0)"
-          fill-opacity="0.02"
+          fillOpacity="0.02"
           stroke="url(#paint31_linear_2132_1657)"
-          stroke-width="3"
+          strokeWidth="3"
         />
       </g>
       <g opacity="0.449997">
@@ -334,15 +334,15 @@ const RightBg = () => {
         <path
           d="M92.6029 314.462V386.205C78.1877 395.788 57.9453 409.358 42.6387 419.666V314.462H92.6029Z"
           fill="url(#paint43_linear_2132_1657)"
-          fill-opacity="0.3"
+          fillOpacity="0.3"
         />
       </g>
       <path
         d="M42.5293 475.909H92.8867V314.991H42.5293V475.909Z"
         fill="url(#paint44_linear_2132_1657)"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
         stroke="url(#paint45_linear_2132_1657)"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <path
         d="M86.0594 344.109C86.0594 354.167 77.7531 362.321 67.5072 362.321C57.2614 362.321 48.9551 354.167 48.9551 344.109C48.9551 334.051 57.2614 325.898 67.5072 325.898C77.7531 325.898 86.0594 334.051 86.0594 344.109Z"
@@ -364,22 +364,22 @@ const RightBg = () => {
         d="M521.495 293.284V-3.12646H231.346V431.976L468.195 318.755L468.291 318.709L468.39 318.67L468.49 318.63L521.495 293.284Z"
         fill="black"
         stroke="#FF00BF"
-        stroke-width="6"
+        strokeWidth="6"
       />
       <g opacity="0.449997">
         <path
           d="M338.752 -66.044V381.19L536.474 286.685L529.499 -13.712L338.752 -66.044Z"
           fill="#110122"
           stroke="#FF00BF"
-          stroke-width="5"
+          strokeWidth="5"
         />
       </g>
       <path
         d="M463.3 -146.365L289.932 85.7628V344.065L463.3 209.139V-146.365Z"
         fill="url(#paint50_linear_2132_1657)"
-        fill-opacity="0.2"
+        fillOpacity="0.2"
         stroke="#4EDFFF"
-        stroke-width="7"
+        strokeWidth="7"
       />
       <rect
         x="282.607"
@@ -415,14 +415,14 @@ const RightBg = () => {
         <path
           d="M426.825 95.3157C425.937 121.725 419.599 149.849 410.132 173.92C400.658 198.01 388.156 217.805 374.904 228.06C361.652 238.314 349.849 237.329 341.531 227.008C333.22 216.694 328.485 197.139 329.373 170.73C330.261 144.321 336.599 116.197 346.066 92.1254C355.54 68.0354 368.042 48.2412 381.294 37.9863C394.545 27.7313 406.349 28.7166 414.666 39.0382C422.977 49.3517 427.713 68.9068 426.825 95.3157Z"
           stroke="url(#paint51_angular_2132_1657)"
-          stroke-width="3"
-          shape-rendering="crispEdges"
+          strokeWidth="3"
+          shapeRendering="crispEdges"
         />
       </g>
       <path
         d="M437.719 86.8839C436.618 119.649 428.759 154.466 417.09 184.15C405.403 213.879 390.143 237.907 374.155 250.279C358.167 262.652 343.75 261.589 333.492 248.843C323.248 236.116 317.373 211.928 318.474 179.163C319.576 146.397 327.435 111.581 339.104 81.8966C350.79 52.1681 366.05 28.1401 382.038 15.7675C398.026 3.39501 412.443 4.45753 422.702 17.2033C432.945 29.9302 438.821 54.1185 437.719 86.8839Z"
         stroke="url(#paint52_angular_2132_1657)"
-        stroke-width="7"
+        strokeWidth="7"
       />
       <path
         d="M437.656 87.2617C436.578 119.317 428.908 153.495 417.399 182.825C405.888 212.16 390.572 236.564 374.192 249.241C357.811 261.917 343.361 260.547 333.26 247.937C323.161 235.329 317.441 211.513 318.518 179.457C319.596 147.402 327.266 113.224 338.775 83.8944C350.286 54.5587 365.602 30.1547 381.982 17.4782C398.363 4.80163 412.813 6.1716 422.914 18.7823C433.013 31.3902 438.733 55.2065 437.656 87.2617Z"
@@ -436,22 +436,22 @@ const RightBg = () => {
           y2="-5"
           transform="matrix(-0.489081 1.16872 -0.37263 -0.550242 416.328 40.21)"
           stroke="white"
-          stroke-width="10"
+          strokeWidth="10"
         />
       </g>
       <g filter="url(#filter2_d_2132_1657)">
         <path
           d="M416.09 103.295C415.381 124.411 410.328 146.872 402.796 166.067C395.257 185.281 385.34 200.982 374.866 209.088C364.392 217.193 355.029 216.412 348.413 208.152C341.804 199.901 338.032 184.268 338.742 163.152C339.452 142.037 344.504 119.575 352.036 100.38C359.576 81.1659 369.492 65.465 379.966 57.3597C390.44 49.2543 399.803 50.0355 406.419 58.2952C413.028 66.5466 416.8 82.1796 416.09 103.295Z"
           stroke="url(#paint54_angular_2132_1657)"
-          stroke-width="3"
-          shape-rendering="crispEdges"
+          strokeWidth="3"
+          shapeRendering="crispEdges"
         />
       </g>
       <g filter="url(#filter3_d_2132_1657)">
         <path
           d="M392.76 112.717L389.309 105.205L403.627 94.1248L392.76 112.717Z"
           fill="#4EDFFF"
-          fill-opacity="0.73"
+          fillOpacity="0.73"
         />
         <path
           d="M403.627 94.1249L392.706 112.646L385.702 147.689L403.627 94.1249Z"
@@ -571,7 +571,7 @@ const RightBg = () => {
         d="M214.422 737.985H276.702V514.606H214.422V737.985Z"
         fill="black"
         stroke="white"
-        stroke-width="2"
+        strokeWidth="2"
       />
       <path
         d="M246.642 543.129L247.447 541.298L247.438 541.294L247.43 541.291L246.642 543.129ZM249.752 538.582L247.934 539.416L248.928 541.583L250.889 540.227L249.752 538.582ZM252.689 536.551L253.827 538.196L255.107 537.311L254.563 535.852L252.689 536.551ZM243.502 545.848L242.69 547.676L242.7 547.68L242.71 547.685L243.502 545.848ZM239.142 551.035L240.879 550.043L239.78 548.121L237.979 549.408L239.142 551.035ZM236.017 553.27L234.854 551.643L233.471 552.632L234.225 554.156L236.017 553.27ZM244.736 560.114C247.649 560.114 250.36 559.295 252.389 557.683C254.453 556.043 255.721 553.64 255.721 550.77H251.721C251.721 552.369 251.051 553.637 249.9 554.552C248.713 555.495 246.933 556.114 244.736 556.114V560.114ZM255.721 550.77C255.721 548.168 254.669 546.186 253.046 544.66C251.507 543.214 249.463 542.184 247.447 541.298L245.838 544.96C247.806 545.825 249.301 546.63 250.306 547.575C251.225 548.439 251.721 549.403 251.721 550.77H255.721ZM247.43 541.291C245.746 540.569 244.641 540.162 243.837 539.674C243.472 539.452 243.328 539.301 243.277 539.231C243.256 539.202 243.252 539.201 243.252 539.145H239.252C239.252 541.154 240.544 542.354 241.761 543.093C242.886 543.776 244.477 544.377 245.855 544.967L247.43 541.291ZM243.252 539.145C243.252 538.99 243.325 538.73 243.689 538.447C244.057 538.162 244.654 537.926 245.408 537.926V533.926C242.492 533.926 239.252 535.817 239.252 539.145H243.252ZM245.408 537.926C246.567 537.926 247.523 538.52 247.934 539.416L251.57 537.748C250.418 535.238 247.906 533.926 245.408 533.926V537.926ZM250.889 540.227L253.827 538.196L251.552 534.906L248.614 536.937L250.889 540.227ZM254.563 535.852C253.186 532.159 249.639 530.051 245.377 530.051V534.051C248.302 534.051 250.13 535.412 250.815 537.25L254.563 535.852ZM245.377 530.051C240.07 530.051 235.267 533.519 235.267 539.051H239.267C239.267 536.333 241.621 534.051 245.377 534.051V530.051ZM235.267 539.051C235.267 541.691 236.407 543.585 237.96 544.945C239.414 546.217 241.256 547.038 242.69 547.676L244.314 544.02C242.794 543.345 241.519 542.744 240.594 541.935C239.769 541.212 239.267 540.364 239.267 539.051H235.267ZM242.71 547.685C244.232 548.34 245.605 548.934 246.615 549.611C247.683 550.326 247.752 550.738 247.752 550.848H251.752C251.752 548.63 250.165 547.174 248.842 546.288C247.461 545.363 245.709 544.621 244.293 544.011L242.71 547.685ZM247.752 550.848C247.752 550.973 247.706 551.227 247.235 551.534C246.741 551.857 245.902 552.129 244.783 552.129V556.129C246.492 556.129 248.137 555.722 249.421 554.884C250.727 554.032 251.752 552.644 251.752 550.848H247.752ZM244.783 552.129C242.995 552.129 241.608 551.319 240.879 550.043L237.406 552.028C238.927 554.689 241.727 556.129 244.783 556.129V552.129ZM237.979 549.408L234.854 551.643L237.181 554.897L240.306 552.662L237.979 549.408ZM234.225 554.156C236.048 557.844 239.952 560.114 244.736 560.114V556.114C241.239 556.114 238.861 554.508 237.81 552.383L234.225 554.156ZM237.08 597.692H235.08V599.692H237.08V597.692ZM241.033 597.692V599.692H243.033V597.692H241.033ZM241.033 588.957V586.957H239.033V588.957H241.033ZM237.08 572.504V570.504H235.08V572.504H237.08ZM245.502 585.051L245.513 583.051L245.509 583.051L245.502 585.051ZM241.033 585.035H239.033V587.028L241.026 587.035L241.033 585.035ZM241.033 576.426V574.426H239.033V576.426H241.033ZM237.08 599.692H241.033V595.692H237.08V599.692ZM243.033 597.692V588.957H239.033V597.692H243.033ZM241.033 590.957H245.502V586.957H241.033V590.957ZM245.502 590.957C251.318 590.957 256.361 586.562 256.361 580.817H252.361C252.361 584.04 249.436 586.957 245.502 586.957V590.957ZM256.361 580.817C256.361 575.015 251.359 570.504 245.502 570.504V574.504C249.395 574.504 252.361 577.462 252.361 580.817H256.361ZM245.502 570.504H237.08V574.504H245.502V570.504ZM235.08 572.504V597.692H239.08V572.504H235.08ZM245.509 583.051L241.04 583.035L241.026 587.035L245.495 587.051L245.509 583.051ZM243.033 585.035V576.426H239.033V585.035H243.033ZM241.033 578.426H245.502V574.426H241.033V578.426ZM245.502 578.426C247.33 578.426 248.408 579.701 248.408 580.785H252.408C252.408 577.058 249.079 574.426 245.502 574.426V578.426ZM248.408 580.785C248.408 581.793 247.366 583.062 245.513 583.051L245.49 587.051C249.043 587.072 252.408 584.496 252.408 580.785H248.408ZM252.549 637.692L250.724 638.511L251.254 639.692H252.549V637.692ZM256.83 637.692V639.692H259.954L258.646 636.855L256.83 637.692ZM244.986 611.989L246.803 611.152L246.267 609.989H244.986V611.989ZM244.752 611.989V609.989H243.471L242.935 611.152L244.752 611.989ZM232.908 637.692L231.092 636.855L229.784 639.692H232.908V637.692ZM237.189 637.692V639.692H238.484L239.014 638.511L237.189 637.692ZM238.908 633.864V631.864H237.614L237.083 633.044L238.908 633.864ZM250.83 633.864L252.654 633.044L252.124 631.864H250.83V633.864ZM240.439 630.473L238.616 629.651L237.344 632.473H240.439V630.473ZM244.877 620.629L246.701 619.81L244.88 615.755L243.053 619.807L244.877 620.629ZM249.299 630.473V632.473H252.39L251.123 629.653L249.299 630.473ZM252.549 639.692H256.83V635.692H252.549V639.692ZM258.646 636.855L246.803 611.152L243.17 612.826L255.013 638.529L258.646 636.855ZM244.986 609.989H244.752V613.989H244.986V609.989ZM242.935 611.152L231.092 636.855L234.724 638.529L246.568 612.826L242.935 611.152ZM232.908 639.692H237.189V635.692H232.908V639.692ZM239.014 638.511L240.733 634.683L237.083 633.044L235.365 636.872L239.014 638.511ZM238.908 635.864H250.83V631.864H238.908V635.864ZM249.005 634.683L250.724 638.511L254.373 636.872L252.654 633.044L249.005 634.683ZM242.263 631.295L246.7 621.451L243.053 619.807L238.616 629.651L242.263 631.295ZM243.052 621.449L247.474 631.292L251.123 629.653L246.701 619.81L243.052 621.449ZM249.299 628.473H240.439V632.473H249.299V628.473ZM255.314 677.692V679.692H259.241L256.932 676.515L255.314 677.692ZM247.986 667.614L247.369 665.711L244.748 666.561L246.369 668.79L247.986 667.614ZM236.611 652.504V650.504H234.61L234.611 652.505L236.611 652.504ZM236.627 677.692L234.627 677.693L234.628 679.692H236.627V677.692ZM240.58 677.692V679.692H242.58V677.692H240.58ZM240.58 667.942V665.942H238.58V667.942H240.58ZM243.674 667.942L245.316 666.8L244.719 665.942H243.674V667.942ZM250.455 677.692L248.813 678.834L249.41 679.692H250.455V677.692ZM240.564 664.66H238.564V666.66H240.564V664.66ZM240.564 656.426V654.426H238.564V656.426H240.564ZM244.533 664.66L244.546 662.66H244.533V664.66ZM256.932 676.515L249.604 666.437L246.369 668.79L253.697 678.868L256.932 676.515ZM248.603 669.516C252.335 668.306 254.971 664.698 254.971 660.598H250.971C250.971 662.998 249.419 665.046 247.369 665.711L248.603 669.516ZM254.971 660.598C254.971 654.905 250.125 650.504 244.439 650.504V654.504C248.129 654.504 250.971 657.322 250.971 660.598H254.971ZM244.439 650.504H236.611V654.504H244.439V650.504ZM234.611 652.505L234.627 677.693L238.627 677.69L238.611 652.503L234.611 652.505ZM236.627 679.692H240.58V675.692H236.627V679.692ZM242.58 677.692V667.942H238.58V677.692H242.58ZM240.58 669.942H243.674V665.942H240.58V669.942ZM242.032 669.084L248.813 678.834L252.097 676.55L245.316 666.8L242.032 669.084ZM250.455 679.692H255.314V675.692H250.455V679.692ZM242.564 664.66V656.426H238.564V664.66H242.564ZM240.564 658.426H244.533V654.426H240.564V658.426ZM244.533 658.426C245.95 658.426 246.892 659.435 246.892 660.504H250.892C250.892 656.886 247.803 654.426 244.533 654.426V658.426ZM246.892 660.504C246.892 661.577 245.881 662.669 244.546 662.66L244.52 666.66C247.936 666.683 250.892 663.932 250.892 660.504H246.892ZM244.533 662.66H240.564V666.66H244.533V662.66ZM255.002 717.692V719.692H259.054L256.589 716.475L255.002 717.692ZM245.174 704.864L243.553 703.692L242.681 704.898L243.586 706.08L245.174 704.864ZM254.111 692.504L255.732 693.676L258.026 690.504H254.111V692.504ZM249.517 692.504V690.504H248.491L247.893 691.338L249.517 692.504ZM240.861 704.567H238.861V710.784L242.486 705.733L240.861 704.567ZM240.861 692.504H242.861V690.504H240.861V692.504ZM236.924 692.504V690.504H234.924V692.504H236.924ZM236.924 717.692H234.924V719.692H236.924V717.692ZM240.861 717.692V719.692H242.861V717.692H240.861ZM240.861 705.504L242.45 704.29L238.861 699.593V705.504H240.861ZM250.174 717.692L248.584 718.906L249.185 719.692H250.174V717.692ZM256.589 716.475L246.761 703.647L243.586 706.08L253.414 718.908L256.589 716.475ZM246.794 706.035L255.732 693.676L252.491 691.332L243.553 703.692L246.794 706.035ZM254.111 690.504H249.517V694.504H254.111V690.504ZM247.893 691.338L239.236 703.401L242.486 705.733L251.142 693.67L247.893 691.338ZM242.861 704.567V692.504H238.861V704.567H242.861ZM240.861 690.504H236.924V694.504H240.861V690.504ZM234.924 692.504V717.692H238.924V692.504H234.924ZM236.924 719.692H240.861V715.692H236.924V719.692ZM242.861 717.692V705.504H238.861V717.692H242.861ZM239.272 706.718L248.584 718.906L251.763 716.477L242.45 704.29L239.272 706.718ZM250.174 719.692H255.002V715.692H250.174V719.692Z"
@@ -679,9 +679,9 @@ const RightBg = () => {
           width="108.039"
           height="216.008"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -714,9 +714,9 @@ const RightBg = () => {
           width="161.566"
           height="271.508"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -735,9 +735,9 @@ const RightBg = () => {
           width="87.8945"
           height="174.616"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -770,9 +770,9 @@ const RightBg = () => {
           width="62.5684"
           height="148.578"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -805,9 +805,9 @@ const RightBg = () => {
           width="94.2012"
           height="221.427"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"
@@ -827,9 +827,9 @@ const RightBg = () => {
           y2="523.722"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#000021" />
-          <stop offset="0.00396825" stop-color="#000021" />
-          <stop offset="1" stop-color="#1F0053" />
+          <stop stopColor="#000021" />
+          <stop offset="0.00396825" stopColor="#000021" />
+          <stop offset="1" stopColor="#1F0053" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2132_1657"
@@ -839,9 +839,9 @@ const RightBg = () => {
           y2="545.543"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6400CA" />
-          <stop offset="2.4e-07" stop-color="#6400CA" />
-          <stop offset="1" stop-color="#4778EA" />
+          <stop stopColor="#6400CA" />
+          <stop offset="2.4e-07" stopColor="#6400CA" />
+          <stop offset="1" stopColor="#4778EA" />
         </linearGradient>
         <radialGradient
           id="paint2_radial_2132_1657"
@@ -851,7 +851,7 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(16.1386 394.202) scale(7.18119 7.67702)"
         >
-          <stop stop-color="#3EC8FD" />
+          <stop stopColor="#3EC8FD" />
           <stop offset="0.513756" />
           <stop offset="1" />
         </radialGradient>
@@ -863,7 +863,7 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(21.5405 394.202) scale(7.18119 7.67702)"
         >
-          <stop stop-color="#3EC8FD" />
+          <stop stopColor="#3EC8FD" />
           <stop offset="0.513756" />
           <stop offset="1" />
         </radialGradient>
@@ -875,7 +875,7 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(26.9718 394.202) scale(7.1812 7.67701)"
         >
-          <stop stop-color="#3EC8FD" />
+          <stop stopColor="#3EC8FD" />
           <stop offset="0.513756" />
           <stop offset="1" />
         </radialGradient>
@@ -887,7 +887,7 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(16.1386 494.608) scale(7.18123 7.67706)"
         >
-          <stop stop-color="#3EC8FD" />
+          <stop stopColor="#3EC8FD" />
           <stop offset="0.513756" />
           <stop offset="1" />
         </radialGradient>
@@ -899,7 +899,7 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(21.5405 494.608) scale(7.18123 7.67706)"
         >
-          <stop stop-color="#3EC8FD" />
+          <stop stopColor="#3EC8FD" />
           <stop offset="0.513756" />
           <stop offset="1" />
         </radialGradient>
@@ -911,7 +911,7 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(26.9718 494.608) scale(7.18123 7.67705)"
         >
-          <stop stop-color="#3EC8FD" />
+          <stop stopColor="#3EC8FD" />
           <stop offset="0.513756" />
           <stop offset="1" />
         </radialGradient>
@@ -923,8 +923,8 @@ const RightBg = () => {
           y2="500.57"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint9_linear_2132_1657"
@@ -934,9 +934,9 @@ const RightBg = () => {
           y2="462.618"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6400CA" />
-          <stop offset="2.4e-07" stop-color="#6400CA" />
-          <stop offset="1" stop-color="#4778EA" />
+          <stop stopColor="#6400CA" />
+          <stop offset="2.4e-07" stopColor="#6400CA" />
+          <stop offset="1" stopColor="#4778EA" />
         </linearGradient>
         <linearGradient
           id="paint10_linear_2132_1657"
@@ -946,8 +946,8 @@ const RightBg = () => {
           y2="470.493"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0012FF" />
-          <stop offset="1" stop-color="#FF00BF" />
+          <stop stopColor="#0012FF" />
+          <stop offset="1" stopColor="#FF00BF" />
         </linearGradient>
         <linearGradient
           id="paint11_linear_2132_1657"
@@ -957,8 +957,8 @@ const RightBg = () => {
           y2="656.474"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#00F0FF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#00F0FF" />
         </linearGradient>
         <linearGradient
           id="paint12_linear_2132_1657"
@@ -968,8 +968,8 @@ const RightBg = () => {
           y2="556.162"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#47305B" />
-          <stop offset="1" stop-color="#5E167D" />
+          <stop stopColor="#47305B" />
+          <stop offset="1" stopColor="#5E167D" />
         </linearGradient>
         <linearGradient
           id="paint13_linear_2132_1657"
@@ -979,9 +979,9 @@ const RightBg = () => {
           y2="422.618"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#000021" />
-          <stop offset="0.00396825" stop-color="#000021" />
-          <stop offset="1" stop-color="#130037" />
+          <stop stopColor="#000021" />
+          <stop offset="0.00396825" stopColor="#000021" />
+          <stop offset="1" stopColor="#130037" />
         </linearGradient>
         <linearGradient
           id="paint14_linear_2132_1657"
@@ -991,10 +991,10 @@ const RightBg = () => {
           y2="496.162"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1A0038" />
-          <stop offset="0.472058" stop-color="#1A0038" />
-          <stop offset="0.996032" stop-color="#690040" />
-          <stop offset="1" stop-color="#690040" />
+          <stop stopColor="#1A0038" />
+          <stop offset="0.472058" stopColor="#1A0038" />
+          <stop offset="0.996032" stopColor="#690040" />
+          <stop offset="1" stopColor="#690040" />
         </linearGradient>
         <linearGradient
           id="paint15_linear_2132_1657"
@@ -1005,7 +1005,7 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stop-color="#FF00BF" />
+          <stop offset="1" stopColor="#FF00BF" />
         </linearGradient>
         <linearGradient
           id="paint16_linear_2132_1657"
@@ -1015,8 +1015,8 @@ const RightBg = () => {
           y2="49.7095"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#00F0FF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#00F0FF" />
         </linearGradient>
         <linearGradient
           id="paint17_linear_2132_1657"
@@ -1026,9 +1026,9 @@ const RightBg = () => {
           y2="460.847"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#000021" />
-          <stop offset="0.00396825" stop-color="#000021" />
-          <stop offset="1" stop-color="#1F0053" />
+          <stop stopColor="#000021" />
+          <stop offset="0.00396825" stopColor="#000021" />
+          <stop offset="1" stopColor="#1F0053" />
         </linearGradient>
         <linearGradient
           id="paint18_linear_2132_1657"
@@ -1038,9 +1038,9 @@ const RightBg = () => {
           y2="453.358"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6400CA" />
-          <stop offset="2.4e-07" stop-color="#6400CA" />
-          <stop offset="1" stop-color="#4778EA" />
+          <stop stopColor="#6400CA" />
+          <stop offset="2.4e-07" stopColor="#6400CA" />
+          <stop offset="1" stopColor="#4778EA" />
         </linearGradient>
         <linearGradient
           id="paint19_linear_2132_1657"
@@ -1050,8 +1050,8 @@ const RightBg = () => {
           y2="177.067"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#00EBFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#00EBFF" />
         </linearGradient>
         <linearGradient
           id="paint20_linear_2132_1657"
@@ -1061,8 +1061,8 @@ const RightBg = () => {
           y2="177.067"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#00EBFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#00EBFF" />
         </linearGradient>
         <linearGradient
           id="paint21_linear_2132_1657"
@@ -1072,8 +1072,8 @@ const RightBg = () => {
           y2="220.378"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#00EBFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#00EBFF" />
         </linearGradient>
         <linearGradient
           id="paint22_linear_2132_1657"
@@ -1083,8 +1083,8 @@ const RightBg = () => {
           y2="254.91"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#00EBFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#00EBFF" />
         </linearGradient>
         <linearGradient
           id="paint23_linear_2132_1657"
@@ -1094,8 +1094,8 @@ const RightBg = () => {
           y2="289.457"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#00EBFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#00EBFF" />
         </linearGradient>
         <linearGradient
           id="paint24_linear_2132_1657"
@@ -1105,8 +1105,8 @@ const RightBg = () => {
           y2="223.63"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#00EBFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#00EBFF" />
         </linearGradient>
         <linearGradient
           id="paint25_linear_2132_1657"
@@ -1116,9 +1116,9 @@ const RightBg = () => {
           y2="568.524"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6400CA" />
-          <stop offset="2.4e-07" stop-color="#6400CA" />
-          <stop offset="1" stop-color="#4778EA" />
+          <stop stopColor="#6400CA" />
+          <stop offset="2.4e-07" stopColor="#6400CA" />
+          <stop offset="1" stopColor="#4778EA" />
         </linearGradient>
         <linearGradient
           id="paint26_linear_2132_1657"
@@ -1128,9 +1128,9 @@ const RightBg = () => {
           y2="548.474"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6400CA" />
-          <stop offset="2.4e-07" stop-color="#6400CA" />
-          <stop offset="1" stop-color="#4778EA" />
+          <stop stopColor="#6400CA" />
+          <stop offset="2.4e-07" stopColor="#6400CA" />
+          <stop offset="1" stopColor="#4778EA" />
         </linearGradient>
         <linearGradient
           id="paint27_linear_2132_1657"
@@ -1140,10 +1140,10 @@ const RightBg = () => {
           y2="205.231"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2B0097" />
-          <stop offset="2.2e-07" stop-color="#2B0097" />
-          <stop offset="0.710495" stop-color="#00001D" />
-          <stop offset="1" stop-color="#00001D" />
+          <stop stopColor="#2B0097" />
+          <stop offset="2.2e-07" stopColor="#2B0097" />
+          <stop offset="0.710495" stopColor="#00001D" />
+          <stop offset="1" stopColor="#00001D" />
         </linearGradient>
         <linearGradient
           id="paint28_linear_2132_1657"
@@ -1153,10 +1153,10 @@ const RightBg = () => {
           y2="91.3396"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4EDFFF" />
-          <stop offset="0.352083" stop-color="#EA1A85" />
-          <stop offset="0.680208" stop-color="#A73EE7" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop stopColor="#4EDFFF" />
+          <stop offset="0.352083" stopColor="#EA1A85" />
+          <stop offset="0.680208" stopColor="#A73EE7" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint29_linear_2132_1657"
@@ -1166,8 +1166,8 @@ const RightBg = () => {
           y2="-6.12711"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint30_linear_2132_1657"
@@ -1177,10 +1177,10 @@ const RightBg = () => {
           y2="95.8884"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#2B0097" />
-          <stop offset="2.2e-07" stop-color="#2B0097" />
-          <stop offset="0.710495" stop-color="#00001D" />
-          <stop offset="1" stop-color="#00001D" />
+          <stop stopColor="#2B0097" />
+          <stop offset="2.2e-07" stopColor="#2B0097" />
+          <stop offset="0.710495" stopColor="#00001D" />
+          <stop offset="1" stopColor="#00001D" />
         </linearGradient>
         <linearGradient
           id="paint31_linear_2132_1657"
@@ -1190,8 +1190,8 @@ const RightBg = () => {
           y2="481.435"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF00BF" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop stopColor="#FF00BF" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint32_linear_2132_1657"
@@ -1201,11 +1201,11 @@ const RightBg = () => {
           y2="317.009"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint33_linear_2132_1657"
@@ -1215,11 +1215,11 @@ const RightBg = () => {
           y2="329.45"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint34_linear_2132_1657"
@@ -1229,11 +1229,11 @@ const RightBg = () => {
           y2="341.888"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint35_linear_2132_1657"
@@ -1243,11 +1243,11 @@ const RightBg = () => {
           y2="354.325"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint36_linear_2132_1657"
@@ -1257,11 +1257,11 @@ const RightBg = () => {
           y2="366.766"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint37_linear_2132_1657"
@@ -1271,11 +1271,11 @@ const RightBg = () => {
           y2="379.205"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint38_linear_2132_1657"
@@ -1285,11 +1285,11 @@ const RightBg = () => {
           y2="392.211"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint39_linear_2132_1657"
@@ -1299,11 +1299,11 @@ const RightBg = () => {
           y2="404.648"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint40_linear_2132_1657"
@@ -1313,11 +1313,11 @@ const RightBg = () => {
           y2="417.088"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint41_linear_2132_1657"
@@ -1327,11 +1327,11 @@ const RightBg = () => {
           y2="429.629"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#4EDFFF" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint42_linear_2132_1657"
@@ -1341,11 +1341,11 @@ const RightBg = () => {
           y2="442.169"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#690274" />
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.137271" stop-color="#690274" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
-          <stop offset="0.986584" stop-color="#3EC8FD" />
+          <stop stopColor="#690274" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.137271" stopColor="#690274" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
+          <stop offset="0.986584" stopColor="#3EC8FD" />
         </linearGradient>
         <linearGradient
           id="paint43_linear_2132_1657"
@@ -1355,9 +1355,9 @@ const RightBg = () => {
           y2="312.108"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6400CA" />
-          <stop offset="2.4e-07" stop-color="#6400CA" />
-          <stop offset="1" stop-color="#4778EA" />
+          <stop stopColor="#6400CA" />
+          <stop offset="2.4e-07" stopColor="#6400CA" />
+          <stop offset="1" stopColor="#4778EA" />
         </linearGradient>
         <linearGradient
           id="paint44_linear_2132_1657"
@@ -1367,8 +1367,8 @@ const RightBg = () => {
           y2="310.344"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4EDFFF" />
-          <stop offset="0.514605" stop-color="#EA1A85" />
+          <stop stopColor="#4EDFFF" />
+          <stop offset="0.514605" stopColor="#EA1A85" />
         </linearGradient>
         <linearGradient
           id="paint45_linear_2132_1657"
@@ -1378,8 +1378,8 @@ const RightBg = () => {
           y2="313.991"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#4EDFFF" />
-          <stop offset="1" stop-color="#FF00BF" />
+          <stop stopColor="#4EDFFF" />
+          <stop offset="1" stopColor="#FF00BF" />
         </linearGradient>
         <linearGradient
           id="paint46_linear_2132_1657"
@@ -1389,9 +1389,9 @@ const RightBg = () => {
           y2="328.788"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00D1FF" />
-          <stop offset="0.50702" stop-color="#C111FF" />
-          <stop offset="1" stop-color="#FF00BF" />
+          <stop stopColor="#00D1FF" />
+          <stop offset="0.50702" stopColor="#C111FF" />
+          <stop offset="1" stopColor="#FF00BF" />
         </linearGradient>
         <linearGradient
           id="paint47_linear_2132_1657"
@@ -1401,9 +1401,9 @@ const RightBg = () => {
           y2="334.488"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#000021" />
-          <stop offset="0.00396825" stop-color="#000021" />
-          <stop offset="1" stop-color="#1F0053" />
+          <stop stopColor="#000021" />
+          <stop offset="0.00396825" stopColor="#000021" />
+          <stop offset="1" stopColor="#1F0053" />
         </linearGradient>
         <linearGradient
           id="paint48_linear_2132_1657"
@@ -1413,9 +1413,9 @@ const RightBg = () => {
           y2="433.819"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#000021" />
-          <stop offset="0.00396825" stop-color="#000021" />
-          <stop offset="1" stop-color="#1F0053" />
+          <stop stopColor="#000021" />
+          <stop offset="0.00396825" stopColor="#000021" />
+          <stop offset="1" stopColor="#1F0053" />
         </linearGradient>
         <linearGradient
           id="paint49_linear_2132_1657"
@@ -1425,9 +1425,9 @@ const RightBg = () => {
           y2="371.85"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#000021" />
-          <stop offset="0.00396825" stop-color="#000021" />
-          <stop offset="1" stop-color="#1F0053" />
+          <stop stopColor="#000021" />
+          <stop offset="0.00396825" stopColor="#000021" />
+          <stop offset="1" stopColor="#1F0053" />
         </linearGradient>
         <linearGradient
           id="paint50_linear_2132_1657"
@@ -1437,9 +1437,9 @@ const RightBg = () => {
           y2="13.8182"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#6400CA" />
-          <stop offset="2.4e-07" stop-color="#6400CA" />
-          <stop offset="1" stop-color="#4778EA" />
+          <stop stopColor="#6400CA" />
+          <stop offset="2.4e-07" stopColor="#6400CA" />
+          <stop offset="1" stopColor="#4778EA" />
         </linearGradient>
         <radialGradient
           id="paint51_angular_2132_1657"
@@ -1449,11 +1449,11 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(378.099 133.023) rotate(91.9253) scale(96.5903 48.5864)"
         >
-          <stop stop-color="white" stop-opacity="0.4" />
-          <stop offset="0.254601" stop-color="#00A3FF" />
-          <stop offset="0.50245" stop-color="white" stop-opacity="0.96" />
-          <stop offset="0.744987" stop-color="#4EDFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.64" />
+          <stop stopColor="white" stopOpacity="0.4" />
+          <stop offset="0.254601" stopColor="#00A3FF" />
+          <stop offset="0.50245" stopColor="white" stopOpacity="0.96" />
+          <stop offset="0.744987" stopColor="#4EDFFF" />
+          <stop offset="1" stopColor="white" stopOpacity="0.64" />
         </radialGradient>
         <radialGradient
           id="paint52_angular_2132_1657"
@@ -1463,11 +1463,11 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(378.097 133.023) rotate(91.9253) scale(120.822 60.733)"
         >
-          <stop stop-color="white" stop-opacity="0.4" />
-          <stop offset="0.254601" stop-color="#4EDFFF" />
-          <stop offset="0.50245" stop-color="white" stop-opacity="0.96" />
-          <stop offset="0.744987" stop-color="#4EDFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.64" />
+          <stop stopColor="white" stopOpacity="0.4" />
+          <stop offset="0.254601" stopColor="#4EDFFF" />
+          <stop offset="0.50245" stopColor="white" stopOpacity="0.96" />
+          <stop offset="0.744987" stopColor="#4EDFFF" />
+          <stop offset="1" stopColor="white" stopOpacity="0.64" />
         </radialGradient>
         <radialGradient
           id="paint53_angular_2132_1657"
@@ -1477,11 +1477,11 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(378.087 133.36) rotate(91.9253) scale(116.447 58.3712)"
         >
-          <stop stop-color="#9A9A9A" />
-          <stop offset="0.27824" stop-color="#0047FF" />
-          <stop offset="0.495571" stop-color="#9A9A9A" />
-          <stop offset="0.747816" stop-color="white" />
-          <stop offset="1" stop-color="#B4B4B4" />
+          <stop stopColor="#9A9A9A" />
+          <stop offset="0.27824" stopColor="#0047FF" />
+          <stop offset="0.495571" stopColor="#9A9A9A" />
+          <stop offset="0.747816" stopColor="white" />
+          <stop offset="1" stopColor="#B4B4B4" />
         </radialGradient>
         <radialGradient
           id="paint54_angular_2132_1657"
@@ -1491,11 +1491,11 @@ const RightBg = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(377.416 133.224) rotate(91.9253) scale(77.4069 38.8017)"
         >
-          <stop stop-color="white" stop-opacity="0.4" />
-          <stop offset="0.254601" stop-color="#4EDFFF" />
-          <stop offset="0.50245" stop-color="white" stop-opacity="0.96" />
-          <stop offset="0.744987" stop-color="#4EDFFF" />
-          <stop offset="1" stop-color="white" stop-opacity="0.64" />
+          <stop stopColor="white" stopOpacity="0.4" />
+          <stop offset="0.254601" stopColor="#4EDFFF" />
+          <stop offset="0.50245" stopColor="white" stopOpacity="0.96" />
+          <stop offset="0.744987" stopColor="#4EDFFF" />
+          <stop offset="1" stopColor="white" stopOpacity="0.64" />
         </radialGradient>
         <linearGradient
           id="paint55_linear_2132_1657"
@@ -1505,8 +1505,8 @@ const RightBg = () => {
           y2="113.673"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.164314" stop-color="white" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop offset="0.164314" stopColor="white" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint56_linear_2132_1657"
@@ -1516,8 +1516,8 @@ const RightBg = () => {
           y2="153.937"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint57_linear_2132_1657"
@@ -1527,8 +1527,8 @@ const RightBg = () => {
           y2="77.117"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="#4EDFFF" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="#4EDFFF" />
         </linearGradient>
         <linearGradient
           id="paint58_linear_2132_1657"
@@ -1538,8 +1538,8 @@ const RightBg = () => {
           y2="94.8483"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#1BBAF8" />
-          <stop offset="1" stop-color="#8AE2F5" />
+          <stop stopColor="#1BBAF8" />
+          <stop offset="1" stopColor="#8AE2F5" />
         </linearGradient>
         <linearGradient
           id="paint59_linear_2132_1657"
@@ -1549,9 +1549,9 @@ const RightBg = () => {
           y2="415.636"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00DFFF" />
-          <stop offset="0.0091865" stop-color="#00DFFF" />
-          <stop offset="1" stop-color="#002267" />
+          <stop stopColor="#00DFFF" />
+          <stop offset="0.0091865" stopColor="#00DFFF" />
+          <stop offset="1" stopColor="#002267" />
         </linearGradient>
         <linearGradient
           id="paint60_linear_2132_1657"
@@ -1561,9 +1561,9 @@ const RightBg = () => {
           y2="415.636"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00DFFF" />
-          <stop offset="0.0091865" stop-color="#00DFFF" />
-          <stop offset="1" stop-color="#002267" />
+          <stop stopColor="#00DFFF" />
+          <stop offset="0.0091865" stopColor="#00DFFF" />
+          <stop offset="1" stopColor="#002267" />
         </linearGradient>
         <linearGradient
           id="paint61_linear_2132_1657"
@@ -1573,9 +1573,9 @@ const RightBg = () => {
           y2="337.641"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00DFFF" />
-          <stop offset="0.0091865" stop-color="#00DFFF" />
-          <stop offset="1" stop-color="#002267" />
+          <stop stopColor="#00DFFF" />
+          <stop offset="0.0091865" stopColor="#00DFFF" />
+          <stop offset="1" stopColor="#002267" />
         </linearGradient>
         <linearGradient
           id="paint62_linear_2132_1657"
@@ -1585,9 +1585,9 @@ const RightBg = () => {
           y2="337.814"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00DFFF" />
-          <stop offset="0.0091865" stop-color="#00DFFF" />
-          <stop offset="1" stop-color="#002267" />
+          <stop stopColor="#00DFFF" />
+          <stop offset="0.0091865" stopColor="#00DFFF" />
+          <stop offset="1" stopColor="#002267" />
         </linearGradient>
         <linearGradient
           id="paint63_linear_2132_1657"
@@ -1597,8 +1597,8 @@ const RightBg = () => {
           y2="702.334"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#39005B" />
-          <stop offset="1" stop-color="#320025" />
+          <stop stopColor="#39005B" />
+          <stop offset="1" stopColor="#320025" />
         </linearGradient>
         <linearGradient
           id="paint64_linear_2132_1657"
@@ -1608,8 +1608,8 @@ const RightBg = () => {
           y2="691.751"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#39005B" />
-          <stop offset="1" stop-color="#330026" />
+          <stop stopColor="#39005B" />
+          <stop offset="1" stopColor="#330026" />
         </linearGradient>
         <linearGradient
           id="paint65_linear_2132_1657"
@@ -1619,10 +1619,10 @@ const RightBg = () => {
           y2="750.197"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="8e-08" stop-color="#690274" />
-          <stop offset="0.440625" stop-color="#FF00BF" />
-          <stop offset="0.753125" stop-color="#2DD9FF" />
-          <stop offset="1" stop-color="#00CEFB" />
+          <stop offset="8e-08" stopColor="#690274" />
+          <stop offset="0.440625" stopColor="#FF00BF" />
+          <stop offset="0.753125" stopColor="#2DD9FF" />
+          <stop offset="1" stopColor="#00CEFB" />
         </linearGradient>
         <linearGradient
           id="paint66_linear_2132_1657"
@@ -1632,9 +1632,9 @@ const RightBg = () => {
           y2="704.296"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#000021" />
-          <stop offset="0.00396825" stop-color="#000021" />
-          <stop offset="1" stop-color="#1F0053" />
+          <stop stopColor="#000021" />
+          <stop offset="0.00396825" stopColor="#000021" />
+          <stop offset="1" stopColor="#1F0053" />
         </linearGradient>
         <image
           id="image0_2132_1657"

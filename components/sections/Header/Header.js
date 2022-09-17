@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 // import Logo from '../../../style-guide/utils/Icons/Logo'
 import Image from 'next/dist/client/image'
 import LogoPng from '../../../public/assests/landingPage/tecnoesis.png'
