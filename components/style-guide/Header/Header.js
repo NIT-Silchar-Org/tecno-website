@@ -1,3 +1,4 @@
+// import React, { useEffect } from 'react'
 import React from 'react'
 // import Logo from '../../../style-guide/utils/Icons/Logo'
 import Image from 'next/dist/client/image'
