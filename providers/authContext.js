@@ -48,7 +48,7 @@ export function AuthProvider({ children }) {
 	}
 	const getAccessToken = async () =>{
 
-		let token = auth.currentUser.getIdToken()
+		let token = await auth.currentUser.getIdToken()
 		return token
 
 	}
@@ -98,6 +98,7 @@ export function AuthProvider({ children }) {
 		setBackendUser,
 		signup,
 		logout,
+		auth
 	};
 	return (
 		<AuthContext.Provider value={value}>

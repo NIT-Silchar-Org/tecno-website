@@ -1,32 +1,51 @@
-import React from 'react'
 import Module from '../Module/Module'
 import styles from './Modules.module.scss'
 import Image from 'next/image'
 import logo from '../../../public/assests/modules/Logo.svg'
-import profile from '../../../public/assests/modules/ProfileDefault.svg'
+// import slider from '../../../public/assests/modules/slider.svg'
+import hamburger from '../../../public/assests/modules/hamburger.svg'
+import bg from '../../../public/assests/modules/Vector14.svg'
+import LoginButton from '../../AuthLayer/LoginButton'
 
-const modules = ['Robotron', 'Robotron', 'Robotron', 'Robotron']
+// const modules = [
+//   'robotron',
+//   'vWarz',
+//   'showcase',
+//   'amazers',
+//   'conferenza',
+//   'cyberwrap',
+//   'mindsnare',
+//   'asme',
+//   'sae',
+//   'smartcity',
+//   'empresaario',
+// ]
 
-const Modules = ({data}) => {
-  console.log(data);
+const Modules = ({setSelectedItem, setActive, active,modules}) => {
+
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={()=>setActive(false)}>
       <div className={styles.head}>
-        <div className={styles.logo}>
-          <Image src={logo} layout="fill" objectFit="contain" priority="true" />
+        <LoginButton/>
+        <div className={styles.hamburger}>
+          <Image src={hamburger} layout="fill" objectFit="contain" priority="true" />
         </div>
-        <div className={styles.profile}>
-          <Image
-            src={profile}
-            layout="fill"
-            objectFit="contain"
-            priority="true"
-          />
-        </div>
+        <div className={styles.text}>Modules</div>
       </div>
-      {data.map((res, index) => {
-        return <Module key={index} data={res} />
-      })}
+      <div className={styles.bg}>
+        <Image src={bg} layout="fill" objectFit="contain" priority="true"/>
+      </div>
+      <div>
+        {modules.map((module, index) => {
+          return (
+            <section id={module} key={index}>
+              <Module data={module} setSelectedItem={setSelectedItem} ind={index} />
+            </section>
+          )
+        })}
+      </div>
+
     </div>
   )
 }

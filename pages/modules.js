@@ -1,18 +1,30 @@
 
+import React, { useState } from 'react'
 import Sidebar from '../components/sections/Sidebar/Sidebar'
 import Main from "../components/sections/Modules/Modules"
+import styles from '../styles/Modules.module.scss'
+import Slider from '../components/style-guide/Slider/Slider'
 import { fetch_module } from '../utils/events_fetch'
 
 const Modules = ({data}) => {
-  console.log({data});
+  const [selectedItem, setSelectedItem] = useState(0)
+  const [active, setActive] = useState(false);
   return (
-    <div className="grid grid-cols-7">
-      <div className="col-span-6">
-        <Main data={data?.msg} />
+    <div className={styles.mod_container}>
+      <div className={styles.bg}>
+        <div id={styles.one}></div>
+        <div id={styles.two}></div>
+        <div id={styles.three}></div>
+        <div id={styles.four}></div>
+      </div>
+      <div className={styles.main}>
+        <Main setSelectedItem={setSelectedItem} setActive={setActive} active={active} modules={data} />
+
       </div>
       <div>
-        <Sidebar />
+        <Sidebar setSelectedItem={setSelectedItem} selectedItem={selectedItem} active={active} setActive={setActive} modules={data} />
       </div>
+
 
     </div>
   )
@@ -22,7 +34,7 @@ export default Modules
 
 export const getStaticProps = async () =>{
   let resp = await fetch_module();
-  let data = resp?.data
+  let data = resp?.data?.msg
   console.log(resp);
   return {
     props:{

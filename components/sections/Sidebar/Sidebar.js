@@ -1,27 +1,28 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './Sidebar.module.scss'
 import svg1 from '../../../public/assests/modules/Vector14.svg'
 import svg2 from '../../../public/assests/modules/Vector15.svg'
 import Image from 'next/image'
 
-const modules = [
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-  'Robotron',
-]
+// const [active, setActive] = useState(true);
 
-const Sidebar = () => {
-  const [selectedItem, setSelectedItem] = useState(0)
+// const modules = [
+//   'robotron',
+//   'vWarz',
+//   'showcase',
+//   'amazers',
+//   'conferenza',
+//   'cyberwrap',
+//   'mindsnare',
+//   'asme',
+//   'sae',
+//   'smartcity',
+//   'empresaario',
+// ]
+
+const Sidebar = ({ selectedItem,setSelectedItem, setActive, active, modules }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${active ? styles.active : ''}`}>
       <div className={styles.head}>
         <div className={styles.text}>Modules</div>
       </div>
@@ -41,7 +42,7 @@ const Sidebar = () => {
                   }`}
                   onClick={() => setSelectedItem(index)}
                 >
-                  {item}
+                  {item.name}
                 </div>
               </div>
             )
