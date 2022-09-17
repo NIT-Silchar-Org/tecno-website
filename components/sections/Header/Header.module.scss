@@ -14,6 +14,7 @@
   font-family: mokotoGlitch;
   src: url('/public/Fonts/MokotoGlitch.otf');
 }
+
 .cont {
   .main {
     display: flex;
@@ -25,6 +26,7 @@
     justify-content: center;
     position: absolute;
     z-index: 5;
+
     .h1 {
       display: flex;
       font-size: 2rem;
@@ -69,6 +71,7 @@
           position: relative;
           width: 200px;
           height: 200px;
+
           @media (min-width: 2000px) {
             width: 200px;
             height: 200px;
@@ -89,6 +92,16 @@
           font-size: 7rem;
           filter: drop-shadow(2px 8px 20px rgba(78, 223, 255, 0.5));
           font-family: lemonMilk;
+
+
+
+          @media (max-width: 1000px) {
+            font-size: 6rem;
+          }
+
+          @media (max-width: 772px) {
+            font-size: 3.6rem;
+          }
         }
       }
 
@@ -99,6 +112,7 @@
         justify-content: flex-end;
         width: 100%;
         color: white;
+
         .yearH1 {
           font-size: 1.5rem;
           line-height: 2rem;
@@ -118,6 +132,7 @@
       font-size: 2rem;
       font-family: $mokotoGlitchMark;
     }
+
     .foot {
       display: flex;
       flex-direction: column;
@@ -125,20 +140,24 @@
       justify-content: center;
       font-family: lemonMilk;
       letter-spacing: 0.2em;
+
       .date {
         font-size: 2rem;
         letter-spacing: 0.25em;
       }
+
       .month {
         font-size: 1.5rem;
       }
     }
   }
+
   .flick {
     animation: animeStatic 900ms ease-in-out;
     animation-fill-mode: forwards;
     opacity: 0;
   }
+
   .stop {
     opacity: 0 !important;
   }
@@ -147,79 +166,104 @@
 $low: 0.4;
 $high: 1;
 $invisible: 0;
+
 @keyframes animeStatic {
   0% {
     opacity: $high;
   }
+
   9% {
     opacity: $high;
   }
+
   10% {
     opacity: $low;
   }
+
   14% {
     opacity: $low;
   }
+
   15% {
     opacity: $high;
   }
+
   26% {
     opacity: $high;
   }
+
   27% {
     opacity: $low;
   }
+
   33% {
     opacity: $low;
   }
+
   34% {
     opacity: $high;
   }
+
   47% {
     opacity: $high;
   }
+
   48% {
     opacity: $low;
   }
+
   51% {
     opacity: $low;
   }
+
   52% {
     opacity: $high;
   }
+
   55% {
     opacity: $high;
   }
+
   56% {
     opacity: $low;
   }
+
   72% {
     opacity: $low;
   }
+
   73% {
     opacity: $high;
   }
+
   82% {
     opacity: $high;
   }
+
   83% {
     opacity: $low;
   }
+
   85% {
     opacity: $low;
   }
+
   86% {
     opacity: $high;
   }
+
   92% {
     opacity: $high;
   }
+
   93% {
     opacity: $low;
   }
+
   99% {
     opacity: $low;
   }
+
   100% {
     opacity: $invisible;
   }

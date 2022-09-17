@@ -123,9 +123,8 @@ const MainLanding = () => {
   }, [])
   return (
     <div
-      className={`${styles.container} ${
-        !state.scrollable ? styles.static : ''
-      }`}
+      className={`${styles.container} ${!state.scrollable ? styles.static : ''
+        }`}
     >
       <div className={`${styles.hero}`} ref={ref}>
         <div className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}>
@@ -138,7 +137,7 @@ const MainLanding = () => {
           <RightBg state={state.animation} />
         </div>
         <div className={styles.overlay}>
-          <Header state={state.animation} view={ heroInView} />
+          <Header state={state.animation} view={heroInView} />
         </div>
       </div>
       <div className={styles.main} ref={divRef}>
