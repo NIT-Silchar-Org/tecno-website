@@ -24,7 +24,7 @@ import { useInView } from 'react-intersection-observer'
 const MainLanding = () => {
   const [offsetY, setOffsetY] = useState(0)
   const [animation, setAnimation] = useState(false)
-  const [animationState, setAnimationState] = useState(0)
+  const [animationState, setAnimationState] = useState(1)
   const [startRoll, setStartRoll] = useState(false)
   const divRef = useRef(null)
   const { ref, inView } = useInView({
@@ -54,7 +54,7 @@ const MainLanding = () => {
     }
     return () => {
       window.removeEventListener('scroll', handleScroll)
-      window.removeEventListener('mousewheel', handleAnimation)
+      window.removeEventListener('mouseeheel', handleAnimation)
     }
   }, [inView])
   return (
@@ -74,7 +74,7 @@ const MainLanding = () => {
           <Header />
         </div>
       </div>
-      <div className={styles.main} ref={divRef}>
+      <div className={styles.main}>
         <div className={styles.bg}>
           <div
             className={styles.ele}
