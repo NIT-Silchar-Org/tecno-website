@@ -1,7 +1,10 @@
 .container {
   background-color: black;
   position: relative;
-  scroll-snap-type: y mandatory;	
+  scroll-snap-type: y mandatory;
+  .black {
+    background-color: black;
+  }
   .hero {
     height: 100vh;
     width: 100vw;
@@ -16,7 +19,7 @@
     // opacity: 0.6;
     position: relative;
     top: 0;
-    .overlay{
+    .overlay {
       position: absolute;
       z-index: 50;
     }
@@ -79,15 +82,16 @@
       position: fixed;
       top: -10em;
     }
-    .off{
+    .off {
       display: none;
     }
-    .hide{
+    .hide {
       opacity: 0;
     }
   }
 }
-.static{
+.static {
   overflow: hidden;
   height: 100vh;
 }
+// .container

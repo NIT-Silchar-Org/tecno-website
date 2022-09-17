@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from './Styles.module.scss'
+import { ANIMATION_EXIT } from '../../sections/MainLanding/MainLanding'
 
-const RightBg = () => {
+const RightBg = ({ state }) => {
   return (
     <svg
-      className={styles.svg}
+      className={`${styles.svg} ${
+        state === ANIMATION_EXIT ? styles.static : ''
+      }`}
       width="100%"
       height="100%"
       viewBox="0 0 535 782"

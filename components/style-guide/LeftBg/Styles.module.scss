@@ -8,7 +8,8 @@ $invisible: 0;
 }
 .static {
   //   box-shadow: 0px 0px 90px 120px #d03cab;
-  animation: animeStatic 3500ms ease-in-out;
+  animation: animeStatic 3000ms ease-in-out;
+  opacity: 0;
 }
 @keyframes anime {
   0% {
