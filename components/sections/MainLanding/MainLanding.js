@@ -25,6 +25,7 @@ const MainLanding = () => {
   const [offsetY, setOffsetY] = useState(0)
   const [animation, setAnimation] = useState(false)
   const [animationState, setAnimationState] = useState(0)
+  const [startRoll, setStartRoll] = useState(false)
   const divRef = useRef(null)
   const { ref, inView } = useInView({
     threshold: 0.1,
@@ -33,11 +34,15 @@ const MainLanding = () => {
     setOffsetY(window.pageYOffset)
   }
   const handleAnimation = () => {
+    setStartRoll(true)
     setTimeout(() => {
       if (inView) {
         setAnimationState(1)
       }
-    }, 1500)
+    }, 4000)
+    setTimeout(() => {
+      if (inView && animationState===0) divRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }, 3999)
   }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -60,7 +65,7 @@ const MainLanding = () => {
     >
       <div className={styles.hero} ref={ref}>
         <div className={styles.bgEle}>
-          <LeftBg />
+          <LeftBg state={startRoll} />
         </div>
         <div className={styles.bgEle} id={styles.right}>
           <RightBg />
