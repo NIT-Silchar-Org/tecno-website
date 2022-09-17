@@ -1,0 +1,129 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  background-color: $bgDark;
+  width: 100%;
+  height: 100vh !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text {
+      //   text-align: center;
+      display: none;
+      font-family: $mokotoGlitchMark;
+      font-size: 3rem;
+      position: absolute;
+      text-align: center;
+    }
+
+    .logo {
+      position: relative;
+      width: 4.5rem;
+      height: 4.5rem;
+      margin: 2rem;
+      cursor: pointer;
+    }
+    .hamburger {
+      display: none;
+    }
+    .profile {
+      position: relative;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin: 2rem;
+      margin-right: 4rem;
+      border: 2px solid white;
+      border-radius: 50%;
+      padding: 1rem;
+      cursor: pointer;
+    }
+  }
+  .bg {
+    display: none;
+  }
+  .button {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .container {
+    .head {
+      .logo {
+        width: 7.5rem;
+        height: 7.5rem;
+      }
+      .profile {
+        width: 6.5rem;
+        height: 6.5rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    position: relative;
+    .head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // position: absolute;
+      // z-index: 2;
+      .text {
+        //   text-align: center;
+        display: block;
+        font-family: $mokotoGlitchMark;
+        font-size: 1.4rem;
+        position: relative;
+        margin: 2rem;
+        color: white;
+      }
+      .logo {
+        display: none;
+      }
+      .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2rem;
+        height: 2rem;
+        margin: 2rem;
+        // margin-top: 2.2rem;
+        cursor: pointer;
+        display: block;
+      }
+      .slider {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        margin: 2rem;
+        margin-top: 3rem;
+      }
+    }
+    .bg {
+      display: block;
+      // justify-content: center;
+      position: relative;
+      height: 12em;
+      width: 90vw;
+      margin: -2rem auto;
+      margin-bottom: -12rem;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

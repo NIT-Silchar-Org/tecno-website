@@ -1,0 +1,245 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  width: 16rem;
+  height: 100vh !important;
+  overflow-y: hidden;
+  position: absolute;
+  right: 0;
+  background: linear-gradient(to bottom, #0f73ba46, #ff00bf37);
+  background-color: black;
+  z-index: 2;
+  // box-shadow: -8px 0px 12px 4px rgb(46, 46, 46);
+  transition: all 0.3s ease-in;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  .head {
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    .text {
+      //   text-align: center;
+      font-family: $mokotoGlitchMark;
+      font-size: 1.6rem;
+      position: relative;
+      text-shadow: 0 -10px 20px #d03cab, 0 10px 20px #4edfff;
+    }
+    margin-bottom: 0.5rem;
+  }
+  .button {
+    position: absolute;
+    display: none;
+  }
+  .svg_cnt {
+    position: relative;
+    width: 100;
+    margin-bottom: -5rem;
+    .svg {
+      position: absolute;
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: 6rem;
+      margin: 0 auto;
+    }
+    .svg2 {
+      position: absolute;
+      position: relative;
+      bottom: 0rem;
+      width: 100%;
+      height: 6rem;
+      margin: -3.5rem auto;
+    }
+  }
+  .body {
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    height: 82vh;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .cont {
+      max-height: 97%;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      .item_cnt {
+        width: 80%;
+        cursor: pointer;
+        margin: 0.6rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .item {
+          padding: 0.3rem 0;
+          width: 97%;
+          height: 97%;
+          text-align: center;
+          font-family: $mokotoGlitch;
+          font-size: 0.8rem;
+          margin: 0.1rem auto;
+          -webkit-clip-path: polygon(
+            92% 0,
+            100% 25%,
+            100% 90%,
+            90% 100%,
+            10% 100%,
+            0 75%,
+            0 0
+          );
+          clip-path: polygon(
+            92% 0,
+            100% 25%,
+            100% 90%,
+            90% 100%,
+            10% 100%,
+            0 75%,
+            0 0
+          );
+          background-color: rgba(217, 217, 217, 0.16);
+          border-bottom-right-radius: 15px;
+          border-bottom-left-radius: 17px;
+        }
+        .selected {
+          background: linear-gradient(to right, #4edfff79, #ff26c266);
+          border: none;
+        }
+        &:hover {
+          background: url('../../../public/assests/modules/Border.svg')
+            no-repeat center;
+        }
+      }
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .container {
+    width: 22rem;
+    .head {
+      padding: 2rem;
+      .text {
+        font-size: 2.2rem;
+      }
+    }
+    .svg_cnt {
+      margin-bottom: -6rem;
+      .svg {
+        height: 8rem;
+      }
+      .svg2 {
+        height: 8rem;
+        bottom: 0;
+        margin: -5rem 0;
+      }
+    }
+    .body {
+      .cont {
+        .item_cnt {
+          margin: 1rem auto;
+          .item {
+            padding: 0.5rem;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .container {
+    width: 26rem;
+    .svg_cnt {
+      margin-bottom: 0rem;
+      .svg {
+        height: 10rem;
+      }
+      .svg2 {
+        height: 10rem;
+        bottom: 1rem;
+      }
+    }
+    .body {
+      margin-top: -6rem;
+      .cont {
+        .item_cnt {
+          margin: 1.4rem auto;
+          .item {
+            padding: 0.8rem;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    .body {
+      height: 78vh;
+    }
+    .svg_cnt {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 0;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    .svg_cnt {
+      .svg {
+        display: none;
+      }
+      .svg2 {
+        height: 4rem;
+        margin-bottom: -1rem;
+      }
+    }
+    .head {
+      margin-bottom: 6.5rem;
+      .text {
+        font-size: 1.4rem;
+        position: relative;
+        margin-top: 1.5rem;
+        text-shadow: 0 -10px 20px #d03cab, 0 10px 20px #4edfff;
+      }
+    }
+    .button {
+      position: absolute;
+      display: block;
+      top: 50vh;
+      right: 0;
+      transform: translate(-680%);
+    }
+  }
+  .active {
+    width: 16rem;
+  }
+  // .inactive{
+  //   width: 0 !important;
+  // }
+}

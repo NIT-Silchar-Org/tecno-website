@@ -1,0 +1,85 @@
+/* web view */
+$height: 15rem;
+// Multiply width by 1.07 to keep the svg proportional
+$width: $height * 1.07;
+/* mobile view */
+$mheight: 6rem;
+$mwidth: $mheight * 1.02;
+
+.surround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    z-index: -1;
+    margin-top: 55px;
+
+    @media screen and (min-width: 1601px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        width: $width;
+        height: $height;
+        margin-left: 37px;
+        .profile {
+            position: absolute;
+            left: 147px;
+            top: 138px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1600px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround-mobile.svg');
+        width: $mwidth;
+        height: $mheight;
+        margin-left: auto;
+        margin-right: auto;
+        .profile {
+            position: absolute;
+            top: 73px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 2500px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        width: $width;
+        height: $height;
+        margin-top: 80px;
+        margin-left: 70px;
+        .profile {
+            position: absolute;
+            left: 110px;
+            top: 80px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+        transform: scale(1.2);
+    }
+
+    @media screen and (min-width: 3500px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        width: $width;
+        height: $height;
+        margin-top: 200px;
+        margin-left: 200px;
+        .profile {
+            position: absolute;
+            left: 110px;
+            top: 80px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+        transform: scale(2);
+    }
+}
