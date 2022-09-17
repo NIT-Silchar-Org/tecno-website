@@ -25,6 +25,7 @@
   justify-content: center;
   position: absolute;
   z-index: 5;
+
   .h1 {
     display: flex;
     font-size: 2rem;
@@ -52,7 +53,7 @@
     margin-top: 2.5rem;
 
     @media (min-width: 772px) {
-      margin-top: -1%;
+      // margin-top: -1%;
     }
 
     .textAndLogo {
@@ -69,9 +70,18 @@
         position: relative;
         width: 200px;
         height: 200px;
+        // overflow-y: scroll;
+
+        @media (max-width: 772px) {
+          width: 150px;
+          height: 150px;
+        }
+
+
         @media (min-width: 2000px) {
           width: 200px;
           height: 200px;
+          // overflow-y: scroll;
         }
 
         @media (min-width: 3600px) {
@@ -89,6 +99,15 @@
         font-size: 7rem;
         filter: drop-shadow(2px 8px 20px rgba(78, 223, 255, 0.5));
         font-family: lemonMilk;
+
+        @media (max-width: 772px) {
+          font-size: 3rem;
+
+        }
+
+        @media (min-width: 775px) and (max-width: 1000px) {
+          font-size: 6rem;
+        }
       }
     }
 
@@ -99,6 +118,7 @@
       justify-content: flex-end;
       width: 100%;
       color: white;
+
       .yearH1 {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -117,7 +137,13 @@
     opacity: 0.9;
     font-size: 2rem;
     font-family: $mokotoGlitchMark;
+
+    @media (max-width: 772px) {
+      font-size: 1.75rem;
+
+    }
   }
+
   .foot {
     display: flex;
     flex-direction: column;
@@ -125,12 +151,22 @@
     justify-content: center;
     font-family: lemonMilk;
     letter-spacing: 0.2em;
+
     .date {
       font-size: 2rem;
       letter-spacing: 0.25em;
+
+      @media (max-width: 772px) {
+        font-size: 1.5rem;
+      }
     }
+
     .month {
       font-size: 1.5rem;
+
+      @media (max-width: 772px) {
+        font-size: 1.1rem;
+      }
     }
   }
 }

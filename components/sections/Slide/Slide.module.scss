@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   .container {
     width: 50%;
     margin: auto;
@@ -12,6 +13,11 @@
     color: white;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+
     .carousel {
       display: flex;
       text-align: center;
@@ -21,12 +27,24 @@
       padding: 3rem 0;
       overflow: hidden;
     }
+
     .btn {
       position: relative;
       width: 3rem;
       height: 4rem;
       transform: translateY(80%);
       cursor: pointer;
+
+      @media (max-width: 772px) {
+        width: 4rem;
+        height: 3.5rem;
+        transform: translateY(60%);
+      }
+
+      @media (max-width: 400px) {
+        width: 3.8rem;
+        height: 3.2rem;
+      }
     }
   }
 }

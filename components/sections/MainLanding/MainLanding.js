@@ -54,9 +54,8 @@ const MainLanding = () => {
   }, [inView])
   return (
     <div
-      className={`${styles.container} ${
-        animationState === 0 ? styles.static : ''
-      }`}
+      className={`${styles.container} ${animationState === 0 ? styles.static : ''
+        }`}
     >
       <div className={styles.hero} ref={ref}>
         <div className={styles.bgEle}>
