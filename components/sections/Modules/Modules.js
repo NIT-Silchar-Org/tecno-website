@@ -3,7 +3,7 @@ import styles from './Modules.module.scss'
 import Image from 'next/image'
 // import logo from '../../../public/assests/modules/Logo.svg'
 // import slider from '../../../public/assests/modules/slider.svg'
-import hamburger from '../../../public/assests/modules/hamburger.svg'
+import hamburger from '../../../public/assests/modules/Left.svg'
 import bg from '../../../public/assests/modules/Vector14.svg'
 // import LoginButton from '../../AuthLayer/LoginButton'
 // import LogoHamburger from '../Navbar/LogoHamburger'
@@ -29,7 +29,7 @@ const Modules = ({setSelectedItem, setActive, active,modules}) => {
       <div className={styles.head}>
         {/* <LoginButton/> */}
         
-        <div className={styles.hamburger}>
+        <div className={styles.hamburger} onClick={()=> setActive(true)}>
           <Image src={hamburger} layout="fill" objectFit="contain" priority="true" />
         </div>
         <div className={styles.text}>Modules</div>

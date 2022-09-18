@@ -391,7 +391,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url('../public/assests/modal/modalbg.png');
+  background: url('../public/assests/Modal/modalbg.png');
   /* opacity: 0.5; */
 
 
