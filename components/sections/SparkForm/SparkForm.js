@@ -23,6 +23,7 @@ const UploadControl = ({ children, value, disabled, accept }) => {
         type="file"
         onChange={disabled ? () => {} : onChange}
         name="paymentReceiptImg"
+        required
       />
       {fileName ? <div className={styles.content}>{fileName}</div> : children}
     </label>
