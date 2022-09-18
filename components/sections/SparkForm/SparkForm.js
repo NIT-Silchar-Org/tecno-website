@@ -5,6 +5,7 @@ import axios from 'axios'
 library.add(faFileUpload)
 import styles from '../../../styles/Form.module.scss'
 import { useEffect, useRef, useState } from 'react'
+import { useRouter } from 'next/router'
 
 const UploadControl = ({ children, value, disabled, accept }) => {
   const [fileName, setFileName] = useState()
@@ -38,6 +39,9 @@ export default function SparkForm() {
       ref.current?.scrollIntoView({ behaviour: 'smooth' })
     }, 2000)
   }, [])
+
+  const router = useRouter()
+
   const onSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
@@ -53,6 +57,7 @@ export default function SparkForm() {
       .then((res) => {
         if (res.data.status < 300) {
           setLoading(false)
+          router.push('/')
         } else {
           setErr(true)
         }
@@ -60,6 +65,7 @@ export default function SparkForm() {
       .catch(() => setErr(true))
       .finally(() => setLoading(false))
   }
+
   return (
     <form
       onSubmit={onSubmit}
