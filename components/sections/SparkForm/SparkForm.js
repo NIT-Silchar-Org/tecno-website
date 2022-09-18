@@ -107,6 +107,17 @@ export default function SparkForm() {
         <label htmlFor="address">Address (If outside NITS)</label>
         <input type="text" name="address" id="address" />
       </div>
+      <div className={styles.paymentInfo}>
+        <span className={styles.infoLabel}>Account Holder</span>: Prateek Vij
+        <br />
+        <span className={styles.infoLabel}>A/C No.: </span>38602933895
+        <br />
+        <span className={styles.infoLabel}>IFSC:</span> SBIN0007646
+        <br />
+        <span className={styles.infoLabel}>UPI:</span> prateek.vij24@oksbi
+        <br />
+        <span className={styles.infoLabel}>GPay/PhonePe:</span> 8416932301
+      </div>
       <div className={styles.formFields}>
         {/* <input type="file" name="paymentProof" id="paymentProof" required /> */}
         <div className={styles.btn}>
