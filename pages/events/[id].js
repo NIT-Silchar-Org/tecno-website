@@ -9,8 +9,8 @@ import { useAuth } from '../../providers/authContext';
 import { team_register } from '../../utils/event_register';
 import alert from '../../components/Alert';
 import Alert from '../../components/Alert';
-
-function Event({data, id}) {
+import {useRouter} from 'next/router'
+function Event() {
   const [isFormHidden, setIsFormHidden] = useState(true)
   const scrollToRef = useRef()
 
@@ -28,7 +28,7 @@ function Event({data, id}) {
   const [members, setMembers] = useState([])
 
   const {auth} = useAuth()
-  console.log(data.module);
+  // console.log(data.module);
   const handleReg = async () =>{
     const token = await auth.currentUser.getIdToken()
     let body ={
@@ -42,6 +42,18 @@ function Event({data, id}) {
     let res = await team_register(id,body, token )
     console.log(res);
   }
+  const router = useRouter()
+  const [data, setData] = useState(null)
+  const {id} = router.query
+  useEffect(()=>{
+     fetch_event_by_id(id).then((res)=>{
+      setData(res?.data?.msg)
+    })
+    // let id = params?.id
+    // console.log(resp);
+    // let data = resp?.data?.msg
+
+  },[])
   return (
     <>
       <div className="justify-center bg-black w-full h-screen">
@@ -139,17 +151,14 @@ function Event({data, id}) {
 }
 
 export default Event
-export const getServerSideProps = async ({ params }) => {
+// export const getServerSideProps = async ({ params }) => {
 
-  let resp = await fetch_event_by_id(params?.id)
-  let id = params?.id
-  console.log(resp);
-  let data = resp?.data?.msg
+  
 
-  return {
-    props: {
-      data,
-      id
-    },
-  }
-}
+//   return {
+//     props: {
+//       data,
+//       id
+//     },
+//   }
+// }
