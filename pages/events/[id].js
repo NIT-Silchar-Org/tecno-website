@@ -1,13 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
-import DummyLogo from '../../public/assests/stash/dummylogo.png'
+// import DummyLogo from '../../public/assests/stash/dummylogo.png'
 import Header from '../../components/Header';
 import TeamMember from '../../components/teamMember';
 import Button from '../../components/button';
-import { fetch_event_by_id } from '../../utils/events_fetch';
+import { fetchEventById } from '../../utils/events_fetch';
 import { useAuth } from '../../providers/authContext';
-import { team_register } from '../../utils/event_register';
-import alert from '../../components/Alert';
+import { teamRegister } from '../../utils/event_register';
+// import alert from '../../components/Alert';
 import Alert from '../../components/Alert';
 import {useRouter} from 'next/router'
 import Navbar from '../../components/sections/Navbar/Navbar';
@@ -33,7 +33,7 @@ function Event() {
   // console.log(data.module);
   const handleReg = async () =>{
     const token = await auth.currentUser.getIdToken()
-    let body ={
+    const body ={
       name:teamname,
       members:members,
 
@@ -41,14 +41,14 @@ function Event() {
 
 
     }
-    let res = await team_register(id,body, token )
+    const res = await teamRegister(id,body, token )
     console.log(res);
   }
   const router = useRouter()
   const [data, setData] = useState(null)
   const {id} = router.query
   useEffect(()=>{
-     fetch_event_by_id(id).then((res)=>{
+    fetchEventById(id).then((res)=>{
       setData(res?.data?.msg)
     })
     // let id = params?.id

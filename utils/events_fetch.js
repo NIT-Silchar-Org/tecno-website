@@ -19,7 +19,7 @@ export const fetch_events_all = async () =>{
 }
 
 
-export const fetch_event_by_id = async (id) =>{
+export const fetchEventById = async (id) =>{
     let url = `${BASE_URL}/event/${id}`
     let resp;
     
@@ -49,7 +49,7 @@ export const fetch_module_events = async (id) =>{
 }
 
 
-export const fetch_module = async () =>{
+export const fetchModule = async () =>{
     let url = `${BASE_URL}/module`
     let resp;
 
