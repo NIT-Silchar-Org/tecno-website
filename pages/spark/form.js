@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Parallax from '../../components/style-guide/Parallax/Parallax.js'
 import SparkForm from '../../components/sections/SparkForm/SparkForm.js'
 import Head from 'next/head'

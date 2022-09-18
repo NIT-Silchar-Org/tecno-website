@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileUpload } from '@fortawesome/free-solid-svg-icons'
 library.add(faFileUpload)
 import styles from '../../../styles/Form.module.scss'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const UploadControl = ({ children, value, disabled, accept }) => {
   const [fileName, setFileName] = useState()
@@ -25,13 +25,20 @@ const UploadControl = ({ children, value, disabled, accept }) => {
         onChange={disabled ? () => {} : onChange}
         name="paymentReceiptImg"
       />
-      <div className={styles.content}>{fileName ? fileName : children}</div>
+      {fileName ? <div className={styles.content}>{fileName}</div> : children}
     </label>
   )
 }
 export default function SparkForm() {
+  const ref = useRef()
+  useEffect(() => {
+    console.log('=====')
+    setTimeout(() => {
+      ref.current?.scrollIntoView({ behaviour: 'smooth' })
+    }, 2000)
+  }, [])
   return (
-    <form className={styles.form} method="post" action="#">
+    <form ref={ref} className={styles.form} method="post" action="#">
       <h1>Spark TShirt Form</h1>
       <div className={styles.formFields}>
         <label htmlFor="name">Name</label>
