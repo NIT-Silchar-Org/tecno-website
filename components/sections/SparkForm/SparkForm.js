@@ -88,7 +88,7 @@ export default function SparkForm() {
         <input type="text" name="email" id="email" required />
       </div>
       <div className={styles.formFields}>
-        <label htmlFor="scholarId">ScholarID (If from NITS)</label>
+        <label htmlFor="scholarId">Scholar ID (If from NITS)</label>
         <input type="text" name="scholarId" id="scholarId" />
       </div>
       <div className={styles.formFields}>
@@ -134,6 +134,12 @@ export default function SparkForm() {
         <span className={styles.infoLabel}>UPI:</span> prateek.vij24@oksbi
         <br />
         <span className={styles.infoLabel}>GPay/PhonePe:</span> 8416932301
+        <br />
+        <span className={styles.infoLabel}>Price - for nits students:</span> Rs.
+        450
+        <br />
+        <span className={styles.infoLabel}>Price - for outside:</span> Rs. 500
+        (including shipping)
       </div>
       <div className={styles.formFields}>
         {/* <input type="file" name="paymentProof" id="paymentProof" required /> */}
