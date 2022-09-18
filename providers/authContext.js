@@ -17,7 +17,7 @@ export function AuthProvider({ children }) {
 
 
 
-	
+
 	const [firebaseUser, setFirebaseUser] = useState();
 	const [backendUser, setBackendUser] = useState();
 	const [loading, setLoading] = useState(true);
@@ -44,9 +44,9 @@ export function AuthProvider({ children }) {
 	async function logout() {
 		setBackendUser(undefined);
 		await signOut(auth);
-		history.push("/home");  // sends the user to home after logout
+		history.push("/");  // sends the user to home after logout
 	}
-	const getAccessToken = async () =>{
+	const getAccessToken = async () => {
 
 		let token = await auth.currentUser.getIdToken()
 		return token
