@@ -24,6 +24,7 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
+  
 
   transition-property: opacity, filter;
   transition-duration: 0.15s;

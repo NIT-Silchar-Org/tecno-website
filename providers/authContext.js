@@ -2,7 +2,9 @@ import { app } from "../firebase";
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom"
+// import { useHistory } from "react-router-dom"
+import { useRouter } from 'next/router'
+import { async } from "@firebase/util";
 
 
 const AuthContext = React.createContext();
@@ -12,12 +14,20 @@ export function useAuth() {
 }
 
 export function AuthProvider({ children }) {
+
+
+
+	
 	const [firebaseUser, setFirebaseUser] = useState();
 	const [backendUser, setBackendUser] = useState();
 	const [loading, setLoading] = useState(true);
-	const history = useHistory();
+	const history = useRouter();
 	// const location = useLocation();
 	const auth = getAuth();
+	let api_url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/user/me`
+
+
+
 	async function signup() {
 		try {
 			const provider = new GoogleAuthProvider();
@@ -36,16 +46,26 @@ export function AuthProvider({ children }) {
 		await signOut(auth);
 		history.push("/home");  // sends the user to home after logout
 	}
+	const getAccessToken = async () =>{
+
+		let token = await auth.currentUser.getIdToken()
+		return token
+
+	}
 	async function signInBackend(user) {
+		console.log(user);
 		try {
 			let backendUser;
 			if (user) {
-				const credential = GoogleAuthProvider.credentialFromResult(user);
-				const res = await axios.post(
-					"/dest/", // send token back
+				// const credential = GoogleAuthProvider.credentialFromResult(user);
+				// const credential = user?.accessToken
+				// console.log(credential);
+				let token = await getAccessToken()
+				const res = await axios.get(
+					api_url, // send token back
 					{
 						headers: {
-							authorisation: `Bearer ${credential.accessToken}`,
+							Authorization: `Bearer ${token}`,
 						},
 					}
 				);
@@ -62,10 +82,11 @@ export function AuthProvider({ children }) {
 			setFirebaseUser(user);
 			signInBackend(user).then((bcUser) => {
 				setLoading(false);
+				console.log("bc: ", bcUser);
 				if (user && bcUser) {
-					history.push("/home") // if user exists in backend send to home
+					// history.push("/") // if user exists in backend send to home
 				} else if (user && !bcUser) {
-					history.push("/registration"); // if user does not exist in backend send to register
+					history.push("/register"); // if user does not exist in backend send to register
 				}
 			});
 		});
@@ -77,6 +98,7 @@ export function AuthProvider({ children }) {
 		setBackendUser,
 		signup,
 		logout,
+		auth
 	};
 	return (
 		<AuthContext.Provider value={value}>

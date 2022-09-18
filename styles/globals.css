@@ -379,6 +379,10 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 2.4rem;
 }
 
+.my-4{
+  margin-top: 6rem;
+}
+
 .text-start{
   text-align: start;
 }
@@ -744,10 +748,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .profPhoto {
 
-  width: 20vw;
-  height: 20vw;
-  left: 2rem;
-  top: 5rem;
+  width: 15vw;
+  height: 15vw;
+  /* left: 2rem;
+  top: 5rem; */
+  margin-left:0.625rem;
 }
 
 .profPhoto2 {
@@ -901,13 +906,13 @@ Image {
 
 }
 
-span {
+.profilePage span {
   padding-left: 10px;
   padding-bottom: 20px;
   padding-right: 30px;
   margin-bottom: 5px;
 
-}
+} 
 
 .EventListLi {
   display: flex;
@@ -1391,6 +1396,7 @@ th, td { min-width: 12.5rem; }
   padding: 5px;
   margin-bottom: 5px;
   }
+  
   .StatBtn .logout{
     width: max-content;
   height: max-content;
@@ -1445,10 +1451,12 @@ th, td { min-width: 12.5rem; }
 .form-section::-webkit-scrollbar{
   display: none;
 }
-.form {
+/* .form {
   width: 46%;
+} */
+.relative{
+  position: relative;
 }
-
 .form-input {
   border: 0;
   outline: 0;
@@ -1511,6 +1519,9 @@ th, td { min-width: 12.5rem; }
   background-size: cover;
   padding-top: 6rem;
 }
+.input-field{
+  margin-top: 2.4rem;
+}
 
 .back-button {
   font-size: 1.8rem;
@@ -1570,6 +1581,9 @@ th, td { min-width: 12.5rem; }
     margin-bottom: 0.1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    width: 100px;
+    height: 100px;
+    position: relative;
   }
   .btn {
     width: 6rem;
@@ -1607,5 +1621,10 @@ th, td { min-width: 12.5rem; }
   .back-button {
     display: none;
   }
+}
+
+
+.rounded{
+  border-radius: 50%;
 }
 
