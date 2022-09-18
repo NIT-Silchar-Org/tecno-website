@@ -41,6 +41,9 @@ const RejectCard = ({ color = '#FFE166', registration }) => {
       setArr(downArr)
     }
   }
+
+  const handleAccept = () => {}
+
   return (
     <li className="Teamdetail" style={{ borderColor: color }}>
       <div className="hshow">
@@ -59,11 +62,11 @@ const RejectCard = ({ color = '#FFE166', registration }) => {
           </div>
         </div>
         <div className="StatBtn">
-          <button className="reg">
+          <button className="reg" onClick={handleAccept}>
             <Image src={Accept} />
             &nbsp; Accept
           </button>
-          <button className="logout">
+          <button className="logout" onClick={handleReject}>
             <Image src={Reject} />
             &nbsp; Reject
           </button>

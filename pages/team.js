@@ -14,7 +14,7 @@ import { useAuth } from '../providers/authContext'
 import { teamsFetch } from '../utils/team_fetch'
 function Team() {
   const [toggleState, setToggleState] = useState(1)
-  const { auth } = useAuth()
+  const { auth, firebaseUser } = useAuth()
   const [teams, setTeams] = useState([])
 
   const toggleTab = (index) => {
@@ -28,11 +28,7 @@ function Team() {
         setTeams(resp.msg)
       })
     })
-
-    return () => {
-      second
-    }
-  }, [third])
+  }, [firebaseUser, auth])
 
   useEffect(() => {})
   return (
