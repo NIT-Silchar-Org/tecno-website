@@ -5,7 +5,7 @@ import EventCard from '../EventCard/EventCard'
 import left from '../../../public/assests/modules/Left.svg'
 import right from '../../../public/assests/modules/Right.svg'
 import { useInView } from 'react-intersection-observer'
-
+import Link from 'next/link'
 const events = [
   'Robotron',
   'Robotron',
@@ -17,7 +17,8 @@ const events = [
 
 const len = events.length
 
-const Module = ({ name, setSelectedItem, ind }) => {
+const Module = ({ data, setSelectedItem, ind }) => {
+
   const [activeIndex, setActiveIndex] = useState(0)
   const toggle = (mult) => {
     const index = activeIndex + 1 * mult
@@ -25,6 +26,7 @@ const Module = ({ name, setSelectedItem, ind }) => {
     else if (index > len - 3) setActiveIndex(0)
     else setActiveIndex(index)
   }
+
 
   const { ref, inView } = useInView({
     /* Optional options */
@@ -51,7 +53,7 @@ const Module = ({ name, setSelectedItem, ind }) => {
             />
           </div>
         </div>
-        <div>{name}</div>
+        <div>{data?.name}</div>
       </div>
       <div className={styles.slider}>
         <div
@@ -63,17 +65,20 @@ const Module = ({ name, setSelectedItem, ind }) => {
           <Image src={left} layout="fill" objectFit="contain" priority="true" />
         </div>
         <div className={styles.carousel}>
-          {events.map((event, index) => {
+          {data?.events?.map((event, index) => {
             return (
-              <div
-                style={{
-                  transform: `translateX(-${activeIndex * 100}%)`,
-                  transition: 'all 0.5s ease-in-out',
-                }}
-                key={index}
-              >
-                <EventCard name={event} />
-              </div>
+
+              <Link href={`/events/${event?.id}`} key={index} >
+                <div
+                  style={{
+                    transform: `translateX(-${activeIndex * 100}%)`,
+                    transition: 'all 0.5s ease-in-out',
+                  }}
+                  key={index}
+                >
+                  <EventCard data={event} />
+                </div>
+              </Link>
             )
           })}
         </div>

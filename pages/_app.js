@@ -1,11 +1,29 @@
 import '../styles/globals.css'
-import React from 'react';
-
+import {AuthProvider} from '../providers/authContext'
+const unprotectedRoutes = [
+  '/login', '/signup', '/', '/register', '/modules'
+]
+import {useRouter} from 'next/router'
+import ProtectedRoute from '../components/AuthLayer/ProtectedRoute'
 function MyApp({ Component, pageProps }) {
+  const router = useRouter()
   return (
+
+    <AuthProvider>
+
       <div>
-        <Component {...pageProps} />
+
+        {unprotectedRoutes.includes(router.pathname) ?(
+
+          <Component {...pageProps} />
+        ):(
+          <ProtectedRoute>
+
+            <Component {...pageProps} />
+          </ProtectedRoute>
+        )}
       </div>
+    </AuthProvider>
   )
 }
 

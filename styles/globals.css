@@ -379,6 +379,10 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 2.4rem;
 }
 
+.my-4{
+  margin-top: 6rem;
+}
+
 .text-start{
   text-align: start;
 }
@@ -387,7 +391,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background: url('../public/assests/modal/modalbg.png');
+  background: url('../public/assests/Modal/modalbg.png');
   /* opacity: 0.5; */
 
 
@@ -744,10 +748,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .profPhoto {
 
-  width: 20vw;
-  height: 20vw;
-  left: 2rem;
-  top: 5rem;
+  width: 15vw;
+  height: 15vw;
+  /* left: 2rem;
+  top: 5rem; */
+  margin-left:0.625rem;
 }
 
 .profPhoto2 {
@@ -901,13 +906,13 @@ Image {
 
 }
 
-span {
+.profilePage span {
   padding-left: 10px;
   padding-bottom: 20px;
   padding-right: 30px;
   margin-bottom: 5px;
 
-}
+} 
 
 .EventListLi {
   display: flex;
@@ -1053,7 +1058,7 @@ span {
 .teamBack {
   background: #000000;
   height: 100vh;
- 
+ overflow: hidden;
 }
 
 .registration1 {
@@ -1068,15 +1073,16 @@ span {
   position: fixed;
   display: flex;
   flex-direction: row;
+  top: 159px;
   width: 100%;
   height: 3.125rem;
   justify-content: space-around;
   z-index: 20;
   background-color: #040404;
 }
-hr{
+.teamhr{
   position: absolute;
-  top: 50px;
+  top: 209px;
   height: 2px;
   color: white;
   z-index: 50;
@@ -1101,6 +1107,7 @@ hr{
   color: #FFFFFF;
   z-index: 10;
   margin-bottom: 6.25rem;
+  margin-top: 6.25rem;
   height: 72vh;
 }
 
@@ -1110,6 +1117,7 @@ hr{
 }
 
 .TeamList {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -1297,11 +1305,26 @@ line-height: 28px;
 /* padding-left: 100px;
 padding-right: 100px; */
 padding-bottom: 10px;
+
+}
+
+.topgrad{
+  position: absolute;
+  width: 320px;
+  height: 374px;
+  left: 1171px;
+  top: 221px;
+  
+  background: #D03CAB;
+  filter: blur(250px);
+  transform: rotate(-90deg);
 }
 
 
 
-
+.hide{
+  display: none;
+}
 
 /* .downArr{
   margin-left: .565rem;
@@ -1340,6 +1363,13 @@ td {
 
 th, td { min-width: 12.5rem; }
 
+.designTop{
+  position: fixed;
+  width: 100vw;
+  right: 0px;
+  text-align: right;
+  z-index: 100;
+}
 
 /*================================ registration status responsive========================= */
 @media (max-width: 700px) {
@@ -1363,7 +1393,26 @@ th, td { min-width: 12.5rem; }
   .StatBtn .reg{
     width: max-content;
   height: max-content;
+  padding: 5px;
+  margin-bottom: 5px;
   }
+  
+  .StatBtn .logout{
+    width: max-content;
+  height: max-content;
+  padding: 5px;
+
+  }
+  .StatBtn{
+    flex-direction: column;
+  }
+  .TeamList{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+
 .section-one::-webkit-scrollbar{
   display: none;
 }
@@ -1402,10 +1451,12 @@ th, td { min-width: 12.5rem; }
 .form-section::-webkit-scrollbar{
   display: none;
 }
-.form {
+/* .form {
   width: 46%;
+} */
+.relative{
+  position: relative;
 }
-
 .form-input {
   border: 0;
   outline: 0;
@@ -1468,6 +1519,9 @@ th, td { min-width: 12.5rem; }
   background-size: cover;
   padding-top: 6rem;
 }
+.input-field{
+  margin-top: 2.4rem;
+}
 
 .back-button {
   font-size: 1.8rem;
@@ -1527,6 +1581,9 @@ th, td { min-width: 12.5rem; }
     margin-bottom: 0.1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    width: 100px;
+    height: 100px;
+    position: relative;
   }
   .btn {
     width: 6rem;
@@ -1565,4 +1622,9 @@ th, td { min-width: 12.5rem; }
     display: none;
   }
 }
+
+
+.rounded{
+  border-radius: 50%;
 }
+

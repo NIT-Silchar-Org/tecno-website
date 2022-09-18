@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from 'react';
+// import { useState } from 'react';
 import Button from "./button";
 
-function TeamMember() {
-    const [username, setUsername] = useState("")
-    const [memberCount, setMemberCount] = useState(1)
-    const [members, setMembers] = useState([])
+function TeamMember({username, setUsername, memberCount, setMemberCount, members , setMembers}) {
+    // const [username, setUsername] = useState("")
+    // const [memberCount, setMemberCount] = useState(1)
+    // const [members, setMembers] = useState([])
     const addMember = () => {
         if (!username) return
         const temp = [...members, username]
