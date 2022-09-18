@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 // import Alert from '../components/Alert'
-import Button from '../components/button'
+import Button from '../components/Button'
 // import Alert from '../components/Form/Alert'
 import Input from '../components/Form/Input'
 import HamBurger from '../components/sections/Navbar/HamBurger'

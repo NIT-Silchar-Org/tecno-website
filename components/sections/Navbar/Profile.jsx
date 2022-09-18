@@ -38,7 +38,7 @@ export default function Profile(props) {
                         <Link href={props.href}>
                         <Image
                             className={styles.image}
-                            src={props.pfp || defaultimg} // use props.pfp if available else default pfp
+                            src={firebaseUser.photoURL} // use props.pfp if available else default pfp
                             alt="Profile Picture"
                             width={60}
                             height={60}
@@ -53,7 +53,8 @@ export default function Profile(props) {
         </div>
 
         ):(
-            <div className={styles.surround} onClick={handleLogin} disabled={isdisabled}>
+            <div className={ styles.surrounddisabled } onClick={handleLogin} disabled={isdisabled}>
+            <img src = "/assests/Navbar/signin.svg"/>
 
             </div>
 

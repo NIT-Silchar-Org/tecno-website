@@ -3,7 +3,7 @@ import Image from 'next/image'
 // import DummyLogo from '../../public/assests/stash/dummylogo.png'
 import Header from '../../components/Header';
 import TeamMember from '../../components/teamMember';
-import Button from '../../components/button';
+import Button from '../../components/Button';
 import { fetchEventById } from '../../utils/events_fetch';
 import { useAuth } from '../../providers/authContext';
 import { teamRegister } from '../../utils/event_register';

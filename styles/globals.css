@@ -623,7 +623,7 @@ body::-webkit-scrollbar-thumb:hover {
   /* left: 0px; */
   /* top: 0px; */
   /* The image used */
-  background-image: url('../public/assests/profile/background.png');
+  background-image: url('../public/assests/profile/Background.png');
   height: 100%;
   background-position: center;
 }

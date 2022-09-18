@@ -18,7 +18,8 @@ import HamBurger from '../components/sections/Navbar/HamBurger'
 import { useAuth } from '../providers/authContext'
 function Profile1() {
 
-  const { backendUser } = useAuth()
+  const auth = useAuth();
+  const { backendUser, logout } = auth;
   
   // useEffect(() => {
     
@@ -30,7 +31,7 @@ function Profile1() {
 
   return (
     <div className='profilePage'>
-        <Navbar profile="/profile" pfp="" hamburger={<HamBurger/>}  />
+        <Navbar profile="/profile" pfp={backendUser?.msg?.imageUrl} hamburger={<HamBurger/>}  />
       <div className="profPhoto2 relative rounded">
         <Image src={backendUser?.msg?.imageUrl} layout="fill" className='rounded'/>
       </div>
@@ -87,7 +88,7 @@ function Profile1() {
               </ul>
               <button className="reg">Registrations</button>
               <br />
-              <button className="logout">Log Out</button>
+              <button className="logout" onClick={logout}>Log Out</button>
               <br />
               {backendUser?.msg?.registrationId}
             </div>
