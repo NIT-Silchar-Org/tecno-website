@@ -43,7 +43,7 @@ const RejectCard = ({ color = '#FFE166', registration, deleteFromPending }) => {
     auth.currentUser.getIdToken().then((token) => {
       if (token) {
         teamRespond(token, status, registration.team.id).then((resp) => {
-          if (resp.status < 300) {
+          if (resp.data.status < 300) {
             deleteFromPending(registration.id)
           }
         })

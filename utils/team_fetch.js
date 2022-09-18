@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const teamsFetch = async (token) => {
   const url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/user/me/my_teams`
-  console.log(body)
+  // console.log(body)
   let resp
 
   const headers = {

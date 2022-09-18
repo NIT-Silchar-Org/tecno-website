@@ -25,7 +25,8 @@ function Team() {
   useEffect(() => {
     auth.currentUser.getIdToken().then((token) => {
       teamsFetch(token).then((resp) => {
-        setTeams(resp.msg)
+        console.log(resp)
+        setTeams(resp.data.msg)
       })
     })
   }, [firebaseUser, auth, toggleState])
