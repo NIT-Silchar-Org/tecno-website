@@ -52,7 +52,7 @@ export default function SparkForm() {
     const formData = new FormData(e.target)
 
     axios
-      .post(`https://api.dev.tecnoesis.org/api/spark/tshirt`, formData, {
+      .post(`https://backend.tecnoesis.org/api/spark/tshirt`, formData, {
         headers: {
           'content-type': 'multipart/form-data',
         },
