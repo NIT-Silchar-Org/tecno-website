@@ -10,6 +10,8 @@ import { team_register } from '../../utils/event_register';
 import alert from '../../components/Alert';
 import Alert from '../../components/Alert';
 import {useRouter} from 'next/router'
+import Navbar from '../../components/sections/Navbar/Navbar';
+import HamBurger from '../../components/sections/Navbar/HamBurger';
 function Event() {
   const [isFormHidden, setIsFormHidden] = useState(true)
   const scrollToRef = useRef()
@@ -57,6 +59,7 @@ function Event() {
   return (
     <>
       <div className="justify-center bg-black w-full h-screen">
+      <Navbar profile="/profile" pfp="" hamburger={<HamBurger/>}  />
         <div className="section-one">
           <Header />
           

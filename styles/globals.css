@@ -906,13 +906,13 @@ Image {
 
 }
 
-span {
+.profilePage span {
   padding-left: 10px;
   padding-bottom: 20px;
   padding-right: 30px;
   margin-bottom: 5px;
 
-}
+} 
 
 .EventListLi {
   display: flex;

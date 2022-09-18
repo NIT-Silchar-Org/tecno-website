@@ -11,9 +11,10 @@ import Phone from '../public/assests/profile/phone.png'
 import Location from '../public/assests/profile/location.png'
 // import backgrd from "../public/assests/profile/bgMobile.png"
 // import CamIcon from "../public/assests/profile/cam.svg"
-
-import axios from 'axios'
-import { useEffect, useState } from 'react'
+import Navbar from '../components/sections/Navbar/Navbar'
+import HamBurger from '../components/sections/Navbar/HamBurger'
+// import axios from 'axios'
+import {  useState } from 'react'
 import { useAuth } from '../providers/authContext'
 function Profile1() {
 
@@ -33,7 +34,8 @@ function Profile1() {
   
 
   return (
-    <div>
+    <div className='profilePage'>
+        <Navbar profile="/profile" pfp="" hamburger={<HamBurger/>}  />
       <div className="profPhoto2 relative rounded">
         <Image src={backendUser?.msg?.imageUrl} layout="fill" className='rounded'/>
       </div>
@@ -44,7 +46,7 @@ function Profile1() {
               <Image src={Tecnologo} />
             </div>
             <div className="profImg">
-              <div className="profPhoto relative">
+              <div className="profPhoto relative ">
                 <Image src={backendUser?.msg?.imageUrl} layout="fill" className='rounded' />
               </div>
               <div className="eventDetail">
