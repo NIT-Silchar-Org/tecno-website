@@ -28,7 +28,7 @@ function Team() {
         setTeams(resp.msg)
       })
     })
-  }, [firebaseUser, auth])
+  }, [firebaseUser, auth, toggleState])
 
   useEffect(() => {})
   return (
@@ -73,6 +73,9 @@ function Team() {
               teams={teams.filter(
                 (team) => team.registrationStatus === 'PENDING',
               )}
+              deleteFromPending={(id) =>
+                setTeams(teams.filter((t) => t.id !== id))
+              }
             />
           )}
           {toggleState === 2 && (

@@ -7,12 +7,6 @@ import upArr from '../../../public/assests/TeamStat/upArr.png'
 import accept from '../../../public/assests/TeamStat/accept.png'
 import reject from '../../../public/assests/TeamStat/reject.png'
 
-const data = [
-  { name: 'Levi', username: 'ackermann', status: true },
-  { name: 'Izuku', username: 'midoriya', status: false },
-  { name: 'Shoto', username: 'todoroki', status: true },
-]
-
 const StatusCard = ({ color, registration }) => {
   const [Height, setHeight] = useState('0')
   const [show, setshow] = useState(false)
