@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { getAuth } from 'firebase/auth'
 import React from 'react'
 import { useState } from 'react'
@@ -7,10 +8,11 @@ import Button from '../components/button'
 import Input from '../components/Form/Input'
 import HamBurger from '../components/sections/Navbar/HamBurger'
 import Navbar from '../components/sections/Navbar/Navbar'
-import { useAuth } from '../providers/authContext'
+import { useAuth, AuthProvider } from '../providers/authContext'
 import { userBackendRegister } from '../utils/auth_handlers'
+
 function Register() {
-  const { auth } = useAuth()
+  const { auth, logout } = useAuth()
 
   // const [name, setName] = useState('hello')
   const [firstName, setFirstName] = useState('')
@@ -28,7 +30,7 @@ function Register() {
   // let token = firebaseToken
   const handleSignup = async (e) => {
     e.preventDefault()
-    const token = await auth.currentUser.getIdToken()
+    const token = await auth?.currentUser?.getIdToken()
     await userBackendRegister({
       firstName,
       secondName,
@@ -68,7 +70,9 @@ function Register() {
         <div className="form-section">
           <h1 className="text-lg text-center text-white mokoto-glitch-font">Signup Form</h1>
           <form className="form" onSubmit={(e) => handleSignup(e)}>
-            <div className=" input-wrapper">
+            <div className=" input-wrapper"
+            // style={{}}
+            >
               {/* <Input placeholder={'Name'} val={name} setVal={setName} req={true}/> */}
               <Input
                 placeholder={'First Name'}
@@ -102,7 +106,7 @@ function Register() {
                 req={true}
               />
               <Input
-                placeholder={'Collge Name'}
+                placeholder={'College Name'}
                 val={collegeName}
                 setVal={setCollegeName}
                 req={true}
@@ -113,24 +117,23 @@ function Register() {
                 setVal={setRegID}
                 req={true}
               />
-              <div>
-
-              </div>
-              <div className="my-4">
-                <Button>
-                  <button type="submit">
-                    Register
-                  </button>
-                </Button>
-
-              </div>
               {/* <Input placeholder={"Name"}/> */}
+            </div>
+            <div className="my-4"
+              style={{
+                display: "flex", flexDirection: "row", justifyContent: "center", marginLeft: "10rem"
+                // @media (max-width: "768px") {flexDirection: "column"}
+              }}
+            >
+              <Button children={"cancel"} onClick={logout} />
+              <Button children={"Submit"} onClick={handleSignup} />
+
             </div>
 
           </form>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }
 
