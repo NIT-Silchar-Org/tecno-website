@@ -23,6 +23,7 @@ const UploadControl = ({ children, value, disabled, accept }) => {
         multiple
         type="file"
         onChange={disabled ? () => {} : onChange}
+        name="paymentReceiptImg"
       />
       <div className={styles.content}>{fileName ? fileName : children}</div>
     </label>
@@ -49,8 +50,8 @@ export default function SparkForm() {
         <input type="text" name="mobileNumber" id="mobileNumber" required />
       </div>
       <div className={styles.formFields}>
-        <label htmlFor="isFromNITS">Are you from NITS?</label>
-        <select name="isFromNITS" id="isFromNITS">
+        <label htmlFor="isNITS">Are you from NITS?</label>
+        <select name="isNITS" id="isNITS">
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
@@ -75,14 +76,14 @@ export default function SparkForm() {
       </div>
 
       <div className={styles.formFields}>
-        <label htmlFor="size">Are you from NITS?</label>
-        <select name="size" id="size">
-          <option value="xs">XS</option>
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-          <option value="xl">XL</option>
-          <option value="xxl">XXL</option>
+        <label htmlFor="tshirtSize">Are you from NITS?</label>
+        <select name="tshirtSize" id="tshirtSize">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
         </select>
       </div>
       <div className={styles.formFields}>
