@@ -1,15 +1,17 @@
 import React from 'react'
 import StatusCard from './StatusCard'
 
-function TeamReg() {
+function TeamReg({ teams: registrations }) {
   return (
     <div className="Team">
       <ul className="TeamList">
-        <StatusCard color={'#4992FF'} />
-        <StatusCard color={'#4992FF'} />
-        <StatusCard color={'#4992FF'} />
-        <StatusCard color={'#4992FF'} />
-        <StatusCard color={'#4992FF'} />
+        {registrations.map((registration) => (
+          <StatusCard
+            key={registration.id}
+            registration={registration}
+            color={'#4992FF'}
+          />
+        ))}
       </ul>
     </div>
   )

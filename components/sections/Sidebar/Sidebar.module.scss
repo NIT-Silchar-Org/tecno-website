@@ -205,7 +205,7 @@
 
 @media only screen and (max-width: 800px) {
   .container {
-    width: 0;
+    // width: 0;
     position: absolute;
     z-index: 10;
     top: 0;
@@ -237,9 +237,9 @@
     }
   }
   .active {
-    width: 16rem;
+    width: 16rem !important;
   }
-  // .inactive{
-  //   width: 0 !important;
-  // }
+  .inactive{
+    width: 0 !important;
+  }
 }

@@ -22,7 +22,7 @@ import Image from 'next/image'
 
 const Sidebar = ({ selectedItem,setSelectedItem, setActive, active, modules }) => {
   return (
-    <div className={`${styles.container} ${active ? styles.active : ''}`}>
+    <div className={`${styles.container} ${active ? styles.active : styles.inactive}`}>
       <div className={styles.head}>
         <div className={styles.text}>Modules</div>
       </div>
