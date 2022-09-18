@@ -1,25 +1,30 @@
 .container {
   background-color: black;
   position: relative;
-  scroll-snap-type: y mandatory;	
+  scroll-snap-type: y mandatory;
+
+  .blank {
+    opacity: 0;
+  }
+
   .hero {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(76, 0, 130, 0.395),
-      rgba(98, 20, 153, 0.516),
-      rgba(147, 46, 147, 0.489),
-      black,
-      black
-    );
+    background-image: linear-gradient(to bottom,
+        rgba(76, 0, 130, 0.395),
+        rgba(98, 20, 153, 0.516),
+        rgba(147, 46, 147, 0.489),
+        black,
+        black);
     // opacity: 0.6;
     position: relative;
     top: 0;
-    .overlay{
+
+    .overlay {
       position: absolute;
       z-index: 50;
     }
+
     .bgEle {
       height: 100vh;
       width: 35vw;
@@ -28,66 +33,120 @@
       top: 0;
       z-index: 30;
     }
+
+    .blank {
+      opacity: 0;
+    }
+
     #right {
       left: 100vw;
       transform: translateX(-100%);
     }
   }
+
   .main {
     position: relative;
+
     // box-shadow: 0px 100px 40px 300px black;
     .bg {
       position: absolute;
       z-index: 20;
       top: 0;
       width: 100vw;
+
+      @media (max-width: 1000px) {
+        display: none;
+      }
+
       #eclipse {
         width: 12rem;
         height: 12rem;
         position: relative;
         top: 20rem;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
+
       #ball {
         width: 14rem;
         height: 14rem;
         position: relative;
         top: 14rem;
         left: 90vw;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
+
       #ring {
         width: 10rem;
         height: 10rem;
         position: relative;
         left: 90vw;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
+
       .sphere {
         width: 10rem;
         height: 10rem;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
+
       #sp1 {
         position: relative;
         top: 20rem;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
+
       #sp2 {
         position: relative;
         top: 20rem;
         left: 92vw;
+
+        @media (max-width: 1000px) {
+          display: none;
+        }
       }
     }
+
     .back {
       background-color: rgba(0, 0, 0, 0);
       position: fixed;
       top: -10em;
     }
-    .off{
+
+    .off {
       display: none;
     }
-    .hide{
+
+    .hide {
       opacity: 0;
+    }
+
+    .sections {
+      @media (max-width: 772px) {
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
     }
   }
 }
-.static{
+
+.static {
   overflow: hidden;
   height: 100vh;
 }
+
+// .container

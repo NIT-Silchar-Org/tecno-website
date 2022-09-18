@@ -1,17 +1,25 @@
 @import '../../../styles/variables.scss';
+
 .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   .head {
     font-family: $lemonMilk;
     font-size: 2.2rem;
     margin: 2rem 0;
+
+    @media (max-width: 772px) {
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
   }
+
   .card {
-    width: 26em;
-    height: 18em;
+    width: 30em;
+    height: 20em;
     display: flex;
     margin: 0 1rem;
     align-items: center;
@@ -24,5 +32,23 @@
     -webkit-backdrop-filter: blur(9.5px);
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.47);
+
+    @media (max-width: 767px) {
+      width: 15em;
+      height: 10em;
+      margin: 0 0.5rem;
+    }
+
+    @media (max-width: 400px) {
+      width: 12em;
+      height: 9em;
+      margin: 0 1rem
+    }
+
+    @media (min-width: 767px) and (max-width: 1000px) {
+      margin: 0 1.75em;
+      width: 26em;
+      height: 14em;
+    }
   }
 }
