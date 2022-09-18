@@ -10,13 +10,29 @@ import Pending from '../components/sections/TeamRegist/Pending'
 import Rejected from '../components/sections/TeamRegist/Rejected'
 import Navbar from '../components/sections/Navbar/Navbar'
 import HamBurger from '../components/sections/Navbar/HamBurger'
+import { useAuth } from '../providers/authContext'
+import { teamsFetch } from '../utils/team_fetch'
 function Team() {
   const [toggleState, setToggleState] = useState(1)
+  const { auth } = useAuth()
+  const [teams, setTeams] = useState([])
 
   const toggleTab = (index) => {
     setToggleState(index)
     console.log('clicked!')
   }
+
+  useEffect(() => {
+    auth.currentUser.getIdToken().then((token) => {
+      teamsFetch(token).then((resp) => {
+        setTeams(resp.msg)
+      })
+    })
+
+    return () => {
+      second
+    }
+  }, [third])
 
   useEffect(() => {})
   return (
@@ -24,7 +40,7 @@ function Team() {
       <div className="teamBack">
         <div className="registration1">
           <div className="designTop">
-            <Navbar profile="/profile" pfp="" hamburger={<HamBurger/>}  />
+            <Navbar profile="/profile" pfp="" hamburger={<HamBurger />} />
             <Image src={TopDesign} />
           </div>
           <div className="regStatus">
@@ -56,9 +72,27 @@ function Team() {
         </div>
         <hr className="teamhr" />
         <div className="content-tabs">
-          {toggleState === 1 && <Pending />}
-          {toggleState === 2 && <Registered />}
-          {toggleState === 3 && <Rejected />}
+          {toggleState === 1 && (
+            <Pending
+              teams={teams.filter(
+                (team) => team.registrationStatus === 'PENDING',
+              )}
+            />
+          )}
+          {toggleState === 2 && (
+            <Registered
+              teams={teams.filter(
+                (team) => team.registrationStatus === 'REGISTERED',
+              )}
+            />
+          )}
+          {toggleState === 3 && (
+            <Rejected
+              teams={teams.filter(
+                (team) => team.registrationStatus === 'CANCELLED',
+              )}
+            />
+          )}
         </div>
       </div>
     </>

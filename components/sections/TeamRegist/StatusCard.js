@@ -13,7 +13,7 @@ const data = [
   { name: 'Shoto', username: 'todoroki', status: true },
 ]
 
-const StatusCard = ({ color }) => {
+const StatusCard = ({ color, registration }) => {
   const [Height, setHeight] = useState('0')
   const [show, setshow] = useState(false)
   const [dis, setDis] = useState('1')
@@ -53,7 +53,9 @@ const StatusCard = ({ color }) => {
               NITS Hacks 4.0
               <br />
             </span>
-            <span className="registeredteam">Team Name: Bonkers</span>
+            <span className="registeredteam">
+              Team Name: {registration.team.teamName}
+            </span>
           </div>
         </div>
         <div className="viewTeam">
@@ -73,18 +75,26 @@ const StatusCard = ({ color }) => {
               <th>Username</th>
               <th>Status</th>
             </tr>
-            {data.map((val, key) => {
+            {registration.team.members.map((val, key) => {
               return (
                 <tr key={key}>
-                  <td>{val.name}</td>
-                  <td>{val.username}</td>
-                  <td className={`${val.status ? '' : 'hide'}`}>
-                    {' '}
-                    <Image src={accept} />
+                  <td>
+                    {val.firstName} {val.middleName ? val.middleName + ' ' : ''}
+                    {val.lastName}
                   </td>
-                  <td className={`${val.status ? 'hide' : ''}`}>
-                    {' '}
-                    <Image src={reject} />
+                  <td>{val.username}</td>
+                  <td>
+                    {val.registrationStatus === 'PENDING' ? pending : ''}
+                    {val.registrationStatus === 'REGISTERED' ? (
+                      <Image src={accept} alt="accepted" />
+                    ) : (
+                      ''
+                    )}
+                    {val.registrationStatus === 'REGISTERED' ? (
+                      <Image src={reject} alt="rejected" />
+                    ) : (
+                      ''
+                    )}
                   </td>
                 </tr>
               )

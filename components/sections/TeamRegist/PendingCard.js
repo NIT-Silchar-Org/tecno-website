@@ -13,7 +13,7 @@ const data = [
   { name: 'Shoto', username: 'todoroki', status: 'true' },
 ]
 
-const RejectCard = ({ color }) => {
+const RejectCard = ({ color = '#FFE166', registration }) => {
   const [Height, setHeight] = useState('0')
   const [show, setshow] = useState(false)
   const [dis, setDis] = useState('1')
@@ -53,7 +53,9 @@ const RejectCard = ({ color }) => {
               NITS Hacks 4.0
               <br />
             </span>
-            <span className="registeredteam">Team Name: Bonkers</span>
+            <span className="registeredteam">
+              Team Name: {registration.team.teamName}
+            </span>
           </div>
         </div>
         <div className="StatBtn">
@@ -82,10 +84,13 @@ const RejectCard = ({ color }) => {
               <th>Name</th>
               <th>Username</th>
             </tr>
-            {data.map((val, key) => {
+            {registration.team.members.map((val, key) => {
               return (
                 <tr key={key}>
-                  <td>{val.name}</td>
+                  <td>
+                    {val.firstName} {val.middleName ? val.middleName + ' ' : ''}
+                    {val.lastName}
+                  </td>
                   <td>{val.username}</td>
                 </tr>
               )

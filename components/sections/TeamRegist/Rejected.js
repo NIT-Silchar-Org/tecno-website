@@ -2,15 +2,17 @@ import React from 'react'
 import StatusCard from './StatusCard'
 // import reject from "../public/assests/TeamStat/reject.png"
 
-function TeamReg() {
+function TeamReg({ teams: registrations }) {
   return (
     <div className="Team">
       <ul className="TeamList">
-        <StatusCard color={'#D03CAB'} />
-        <StatusCard color={'#D03CAB'} />
-        <StatusCard color={'#D03CAB'} />
-        <StatusCard color={'#D03CAB'} />
-        <StatusCard color={'#D03CAB'} />
+        {registrations.map((registration) => (
+          <StatusCard
+            key={registration.id}
+            registration={registration}
+            color={'#D03CAB'}
+          />
+        ))}
       </ul>
     </div>
   )
