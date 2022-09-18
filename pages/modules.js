@@ -28,3 +28,14 @@ const Modules = () => {
 }
 
 export default Modules
+
+export async function getStaticProps (){
+  const resp = await fetchModule();
+  const data = resp?.data?.msg
+  // console.log(resp);
+  return {
+    props:{
+      data
+    }
+  }
+}
