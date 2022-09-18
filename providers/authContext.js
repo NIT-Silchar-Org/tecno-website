@@ -61,6 +61,7 @@ export function AuthProvider({ children }) {
 				// const credential = user?.accessToken
 				// console.log(credential);
 				let token = await getAccessToken()
+				console.log(token)
 				const res = await axios.get(
 					api_url, // send token back
 					{
