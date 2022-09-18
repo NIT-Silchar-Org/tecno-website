@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-import React from 'react'
-// import Modal from '../components/sections/Modules/Modal'
-=======
 import React, { useState } from 'react'
->>>>>>> 5d32fc8a39b46c2aeb87dafced18b1e6118da9fa
 import Sidebar from '../components/sections/Sidebar/Sidebar'
 import Main from "../components/sections/Modules/Modules"
 import styles from '../styles/Modules.module.scss'

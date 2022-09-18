@@ -1369,6 +1369,8 @@ th, td { min-width: 12.5rem; }
     width: max-content;
   height: max-content;
   }
+}
+
 .section-one::-webkit-scrollbar{
   display: none;
 }
@@ -1578,7 +1580,7 @@ th, td { min-width: 12.5rem; }
     display: none;
   }
 }
-}
+
 
 
 
