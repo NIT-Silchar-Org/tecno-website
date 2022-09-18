@@ -26,8 +26,6 @@ export default function Navbar(props) {
                 console.log("click");
                 toggleNavbar(!open)
             }}>
-            {/* {props?.hamburger}
-             */}
              {React.cloneElement(props.hamburger, {
                 open:open
              })}

@@ -73,6 +73,8 @@ $mwidth: $mheight * 1.02;
         top : -2.5rem;
         width: $signinwidth;
         height: $signinheight;
+        margin-right: auto;
+        margin-left: auto;
         transform: scale(0.5);
     }
 }
