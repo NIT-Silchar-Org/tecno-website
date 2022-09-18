@@ -1,5 +1,5 @@
 import styles from '../Navbar/Navbar.module.scss'
-import ham from '../Navbar/Hamburger.module.scss'
+// import ham from '../Navbar/Hamburger.module.scss'
 import React, { useState } from 'react';
 import Profile from './Profile';
 import NavButton from '../Navbar/NavButton'

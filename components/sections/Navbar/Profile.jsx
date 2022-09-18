@@ -3,7 +3,7 @@ import defaultimg from '../../../public/assests/Navbar/default.png'
 import Image from 'next/image';
 import Link from 'next/link';
 // import { useAuth } from '../../../providers/authContext';
-import LoginButton from '../../AuthLayer/LoginButton';
+// import LoginButton from '../../AuthLayer/LoginButton';
 // import Image from 'next/image'
 import {useAuth} from '../../../providers/authContext'
 import {useState} from 'react'

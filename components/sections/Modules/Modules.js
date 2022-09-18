@@ -1,12 +1,12 @@
 import Module from '../Module/Module'
 import styles from './Modules.module.scss'
 import Image from 'next/image'
-import logo from '../../../public/assests/modules/Logo.svg'
+// import logo from '../../../public/assests/modules/Logo.svg'
 // import slider from '../../../public/assests/modules/slider.svg'
 import hamburger from '../../../public/assests/modules/hamburger.svg'
 import bg from '../../../public/assests/modules/Vector14.svg'
-import LoginButton from '../../AuthLayer/LoginButton'
-import LogoHamburger from '../Navbar/LogoHamburger'
+// import LoginButton from '../../AuthLayer/LoginButton'
+// import LogoHamburger from '../Navbar/LogoHamburger'
 // const modules = [
 //   'robotron',
 //   'vWarz',

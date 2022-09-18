@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import Sidebar from '../components/sections/Sidebar/Sidebar'
 import Main from "../components/sections/Modules/Modules"
 import styles from '../styles/Modules.module.scss'
-import Slider from '../components/style-guide/Slider/Slider'
-import { fetch_module } from '../utils/events_fetch'
+// import Slider from '../components/style-guide/Slider/Slider'
+import { fetchModule } from '../utils/events_fetch'
 import Navbar from '../components/sections/Navbar/Navbar'
-import LogoHamburger from '../components/sections/Navbar/LogoHamburger'
+// import LogoHamburger from '../components/sections/Navbar/LogoHamburger'
 import HamBurger from '../components/sections/Navbar/HamBurger'
 
 
@@ -41,9 +41,9 @@ const Modules = ({data}) => {
 export default Modules
 
 export const getStaticProps = async () =>{
-  let resp = await fetch_module();
-  let data = resp?.data?.msg
-  console.log(resp);
+  const resp = await fetchModule();
+  const data = resp?.data?.msg
+  // console.log(resp);
   return {
     props:{
       data

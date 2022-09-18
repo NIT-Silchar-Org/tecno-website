@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import UserIcon from '../public/assests/profile/user.png'
+// import UserIcon from '../public/assests/profile/user.png'
 import EventIcon from '../public/assests/profile/icon.png'
 import Tecnologo from '../public/assests/profile/Tecnoesis Logo.png'
 import Attended from '../public/assests/profile/Event Attended.svg'
@@ -8,23 +8,18 @@ import TecnoCoin from '../public/assests/profile/Tecno Coin.svg'
 import Name from '../public/assests/profile/nameIcon.png'
 import Institute from '../public/assests/profile/InstiIcon.png'
 import Phone from '../public/assests/profile/phone.png'
-import Location from '../public/assests/profile/location.png'
+// import Location from '../public/assests/profile/location.png'
 // import backgrd from "../public/assests/profile/bgMobile.png"
 // import CamIcon from "../public/assests/profile/cam.svg"
 import Navbar from '../components/sections/Navbar/Navbar'
 import HamBurger from '../components/sections/Navbar/HamBurger'
 // import axios from 'axios'
-import {  useState } from 'react'
+// import {  useState } from 'react'
 import { useAuth } from '../providers/authContext'
 function Profile1() {
 
   const { backendUser } = useAuth()
-  const [token, setToken] = useState(null)
-  console.log({backendUser});
-  const getToken = async () =>{
-    let t = await auth.currentUser.getIdToken()
-    setToken(t)
-  }
+  
   // useEffect(() => {
     
   //   getToken()

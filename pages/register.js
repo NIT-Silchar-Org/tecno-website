@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import Alert from '../components/Alert'
+// import Alert from '../components/Alert'
 import Button from '../components/button'
 // import Alert from '../components/Form/Alert'
 import Input from '../components/Form/Input'
@@ -20,12 +20,13 @@ function Register() {
   const [collegeName, setCollegeName] = useState('')
   const [regID, setRegID] = useState(null)
   const [userName, setUserName] = useState('')
-  const [imageUrl, setImageUrl] = useState('')
+  // const [imageUrl, setImageUrl] = useState('')
+  const imageUrl =""
   // console.log(firebaseUser?.accessToken);
   // let token = firebaseToken
   const handleSignup = async (e) => {
     e.preventDefault()
-    let token = await auth.currentUser.getIdToken()
+    const token = await auth.currentUser.getIdToken()
     await userBackendRegister({
       firstName,
       secondName,
@@ -39,7 +40,7 @@ function Register() {
     })
   }
 
-  const [message, setMessage] = useState("Hello")
+  // const [message, setMessage] = useState("Hello")
 
   return (
     <div>
