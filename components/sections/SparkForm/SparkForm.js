@@ -6,6 +6,9 @@ library.add(faFileUpload)
 import styles from '../../../styles/Form.module.scss'
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
+import tshirtSize from '../../../public/assests/spark/size-chart.jpeg'
+import sparkTshirt from '../../../public/assests/spark/spark-tshirt.png'
+import Image from 'next/image'
 
 const UploadControl = ({ children, value, disabled, accept }) => {
   const [fileName, setFileName] = useState()
@@ -74,7 +77,8 @@ export default function SparkForm() {
       method="post"
       action="#"
     >
-      <h1>Spark TShirt Form</h1>
+      <h1>Spark T-Shirt</h1>
+      <Image src={sparkTshirt} />
       <div className={styles.formFields}>
         <label htmlFor="name">Name *</label>
         <input type="text" name="name" id="name" required />
@@ -103,6 +107,19 @@ export default function SparkForm() {
         <input type="text" name="hostelName" id="hostelName" />
       </div>
 
+      <Image src={tshirtSize} />
+      <div className={styles.formFields}>
+        <label htmlFor="tshirtSize">TShirt Size*</label>
+        <select name="tshirtSize" id="tshirtSize" required>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </div>
+
       <div className={styles.formFields}>
         <label htmlFor="address">Address (If outside NITS)</label>
         <input type="text" name="address" id="address" />
@@ -128,17 +145,6 @@ export default function SparkForm() {
         </div>
       </div>
 
-      <div className={styles.formFields}>
-        <label htmlFor="tshirtSize">TShirt Size*</label>
-        <select name="tshirtSize" id="tshirtSize" required>
-          <option value="XS">XS</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-          <option value="XXL">XXL</option>
-        </select>
-      </div>
       <div className={styles.formFields}>
         <label htmlFor="transactionId">Transaction ID *</label>
         <input type="text" name="transactionId" id="transactionId" required />
