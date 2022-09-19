@@ -136,7 +136,7 @@ export default function SparkForm() {
         <span className={styles.infoLabel}>GPay/PhonePe:</span> 8416932301
         <br />
         <span className={styles.infoLabel}>Price - for nits students:</span> Rs.
-        450
+        425
         <br />
         <span className={styles.infoLabel}>Price - for outside:</span> Rs. 500
         (including shipping)
