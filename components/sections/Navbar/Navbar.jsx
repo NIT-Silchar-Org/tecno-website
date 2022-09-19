@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Profile from './Profile';
 import NavButton from '../Navbar/NavButton'
 import Link from 'next/link';
-import { useAuth } from '../../../providers/authContext';
+// import { useAuth } from '../../../providers/authContext';
 
 const navLinks = [
     /* Set navlinks to different routes */

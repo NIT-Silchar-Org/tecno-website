@@ -870,6 +870,16 @@ Image {
   color: #FFFFFF;
 }
 
+.transcomesoon{
+  text-align: center;
+  height: 70vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
 .eventName span {
   font-weight: 600;
   font-size: 16px;
