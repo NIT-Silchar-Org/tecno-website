@@ -8,17 +8,16 @@ import Link from 'next/link';
 
 const navLinks = [
     /* Set navlinks to different routes */
-    {text: "HOME", route: "/"},
+    {text: "HOME", route: "/#hero"},
     {text: "MODULES", route: "/modules"},
     {text: "ABOUT", route: "/#about"},
-    {text: "TEAM", route: "#"},
+    {text: "MY REGISTRATIONS", route: "/team"},
     {text: "GALLERY", route: "/#gallery"},
     {text: "CONTACT US", route: "/#footer"},
 ]
 
 export default function Navbar(props) {
     const [open, toggleNavbar] = useState(false);
-    console.log(open);
 
     const onNavlinkClick = () => {
         toggleNavbar((prevstate) => !prevstate)
@@ -27,7 +26,6 @@ export default function Navbar(props) {
     return(
         <div className={styles.nav}>
             <div onClick={()=>{
-                console.log("click");
                 toggleNavbar(!open)
             }}>
              {React.cloneElement(props.hamburger, {

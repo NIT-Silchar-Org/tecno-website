@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 // import UserIcon from '../public/assests/profile/user.png'
 // import EventIcon from '../public/assests/profile/icon.png'
 import Tecnologo from '../public/assests/profile/Tecnoesis Logo.png'
@@ -19,6 +20,7 @@ import { useAuth } from '../providers/authContext'
 function Profile1() {
   const auth = useAuth()
   const { backendUser, logout } = auth
+  const router = useRouter();
 
   // useEffect(() => {
 
@@ -97,7 +99,7 @@ function Profile1() {
                   </li>
                   {/* <li className='personalDetailIcon'><Image src={Location} />&emsp;Address</li> */}
                 </ul>
-                <button className="reg">Registrations</button>
+                <button className="reg" onClick={() => {router.push('/team')} }>Registrations</button>
                 <br />
                 <button className="logout" onClick={logout}>
                   Log Out

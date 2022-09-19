@@ -19,13 +19,11 @@ function Team() {
 
   const toggleTab = (index) => {
     setToggleState(index)
-    console.log('clicked!')
   }
 
   useEffect(() => {
     auth.currentUser.getIdToken().then((token) => {
       teamsFetch(token).then((resp) => {
-        console.log(resp)
         setTeams(resp.data.msg)
       })
     })
@@ -72,7 +70,7 @@ function Team() {
           {toggleState === 1 && (
             <Pending
               teams={teams.filter(
-                (team) => team.registrationStatus === 'PENDING',
+                (team) => team.team.registrationStatus === 'PENDING',
               )}
               deleteFromPending={(id) =>
                 setTeams(teams.filter((t) => t.id !== id))
@@ -82,14 +80,14 @@ function Team() {
           {toggleState === 2 && (
             <Registered
               teams={teams.filter(
-                (team) => team.registrationStatus === 'REGISTERED',
+                (team) => team.team.registrationStatus === 'REGISTERED',
               )}
             />
           )}
           {toggleState === 3 && (
             <Rejected
               teams={teams.filter(
-                (team) => team.registrationStatus === 'CANCELLED',
+                (team) => team.team.registrationStatus === 'CANCELLED',
               )}
             />
           )}

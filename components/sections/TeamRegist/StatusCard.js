@@ -1,13 +1,16 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import TeamLogo from '../../../public/assests/TeamStat/Ellipse_2168.png'
 import downArr from '../../../public/assests/TeamStat/Vector.png'
 import upArr from '../../../public/assests/TeamStat/upArr.png'
 // import reject from "../public/assests/TeamStat/reject.png"
 import accept from '../../../public/assests/TeamStat/accept.png'
 import reject from '../../../public/assests/TeamStat/reject.png'
+import Accept from '../../../public/assests/TeamStat/accept.png'
+import Reject from '../../../public/assests/TeamStat/reject.png'
+import { teamRespond } from '../../../utils/team_fetch'
+import { useAuth } from '../../../providers/authContext'
 
-const StatusCard = ({ color, registration }) => {
+const StatusCard = ({ color, registration, deleteFromPending }) => {
   const [Height, setHeight] = useState('0')
   const [show, setshow] = useState(false)
   const [dis, setDis] = useState('1')
@@ -35,16 +38,27 @@ const StatusCard = ({ color, registration }) => {
       setArr(downArr)
     }
   }
+  const { backendUser, auth } = useAuth()
+
+  const handleRespond = (status) => {
+    auth.currentUser.getIdToken().then((token) => {
+      if (token) {
+        teamRespond(token, status, registration.team.id).then((resp) => {
+          if (resp.data?.status < 300) {
+            deleteFromPending(registration.id)
+          }
+        })
+      }
+    })
+  }
+
   return (
     <li className="Teamdetail" style={{ borderColor: color }}>
       <div className="hshow">
         <div className="teamName">
           <div>
-            <Image src={TeamLogo} />
-          </div>
-          <div>
             <span className="registered" style={{ color: color }}>
-              NITS Hacks 4.0
+              {registration.team.event.name}
               <br />
             </span>
             <span className="registeredteam">
@@ -52,6 +66,23 @@ const StatusCard = ({ color, registration }) => {
             </span>
           </div>
         </div>
+        {registration.team.members.find(
+          (member) => backendUser?.msg?.username === member.user.username,
+        )?.registrationStatus === 'PENDING' && (
+          <div className="StatBtn">
+            <button className="reg" onClick={() => handleRespond('REGISTERED')}>
+              <Image src={Accept} />
+              &nbsp; Accept
+            </button>
+            <button
+              className="logout"
+              onClick={() => handleRespond('CANCELLED')}
+            >
+              <Image src={Reject} />
+              &nbsp; Reject
+            </button>
+          </div>
+        )}
         <div className="viewTeam">
           <div className="viewTeamSize" style={styles1}>
             View Team{' '}
@@ -73,18 +104,19 @@ const StatusCard = ({ color, registration }) => {
               return (
                 <tr key={key}>
                   <td>
-                    {val.firstName} {val.middleName ? val.middleName + ' ' : ''}
-                    {val.lastName}
+                    {val.user.firstName}{' '}
+                    {val.user.middleName ? val.user.middleName + ' ' : ''}
+                    {val.user.lastName}
                   </td>
-                  <td>{val.username}</td>
+                  <td>{val.user.username}</td>
                   <td>
-                    {val.registrationStatus === 'PENDING' ? pending : ''}
+                    {val.registrationStatus === 'PENDING' ? 'pending' : ''}
                     {val.registrationStatus === 'REGISTERED' ? (
                       <Image src={accept} alt="accepted" />
                     ) : (
                       ''
                     )}
-                    {val.registrationStatus === 'REGISTERED' ? (
+                    {val.registrationStatus === 'CANCELLED' ? (
                       <Image src={reject} alt="rejected" />
                     ) : (
                       ''

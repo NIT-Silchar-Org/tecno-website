@@ -31,8 +31,7 @@ function Event() {
   const [memberCount, setMemberCount] = useState(1)
   const [members, setMembers] = useState([])
 
-  const {auth, backendUser, signup} = useAuth()
-  // console.log(data.module);
+  const { auth, backendUser, signup } = useAuth()
   const handleReg = async () => {
     const token = await auth.currentUser.getIdToken()
     const body = {
@@ -40,7 +39,7 @@ function Event() {
       members: members,
     }
     const res = await teamRegister(id, body, token)
-    console.log(res)
+    if (!res.error && res.status < 300) router.push('/team')
   }
   const router = useRouter()
   const [data, setData] = useState(null)
@@ -53,9 +52,14 @@ function Event() {
       setData(res?.data?.msg)
     })
     // let id = params?.id
-    // console.log(resp);
     // let data = resp?.data?.msg
   }, [])
+  const deleteMember = (index) => {
+    const newMembers = members.filter((val, idx) => idx != index)
+    setMembers(newMembers)
+    setMemberCount(memberCount - 1)
+  }
+
   return (
     <>
       <div className="justify-center bg-black w-full h-screen">
@@ -102,20 +106,18 @@ function Event() {
             </div>
 
             <div className="my-2">
-              { backendUser?.status < 300 ?
-              <Button
-                onClick={() => {
-                  setIsFormHidden(false)
-                  scrollToRef.current.scrollIntoView()
-                }}
-              >
-                Register
-              </Button> : <Button
-                onClick={signup}
-              >
-                Login To Participate
-              </Button>
-                }
+              {backendUser?.status < 300 ? (
+                <Button
+                  onClick={() => {
+                    setIsFormHidden(false)
+                    scrollToRef.current.scrollIntoView()
+                  }}
+                >
+                  Register
+                </Button>
+              ) : (
+                <Button onClick={signup}>Login To Participate</Button>
+              )}
             </div>
           </div>
         </div>
@@ -140,7 +142,6 @@ function Event() {
           } `}
         ref={scrollToRef}
       >
-        <Alert text="hello" />
         <div className="form-section">
           <h1 className="text-lg text-white mokoto-glitch-font">
             Registration Form
@@ -160,14 +161,18 @@ function Event() {
                 <div className="input-border"></div>
               </div> */}
           </div>
-          <TeamMember
-            members={members}
-            setMembers={setMembers}
-            memberCount={memberCount}
-            setMemberCount={setMemberCount}
-            username={username}
-            setUsername={setUsername}
-          />
+          {data && data.maxTeamSize != 1 && (
+            <TeamMember
+              members={members}
+              setMembers={setMembers}
+              memberCount={memberCount}
+              setMemberCount={setMemberCount}
+              username={username}
+              setUsername={setUsername}
+              maxMemberCount={data.maxTeamSize}
+              deleteMember={deleteMember}
+            />
+          )}
           <div className="my-2" onClick={handleReg}>
             <Button>Submit</Button>
           </div>

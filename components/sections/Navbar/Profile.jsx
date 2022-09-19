@@ -9,8 +9,6 @@ import {useState} from 'react'
 export default function Profile(props) {
 
     const {firebaseUser, backendUser} = useAuth()
-    console.log(firebaseUser);
-    console.log(backendUser);
 
     const { signup} = useAuth()
     const [isdisabled, setIsdisabled] = useState(false)

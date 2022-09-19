@@ -116,25 +116,18 @@ const MainLanding = () => {
       // Get sub-array of first n elements after shuffled
       const selected = shuffled.slice(0, 2)
       setActiveind(selected)
-      console.log(selected)
     }, 4000)
 
     return () => clearInterval(interval)
   }, [])
 
-  useEffect(() => {
-    // if already scrolled down, assume everything stopped
-    if (!heroInView) {
-      dispatch(ACTION_EXIT_ANIMATION_COMPLETE)
-    }
-  }, [heroInView])
   return (
     <div
       className={`${styles.container} ${
         !state.scrollable ? styles.static : ''
       }`}
     >
-      <div className={`${styles.hero}`} ref={ref}>
+      <div id="hero" className={`${styles.hero}`} ref={ref}>
         <div className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}>
           <LeftBg state={state.animation} />
         </div>

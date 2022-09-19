@@ -3,7 +3,6 @@ import { toast } from 'react-toastify'
 
 export const teamsFetch = async (token) => {
   const url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/user/me/my_teams`
-  // console.log(body)
   let resp
 
   const headers = {
@@ -25,7 +24,6 @@ export const teamsFetch = async (token) => {
 
 export const teamRespond = async (token, status, teamID) => {
   const url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/team/${teamID}/respond`
-  console.log(body)
   let resp
 
   const headers = {
@@ -34,7 +32,7 @@ export const teamRespond = async (token, status, teamID) => {
   }
 
   try {
-    resp = await axios.post(url, { status }, { headers })
+    resp = await axios.patch(url, { status }, { headers })
   } catch (err) {
     console.log(err)
 

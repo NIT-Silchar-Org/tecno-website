@@ -684,6 +684,7 @@ h3 {
   border-color: #00f0ff;
   border-radius: 10%;
   border-width: 0.1px;
+  width: fit-content;
   padding: 1px;
   margin-bottom: 1rem;
 }
@@ -775,7 +776,7 @@ h3 {
 }
 
 .profPhoto2 {
-  z-index: 999;
+  z-index: 400;
   position: absolute;
   top: 20px;
   opacity: 0;
@@ -1042,7 +1043,7 @@ Image {
   }
 
   .profPhoto2 {
-    z-index: 999;
+    z-index: 400;
     position: absolute;
     top: 7%;
     width: 10.875rem;

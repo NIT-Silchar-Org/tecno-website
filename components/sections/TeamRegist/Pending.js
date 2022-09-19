@@ -1,15 +1,16 @@
 import React from 'react'
-import PendingCard from './PendingCard'
+import StatusCard from './StatusCard'
 
 function TeamPend({ teams: registrations, deleteFromPending }) {
   return (
     <div className="Team">
       <ul className="TeamList">
         {registrations.map((registration) => (
-          <PendingCard
+          <StatusCard
             registration={registration}
             key={registration.id}
             deleteFromPending={deleteFromPending}
+            color="#FFE166"
           />
         ))}
       </ul>

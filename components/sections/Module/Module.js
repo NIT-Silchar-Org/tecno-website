@@ -42,7 +42,6 @@ const Module = ({ data, setSelectedItem, ind }) => {
   useEffect(() => {
     if (inView) setSelectedItem(ind)
   }, [inView, ind, setSelectedItem])
-  console.log('======', data)
 
   return (
     <div className={styles.container} ref={ref}>
@@ -76,11 +75,11 @@ const Module = ({ data, setSelectedItem, ind }) => {
         <Slider className={styles.carousel} classNameTray={styles.carouselTray}>
           {data?.events?.map((event, index) => {
             return (
-              <Slide key={index} index={index} style={{ padding: 0 }}>
                 <Link href={`/events/${event?.id}`} key={index}>
-                  <EventCard data={event} />
+                  <Slide key={index} index={index} style={{ padding: 0 }}>
+                      <EventCard data={event} />
+                  </Slide>
                 </Link>
-              </Slide>
             )
           })}
         </Slider>
