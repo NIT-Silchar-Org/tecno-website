@@ -26,13 +26,13 @@ $text_font: LemonMilk;
     background: url('../../../public/assests/Navbar/ButtonSurround.svg');
     background-size: cover;
 
-    @media screen and (min-width: 1601px) {
+    @media screen and (min-width: 1280px) {
       margin: 50px;
       width: $btn_cnt_width;
       height: $btn_cnt_height;
       transform: rotate(-30deg);
     }
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1279px) {
       margin: auto;
       width: $mbtn_cnt_width;
       height: $mbtn_cnt_height;
@@ -49,11 +49,11 @@ $text_font: LemonMilk;
     font-family: $text_font;
     font-size: large;
     color: white;
-    @media screen and (min-width: 1601px) {
+    @media screen and (min-width: 1280px) {
       width: $btn_width;
       height: $btn_height;
     }
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1279px) {
       width: $mbtn_width;
       height: $mbtn_height;
     }

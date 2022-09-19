@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Profile from './Profile';
 import NavButton from '../Navbar/NavButton'
 import Link from 'next/link';
+import { useAuth } from '../../../providers/authContext';
 
 const navLinks = [
     /* Set navlinks to different routes */
@@ -19,28 +20,25 @@ export default function Navbar(props) {
     const [open, toggleNavbar] = useState(false);
     console.log(open);
 
-
     return(
         <div className={styles.nav}>
             <div onClick={()=>{
                 console.log("click");
                 toggleNavbar(!open)
             }}>
-            {/* {props?.hamburger}
-             */}
              {React.cloneElement(props.hamburger, {
                 open:open
              })}
             </div>
 
             <div className={open ? styles.navbarshow : styles.navbar}>
-                <Profile href={props.profile} pfp={props.pfp} />
+                <Profile href={props.profile} />
                 <div className={ styles.navitemcontainer }>
                     {
                         navLinks.map((links, index) => {
                             return(
                                 <Link href={links.route} key={index}>
-                                    <NavButton text={links.text} href={links.route} key={index}/>
+                                    <NavButton text={links.text} onClick={links.route} key={index}/>
                                 </Link>
                             )
                        })

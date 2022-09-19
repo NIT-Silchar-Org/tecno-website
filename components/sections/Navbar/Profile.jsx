@@ -1,5 +1,4 @@
 import styles from '../Navbar/Profile.module.scss'
-import defaultimg from '../../../public/assests/Navbar/default.png'
 import Image from 'next/image';
 import Link from 'next/link';
 // import { useAuth } from '../../../providers/authContext';
@@ -9,8 +8,9 @@ import {useAuth} from '../../../providers/authContext'
 import {useState} from 'react'
 export default function Profile(props) {
 
-    const {firebaseUser} = useAuth()
+    const {firebaseUser, backendUser} = useAuth()
     console.log(firebaseUser);
+    console.log(backendUser);
 
     const { signup} = useAuth()
     const [isdisabled, setIsdisabled] = useState(false)
@@ -38,7 +38,7 @@ export default function Profile(props) {
                         <Link href={props.href}>
                         <Image
                             className={styles.image}
-                            src={props.pfp || defaultimg} // use props.pfp if available else default pfp
+                            src={firebaseUser.photoURL}
                             alt="Profile Picture"
                             width={60}
                             height={60}
@@ -53,7 +53,8 @@ export default function Profile(props) {
         </div>
 
         ):(
-            <div className={styles.surround} onClick={handleLogin} disabled={isdisabled}>
+            <div className={ styles.surrounddisabled } onClick={handleLogin} disabled={isdisabled}>
+            <img src = "/assests/Navbar/signin.svg"/>
 
             </div>
 

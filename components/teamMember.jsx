@@ -1,6 +1,6 @@
 import React from "react";
 // import { useState } from 'react';
-import Button from "./button";
+import Button from "./Button";
 
 function TeamMember({username, setUsername, memberCount, setMemberCount, members , setMembers}) {
     // const [username, setUsername] = useState("")

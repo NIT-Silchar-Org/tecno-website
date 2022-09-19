@@ -2,6 +2,10 @@
 $height: 15rem;
 // Multiply width by 1.07 to keep the svg proportional
 $width: $height * 1.07;
+$signinheight: 10rem;
+$signinwidth: $signinheight * 2.517;
+
+
 /* mobile view */
 $mheight: 6rem;
 $mwidth: $mheight * 1.02;
@@ -13,10 +17,10 @@ $mwidth: $mheight * 1.02;
     justify-content: center;
     align-items: center;
     background-size: cover;
-    z-index: -1;
+    z-index: 499;
     margin-top: 55px;
 
-    @media screen and (min-width: 1601px) {
+    @media screen and (min-width: 1280px) {
         background: url('../../../public/assests/Navbar/ProfileSurround.svg');
         width: $width;
         height: $height;
@@ -34,7 +38,7 @@ $mwidth: $mheight * 1.02;
     }
 
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1279px) {
         background: url('../../../public/assests/Navbar/ProfileSurround-mobile.svg');
         width: $mwidth;
         height: $mheight;
@@ -42,7 +46,6 @@ $mwidth: $mheight * 1.02;
         margin-right: auto;
         .profile {
             position: absolute;
-            top: 73px;
             cursor: pointer;
             border-radius: 100%;
             .image {
@@ -50,42 +53,28 @@ $mwidth: $mheight * 1.02;
             }
         }
     }
+}
 
-    @media screen and (min-width: 2500px) {
-        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
-        width: $width;
-        height: $height;
-        margin-top: 80px;
-        margin-left: 70px;
-        .profile {
-            position: absolute;
-            left: 110px;
-            top: 80px;
-            cursor: pointer;
-            border-radius: 100%;
-            .image {
-                border-radius: 100%;
-            }
-        }
-        transform: scale(1.2);
+
+.surrounddisabled {
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 502;
+
+    @media screen and (min-width: 1280px) {
+        width: $signinwidth;
+        height: $signinheight;
+        margin-left: 20px;
+        margin-top: 40px;
+
+        transform: scale(0.6);
     }
-
-    @media screen and (min-width: 3500px) {
-        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
-        width: $width;
-        height: $height;
-        margin-top: 200px;
-        margin-left: 200px;
-        .profile {
-            position: absolute;
-            cursor: pointer;
-            left: 110px;
-            top: 80px;
-            border-radius: 100%;
-            .image {
-                border-radius: 100%;
-            }
-        }
-        transform: scale(2);
+    @media screen and (max-width: 1279px) {
+        top : -2.5rem;
+        width: $signinwidth;
+        height: $signinheight;
+        margin-right: auto;
+        margin-left: auto;
+        transform: scale(0.5);
     }
 }

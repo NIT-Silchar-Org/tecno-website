@@ -1,32 +1,37 @@
+import axios from 'axios'
+import { getAuth } from 'firebase/auth'
 import React from 'react'
 import { useState } from 'react'
 // import Alert from '../components/Alert'
-import Button from '../components/button'
+import Button from '../components/Button'
 // import Alert from '../components/Form/Alert'
 import Input from '../components/Form/Input'
 import HamBurger from '../components/sections/Navbar/HamBurger'
 import Navbar from '../components/sections/Navbar/Navbar'
-import { useAuth } from '../providers/authContext'
+import { useAuth, AuthProvider } from '../providers/authContext'
 import { userBackendRegister } from '../utils/auth_handlers'
+  import { ToastContainer } from 'react-toastify'
+  import 'react-toastify/dist/ReactToastify.css'
+
 function Register() {
-  const { auth } = useAuth()
+  const { auth, logout } = useAuth()
 
   // const [name, setName] = useState('hello')
   const [firstName, setFirstName] = useState('')
   const [secondName, setSecondName] = useState('')
   const [phone, setPhone] = useState(null)
 
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState(getAuth().currentUser?.email || '')
   const [collegeName, setCollegeName] = useState('')
   const [regID, setRegID] = useState(null)
   const [userName, setUserName] = useState('')
   // const [imageUrl, setImageUrl] = useState('')
-  const imageUrl =""
+  const imageUrl = ''
   // console.log(firebaseUser?.accessToken);
   // let token = firebaseToken
   const handleSignup = async (e) => {
     e.preventDefault()
-    const token = await auth.currentUser.getIdToken()
+    const token = await auth?.currentUser?.getIdToken()
     await userBackendRegister({
       firstName,
       secondName,
@@ -44,9 +49,10 @@ function Register() {
 
   return (
     <div>
-      <Navbar profile={"/profile"} hamburger={<HamBurger/>} />
+      <ToastContainer />
+      <Navbar profile={'/profile'} hamburger={<HamBurger />} />
       {/* <Alert text={"Hello"} /> */}
-     
+
       {/* <div>
             <h1>Name</h1>
             <input value={name} onChange={(e)=>setName(e.target.value)}/>
@@ -64,9 +70,14 @@ function Register() {
         </div> */}
       <div className="bg-black w-full h-screen justify-center form-bg ">
         <div className="form-section">
-          <h1 className="text-lg text-center text-white mokoto-glitch-font">Signup Form</h1>
+          <h1 className="text-lg text-center text-white mokoto-glitch-font">
+            Signup Form
+          </h1>
           <form className="form" onSubmit={(e) => handleSignup(e)}>
-            <div className=" input-wrapper">
+            <div
+              className=" input-wrapper"
+              // style={{}}
+            >
               {/* <Input placeholder={'Name'} val={name} setVal={setName} req={true}/> */}
               <Input
                 placeholder={'First Name'}
@@ -94,12 +105,13 @@ function Register() {
               />
               <Input
                 placeholder={'Email'}
+                disabled={'disabled'}
                 val={email}
                 setVal={setEmail}
                 req={true}
               />
               <Input
-                placeholder={'Collge Name'}
+                placeholder={'College Name'}
                 val={collegeName}
                 setVal={setCollegeName}
                 req={true}
@@ -110,20 +122,21 @@ function Register() {
                 setVal={setRegID}
                 req={true}
               />
-              <div>
-                
-              </div>
-            <div className="my-4">
-              <Button>
-                <button  type="submit">
-                  Register
-                </button>
-              </Button>
-              
-            </div>
               {/* <Input placeholder={"Name"}/> */}
             </div>
-            
+            <div
+              className="my-4"
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                marginLeft: '10rem',
+                // @media (max-width: "768px") {flexDirection: "column"}
+              }}
+            >
+              <Button children={'cancel'} onClick={logout} />
+              <Button children={'Submit'} onClick={handleSignup} />
+            </div>
           </form>
         </div>
       </div>

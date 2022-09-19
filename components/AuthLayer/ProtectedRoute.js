@@ -9,7 +9,7 @@ function ProtectedRoute({children}) {
 
     useEffect(()=>{
         if(!firebaseUser){
-            router.push('/login')
+            router.push('/')
         }
     }, [router.push, firebaseUser])
   return <>{firebaseUser?children:null}</>
