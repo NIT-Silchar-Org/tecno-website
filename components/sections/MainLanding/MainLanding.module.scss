@@ -63,7 +63,7 @@
         width: 12rem;
         height: 12rem;
         position: relative;
-        top: 20rem;
+        top: 100vh;
 
         @media (max-width: 1000px) {
           display: none;
@@ -74,7 +74,7 @@
         width: 14rem;
         height: 14rem;
         position: relative;
-        top: 14rem;
+        top: 170vh;
         left: 90vw;
 
         @media (max-width: 1000px) {
@@ -87,6 +87,7 @@
         height: 10rem;
         position: relative;
         left: 90vw;
+        top:150vh;
 
         @media (max-width: 1000px) {
           display: none;
@@ -104,7 +105,7 @@
 
       #sp1 {
         position: relative;
-        top: 20rem;
+        top: 90vh;
 
         @media (max-width: 1000px) {
           display: none;
@@ -113,7 +114,7 @@
 
       #sp2 {
         position: relative;
-        top: 20rem;
+        top: 180vh;
         left: 92vw;
 
         @media (max-width: 1000px) {

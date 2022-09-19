@@ -48,7 +48,7 @@ export default Modules
 export async function getStaticProps() {
   const resp = await fetchModule()
   const data = resp?.data?.msg
-  // console.log(data[0].events)
+  console.log(data[0].events)
   return {
     props: {
       data,

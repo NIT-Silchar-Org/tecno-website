@@ -10,6 +10,8 @@ import HamBurger from '../components/sections/Navbar/HamBurger'
 import Navbar from '../components/sections/Navbar/Navbar'
 import { useAuth, AuthProvider } from '../providers/authContext'
 import { userBackendRegister } from '../utils/auth_handlers'
+  import { ToastContainer } from 'react-toastify'
+  import 'react-toastify/dist/ReactToastify.css'
 
 function Register() {
   const { auth, logout } = useAuth()
@@ -19,13 +21,12 @@ function Register() {
   const [secondName, setSecondName] = useState('')
   const [phone, setPhone] = useState(null)
 
-  const [email, setEmail] = useState(getAuth().currentUser?.email || "")
+  const [email, setEmail] = useState(getAuth().currentUser?.email || '')
   const [collegeName, setCollegeName] = useState('')
   const [regID, setRegID] = useState(null)
   const [userName, setUserName] = useState('')
   // const [imageUrl, setImageUrl] = useState('')
-  const imageUrl = ""
-
+  const imageUrl = ''
   // console.log(firebaseUser?.accessToken);
   // let token = firebaseToken
   const handleSignup = async (e) => {
@@ -48,7 +49,8 @@ function Register() {
 
   return (
     <div>
-      <Navbar profile={"/profile"} hamburger={<HamBurger />} />
+      <ToastContainer />
+      <Navbar profile={'/profile'} hamburger={<HamBurger />} />
       {/* <Alert text={"Hello"} /> */}
 
       {/* <div>
@@ -68,10 +70,13 @@ function Register() {
         </div> */}
       <div className="bg-black w-full h-screen justify-center form-bg ">
         <div className="form-section">
-          <h1 className="text-lg text-center text-white mokoto-glitch-font">Signup Form</h1>
+          <h1 className="text-lg text-center text-white mokoto-glitch-font">
+            Signup Form
+          </h1>
           <form className="form" onSubmit={(e) => handleSignup(e)}>
-            <div className=" input-wrapper"
-            // style={{}}
+            <div
+              className=" input-wrapper"
+              // style={{}}
             >
               {/* <Input placeholder={'Name'} val={name} setVal={setName} req={true}/> */}
               <Input
@@ -119,21 +124,23 @@ function Register() {
               />
               {/* <Input placeholder={"Name"}/> */}
             </div>
-            <div className="my-4"
+            <div
+              className="my-4"
               style={{
-                display: "flex", flexDirection: "row", justifyContent: "center", marginLeft: "10rem"
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                marginLeft: '10rem',
                 // @media (max-width: "768px") {flexDirection: "column"}
               }}
             >
-              <Button children={"cancel"} onClick={logout} />
-              <Button children={"Submit"} onClick={handleSignup} />
-
+              <Button children={'cancel'} onClick={logout} />
+              <Button children={'Submit'} onClick={handleSignup} />
             </div>
-
           </form>
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   )
 }
 

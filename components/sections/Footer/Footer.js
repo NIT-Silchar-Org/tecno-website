@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <div className={styles.foot}>
           <div className={styles.contact}>CONTACT US</div>
-          <div>user123@tecnoesis.org</div>
+          <div>team@tecnoesis.org</div>
         </div>
       </div>
     </div>

@@ -12,6 +12,8 @@ import Navbar from '../components/sections/Navbar/Navbar'
 import HamBurger from '../components/sections/Navbar/HamBurger'
 import { useAuth } from '../providers/authContext'
 import { teamsFetch } from '../utils/team_fetch'
+  import { ToastContainer } from 'react-toastify'
+  import 'react-toastify/dist/ReactToastify.css'
 function Team() {
   const [toggleState, setToggleState] = useState(1)
   const { auth, firebaseUser } = useAuth()
@@ -34,6 +36,7 @@ function Team() {
   useEffect(() => {})
   return (
     <>
+      <ToastContainer />
       <div className="teamBack">
         <div className="registration1">
           <div className="designTop">
