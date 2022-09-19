@@ -8,10 +8,9 @@ import Button from '../components/Button'
 import Input from '../components/Form/Input'
 import HamBurger from '../components/sections/Navbar/HamBurger'
 import Navbar from '../components/sections/Navbar/Navbar'
-import { useAuth, AuthProvider } from '../providers/authContext'
+import { useAuth } from '../providers/authContext'
 import { userBackendRegister } from '../utils/auth_handlers'
-  import { ToastContainer } from 'react-toastify'
-  import 'react-toastify/dist/ReactToastify.css'
+import { useRouter } from 'next/router'
 
 function Register() {
   const { auth, logout } = useAuth()
@@ -29,10 +28,11 @@ function Register() {
   const imageUrl = ''
   // console.log(firebaseUser?.accessToken);
   // let token = firebaseToken
+  const router = useRouter()
   const handleSignup = async (e) => {
     e.preventDefault()
     const token = await auth?.currentUser?.getIdToken()
-    await userBackendRegister({
+    const res = await userBackendRegister({
       firstName,
       secondName,
       phone,
@@ -43,13 +43,15 @@ function Register() {
       imageUrl,
       token,
     })
+    if (!res.error || res.status < 300) {
+      router.push('/modules')
+    }
   }
 
   // const [message, setMessage] = useState("Hello")
 
   return (
     <div>
-      <ToastContainer />
       <Navbar profile={'/profile'} hamburger={<HamBurger />} />
       {/* <Alert text={"Hello"} /> */}
 

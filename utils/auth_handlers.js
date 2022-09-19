@@ -34,7 +34,7 @@ export const userBackendRegister = async ({
 
   try {
     resp = await axios.post(url, body, { headers })
-    if (resp.data.status === 200) toast.success(resp.data.msg)
+    if (resp.data.status === 200) toast.success('Registered Successfully')
     else toast.error(resp.data.msg)
   } catch (err) {
     toast.error(err.response.data.msg)
