@@ -57,6 +57,43 @@ $mwidth: $mheight * 1.02;
             }
         }
     }
+    @media screen and (min-width: 2500px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        background-repeat: no-repeat;
+        width: $width;
+        height: $height;
+        margin-top: 80px;
+        margin-left: 70px;
+        .profile {
+            position: absolute;
+            left: 110px;
+            top: 80px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+        transform: scale(1.2);
+    }
+
+    @media screen and (min-width: 3500px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        background-repeat: no-repeat;
+        width: $width;
+        height: $height;
+        margin-top: 200px;
+        margin-left: 200px;
+        .profile {
+            position: absolute;
+            left: 110px;
+            top: 80px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+        transform: scale(2);
+    }
 }
 
 

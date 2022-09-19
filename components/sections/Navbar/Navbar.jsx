@@ -8,10 +8,10 @@ import Link from 'next/link';
 
 const navLinks = [
     /* Set navlinks to different routes */
-    {text: "HOME", route: "/"},
+    {text: "HOME", route: "/#hero"},
     {text: "MODULES", route: "/modules"},
     {text: "ABOUT", route: "/#about"},
-    {text: "TEAM", route: "#"},
+    {text: "MY REGISTRATIONS", route: "/team"},
     {text: "GALLERY", route: "/#gallery"},
     {text: "CONTACT US", route: "/#footer"},
 ]
