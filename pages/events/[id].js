@@ -31,7 +31,7 @@ function Event() {
   const [memberCount, setMemberCount] = useState(1)
   const [members, setMembers] = useState([])
 
-  const { auth } = useAuth()
+  const {auth, backendUser, signup} = useAuth()
   // console.log(data.module);
   const handleReg = async () => {
     const token = await auth.currentUser.getIdToken()
@@ -90,6 +90,7 @@ function Event() {
             </div>
 
             <div className="my-2">
+              { backendUser?.status < 300 ?
               <Button
                 onClick={() => {
                   setIsFormHidden(false)
@@ -97,7 +98,12 @@ function Event() {
                 }}
               >
                 Register
+              </Button> : <Button
+                onClick={signup}
+              >
+                Login To Participate
               </Button>
+                }
             </div>
           </div>
         </div>
