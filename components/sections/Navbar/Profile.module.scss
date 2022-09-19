@@ -45,7 +45,9 @@ $mwidth: $mheight * 1.02;
         margin-left: auto;
         margin-right: auto;
         .profile {
-            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
             border-radius: 100%;
             .image {

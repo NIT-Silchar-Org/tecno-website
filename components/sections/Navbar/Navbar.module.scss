@@ -53,18 +53,9 @@ $navbar-width: $navbar-height * 1.407;
 @media screen and (min-width: 1280px) {
     .navitemcontainer {
       position: absolute;
-      left: $navbar-width * 0.25;
-      top: $navbar-height * 0.05;
-      transform: rotate(30deg);
-  }
-}
-
-@media screen and (min-height:  700px) and (max-height: 780px){
-    .navitemcontainer {
-      position: absolute;
-      left: $navbar-width * 0.25;
-      top: $navbar-height * 0.0001;
-      transform: rotate(30deg);
+      left: 5%;
+      top: 50%;
+      transform: rotate(30deg) translateY(-60%);
   }
 }
 

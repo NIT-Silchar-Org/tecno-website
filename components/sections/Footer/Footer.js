@@ -6,7 +6,7 @@ import logo from '../../../public/assests/landingPage/logoOutline.svg'
 
 const Footer = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="footer" className={styles.wrapper}>
       <div className={styles.bg}>
         <div className={styles.st1}></div>
         <div className={styles.st2}></div>
