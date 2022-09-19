@@ -22,6 +22,7 @@ $mwidth: $mheight * 1.02;
 
     @media screen and (min-width: 1280px) {
         background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        background-repeat: no-repeat;
         width: $width;
         height: $height;
         margin-left: 37px;
@@ -40,6 +41,7 @@ $mwidth: $mheight * 1.02;
 
     @media screen and (max-width: 1279px) {
         background: url('../../../public/assests/Navbar/ProfileSurround-mobile.svg');
+        background-repeat: no-repeat;
         width: $mwidth;
         height: $mheight;
         margin-left: auto;
@@ -61,6 +63,7 @@ $mwidth: $mheight * 1.02;
 .surrounddisabled {
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
     z-index: 502;
 
     @media screen and (min-width: 1280px) {

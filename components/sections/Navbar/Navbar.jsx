@@ -8,11 +8,11 @@ import { useAuth } from '../../../providers/authContext';
 
 const navLinks = [
     /* Set navlinks to different routes */
-    {text: "ABOUT", route: "#about"},
+    {text: "HOME", route: "/"},
     {text: "MODULES", route: "/modules"},
-    {text: "SPONSORS", route: "/404"},
-    {text: "TEAM", route: "/404"},
-    {text: "GALLERY", route: "/404"},
+    {text: "ABOUT", route: "/#about"},
+    {text: "TEAM", route: "#"},
+    {text: "GALLERY", route: "/#gallery"},
     {text: "CONTACT US", route: "/#footer"},
 ]
 

@@ -17,7 +17,7 @@ const Slide = () => {
   //   else setActiveIndex(index)
   // }
   return (
-    <div className={styles.wrapper}>
+    <div id="gallery" className={styles.wrapper}>
       <div className={styles.container}>
         {/* <div
           className={styles.btn}
