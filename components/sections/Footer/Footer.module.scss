@@ -68,7 +68,9 @@
             border-bottom-right-radius: 15px;
             border-bottom-left-radius: 17px;
           }
-
+          &:hover{
+            text-shadow: 2px 2px 20px #bababa;
+          }
           background: url('../../../public/assests/landingPage/Border.svg') no-repeat center;
 
           @media (max-width: 768px) {

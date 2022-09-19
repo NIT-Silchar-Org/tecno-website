@@ -123,8 +123,9 @@ const MainLanding = () => {
   }, [])
   return (
     <div
-      className={`${styles.container} ${!state.scrollable ? styles.static : ''
-        }`}
+      className={`${styles.container} ${
+        !state.scrollable ? styles.static : ''
+      }`}
     >
       <div className={`${styles.hero}`} ref={ref}>
         <div className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}>
@@ -145,28 +146,28 @@ const MainLanding = () => {
           <div
             className={styles.ele}
             id={styles.eclipse}
-            style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.2}px)` }}
           >
             <Image src={eclipse} />
           </div>
           <div
             className={styles.sphere}
             id={styles.sp1}
-            style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.25}px)` }}
           >
             <Image src={sphere} />
           </div>
           <div
             className={styles.ele}
             id={styles.ball}
-            style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
           >
             <Image src={ball} />
           </div>
           <div
             className={styles.ele}
             id={styles.ring}
-            style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.35}px)` }}
           >
             <Image src={ring} />
           </div>
