@@ -766,7 +766,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .profPhoto2 {
-  z-index: 999;
+  z-index: 400;
   position: absolute;
   top: 20px;
   opacity: 0;
@@ -1033,7 +1033,7 @@ Image {
   }
 
   .profPhoto2 {
-    z-index: 999;
+    z-index: 400;
     position: absolute;
     top: 7%;
     width: 10.875rem;
