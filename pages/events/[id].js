@@ -1,20 +1,18 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
 // import DummyLogo from '../../public/assests/stash/dummylogo.png'
-import Header from '../../components/Header';
-import TeamMember from '../../components/teamMember';
-import Button from '../../components/Button';
-import { fetchEventById } from '../../utils/events_fetch';
-import { useAuth } from '../../providers/authContext';
-import { teamRegister } from '../../utils/event_register';
-import Alert from '../../components/Alert';
-import {useRouter} from 'next/router'
-import Navbar from '../../components/sections/Navbar/Navbar';
-import HamBurger from '../../components/sections/Navbar/HamBurger';
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-import ReactMarkdown from 'react-markdown';
-  
+import Header from '../../components/Header'
+import TeamMember from '../../components/teamMember'
+import Button from '../../components/Button'
+import { fetchEventById } from '../../utils/events_fetch'
+import { useAuth } from '../../providers/authContext'
+import { teamRegister } from '../../utils/event_register'
+import Alert from '../../components/Alert'
+import { useRouter } from 'next/router'
+import Navbar from '../../components/sections/Navbar/Navbar'
+import HamBurger from '../../components/sections/Navbar/HamBurger'
+import ReactMarkdown from 'react-markdown'
+
 function Event() {
   const [isFormHidden, setIsFormHidden] = useState(true)
   const scrollToRef = useRef()
@@ -31,7 +29,7 @@ function Event() {
   const [memberCount, setMemberCount] = useState(1)
   const [members, setMembers] = useState([])
 
-  const {auth, backendUser, signup} = useAuth()
+  const { auth, backendUser, signup } = useAuth()
   const handleReg = async () => {
     const token = await auth.currentUser.getIdToken()
     const body = {
@@ -39,6 +37,7 @@ function Event() {
       members: members,
     }
     const res = await teamRegister(id, body, token)
+    if (!res.error && res.status < 300) router.push('/team')
   }
   const router = useRouter()
   const [data, setData] = useState(null)
@@ -83,24 +82,24 @@ function Event() {
               />
             </div>
             <div className="details scrollbar-hidden">
-              <p className="text-white"><ReactMarkdown>{data?.description}</ReactMarkdown></p>
+              <p className="text-white">
+                <ReactMarkdown>{data?.description}</ReactMarkdown>
+              </p>
             </div>
 
             <div className="my-2">
-              { backendUser?.status < 300 ?
-              <Button
-                onClick={() => {
-                  setIsFormHidden(false)
-                  scrollToRef.current.scrollIntoView()
-                }}
-              >
-                Register
-              </Button> : <Button
-                onClick={signup}
-              >
-                Login To Participate
-              </Button>
-                }
+              {backendUser?.status < 300 ? (
+                <Button
+                  onClick={() => {
+                    setIsFormHidden(false)
+                    scrollToRef.current.scrollIntoView()
+                  }}
+                >
+                  Register
+                </Button>
+              ) : (
+                <Button onClick={signup}>Login To Participate</Button>
+              )}
             </div>
           </div>
         </div>
