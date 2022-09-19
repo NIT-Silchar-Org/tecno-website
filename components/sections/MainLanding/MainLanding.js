@@ -127,7 +127,7 @@ const MainLanding = () => {
         !state.scrollable ? styles.static : ''
       }`}
     >
-      <div className={`${styles.hero}`} ref={ref}>
+      <div id="hero" className={`${styles.hero}`} ref={ref}>
         <div className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}>
           <LeftBg state={state.animation} />
         </div>
