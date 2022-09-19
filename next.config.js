@@ -3,9 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    images: {
-        unoptimized: true
-    }
   },
   images: {
     domains: ['lh3.googleusercontent.com'],
@@ -13,7 +10,7 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
-        port: '',
+        port: '*',
         pathname: '/**'
       }
     ]
