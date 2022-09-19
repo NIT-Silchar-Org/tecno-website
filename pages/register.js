@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { getAuth } from 'firebase/auth'
 import React from 'react'
 import { useState } from 'react'
@@ -11,6 +12,8 @@ import { useAuth } from '../providers/authContext'
 import { userBackendRegister } from '../utils/auth_handlers'
 import 'react-toastify/dist/ReactToastify.css'
 import { useRouter } from 'next/router'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function Register() {
   const { auth, logout } = useAuth()
@@ -136,8 +139,8 @@ function Register() {
                 // @media (max-width: "768px") {flexDirection: "column"}
               }}
             >
-              <Button children={'cancel'} onClick={logout} />
-              <Button children={'Submit'} onClick={handleSignup} />
+              <Button onClick={logout}>cancel</Button>         
+              <Button onClick={handleSignup}>submit</Button>
             </div>
           </form>
         </div>
