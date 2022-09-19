@@ -1,20 +1,18 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
 // import DummyLogo from '../../public/assests/stash/dummylogo.png'
-import Header from '../../components/Header';
-import TeamMember from '../../components/teamMember';
-import Button from '../../components/Button';
-import { fetchEventById } from '../../utils/events_fetch';
-import { useAuth } from '../../providers/authContext';
-import { teamRegister } from '../../utils/event_register';
+import Header from '../../components/Header'
+import TeamMember from '../../components/teamMember'
+import Button from '../../components/Button'
+import { fetchEventById } from '../../utils/events_fetch'
+import { useAuth } from '../../providers/authContext'
+import { teamRegister } from '../../utils/event_register'
 // import alert from '../../components/Alert';
-import Alert from '../../components/Alert';
-import {useRouter} from 'next/router'
-import Navbar from '../../components/sections/Navbar/Navbar';
-import HamBurger from '../../components/sections/Navbar/HamBurger';
-  import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-  
+import Alert from '../../components/Alert'
+import { useRouter } from 'next/router'
+import Navbar from '../../components/sections/Navbar/Navbar'
+import HamBurger from '../../components/sections/Navbar/HamBurger'
+
 function Event() {
   const [isFormHidden, setIsFormHidden] = useState(true)
   const scrollToRef = useRef()
@@ -25,39 +23,36 @@ function Event() {
     }
   }, [isFormHidden])
 
-
   // const [members, addMembers] = useState([{ member: '' }]);
-  const [teamname, setTeamName]  = useState("")
-  const [username, setUsername] = useState("")
+  const [teamname, setTeamName] = useState('')
+  const [username, setUsername] = useState('')
   const [memberCount, setMemberCount] = useState(1)
   const [members, setMembers] = useState([])
 
-  const {auth} = useAuth()
+  const { auth } = useAuth()
   // console.log(data.module);
-  const handleReg = async () =>{
+  const handleReg = async () => {
     const token = await auth.currentUser.getIdToken()
-    const body ={
-      name:teamname,
-      members:members,
+    const body = {
+      name: teamname,
+      members: members,
     }
-    const res = await teamRegister(id,body, token )
-    console.log(res);
+    const res = await teamRegister(id, body, token)
+    console.log(res)
   }
   const router = useRouter()
   const [data, setData] = useState(null)
-  const {id} = router.query
-  useEffect(()=>{
-    fetchEventById(id).then((res)=>{
+  const { id } = router.query
+  useEffect(() => {
+    fetchEventById(id).then((res) => {
       setData(res?.data?.msg)
     })
     // let id = params?.id
     // console.log(resp);
     // let data = resp?.data?.msg
-
-  },[])
+  }, [])
   return (
     <>
-      <ToastContainer />
       <div className="justify-center bg-black w-full h-screen">
         <Navbar profile="/profile" pfp="" hamburger={<HamBurger />} />
         <div className="section-one">
@@ -165,8 +160,6 @@ function Event() {
 
 export default Event
 // export const getServerSideProps = async ({ params }) => {
-
-  
 
 //   return {
 //     props: {
