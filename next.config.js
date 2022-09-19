@@ -3,12 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    images: {
-        unoptimized: true
-    }
+    // images: {
+    //     unoptimized: true
+    // }
   },
   images: {
-    domains: ['lh3.googleusercontent.com'],
+    domains: ['lh3.googleusercontent.com', 'i.kym-cdn.com', ],
     remotePatterns: [
       {
         protocol: 'https',
