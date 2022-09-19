@@ -131,7 +131,6 @@ function Event() {
         } `}
         ref={scrollToRef}
       >
-        <Alert text="hello" />
         <div className="form-section">
           <h1 className="text-lg text-white mokoto-glitch-font">
             Registration Form

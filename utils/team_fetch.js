@@ -32,7 +32,7 @@ export const teamRespond = async (token, status, teamID) => {
   }
 
   try {
-    resp = await axios.post(url, { status }, { headers })
+    resp = await axios.patch(url, { status }, { headers })
   } catch (err) {
     console.log(err)
 

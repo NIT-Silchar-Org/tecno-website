@@ -39,11 +39,13 @@ const RejectCard = ({ color = '#FFE166', registration, deleteFromPending }) => {
     }
   }
 
+  const { backendUser } = useAuth()
+
   const handleRespond = (status) => {
     auth.currentUser.getIdToken().then((token) => {
       if (token) {
         teamRespond(token, status, registration.team.id).then((resp) => {
-          if (resp.data.status < 300) {
+          if (resp.data?.status < 300) {
             deleteFromPending(registration.id)
           }
         })
@@ -60,7 +62,7 @@ const RejectCard = ({ color = '#FFE166', registration, deleteFromPending }) => {
           </div>
           <div>
             <span className="registered" style={{ color: color }}>
-              NITS Hacks 4.0
+              {registration.team.event.name}
               <br />
             </span>
             <span className="registeredteam">
@@ -68,16 +70,20 @@ const RejectCard = ({ color = '#FFE166', registration, deleteFromPending }) => {
             </span>
           </div>
         </div>
-        <div className="StatBtn">
-          <button className="reg" onClick={handleRespond('REGISTERED')}>
-            <Image src={Accept} />
-            &nbsp; Accept
-          </button>
-          <button className="logout" onClick={handleRespond('REJECTED')}>
-            <Image src={Reject} />
-            &nbsp; Reject
-          </button>
-        </div>
+        {registration.team.members.find(
+          (member) => backendUser?.msg?.username === member.user.username,
+        )?.registrationStatus === 'PENDING' && (
+          <div className="StatBtn">
+            <button className="reg" onClick={handleRespond('REGISTERED')}>
+              <Image src={Accept} />
+              &nbsp; Accept
+            </button>
+            <button className="logout" onClick={handleRespond('CANCELLED')}>
+              <Image src={Reject} />
+              &nbsp; Reject
+            </button>
+          </div>
+        )}
         <div className="viewTeam">
           <div className="viewTeamSize" style={styles1}>
             View Team{' '}
@@ -98,10 +104,11 @@ const RejectCard = ({ color = '#FFE166', registration, deleteFromPending }) => {
               return (
                 <tr key={key}>
                   <td>
-                    {val.firstName} {val.middleName ? val.middleName + ' ' : ''}
-                    {val.lastName}
+                    {val.user.firstName}{' '}
+                    {val.user.middleName ? val.user.middleName + ' ' : ''}
+                    {val.user.lastName}
                   </td>
-                  <td>{val.username}</td>
+                  <td>{val.user.username}</td>
                 </tr>
               )
             })}
