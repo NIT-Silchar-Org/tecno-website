@@ -6,6 +6,14 @@ import left from '../../../public/assests/modules/Left.svg'
 import right from '../../../public/assests/modules/Right.svg'
 import { useInView } from 'react-intersection-observer'
 import Link from 'next/link'
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from 'pure-react-carousel'
+
 const events = [
   'Robotron',
   'Robotron',
@@ -18,7 +26,6 @@ const events = [
 const len = events.length
 
 const Module = ({ data, setSelectedItem, ind }) => {
-
   const [activeIndex, setActiveIndex] = useState(0)
   const toggle = (mult) => {
     const index = activeIndex + 1 * mult
@@ -27,21 +34,18 @@ const Module = ({ data, setSelectedItem, ind }) => {
     else setActiveIndex(index)
   }
 
-
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 1,
   })
 
   useEffect(() => {
-    if(inView) setSelectedItem(ind)
+    if (inView) setSelectedItem(ind)
   }, [inView, ind, setSelectedItem])
+  console.log('======', data)
 
   return (
-    <div
-      className={styles.container}
-      ref={ref}
-    >
+    <div className={styles.container} ref={ref}>
       <div className={styles.head}>
         <div className={styles.image_cnt}>
           <div className={styles.image}>
@@ -55,42 +59,40 @@ const Module = ({ data, setSelectedItem, ind }) => {
         </div>
         <div>{data?.name}</div>
       </div>
-      <div className={styles.slider}>
-        <div
+      <CarouselProvider
+        className={styles.slider}
+        totalSlides={data?.events ? data?.events?.length : 0}
+        naturalSlideHeight={223}
+        naturalSlideWidth={303}
+      >
+        <ButtonBack
           className={styles.left}
           onClick={() => {
             toggle(-1)
           }}
         >
           <Image src={left} layout="fill" objectFit="contain" priority="true" />
-        </div>
-        <div className={styles.carousel}>
+        </ButtonBack>
+        <Slider className={styles.carousel} classNameTray={styles.carouselTray}>
           {data?.events?.map((event, index) => {
             return (
-
-              <Link href={`/events/${event?.id}`} key={index} >
-                <div
-                  style={{
-                    transform: `translateX(-${activeIndex * 100}%)`,
-                    transition: 'all 0.5s ease-in-out',
-                  }}
-                  key={index}
-                >
+              <Slide key={index} index={index} style={{ padding: 0 }}>
+                <Link href={`/events/${event?.id}`} key={index}>
                   <EventCard data={event} />
-                </div>
-              </Link>
+                </Link>
+              </Slide>
             )
           })}
-        </div>
-        <div className={styles.right} onClick={() => toggle(1)}>
+        </Slider>
+        <ButtonNext className={styles.right} onClick={() => toggle(1)}>
           <Image
             src={right}
             layout="fill"
             objectFit="contain"
             priority="true"
           />
-        </div>
-      </div>
+        </ButtonNext>
+      </CarouselProvider>
     </div>
   )
 }
