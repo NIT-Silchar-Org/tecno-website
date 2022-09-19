@@ -18,7 +18,6 @@ const navLinks = [
 
 export default function Navbar(props) {
     const [open, toggleNavbar] = useState(false);
-    console.log(open);
 
     const onNavlinkClick = () => {
         toggleNavbar((prevstate) => !prevstate)
@@ -27,7 +26,6 @@ export default function Navbar(props) {
     return(
         <div className={styles.nav}>
             <div onClick={()=>{
-                console.log("click");
                 toggleNavbar(!open)
             }}>
              {React.cloneElement(props.hamburger, {

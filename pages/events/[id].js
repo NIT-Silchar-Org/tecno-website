@@ -32,7 +32,6 @@ function Event() {
   const [members, setMembers] = useState([])
 
   const {auth, backendUser, signup} = useAuth()
-  // console.log(data.module);
   const handleReg = async () => {
     const token = await auth.currentUser.getIdToken()
     const body = {
@@ -40,7 +39,6 @@ function Event() {
       members: members,
     }
     const res = await teamRegister(id, body, token)
-    console.log(res)
   }
   const router = useRouter()
   const [data, setData] = useState(null)
@@ -50,7 +48,6 @@ function Event() {
       setData(res?.data?.msg)
     })
     // let id = params?.id
-    // console.log(resp);
     // let data = resp?.data?.msg
   }, [])
   return (

@@ -13,7 +13,6 @@ function TeamMember({username, setUsername, memberCount, setMemberCount, members
         setMemberCount(memberCount + 1)
 
     }
-    console.log(members);
 
     return (
         <>

@@ -3,7 +3,6 @@ import styles from './EventCard.module.scss'
 import Image from 'next/image'
 import  Link  from 'next/link'
 const EventCard = ({ data }) => {
-  // console.log({data});
   return (
     <div className={styles.container}>
       <div className={styles.wrapper_outline}>

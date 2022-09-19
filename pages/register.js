@@ -30,7 +30,6 @@ function Register() {
   const [userName, setUserName] = useState('')
   // const [imageUrl, setImageUrl] = useState('')
   const imageUrl = ''
-  // console.log(firebaseUser?.accessToken);
   // let token = firebaseToken
   const router = useRouter()
   const handleSignup = async (e) => {

@@ -19,13 +19,11 @@ function Team() {
 
   const toggleTab = (index) => {
     setToggleState(index)
-    console.log('clicked!')
   }
 
   useEffect(() => {
     auth.currentUser.getIdToken().then((token) => {
       teamsFetch(token).then((resp) => {
-        console.log(resp)
         setTeams(resp.data.msg)
       })
     })
