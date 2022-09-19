@@ -49,6 +49,12 @@ function Event() {
     // let id = params?.id
     // let data = resp?.data?.msg
   }, [])
+  const deleteMember = (index) => {
+    const newMembers = members.filter((val, idx) => idx != index)
+    setMembers(newMembers)
+    setMemberCount(memberCount - 1)
+  }
+
   return (
     <>
       <div className="justify-center bg-black w-full h-screen">
@@ -145,14 +151,18 @@ function Event() {
                 <div className="input-border"></div>
               </div> */}
           </div>
-          <TeamMember
-            members={members}
-            setMembers={setMembers}
-            memberCount={memberCount}
-            setMemberCount={setMemberCount}
-            username={username}
-            setUsername={setUsername}
-          />
+          {data && data.maxTeamSize != 1 && (
+            <TeamMember
+              members={members}
+              setMembers={setMembers}
+              memberCount={memberCount}
+              setMemberCount={setMemberCount}
+              username={username}
+              setUsername={setUsername}
+              maxMemberCount={data.maxTeamSize}
+              deleteMember={deleteMember}
+            />
+          )}
           <div className="my-2" onClick={handleReg}>
             <Button>Submit</Button>
           </div>

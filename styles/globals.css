@@ -660,13 +660,23 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .member{
-  display: inline-block;
+  display: inline-flex;
   border-color:#00f0ff;
   border-radius: 10%;
   border-width: 0.1px;
+  width: fit-content;
   padding: 1px;
   margin-bottom: 1rem;
-  
+  margin-right: 1rem;
+}
+
+.member .btn-cross {
+  color: red;
+  padding-right: 1rem;
+}
+
+.member .btn-cross svg {
+  width: 100%;
 }
 
 .mokoto-glitch-font {
