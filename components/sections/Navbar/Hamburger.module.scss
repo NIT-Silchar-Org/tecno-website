@@ -8,7 +8,7 @@ $hamburger-padding-y           : 2px !default;
 $hamburger-layer-width         : 2rem !default;
 $hamburger-layer-height        : 0.3rem !default;
 $hamburger-layer-spacing       : 0.3rem !default;
-$hamburger-layer-color         : blueviolet !default;
+$hamburger-layer-color         : linear-gradient(to right, #70E0F9, #F657CF) !default;
 $hamburger-layer-border-radius : 0.5rem !default;
 $hamburger-hover-opacity       : 0.7 !default;
 $hamburger-active-layer-color  : $hamburger-layer-color !default;
@@ -61,7 +61,7 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
     .hamburger_inner,
     .hamburger_inner::before,
     .hamburger_inner::after {
-      background-color: $hamburger-active-layer-color;
+      background-image: $hamburger-active-layer-color;
     }
   }
 }
@@ -83,7 +83,7 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
   &::after {
     width: $hamburger-layer-width;
     height: $hamburger-layer-height;
-    background-color: $hamburger-layer-color;
+    background-image: $hamburger-layer-color;
     border-radius: $hamburger-layer-border-radius;
     position: absolute;
     transition-property: transform;
@@ -130,6 +130,7 @@ $hamburger-active-hover-filter: $hamburger-hover-filter !default;
         transition-delay: 0s;
         transition-timing-function: ease-out;
         background-color: transparent !important;
+        background-image: none !important;
 
         &::before {
           left: $hamburger-layer-width * -2;
