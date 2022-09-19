@@ -8,10 +8,11 @@ const Index = ({ details }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.head}>{details}</div>
-      <Link href="/">
-      <a className={styles.card}>
-        <Image src={spark} layout="fill" objectFit="contain" />
-      </a></Link>
+      <Link href="/spark/form">
+        <a className={styles.card}>
+          <Image src={spark} layout="fill" objectFit="contain" />
+        </a>
+      </Link>
     </div>
   )
 }

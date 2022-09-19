@@ -20,7 +20,7 @@ import { useAuth } from '../providers/authContext'
 function Profile1() {
   const auth = useAuth()
   const { backendUser, logout } = auth
-  const router = useRouter();
+  const router = useRouter()
 
   // useEffect(() => {
 
@@ -99,7 +99,14 @@ function Profile1() {
                   </li>
                   {/* <li className='personalDetailIcon'><Image src={Location} />&emsp;Address</li> */}
                 </ul>
-                <button className="reg" onClick={() => {router.push('/team')} }>Registrations</button>
+                <button
+                  className="reg"
+                  onClick={() => {
+                    router.push('/team')
+                  }}
+                >
+                  Registrations
+                </button>
                 <br />
                 <button className="logout" onClick={logout}>
                   Log Out
@@ -221,9 +228,7 @@ function Profile1() {
               <h2 className="transHeading">Transactions</h2>
               <hr />
               {/* <br /> */}
-              <div className="transcomesoon">
-                <h1>Coming soon...</h1>
-              </div>
+              <div className="transcomesoon"></div>
               {/* <ul className="TransactionList">
                 <li className="EventListLi">
                   <div className="eventName">
@@ -245,7 +250,6 @@ function Profile1() {
               </ul> */}
             </div>
           </div>
-          
         </div>
       </div>
     </>
