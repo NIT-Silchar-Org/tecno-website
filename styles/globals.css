@@ -1,71 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* custom fonts */
 
-@layer base {
-  @font-face {
-    font-family: 'lemonMilk';
-    src: url('/Fonts/LemonMilk.otf');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-
-
-  }
+@font-face {
+  font-family: 'lemonMilk';
+  src: url('/Fonts/LemonMilk.otf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-@layer base {
-  @font-face {
-    font-family: 'roadRage';
-    src: url('/Fonts/Road_Rage.otf');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'roadRage';
+  src: url('/Fonts/Road_Rage.otf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-@layer base {
-  @font-face {
-    font-family: 'mokotoGlitch';
-    src: url('/Fonts/MokotoGlitch.otf');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
+@font-face {
+  font-family: 'mokotoGlitch';
+  src: url('/Fonts/MokotoGlitch.otf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 
 
-  }
 }
 
-@layer base {
-  @font-face {
-    font-family: 'babaPro';
-    src: url('/Fonts/BabaPro-Bold.ttf');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-
-
-  }
+@font-face {
+  font-family: 'babaPro';
+  src: url('/Fonts/BabaPro-Bold.ttf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-@layer base {
-  @font-face {
-    font-family: 'mokotoGlitchMark';
-    src: url('/Fonts/MokotoGlitchMark.otf');
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
+@font-face {
+  font-family: 'mokotoGlitchMark';
+  src: url('/Fonts/MokotoGlitchMark.otf');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 
 
-  }
 }
-
-
-/* default font */
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -322,6 +304,7 @@ body::-webkit-scrollbar-thumb:hover {
 .hidden {
   display: none !important;
 }
+
 .relative {
   position: relative;
 
@@ -334,6 +317,7 @@ body::-webkit-scrollbar-thumb:hover {
 .text-center {
   text-align: center;
 }
+
 .w-full {
   width: 100%;
 }
@@ -379,13 +363,14 @@ body::-webkit-scrollbar-thumb:hover {
   margin-top: 2.4rem;
 }
 
-.my-4{
+.my-4 {
   margin-top: 6rem;
 }
 
-.text-start{
+.text-start {
   text-align: flex-start;
 }
+
 .modal-wrapper {
   display: block;
   position: relative;
@@ -607,12 +592,46 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 
+.text-white h1 {
+  font-size: 2em;
+}
+
+.text-white h2 {
+  font-size: 1.5em;
+}
+
+.text-white h3 {
+  font-size: 1.17em;
+}
+
+.text-white h1,
+h2,
+h3 {
+  font-family: 'Montserrat';
+  font-weight: normal;
+}
+
 .text-white {
   color: #ffffff;
+  font-family: 'Montserrat';
 }
+
+.text-label {
+  color: #ffffff;
+  font-family: 'Montserrat';
+  display: flex;
+  justify-content: space-around;
+  
+}
+
 .text-lg {
   font-size: 1.5rem;
 }
+
+.text-lg2 {
+  font-size: 2rem;
+}
+
 
 /* ==================Profile PAGE CSS====================== */
 
@@ -627,6 +646,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 100%;
   background-position: center;
 }
+
 .text-xl {
   font-size: 2rem;
 }
@@ -650,7 +670,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: medium;
 }
 
-.btn3{
+.btn3 {
   width: 12rem;
   padding: 0.5rem;
   background-color: white;
@@ -659,24 +679,14 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 3rem;
 }
 
-.member{
-  display: inline-flex;
-  border-color:#00f0ff;
+.member {
+  display: inline-block;
+  border-color: #00f0ff;
   border-radius: 10%;
   border-width: 0.1px;
   width: fit-content;
   padding: 1px;
   margin-bottom: 1rem;
-  margin-right: 1rem;
-}
-
-.member .btn-cross {
-  color: red;
-  padding-right: 1rem;
-}
-
-.member .btn-cross svg {
-  width: 100%;
 }
 
 .mokoto-glitch-font {
@@ -762,7 +772,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 15vw;
   /* left: 2rem;
   top: 5rem; */
-  margin-left:0.625rem;
+  margin-left: 0.625rem;
 }
 
 .profPhoto2 {
@@ -880,7 +890,7 @@ Image {
   color: #FFFFFF;
 }
 
-.transcomesoon{
+.transcomesoon {
   text-align: center;
   height: 70vh;
   justify-content: center;
@@ -932,7 +942,7 @@ Image {
   padding-right: 30px;
   margin-bottom: 5px;
 
-} 
+}
 
 .EventListLi {
   display: flex;
@@ -1078,7 +1088,7 @@ Image {
 .teamBack {
   background: #000000;
   height: 100vh;
- overflow: hidden;
+  overflow: hidden;
 }
 
 .registration1 {
@@ -1100,7 +1110,8 @@ Image {
   z-index: 20;
   background-color: #040404;
 }
-.teamhr{
+
+.teamhr {
   position: absolute;
   top: 209px;
   height: 2px;
@@ -1152,6 +1163,7 @@ Image {
   scrollbar-width: none;
   /* Firefox */
 }
+
 .PenTeamList {
   display: flex;
   flex-direction: row;
@@ -1185,7 +1197,8 @@ Image {
   margin: 0.625rem;
   overflow: hidden;
 }
-.hshow{
+
+.hshow {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -1197,9 +1210,9 @@ Image {
   /* margin: 0.625rem; */
 }
 
-.regcontent{
+.regcontent {
   box-sizing: border-box;
-  background:black;
+  background: black;
   /* border: 1px solid #4992FF; */
   border-radius: 6px;
   align-items: center;
@@ -1218,7 +1231,8 @@ Image {
   text-align: center;
   align-items: center;
 }
-.StatBtn{
+
+.StatBtn {
   color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -1301,40 +1315,41 @@ Image {
   color: #FF1B41;
 }
 
-.rejected{
+.rejected {
   color: #D03CAB;
 }
-.rejectedBorder{
-  border: 1px solid  #D03CAB;
+
+.rejectedBorder {
+  border: 1px solid #D03CAB;
 }
 
-.penBorder{
-  border: 1px solid  #FFE166;
+.penBorder {
+  border: 1px solid #FFE166;
 }
 
-.active-tabs{
+.active-tabs {
   color: #4EDFFF;
   border-bottom: 2px solid #4EDFFF;
 }
 
-.tabs{
-font-style: normal;
-font-weight: 600;
-font-size: 1.25rem;
-line-height: 28px;
-/* padding-left: 100px;
+.tabs {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 28px;
+  /* padding-left: 100px;
 padding-right: 100px; */
-padding-bottom: 10px;
+  padding-bottom: 10px;
 
 }
 
-.topgrad{
+.topgrad {
   position: absolute;
   width: 320px;
   height: 374px;
   left: 1171px;
   top: 221px;
-  
+
   background: #D03CAB;
   filter: blur(250px);
   transform: rotate(-90deg);
@@ -1342,7 +1357,7 @@ padding-bottom: 10px;
 
 
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -1365,25 +1380,28 @@ table {
   font-size: 12px;
   line-height: 15px;
 }
-  
+
 th {
   border-bottom: 0.4px solid #FFFFFF;
   text-align: center;
   color: #4EDFFF;
 }
-  
+
 td {
   text-align: center;
 }
 
-.table-container { 
+.table-container {
   width: 100% !important;
-  overflow-x: scroll; 
+  overflow-x: scroll;
 }
 
-th, td { min-width: 12.5rem; }
+th,
+td {
+  min-width: 12.5rem;
+}
 
-.designTop{
+.designTop {
   position: fixed;
   width: 100vw;
   right: 0px;
@@ -1394,46 +1412,54 @@ th, td { min-width: 12.5rem; }
 /*================================ registration status responsive========================= */
 @media (max-width: 700px) {
 
-  .table{
+  .table {
     width: 50vw;
   }
-  .table-container { 
-      width: 100% !important;
-      overflow-x: scroll; 
+
+  .table-container {
+    width: 100% !important;
+    overflow-x: scroll;
   }
 
-  th, td {min-width: max-content; }
+  th,
+  td {
+    min-width: max-content;
+  }
 
-  .viewTeamSize{
+  .viewTeamSize {
     display: none;
   }
-  .registeredteam{
+
+  .registeredteam {
     font-size: 0.625rem;
   }
-  .StatBtn .reg{
+
+  .StatBtn .reg {
     width: max-content;
-  height: max-content;
-  padding: 5px;
-  margin-bottom: 5px;
+    height: max-content;
+    padding: 5px;
+    margin-bottom: 5px;
   }
-  
-  .StatBtn .logout{
+
+  .StatBtn .logout {
     width: max-content;
-  height: max-content;
-  padding: 5px;
+    height: max-content;
+    padding: 5px;
 
   }
-  .StatBtn{
+
+  .StatBtn {
     flex-direction: column;
   }
-  .TeamList{
+
+  .TeamList {
     padding-left: 2px;
     padding-right: 2px;
   }
 }
 
 
-.section-one::-webkit-scrollbar{
+.section-one::-webkit-scrollbar {
   display: none;
 }
 
@@ -1460,7 +1486,8 @@ th, td { min-width: 12.5rem; }
 /* Hide scrollbar for IE, Edge add Firefox */
 .scrollbar-hidden {
   -ms-overflow-style: none;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .form-section {
@@ -1468,15 +1495,18 @@ th, td { min-width: 12.5rem; }
   width: 60%;
   padding-top: 5rem;
 }
-.form-section::-webkit-scrollbar{
+
+.form-section::-webkit-scrollbar {
   display: none;
 }
+
 /* .form {
   width: 46%;
 } */
-.relative{
+.relative {
   position: relative;
 }
+
 .form-input {
   border: 0;
   outline: 0;
@@ -1493,14 +1523,14 @@ th, td { min-width: 12.5rem; }
 .bt3 {
   white-space: nowrap;
   border: none;
-  
+
   clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
   border-bottom-right-radius: 6px;
-  
+
   font-size: large;
   color: white;
-  
-  }
+
+}
 
 .input-wrapper {
   margin-top: 3rem;
@@ -1509,6 +1539,7 @@ th, td { min-width: 12.5rem; }
   grid-template-columns: 1fr 1fr;
   gap: 10%;
 }
+
 .input-border {
   height: 1px;
   width: 100%;
@@ -1539,7 +1570,8 @@ th, td { min-width: 12.5rem; }
   background-size: cover;
   padding-top: 6rem;
 }
-.input-field{
+
+.input-field {
   margin-top: 2.4rem;
 }
 
@@ -1548,6 +1580,8 @@ th, td { min-width: 12.5rem; }
   margin-top: 1.2rem;
   margin-left: 1.4rem;
   color: #ffffff;
+  background: transparent;
+  border: none;
 }
 
 .poster {
@@ -1556,7 +1590,7 @@ th, td { min-width: 12.5rem; }
 
 @media only screen and (max-width: 600px) {
   .section-second {
-    display: none;   
+    display: none;
   }
 
   .input-wrapper {
@@ -1570,9 +1604,11 @@ th, td { min-width: 12.5rem; }
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
   }
+
   .text-3xl {
     font-size: 2rem;
   }
+
   .text-xl {
     font-size: 1.4rem;
   }
@@ -1586,7 +1622,7 @@ th, td { min-width: 12.5rem; }
     padding: 1.4rem;
   }
 
-  .details{
+  .details {
     height: 200px;
     overflow-y: scroll;
     width: 100%;
@@ -1596,6 +1632,7 @@ th, td { min-width: 12.5rem; }
     /* padding-bottom: 5rem; */
     margin-top: 1.4rem;
   }
+
   .event-logo {
     /* margin-top: 15px; */
     margin-bottom: 0.1rem;
@@ -1605,6 +1642,7 @@ th, td { min-width: 12.5rem; }
     height: 100px;
     position: relative;
   }
+
   .btn {
     width: 6rem;
     padding: 0.5rem;
@@ -1612,9 +1650,11 @@ th, td { min-width: 12.5rem; }
     font-size: medium;
     font-size: small;
   }
+
   .form-bg {
     background: black;
   }
+
   .form-section {
     width: 80%;
     padding-top: 1rem;
@@ -1637,37 +1677,40 @@ th, td { min-width: 12.5rem; }
 }
 
 @media only screen and (min-width: 600px) {
-  
+
   .back-button {
     display: none;
   }
 }
 
 
-.rounded{
+.rounded {
   border-radius: 50%;
 }
 
 /*====================== register form responsive bugs============ */
 
-.btnRegister{
+.btnRegister {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: center;
   /*  margin-left: 10rem; */
 }
-@media screen and (max-width:1290px){
-  .btnRegister{
+
+@media screen and (max-width:1290px) {
+  .btnRegister {
     padding-bottom: 20vh;
   }
 }
-@media screen and (max-width:850px){
-  .myFormBik{
+
+@media screen and (max-width:850px) {
+  .myFormBik {
     padding-top: 0px;
   }
 }
-@media screen and (max-width:750px){
-  .btnRegister{
+
+@media screen and (max-width:750px) {
+  .btnRegister {
     display: flex !important;
     flex-direction: column !important;
     justify-content: space-evenly;
@@ -1676,12 +1719,10 @@ th, td { min-width: 12.5rem; }
     align-items: center;
     padding-bottom: 30vh;
   }
-  
-#btnmy{
-  width: unset !important;
+
+  #btnmy {
+    width: unset !important;
+  }
 }
-}
+
 /*====================== register form responsive bugs END Here ============ */
-
-
-
