@@ -34,6 +34,7 @@ export default function Profile(props) {
                     <Link href={props.href}>
                         <Image
                             className={styles.image}
+                            referrerPolicy="no-referrer"
                             src={firebaseUser.photoURL}
                             width={60}
                             height={60}
