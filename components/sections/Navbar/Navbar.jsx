@@ -8,17 +8,21 @@ import { useAuth } from '../../../providers/authContext';
 
 const navLinks = [
     /* Set navlinks to different routes */
-    {text: "ABOUT", route: "/"},
-    {text: "MODULES", route: "/"},
-    {text: "SPONSORS", route: "/"},
-    {text: "TEAM", route: "/"},
-    {text: "GALLERY", route: "/"},
-    {text: "CONTACT US", route: "/"},
+    {text: "ABOUT", route: "#about"},
+    {text: "MODULES", route: "/modules"},
+    {text: "SPONSORS", route: "/404"},
+    {text: "TEAM", route: "/404"},
+    {text: "GALLERY", route: "/404"},
+    {text: "CONTACT US", route: "/#footer"},
 ]
 
 export default function Navbar(props) {
     const [open, toggleNavbar] = useState(false);
     console.log(open);
+
+    const onNavlinkClick = () => {
+        toggleNavbar((prevstate) => !prevstate)
+    }
 
     return(
         <div className={styles.nav}>
@@ -38,7 +42,7 @@ export default function Navbar(props) {
                         navLinks.map((links, index) => {
                             return(
                                 <Link href={links.route} key={index}>
-                                    <NavButton text={links.text} onClick={links.route} key={index}/>
+                                    <NavButton text={links.text} onClick={onNavlinkClick} key={index}/>
                                 </Link>
                             )
                        })

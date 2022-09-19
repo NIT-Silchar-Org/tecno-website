@@ -30,27 +30,19 @@ export default function Profile(props) {
 
         {firebaseUser?(
             <div className={styles.surround}>
-
-          
-            <div className={styles.profile}>
-                
-                    <>
-                        <Link href={props.href}>
+                <div className={styles.profile}>
+                    <Link href={props.href}>
                         <Image
                             className={styles.image}
                             src={firebaseUser.photoURL}
-                            alt="Profile Picture"
                             width={60}
                             height={60}
                             objectFit="cover"
-                            
                         />
-                        </Link>
-                    </>
-                
-            </div>
+                    </Link>
+                </div>
             
-        </div>
+            </div>
 
         ):(
             <div className={ styles.surrounddisabled } onClick={handleLogin} disabled={isdisabled}>
