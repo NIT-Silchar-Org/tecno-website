@@ -11,7 +11,7 @@ import Navbar from '../components/sections/Navbar/Navbar'
 import { useAuth } from '../providers/authContext'
 import { userBackendRegister } from '../utils/auth_handlers'
 import { useRouter } from 'next/router'
-import { ToastContainer } from 'react-toastify'
+// import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
 function Register() {
