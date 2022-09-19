@@ -8,9 +8,8 @@
 }
 .navbtncontainer {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
-
 }
 @media screen and (min-width: 1601px) {
     .navbtncontainer {
