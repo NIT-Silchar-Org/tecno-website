@@ -3,10 +3,34 @@
 @tailwind components;
 @tailwind utilities;
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
 
 html {
   scroll-behavior: smooth;
 }
+
 /* custom fonts */
 
 @font-face {
@@ -625,7 +649,7 @@ h3 {
   font-family: 'Montserrat';
   display: flex;
   justify-content: space-around;
-  
+
 }
 
 .text-lg {
@@ -646,7 +670,7 @@ h3 {
   /* left: 0px; */
   /* top: 0px; */
   /* The image used */
-  background-image: url('../public/assests/profile/Background.png');
+  background-image: url('/assests/profile/Background.png');
   height: 100%;
   background-position: center;
 }
@@ -746,7 +770,7 @@ h3 {
 
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(30px);
-  background-image: url('../public/assests/profile/rect259.png');
+  background-image: url('/assests/profile/rect259.png');
 }
 
 .profDetail {

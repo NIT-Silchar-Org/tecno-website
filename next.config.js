@@ -3,21 +3,21 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    // images: {
-    //     unoptimized: true
-    // }
+    images: {
+      unoptimized: true,
+    },
   },
   images: {
-    domains: ['lh3.googleusercontent.com', 'i.kym-cdn.com', ],
+    domains: ['lh3.googleusercontent.com', 'i.kym-cdn.com'],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'lh3.googleusercontent.com',
         port: '*',
-        pathname: '/**'
-      }
-    ]
-  }
+        pathname: '/**',
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig

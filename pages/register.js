@@ -1,4 +1,3 @@
-import axios from 'axios'
 import { getAuth } from 'firebase/auth'
 import React from 'react'
 import { useState } from 'react'
@@ -56,6 +55,7 @@ function Register() {
   return (
     <div>
       <Navbar profile={'/profile'} hamburger={<HamBurger />} />
+
       {/* <Alert text={"Hello"} /> */}
 
       {/* <div>
@@ -131,7 +131,7 @@ function Register() {
             </div>
             <div
               className="my-4 btnRegister"
-             
+
               // style={{
               //   display: 'flex',
               //   flexDirection: 'row',
@@ -140,8 +140,12 @@ function Register() {
               //   // @media (max-width: "768px") {flexDirection: "column"}
               // }}
             >
-            <Button id="btnmy" children={'cancel'} onClick={logout} />
-            <Button id="btnmy" children={'Submit'} onClick={handleSignup} />
+              <Button id="btnmy" onClick={logout}>
+                Cancel
+              </Button>
+              <Button id="btnmy" onClick={handleSignup}>
+                Submit
+              </Button>
             </div>
           </form>
         </div>

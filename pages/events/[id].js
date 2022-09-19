@@ -1,19 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
-//import DummyLogo from '../../public/assests/stash/dummylogo.png'
 import Header from '../../components/Header'
 import TeamMember from '../../components/teamMember'
 import Button from '../../components/Button'
 import { fetchEventById } from '../../utils/events_fetch'
 import { useAuth } from '../../providers/authContext'
 import { teamRegister } from '../../utils/event_register'
-import Alert from '../../components/Alert'
 import { useRouter } from 'next/router'
 import Navbar from '../../components/sections/Navbar/Navbar'
 import HamBurger from '../../components/sections/Navbar/HamBurger'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-
 
 function Event() {
   const [isFormHidden, setIsFormHidden] = useState(true)
@@ -77,7 +74,7 @@ function Event() {
               </div>
               <div>
                 <h1 className="text-start text-lg2">{data?.name}</h1>
-                <div className='gap' />
+                <div className="gap" />
                 <h1 className="text-white text-lg mokoto-glitch-font">
                   Module : {data?.module?.name}
                 </h1>
@@ -93,16 +90,16 @@ function Event() {
                 priority="true"
               />
             </div>
-            <div className=' text-label'>
+            <div className=" text-label">
               <p>Min Team Size : {minTeamSize}</p>
               <p>Max Team Size : {maxTeamSize}</p>
             </div>
             <div className="details scrollbar-hidden">
-               
               <p className="text-white">
-                <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} />
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {markdown}
+                </ReactMarkdown>
               </p>
-
             </div>
 
             <div className="my-2">
@@ -138,8 +135,9 @@ function Event() {
         </div>
       </div>
       <div
-        className={`bg-black w-full h-screen justify-center form-bg ${isFormHidden && 'hidden'
-          } `}
+        className={`bg-black w-full h-screen justify-center form-bg ${
+          isFormHidden && 'hidden'
+        } `}
         ref={scrollToRef}
       >
         <div className="form-section">

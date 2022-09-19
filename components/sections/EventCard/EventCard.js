@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './EventCard.module.scss'
 import Image from 'next/image'
-import  Link  from 'next/link'
 const EventCard = ({ data }) => {
   return (
     <div className={styles.container}>
@@ -9,11 +8,15 @@ const EventCard = ({ data }) => {
         <div className={styles.wrapper}>
           <div className={styles.image}>
             <Image
-              src={data?.posterImage? data?.posterImage:"https://placehold.jp/150x150.png"}
+              src={
+                data?.posterImage
+                  ? data?.posterImage
+                  : 'https://placehold.jp/150x150.png'
+              }
               layout="fill"
               objectFit="cover"
               priority="true"
-              />
+            />
           </div>
           <div className={styles.overlay}>{data?.name}</div>
         </div>
