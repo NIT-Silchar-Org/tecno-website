@@ -4,6 +4,7 @@ import React from 'react'
 import { useState } from 'react'
 // import Alert from '../components/Alert'
 import Button from '../components/Button'
+
 // import Alert from '../components/Form/Alert'
 import Input from '../components/Form/Input'
 import HamBurger from '../components/sections/Navbar/HamBurger'
@@ -69,7 +70,7 @@ function Register() {
 
         </div> */}
       <div className="bg-black w-full h-screen justify-center form-bg ">
-        <div className="form-section">
+        <div className="form-section myFormBik">
           <h1 className="text-lg text-center text-white mokoto-glitch-font">
             Signup Form
           </h1>
@@ -125,17 +126,18 @@ function Register() {
               {/* <Input placeholder={"Name"}/> */}
             </div>
             <div
-              className="my-4"
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                marginLeft: '10rem',
-                // @media (max-width: "768px") {flexDirection: "column"}
-              }}
+              className="my-4 btnRegister"
+             
+              // style={{
+              //   display: 'flex',
+              //   flexDirection: 'row',
+              //   justifyContent: 'center',
+              //   marginLeft: '10rem',
+              //   // @media (max-width: "768px") {flexDirection: "column"}
+              // }}
             >
-              <Button children={'cancel'} onClick={logout} />
-              <Button children={'Submit'} onClick={handleSignup} />
+            <Button id="btnmy" children={'cancel'} onClick={logout} />
+            <Button id="btnmy" children={'Submit'} onClick={handleSignup} />
             </div>
           </form>
         </div>
