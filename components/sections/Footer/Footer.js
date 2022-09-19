@@ -3,6 +3,7 @@ import Header from '../../style-guide/Header/Header'
 import styles from './Footer.module.scss'
 import Image from 'next/image'
 import logo from '../../../public/assests/landingPage/logoOutline.svg'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -21,10 +22,18 @@ const Footer = () => {
         <div className={styles.body}>
           <div className={styles.content}>
             <div className={styles.btn_cnt}>
-              <div className={styles.btn}>Download Brochure</div>
+              <div className={styles.btn}>
+                <Link href="https://drive.google.com/file/d/1n0z-jPHsTJOfy4DNYKFALGZAV5lArNu-/view">
+                  Download Brochure
+                </Link>
+              </div>
             </div>
             <div className={styles.btn_cnt}>
-              <div className={styles.btn}>Become Our Campus Ambassador</div>
+              <div className={styles.btn}>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScZu6nYeZqgvyaEr2sQmXcAUs2MKObQzpNWhCJtd-u-YD16bw/viewform?usp=sf_link">
+                  Become Our Campus Ambassador
+                </Link>
+              </div>
             </div>
           </div>
         </div>
