@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import GlassCard from '../../style-guide/GlassCard/Index'
 import styles from './Slide.module.scss'
 // import Image from 'next/image'
@@ -17,7 +17,7 @@ const Slide = () => {
   //   else setActiveIndex(index)
   // }
   return (
-    <div className={styles.wrapper}>
+    <div id="gallery" className={styles.wrapper}>
       <div className={styles.container}>
         {/* <div
           className={styles.btn}

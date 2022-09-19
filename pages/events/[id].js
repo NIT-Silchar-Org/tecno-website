@@ -1,18 +1,20 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
 // import DummyLogo from '../../public/assests/stash/dummylogo.png'
-import Header from '../../components/Header'
-import TeamMember from '../../components/teamMember'
-import Button from '../../components/Button'
-import { fetchEventById } from '../../utils/events_fetch'
-import { useAuth } from '../../providers/authContext'
-import { teamRegister } from '../../utils/event_register'
-// import alert from '../../components/Alert';
-import Alert from '../../components/Alert'
-import { useRouter } from 'next/router'
-import Navbar from '../../components/sections/Navbar/Navbar'
-import HamBurger from '../../components/sections/Navbar/HamBurger'
-
+import Header from '../../components/Header';
+import TeamMember from '../../components/teamMember';
+import Button from '../../components/Button';
+import { fetchEventById } from '../../utils/events_fetch';
+import { useAuth } from '../../providers/authContext';
+import { teamRegister } from '../../utils/event_register';
+import Alert from '../../components/Alert';
+import {useRouter} from 'next/router'
+import Navbar from '../../components/sections/Navbar/Navbar';
+import HamBurger from '../../components/sections/Navbar/HamBurger';
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import ReactMarkdown from 'react-markdown';
+  
 function Event() {
   const [isFormHidden, setIsFormHidden] = useState(true)
   const scrollToRef = useRef()
@@ -84,7 +86,7 @@ function Event() {
               />
             </div>
             <div className="details scrollbar-hidden">
-              <p className="text-white">{data?.description}</p>
+              <p className="text-white"><ReactMarkdown>{data?.description}</ReactMarkdown></p>
             </div>
 
             <div className="my-2">
@@ -159,12 +161,3 @@ function Event() {
 }
 
 export default Event
-// export const getServerSideProps = async ({ params }) => {
-
-//   return {
-//     props: {
-//       data,
-//       id
-//     },
-//   }
-// }
