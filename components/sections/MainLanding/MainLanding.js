@@ -121,6 +121,13 @@ const MainLanding = () => {
 
     return () => clearInterval(interval)
   }, [])
+
+  useEffect(() => {
+    // if already scrolled down, assume everything stopped
+    if (!heroInView) {
+      dispatch(ACTION_EXIT_ANIMATION_COMPLETE)
+    }
+  }, [heroInView])
   return (
     <div
       className={`${styles.container} ${

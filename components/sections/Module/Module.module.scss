@@ -75,19 +75,23 @@
 
       -ms-overflow-style: none; /* IE and Edge */
       scrollbar-width: none; /* Firefox */
+      .carouselTray {
+        display: flex;
+        width: 100% !important;
+        transition: all 0.5s ease-in-out;
+      }
     }
     .left {
       position: absolute;
       width: 2rem;
       height: 2rem;
-      margin-left: 2rem;
       cursor: pointer;
     }
     .right {
       position: absolute;
       width: 2rem;
       height: 2rem;
-      margin-right: 3rem;
+      margin-right: 2.8rem;
       cursor: pointer;
       right: 0;
     }

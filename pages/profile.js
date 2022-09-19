@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 // import UserIcon from '../public/assests/profile/user.png'
-import EventIcon from '../public/assests/profile/icon.png'
+// import EventIcon from '../public/assests/profile/icon.png'
 import Tecnologo from '../public/assests/profile/Tecnoesis Logo.png'
 import Attended from '../public/assests/profile/Event Attended.svg'
 import TecnoCoin from '../public/assests/profile/Tecno Coin.svg'
@@ -106,7 +106,7 @@ function Profile1() {
                 {backendUser?.msg?.registrationId}
               </div>
             </div>
-            <div className="TransactionDetail">
+            {/* <div className="TransactionDetail">
               <h2 className="transHeading">Transactions</h2>
               <hr />
               <br />
@@ -214,8 +214,36 @@ function Profile1() {
                   </div>
                 </li>
               </ul>
+            </div> */}
+            <div className="TransactionDetail">
+              <h2 className="transHeading">Transactions</h2>
+              <hr />
+              {/* <br /> */}
+              <div className="transcomesoon">
+                <h1>Coming soon...</h1>
+              </div>
+              {/* <ul className="TransactionList">
+                <li className="EventListLi">
+                  <div className="eventName">
+                    <div>
+                      <Image src={EventIcon} />
+                    </div>
+                    <div>
+                      <span>
+                        ROBOTRON
+                        <br />
+                      </span>
+                      <span>Date</span>
+                    </div>
+                  </div>
+                  <div className="EarnCoin">
+                    <span>30</span>
+                  </div>
+                </li>
+              </ul> */}
             </div>
           </div>
+          
         </div>
       </div>
     </>

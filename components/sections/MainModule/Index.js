@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './MainModule.module.scss'
-
+import Link from 'next/link'
 const Index = () => {
   return (
     <section className={styles.wrapper}>
@@ -16,7 +16,9 @@ const Index = () => {
           blend of creativity and art.
         </div>
         <div className={styles.btn_cnt}>
-          <div className={styles.btn}>View Modules</div>
+          <Link href="/modules">
+            <div className={styles.btn}>View Modules</div>
+          </Link>
         </div>
       </div>
     </section>
