@@ -116,7 +116,6 @@ const MainLanding = () => {
       // Get sub-array of first n elements after shuffled
       const selected = shuffled.slice(0, 2)
       setActiveind(selected)
-      console.log(selected)
     }, 4000)
 
     return () => clearInterval(interval)

@@ -12,7 +12,6 @@ export const userBackendRegister = async ({
   imageUrl,
   token,
 }) => {
-  //   console.log({ name })
   let url = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/auth/signup`
   let body = {
     firstName: firstName,
@@ -42,6 +41,5 @@ export const userBackendRegister = async ({
       error: err,
     }
   }
-  console.log({ resp })
   return resp
 }
