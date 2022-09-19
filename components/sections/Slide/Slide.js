@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import GlassCard from '../../style-guide/GlassCard/Index'
 import styles from './Slide.module.scss'
 // import Image from 'next/image'

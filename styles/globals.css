@@ -348,7 +348,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .justify-start {
   display: flex;
-  justify-items: start;
+  justify-items: flex-start;
 }
 
 .justify-center {
@@ -384,7 +384,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .text-start{
-  text-align: start;
+  text-align: flex-start;
 }
 .modal-wrapper {
   display: block;

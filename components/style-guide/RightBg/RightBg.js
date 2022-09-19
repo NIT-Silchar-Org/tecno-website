@@ -643,7 +643,6 @@ const RightBg = ({ state }) => {
       <defs>
         <pattern
           id="pattern0"
-          use
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"
