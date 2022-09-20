@@ -102,8 +102,7 @@
   }
 }
 
-@media only screen and (max-width: 500px) {
-  .year {
-    display: none !important;
-  }
+.year,
+.year * {
+  display: none !important;
 }
