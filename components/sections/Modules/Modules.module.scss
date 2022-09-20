@@ -67,7 +67,7 @@
 }
 @media only screen and (max-width: 1300px) {
   .container {
-    width: 95%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -99,6 +99,7 @@
         height: 2rem;
         margin: 2rem;
         // margin-top: 2.2rem;
+        pointer-events: all;
         cursor: pointer;
         display: block;
       }

@@ -103,9 +103,11 @@ const MainLanding = () => {
   useEffect(() => {
     if (heroInView) {
       window.addEventListener('mousewheel', handleAnimation)
+      window.addEventListener('touchmove', handleAnimation)
     }
     return () => {
       window.removeEventListener('mousewheel', handleAnimation)
+      window.removeEventListener('touchmove', handleAnimation)
     }
   }, [heroInView])
   useEffect(() => {

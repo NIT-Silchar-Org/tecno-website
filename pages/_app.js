@@ -7,6 +7,7 @@ const unprotectedRoutes = [
   '/register',
   '/modules',
   '/events',
+  '/spark/form',
 ]
 import { useRouter } from 'next/router'
 import ProtectedRoute from '../components/AuthLayer/ProtectedRoute'

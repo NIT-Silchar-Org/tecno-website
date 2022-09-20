@@ -20,15 +20,25 @@ import Image from 'next/image'
 //   'empresaario',
 // ]
 
-const Sidebar = ({ selectedItem,setSelectedItem, setActive, active, modules }) => {
+const Sidebar = ({
+  selectedItem,
+  setSelectedItem,
+  setActive,
+  active,
+  modules,
+}) => {
   return (
-    <div className={`${styles.container} ${active ? styles.active : styles.inactive}`}>
+    <div
+      className={`${styles.container} ${
+        active ? styles.active : styles.inactive
+      }`}
+    >
       <div className={styles.head}>
         <div className={styles.text}>Modules</div>
       </div>
       <div className={styles.svg_cnt}>
         <div className={styles.svg}>
-          <Image src={svg1} layout="fill" objectFit="contain" priority="true" />
+          {/* <Image src={svg1} layout="fill" objectFit="contain" priority="true" /> */}
         </div>
       </div>
       <div className={styles.body}>
