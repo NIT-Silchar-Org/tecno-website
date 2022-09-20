@@ -1,0 +1,183 @@
+import React, { useEffect, useState, useRef } from 'react'
+import Image from 'next/image'
+import Header from '../../components/Header'
+import TeamMember from '../../components/teamMember'
+import Button from '../../components/Button'
+import { fetchEventById } from '../../utils/events_fetch'
+import { useAuth } from '../../providers/authContext'
+import { teamRegister } from '../../utils/event_register'
+import { useRouter } from 'next/router'
+import Navbar from '../../components/sections/Navbar/Navbar'
+import HamBurger from '../../components/sections/Navbar/HamBurger'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+
+function Event() {
+  const [isFormHidden, setIsFormHidden] = useState(true)
+  const scrollToRef = useRef()
+
+  useEffect(() => {
+    if (!isFormHidden) {
+      scrollToRef.current.scrollIntoView()
+    }
+  }, [isFormHidden])
+
+  // const [members, addMembers] = useState([{ member: '' }]);
+  const [teamname, setTeamName] = useState('')
+  const [username, setUsername] = useState('')
+  const [memberCount, setMemberCount] = useState(1)
+  const [members, setMembers] = useState([])
+
+  const { auth, backendUser, signup } = useAuth()
+  const handleReg = async () => {
+    const token = await auth.currentUser.getIdToken()
+    const body = {
+      name: teamname,
+      members: members,
+    }
+    const res = await teamRegister(id, body, token)
+    if (!res.error && res.status < 300) router.push('/team')
+  }
+  const router = useRouter()
+  const [data, setData] = useState(null)
+  const markdown = data?.description.toString()
+  const minTeamSize = data?.minTeamSize
+  const maxTeamSize = data?.maxTeamSize
+  const { id } = router.query
+  useEffect(() => {
+    fetchEventById(id).then((res) => {
+      setData(res?.data?.msg)
+    })
+    // let id = params?.id
+    // let data = resp?.data?.msg
+  }, [])
+  const deleteMember = (index) => {
+    const newMembers = members.filter((val, idx) => idx != index)
+    setMembers(newMembers)
+    setMemberCount(memberCount - 1)
+  }
+
+  return (
+    <>
+      <div className="justify-center bg-black w-full h-screen">
+        <Navbar profile="/profile" pfp="" hamburger={<HamBurger />} />
+        <div className="section-one">
+          <Header />
+
+          <div className="details-section-wrapper">
+            <div className="text-3xl text-center justify-start relative items-center">
+              {/* <h2>Logo</h2>
+               */}
+
+              <div className="event-logo relative">
+                <Image src={data?.module?.iconImage} width={80} height={80} />
+              </div>
+              <div>
+                <h1 className="text-start text-lg2">{data?.name}</h1>
+                <div className="gap" />
+                <h1 className="text-white text-lg mokoto-glitch-font">
+                  Module : {data?.module?.name}
+                </h1>
+              </div>
+            </div>
+            <div className="poster relative">
+              <Image
+                src={data?.posterImage}
+                layout="fill"
+                // width="100%"
+                // height="100%"
+                objectFit="cover"
+                priority="true"
+              />
+            </div>
+            <div className=" text-label">
+              <p>Min Team Size : {minTeamSize}</p>
+              <p>Max Team Size : {maxTeamSize}</p>
+            </div>
+            <div className="details scrollbar-hidden">
+              <p className="text-white">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {markdown}
+                </ReactMarkdown>
+              </p>
+            </div>
+
+            <div className="my-2">
+              {backendUser?.status < 300 ? (
+                <Button
+                  onClick={() => {
+                    setIsFormHidden(false)
+                    scrollToRef.current.scrollIntoView()
+                  }}
+                >
+                  Register
+                </Button>
+              ) : (
+                <Button onClick={signup}>Login</Button>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="section-second">
+          <div className="bg-purple w-full h-full relative">
+            {data?.posterImage && (
+              <Image
+                src={data?.posterImage}
+                layout="fill"
+                // width="100%"
+                // height="100%"
+                objectFit="cover"
+                priority="true"
+              />
+            )}
+          </div>
+        </div>
+      </div>
+      <div
+        className={`bg-black w-full h-screen justify-center form-bg ${
+          isFormHidden && 'hidden'
+        } `}
+        ref={scrollToRef}
+      >
+        <div className="form-section">
+          <h1 className="text-lg text-white mokoto-glitch-font">
+            Registration Form
+          </h1>
+          <div className=" input-wrapper">
+            <div className="input-field">
+              <input
+                value={teamname}
+                onChange={(e) => setTeamName(e.target.value)}
+                className="form-input"
+                placeholder="Team Name"
+              />
+              <div className="input-border"></div>
+            </div>
+            {/* <div>
+                <input className="form-input" placeholder="" />
+                <div className="input-border"></div>
+              </div> */}
+          </div>
+          {data && data.maxTeamSize != 1 && (
+            <TeamMember
+              members={members}
+              setMembers={setMembers}
+              memberCount={memberCount}
+              setMemberCount={setMemberCount}
+              username={username}
+              setUsername={setUsername}
+              maxMemberCount={data.maxTeamSize}
+              deleteMember={deleteMember}
+            />
+          )}
+          <div className="my-2" onClick={handleReg}>
+            <Button>Submit</Button>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default Event

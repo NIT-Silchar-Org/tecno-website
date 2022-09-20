@@ -1,0 +1,169 @@
+$low: 0.4;
+$high: 1;
+$invisible: 0;
+
+.svg {
+  //   box-shadow: 0px 0px 90px 120px #d03cab;
+  animation: anime 9000ms ease-in-out infinite;
+  animation-delay: 600ms;
+  opacity: 0;
+}
+.static {
+  //   box-shadow: 0px 0px 90px 120px #d03cab;
+  animation: animeStatic 1000ms ease-in-out;
+  opacity: 0;
+}
+@keyframes anime {
+  0% {
+    opacity: $high;
+  }
+  9% {
+    opacity: $high;
+  }
+  10% {
+    opacity: $low;
+  }
+  14% {
+    opacity: $low;
+  }
+  15% {
+    opacity: $high;
+  }
+  26% {
+    opacity: $high;
+  }
+  27% {
+    opacity: $low;
+  }
+  33% {
+    opacity: $low;
+  }
+  34% {
+    opacity: $high;
+  }
+  47% {
+    opacity: $high;
+  }
+  48% {
+    opacity: $low;
+  }
+  51% {
+    opacity: $low;
+  }
+  52% {
+    opacity: $high;
+  }
+  55% {
+    opacity: $high;
+  }
+  56% {
+    opacity: $low;
+  }
+  72% {
+    opacity: $low;
+  }
+  73% {
+    opacity: $high;
+  }
+  82% {
+    opacity: $high;
+  }
+  83% {
+    opacity: $low;
+  }
+  85% {
+    opacity: $low;
+  }
+  86% {
+    opacity: $high;
+  }
+  92% {
+    opacity: $high;
+  }
+  93% {
+    opacity: $low;
+  }
+  99% {
+    opacity: $low;
+  }
+  100% {
+    opacity: $high;
+  }
+}
+@keyframes animeStatic {
+  0% {
+    opacity: $invisible;
+  }
+  9% {
+    opacity: $high;
+  }
+  10% {
+    opacity: $low;
+  }
+  14% {
+    opacity: $low;
+  }
+  15% {
+    opacity: $high;
+  }
+  26% {
+    opacity: $high;
+  }
+  27% {
+    opacity: $low;
+  }
+  33% {
+    opacity: $low;
+  }
+  34% {
+    opacity: $high;
+  }
+  47% {
+    opacity: $high;
+  }
+  48% {
+    opacity: $low;
+  }
+  51% {
+    opacity: $low;
+  }
+  52% {
+    opacity: $high;
+  }
+  55% {
+    opacity: $high;
+  }
+  56% {
+    opacity: $low;
+  }
+  72% {
+    opacity: $low;
+  }
+  73% {
+    opacity: $high;
+  }
+  82% {
+    opacity: $high;
+  }
+  83% {
+    opacity: $low;
+  }
+  85% {
+    opacity: $low;
+  }
+  86% {
+    opacity: $high;
+  }
+  92% {
+    opacity: $high;
+  }
+  93% {
+    opacity: $low;
+  }
+  99% {
+    opacity: $low;
+  }
+  100% {
+    opacity: $invisible;
+  }
+}

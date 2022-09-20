@@ -1,0 +1,122 @@
+/* web view */
+$height: 15rem;
+// Multiply width by 1.07 to keep the svg proportional
+$width: $height * 1.07;
+$signinheight: 10rem;
+$signinwidth: $signinheight * 2.517;
+
+
+/* mobile view */
+$mheight: 6rem;
+$mwidth: $mheight * 1.02;
+.profile{
+    cursor: pointer;
+}
+.surround {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    z-index: 499;
+    margin-top: 55px;
+
+    @media screen and (min-width: 1280px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        background-repeat: no-repeat;
+        width: $width;
+        height: $height;
+        margin-left: 37px;
+        .profile {
+            position: absolute;
+            left: 147px;
+            top: 138px;
+            border-radius: 100%;
+            cursor: pointer;
+            .image {
+                border-radius: 100%;
+            }
+        }
+    }
+
+
+    @media screen and (max-width: 1279px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround-mobile.svg');
+        background-repeat: no-repeat;
+        width: $mwidth;
+        height: $mheight;
+        margin-left: auto;
+        margin-right: auto;
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+    }
+    @media screen and (min-width: 2500px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        background-repeat: no-repeat;
+        width: $width;
+        height: $height;
+        margin-top: 80px;
+        margin-left: 70px;
+        .profile {
+            position: absolute;
+            left: 110px;
+            top: 80px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+        transform: scale(1.2);
+    }
+
+    @media screen and (min-width: 3500px) {
+        background: url('../../../public/assests/Navbar/ProfileSurround.svg');
+        background-repeat: no-repeat;
+        width: $width;
+        height: $height;
+        margin-top: 200px;
+        margin-left: 200px;
+        .profile {
+            position: absolute;
+            left: 110px;
+            top: 80px;
+            border-radius: 100%;
+            .image {
+                border-radius: 100%;
+            }
+        }
+        transform: scale(2);
+    }
+}
+
+
+.surrounddisabled {
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 502;
+
+    @media screen and (min-width: 1280px) {
+        width: $signinwidth;
+        height: $signinheight;
+        margin-left: 20px;
+        margin-top: 40px;
+
+        transform: scale(0.6);
+    }
+    @media screen and (max-width: 1279px) {
+        top : -2.5rem;
+        width: $signinwidth;
+        height: $signinheight;
+        margin-right: auto;
+        margin-left: auto;
+        transform: scale(0.5);
+    }
+}

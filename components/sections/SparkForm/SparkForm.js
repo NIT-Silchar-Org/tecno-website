@@ -52,11 +52,15 @@ export default function SparkForm() {
     const formData = new FormData(e.target)
 
     axios
-      .post(`https://backend.tecnoesis.org/api/spark/tshirt`, formData, {
-        headers: {
-          'content-type': 'multipart/form-data',
+      .post(
+        `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/spark/tshirt`,
+        formData,
+        {
+          headers: {
+            'content-type': 'multipart/form-data',
+          },
         },
-      })
+      )
       .then((res) => {
         if (res.data.status < 300) {
           setLoading(false)

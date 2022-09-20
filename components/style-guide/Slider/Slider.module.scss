@@ -1,0 +1,17 @@
+.slider {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  z-index: 5;
+  display: none;
+
+}
+
+@media only screen and (max-width: 800px) {
+  .slider {
+    display: block;
+  }
+}

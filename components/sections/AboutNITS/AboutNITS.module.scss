@@ -1,0 +1,42 @@
+@import '../../../styles/variables.scss';
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+
+    .title {
+      font-family: $lemonMilk;
+      font-size: 2.4rem;
+      margin: 2rem;
+
+      @media (max-width: 772px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .body {
+      font-size: 1.2rem;
+      padding: 1.5rem;
+      line-height: 1.8rem;
+      text-transform: uppercase;
+
+      @media (max-width: 772px) {
+        font-size: 0.75rem;
+        padding: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

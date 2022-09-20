@@ -18,11 +18,21 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "axios": "^0.27.2",
+    "firebase": "^9.9.4",
+    "next": "12.2.4",
+    "pure-react-carousel": "^1.29.0",
     "next": "^12.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "react-intersection-observer": "^9.4.0",
+    "react-markdown": "^8.0.3",
+    "react-router-dom": "^6.3.0",
     "react-scroll-parallax": "^3.3.0",
-    "sass": "^1.54.7"
+    "react-toastify": "^9.0.8",
+    "remark-gfm": "^3.0.1",
+    "sass": "^1.54.7",
+    "scroll-snap": "^4.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",

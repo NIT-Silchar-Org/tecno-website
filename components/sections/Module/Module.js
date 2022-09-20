@@ -1,9 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Module.module.scss'
 import Image from 'next/image'
 import EventCard from '../EventCard/EventCard'
 import left from '../../../public/assests/modules/Left.svg'
 import right from '../../../public/assests/modules/Right.svg'
+import { useInView } from 'react-intersection-observer'
+import Link from 'next/link'
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from 'pure-react-carousel'
 
 const events = [
   'Robotron',
@@ -16,7 +25,7 @@ const events = [
 
 const len = events.length
 
-const Module = ({ name }) => {
+const Module = ({ data, setSelectedItem, ind }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const toggle = (mult) => {
     const index = activeIndex + 1 * mult
@@ -24,63 +33,65 @@ const Module = ({ name }) => {
     else if (index > len - 3) setActiveIndex(0)
     else setActiveIndex(index)
   }
+
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 1,
+  })
+
+  useEffect(() => {
+    if (inView) setSelectedItem(ind)
+  }, [inView, ind, setSelectedItem])
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} ref={ref}>
       <div className={styles.head}>
         <div className={styles.image_cnt}>
           <div className={styles.image}>
-            {/* <Image layout="fill" objectFit="contain" priority="true" /> */}
+            <Image
+              src="https://placehold.jp/150x150.png"
+              layout="fill"
+              objectFit="contain"
+              priority="true"
+            />
           </div>
         </div>
-        <div>{name}</div>
+        <div>{data?.name}</div>
       </div>
-      <div className={styles.slider}>
-        <div
+      <CarouselProvider
+        className={styles.slider}
+        totalSlides={data?.events ? data?.events?.length : 0}
+        naturalSlideHeight={223}
+        naturalSlideWidth={303}
+      >
+        <ButtonBack
           className={styles.left}
           onClick={() => {
             toggle(-1)
           }}
         >
           <Image src={left} layout="fill" objectFit="contain" priority="true" />
-        </div>
-        <div className={styles.carousel}>
-          {events.map((event, index) => {
+        </ButtonBack>
+        <Slider className={styles.carousel} classNameTray={styles.carouselTray}>
+          {data?.events?.map((event, index) => {
             return (
-              <div
-                style={{
-                  transform: `translateX(-${activeIndex * 100}%)`,
-                  transition: 'all 0.5s ease-in-out',
-                }}
-                key={index}
-              >
-                <EventCard name={event} />
-              </div>
+                <Link href={`/events/${event?.id}`} key={index}>
+                  <Slide key={index} index={index} style={{ padding: 0 }}>
+                      <EventCard data={event} />
+                  </Slide>
+                </Link>
             )
           })}
-        </div>
-        <div className={styles.right} onClick={() => toggle(1)}>
+        </Slider>
+        <ButtonNext className={styles.right} onClick={() => toggle(1)}>
           <Image
             src={right}
             layout="fill"
             objectFit="contain"
             priority="true"
           />
-        </div>
-      </div>
-      <div className={styles.indicators}>
-        {events.map((event, index) => {
-          return index <= len - 3 ? (
-            <div
-              className={`${styles.dot} ${
-                activeIndex === index ? styles.active : ''
-              }`}
-              key={index}
-            ></div>
-          ) : (
-            ''
-          )
-        })}
-      </div>
+        </ButtonNext>
+      </CarouselProvider>
     </div>
   )
 }

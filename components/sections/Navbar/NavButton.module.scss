@@ -1,0 +1,66 @@
+/* web dimensions */
+$btn_cnt_height: 5rem;
+/* multiply by 5.25 to keep ratio same */
+$btn_cnt_width: $btn_cnt_height * 5.25;
+$btn_height: $btn_cnt_height * 0.48;
+$btn_width: $btn_cnt_width * 0.58;
+$btn_background: rgba(217, 217, 217, 0.16);
+
+/* mobile dimensions */
+$mbtn_cnt_height: 4rem;
+/* multiply by 5.25 to keep ratio same */
+$mbtn_cnt_width: $mbtn_cnt_height * 5.25;
+$mbtn_height: $mbtn_cnt_height * 0.48;
+$mbtn_width: $mbtn_cnt_width * 0.58;
+$text_font: LemonMilk;
+
+@font-face {
+    font-family: LemonMilk;
+    src: url('../../../public/Fonts/LemonMilk.otf') format('opentype');
+}
+
+.navbtncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../../public/assests/Navbar/ButtonSurround.svg');
+    background-size: cover;
+
+    @media screen and (min-width: 1280px) {
+      margin: 50px;
+      width: $btn_cnt_width;
+      height: $btn_cnt_height;
+      transform: rotate(-30deg);
+    }
+    @media screen and (max-width: 1279px) {
+      margin: auto;
+      width: $mbtn_cnt_width;
+      height: $mbtn_cnt_height;
+      margin-bottom: 4px;
+    }
+}
+
+.navbtn {
+    white-space: nowrap;
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
+    background: $btn_background;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 100% 100%, 10% 100%, 0% 60%);
+    border-bottom-right-radius: 6px;
+    font-family: $text_font;
+    font-size: large;
+    color: white;
+    @media screen and (min-width: 1280px) {
+      width: $btn_width;
+      height: $btn_height;
+    }
+    @media screen and (max-width: 1279px) {
+      width: $mbtn_width;
+      height: $mbtn_height;
+    }
+}
+
+.navbtn:hover {
+    background: linear-gradient(91.06deg, rgba(78, 223, 255, 0.4) 13.58%, rgba(255, 38, 194, 0.4) 97.83%);
+}
