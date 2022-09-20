@@ -23,14 +23,20 @@ const Footer = () => {
           <div className={styles.content}>
             <div className={styles.btn_cnt}>
               <div className={styles.btn}>
-                <Link href="https://drive.google.com/file/d/1n0z-jPHsTJOfy4DNYKFALGZAV5lArNu-/view">
+                <Link
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1n0z-jPHsTJOfy4DNYKFALGZAV5lArNu-/view"
+                >
                   Download Brochure
                 </Link>
               </div>
             </div>
             <div className={styles.btn_cnt}>
               <div className={styles.btn}>
-                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScZu6nYeZqgvyaEr2sQmXcAUs2MKObQzpNWhCJtd-u-YD16bw/viewform?usp=sf_link">
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScZu6nYeZqgvyaEr2sQmXcAUs2MKObQzpNWhCJtd-u-YD16bw/viewform?usp=sf_link"
+                >
                   Become Our Campus Ambassador
                 </Link>
               </div>
