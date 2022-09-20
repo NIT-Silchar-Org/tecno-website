@@ -15,10 +15,14 @@ import ProtectedRoute from '../components/AuthLayer/ProtectedRoute'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Script from 'next/script'
+import Head from 'next/head'
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
   return (
     <AuthProvider>
+      <Head>
+        <title>Tecnoesis 2022</title>
+      </Head>
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
