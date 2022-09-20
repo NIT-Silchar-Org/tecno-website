@@ -31,7 +31,7 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className={styles.btn_cnt}>
+            {/* <div className={styles.btn_cnt}>
               <div className={styles.btn}>
                 <Link
                   target="_blank"
@@ -40,7 +40,7 @@ const Footer = () => {
                   Become Our Campus Ambassador
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.foot}>

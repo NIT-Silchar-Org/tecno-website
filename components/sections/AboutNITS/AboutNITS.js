@@ -5,7 +5,7 @@ const AboutNITS = () => {
   return (
     <section className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.title}>About NITS</div>
+        <div className={styles.title}>About NIT Silchar</div>
         <div className={styles.body}>
           A bright future requires a bright start. NITS abides by this mantra.
           The institute believes in equipping students with the knowledge and
