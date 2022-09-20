@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './Sidebar.module.scss'
-import svg1 from '../../../public/assests/modules/Vector14.svg'
 import svg2 from '../../../public/assests/modules/Vector15.svg'
 import Image from 'next/image'
 

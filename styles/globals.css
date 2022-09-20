@@ -649,6 +649,11 @@ h3 {
   font-family: 'Montserrat';
 }
 
+@media screen and (max-width:500px) {
+  .text-white {
+      font-size: 8px;
+  }
+}
 .text-label {
   color: #ffffff;
   font-family: 'Montserrat';

@@ -113,7 +113,7 @@ function Event() {
                   Register
                 </Button>
               ) : (
-                <Button onClick={signup}>Login To Participate</Button>
+                <Button onClick={signup}>Login</Button>
               )}
             </div>
           </div>
