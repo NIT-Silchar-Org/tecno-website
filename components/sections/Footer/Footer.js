@@ -28,13 +28,13 @@ const Footer = () => {
                 </Link>
               </div>
             </div>
-            <div className={styles.btn_cnt}>
+            {/* <div className={styles.btn_cnt}>
               <div className={styles.btn}>
                 <Link href="https://docs.google.com/forms/d/e/1FAIpQLScZu6nYeZqgvyaEr2sQmXcAUs2MKObQzpNWhCJtd-u-YD16bw/viewform?usp=sf_link">
                   Become Our Campus Ambassador
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.foot}>
