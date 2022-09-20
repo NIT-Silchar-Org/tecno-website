@@ -163,6 +163,13 @@
   }
 }
 
+
+@media only screen and (max-width: 500px) {
+  .year {
+    display: none !important;
+  }
+}
+
 $low: 0.4;
 $high: 1;
 $invisible: 0;
