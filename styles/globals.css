@@ -1115,8 +1115,7 @@ Image {
   }
 
   .attendedAlign {
-    padding-left: 0px;
-    padding-right: 0px;
+  padding: 0 !important;
   }
 }
 
