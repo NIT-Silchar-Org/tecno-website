@@ -128,3 +128,12 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+.comingSoon {
+  color: white;
+  position: fixed;
+  top: 45vh;
+  font-family: $roadRage;
+  font-size: 2rem;
+  left: 35vw;
+}
