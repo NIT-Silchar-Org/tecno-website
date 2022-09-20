@@ -58,25 +58,15 @@ function Profile1() {
                   />
                 </div>
                 <div className="eventDetail">
-                  <div className="Attended">
-                    <Image src={Attended} />
-                    <br />
-                    <span className="attendedAlign">
-                      Attended
-                      <br />
-                    </span>
-                    {/* <span>6 Events<br /></span> */}
-                    <span className="attendedAlign">6 Events</span>
-                  </div>
                   <div className="Tecnocoins">
                     <Image src={TecnoCoin} />
                     <br />
                     <span className="attendedAlign">
-                      Earned
+                      Tecno Coins
                       <br />
                     </span>
                     <span className="attendedAlign">
-                      300 Coins
+                      Coming Soon
                       <br />
                     </span>
                   </div>
@@ -228,7 +218,7 @@ function Profile1() {
               <h2 className="transHeading">Transactions</h2>
               <hr />
               {/* <br /> */}
-              <div className="transcomesoon"></div>
+              <div className="transcomesoon">Coming Soon</div>
               {/* <ul className="TransactionList">
                 <li className="EventListLi">
                   <div className="eventName">
