@@ -35,12 +35,12 @@ const Modules = ({ setSelectedItem, setActive, active, modules }) => {
         <Image src={bg} layout="fill" objectFit="contain" priority="true" />
       </div>
       <div>
-        {modules.length && (
+        {modules.length === 0 && (
           <div className={styles.comingSoon}>
             <h1>Coming Soon</h1>
           </div>
         )}
-        {/* {modules.map((module, index) => {
+        {modules.map((module, index) => {
           return (
             <section id={module} key={index}>
               <Module
@@ -50,7 +50,7 @@ const Modules = ({ setSelectedItem, setActive, active, modules }) => {
               />
             </section>
           )
-        })} */}
+        })}
       </div>
     </div>
   )
