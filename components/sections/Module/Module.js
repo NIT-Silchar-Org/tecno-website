@@ -39,6 +39,7 @@ const Module = ({ data, setSelectedItem, ind }) => {
     threshold: 1,
   })
 
+  console.log(data);
   useEffect(() => {
     if (inView) setSelectedItem(ind)
   }, [inView, ind, setSelectedItem])
@@ -49,10 +50,9 @@ const Module = ({ data, setSelectedItem, ind }) => {
         <div className={styles.image_cnt}>
           <div className={styles.image}>
             <Image
-              src="https://placehold.jp/150x150.png"
+              src={data?.iconImage}
               layout="fill"
               objectFit="contain"
-              priority="true"
             />
           </div>
         </div>
@@ -70,7 +70,7 @@ const Module = ({ data, setSelectedItem, ind }) => {
             toggle(-1)
           }}
         >
-          <Image src={left} layout="fill" objectFit="contain" priority="true" />
+          <Image src={left} layout="fill" objectFit="contain" priority="true" objectPosition="center" />
         </ButtonBack>
         <Slider className={styles.carousel} classNameTray={styles.carouselTray}>
           {data?.events?.map((event, index) => {
