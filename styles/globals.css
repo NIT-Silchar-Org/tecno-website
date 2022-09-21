@@ -625,6 +625,9 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
 }
 
+.text-white p {
+  margin-bottom: 1rem;
+}
 .text-white h1 {
   font-size: 2em;
 }
