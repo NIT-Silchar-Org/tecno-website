@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Header from '../../components/Header'
 import TeamMember from '../../components/teamMember'
 import Button from '../../components/Button'
-import { fetchEventById } from '../../utils/events_fetch'
+import { fetchEventById, fetchEventsAll } from '../../utils/events_fetch'
 import { useAuth } from '../../providers/authContext'
 import { teamRegister } from '../../utils/event_register'
 import { useRouter } from 'next/router'
@@ -12,7 +12,7 @@ import HamBurger from '../../components/sections/Navbar/HamBurger'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
-function Event() {
+function Event({ data }) {
   const [isFormHidden, setIsFormHidden] = useState(true)
   const scrollToRef = useRef()
 
@@ -39,18 +39,18 @@ function Event() {
     if (!res.error && res.status < 300) router.push('/team')
   }
   const router = useRouter()
-  const [data, setData] = useState(null)
+  // const [data, setData] = useState(null)
   const markdown = data?.description.toString()
   const minTeamSize = data?.minTeamSize
   const maxTeamSize = data?.maxTeamSize
   const { id } = router.query
-  useEffect(() => {
-    fetchEventById(id).then((res) => {
-      setData(res?.data?.msg)
-    })
-    // let id = params?.id
-    // let data = resp?.data?.msg
-  }, [])
+  // useEffect(() => {
+  //   fetchEventById(id).then((res) => {
+  //     setData(res?.data?.msg)
+  //   })
+  //   // let id = params?.id
+  //   // let data = resp?.data?.msg
+  // }, [])
   const deleteMember = (index) => {
     const newMembers = members.filter((val, idx) => idx != index)
     setMembers(newMembers)
@@ -178,6 +178,29 @@ function Event() {
       </div>
     </>
   )
+}
+
+export async function getStaticPaths() {
+  const res = await fetchEventsAll()
+  // console.log(res.data.msg.map((event) => event.id))
+  const paths = res.data.msg.map((event) => ({
+    params: {
+      id: `${event.id}`,
+    },
+  }))
+
+  console.log(paths)
+  return {
+    paths,
+    fallback: false,
+  }
+}
+
+export async function getStaticProps(context) {
+  const res = await fetchEventById(context.params.id)
+  return {
+    props: { data: res.data.msg },
+  }
 }
 
 export default Event
