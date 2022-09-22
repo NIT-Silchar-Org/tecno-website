@@ -3,8 +3,8 @@ import axios from 'axios'
 
 const BASE_URL = `${process.env.NEXT_PUBLIC_BACKEND_API_URL}`
 
-export const fetch_events_all = async () => {
-  let url = `${BASE_URL}/event`
+export const fetchEventsAll = async () => {
+  const url = `${BASE_URL}/event`
   let resp
 
   try {
