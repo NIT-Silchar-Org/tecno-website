@@ -36,7 +36,7 @@
         width: 3.35rem;
         height: 3.8rem;
         border-radius: 20px;
-
+        position: relative;
         -webkit-clip-path: polygon(
           50% 0%,
           100% 25%,
@@ -53,7 +53,7 @@
           0% 75%,
           0% 25%
         );
-        background-color: black;
+        background-color: white;
       }
     }
   }

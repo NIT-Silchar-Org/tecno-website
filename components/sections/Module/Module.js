@@ -53,6 +53,8 @@ const Module = ({ data, setSelectedItem, ind }) => {
               src={data?.iconImage}
               layout="fill"
               objectFit="contain"
+              priority="true"
+              objectPosition="center"
             />
           </div>
         </div>
@@ -70,16 +72,22 @@ const Module = ({ data, setSelectedItem, ind }) => {
             toggle(-1)
           }}
         >
-          <Image src={left} layout="fill" objectFit="contain" priority="true" objectPosition="center" />
+          <Image
+            src={left}
+            layout="fill"
+            objectFit="contain"
+            priority="true"
+            objectPosition="center"
+          />
         </ButtonBack>
         <Slider className={styles.carousel} classNameTray={styles.carouselTray}>
           {data?.events?.map((event, index) => {
             return (
-                <Link href={`/events/${event?.id}`} key={index}>
-                  <Slide key={index} index={index} style={{ padding: 0 }}>
-                      <EventCard data={event} />
-                  </Slide>
-                </Link>
+              <Link href={`/events/${event?.id}`} key={index}>
+                <Slide key={index} index={index} style={{ padding: 0 }}>
+                  <EventCard data={event} />
+                </Slide>
+              </Link>
             )
           })}
         </Slider>
