@@ -101,7 +101,7 @@ function Profile1() {
                   Log Out
                 </button>
                 <br />
-                {backendUser?.msg?.registrationId}
+                {backendUser?.msg?.username}
               </div>
             </div>
             {/* <div className="TransactionDetail">
