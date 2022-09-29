@@ -96,7 +96,7 @@ function Event({ data }) {
             </div>
             <div className="details scrollbar-hidden">
               <p className="text-white">
-                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} linkTarget="_blank">
                   {markdown}
                 </ReactMarkdown>
               </p>

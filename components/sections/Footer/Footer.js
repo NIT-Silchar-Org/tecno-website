@@ -3,7 +3,6 @@ import Header from '../../style-guide/Header/Header'
 import styles from './Footer.module.scss'
 import Image from 'next/image'
 import logo from '../../../public/assests/landingPage/logoOutline.svg'
-import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -23,12 +22,13 @@ const Footer = () => {
           <div className={styles.content}>
             <div className={styles.btn_cnt}>
               <div className={styles.btn}>
-                <Link
-                  target="_blank"
+                <a
                   href="https://drive.google.com/file/d/1n0z-jPHsTJOfy4DNYKFALGZAV5lArNu-/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Download Brochure
-                </Link>
+                </a>
               </div>
             </div>
             {/* <div className={styles.btn_cnt}>
