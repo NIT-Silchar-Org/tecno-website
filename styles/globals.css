@@ -647,6 +647,10 @@ h3 {
   font-weight: normal;
 }
 
+.text-white  a {
+  text-decoration: underline;
+}
+
 .text-white {
   color: #ffffff;
   font-family: 'Montserrat';
