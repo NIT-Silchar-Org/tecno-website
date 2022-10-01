@@ -11,6 +11,7 @@ import Navbar from '../../components/sections/Navbar/Navbar'
 import HamBurger from '../../components/sections/Navbar/HamBurger'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import { toast } from 'react-toastify'
 
 function Event({ data }) {
   const [isFormHidden, setIsFormHidden] = useState(true)
@@ -36,7 +37,10 @@ function Event({ data }) {
       members: members,
     }
     const res = await teamRegister(id, body, token)
-    if (!res.error && res.status < 300) router.push('/team')
+    if (!res.error && res.status < 300) {
+      toast.success('Registered Successfully')
+      setIsFormHidden(true)
+    }
   }
   const router = useRouter()
   // const [data, setData] = useState(null)
