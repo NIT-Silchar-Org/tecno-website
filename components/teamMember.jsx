@@ -51,7 +51,7 @@ function TeamMember({
                   className="btn-cross"
                   onClick={() => deleteMember(index)}
                 >
-                  <FontAwesomeIcon icon={['fa', 'fa-xmark']} />
+                  <FontAwesomeIcon icon={['fa', 'fa-xmark']} size={1} />
                 </button>
               </div>
             )

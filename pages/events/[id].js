@@ -155,8 +155,50 @@ function Event({ data }) {
                 onChange={(e) => setTeamName(e.target.value)}
                 className="form-input"
                 placeholder="Team Name"
+                required
               />
               <div className="input-border"></div>
+            </div>
+            {/* <div>
+                <input className="form-input" placeholder="" />
+                <div className="input-border"></div>
+              </div> */}
+          </div>
+
+          <div className=" input-wrapper">
+            <div className="input-field">
+              <h2 className="my-2 text-input text-lg">Leader </h2>
+              <div className="input-field">
+                <input
+                  value={
+                    backendUser.msg.firstName + ' ' + backendUser.msg.lastName
+                  }
+                  // onChange={(e) => setTeamName(e.target.value)}
+                  className="form-input"
+                  // placeholder="Leader"
+                  disabled
+                />
+                <div className="input-border"></div>
+              </div>
+            </div>
+            {/* <div>
+                <input className="form-input" placeholder="" />
+                <div className="input-border"></div>
+              </div> */}
+          </div>
+          <div className=" input-wrapper">
+            <div className="input-field">
+              <h2 className="my-2 text-input text-lg">Leader Phone</h2>
+              <div className="input-field">
+                <input
+                  value={backendUser.msg.phoneNumber}
+                  // onChange={(e) => setTeamName(e.target.value)}
+                  className="form-input"
+                  // placeholder="Leader"
+                  disabled
+                />
+                <div className="input-border"></div>
+              </div>
             </div>
             {/* <div>
                 <input className="form-input" placeholder="" />
