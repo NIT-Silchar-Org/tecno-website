@@ -138,90 +138,92 @@ function Event({ data }) {
           </div>
         </div>
       </div>
-      <div
-        className={`bg-black w-full h-screen justify-center form-bg ${
-          isFormHidden && 'hidden'
-        } `}
-        ref={scrollToRef}
-      >
-        <div className="form-section">
-          <h1 className="text-lg text-white mokoto-glitch-font">
-            Registration Form
-          </h1>
-          <div className=" input-wrapper">
-            <div className="input-field">
-              <input
-                value={teamname}
-                onChange={(e) => setTeamName(e.target.value)}
-                className="form-input"
-                placeholder="Team Name"
-                required
-              />
-              <div className="input-border"></div>
-            </div>
-            {/* <div>
+      {!isFormHidden && (
+        <div
+          className={`bg-black w-full h-screen justify-center form-bg ${
+            isFormHidden && 'hidden'
+          } `}
+          ref={scrollToRef}
+        >
+          <div className="form-section">
+            <h1 className="text-lg text-white mokoto-glitch-font">
+              Registration Form
+            </h1>
+            <div className=" input-wrapper">
+              <div className="input-field">
+                <input
+                  value={teamname}
+                  onChange={(e) => setTeamName(e.target.value)}
+                  className="form-input"
+                  placeholder="Team Name"
+                  required
+                />
+                <div className="input-border"></div>
+              </div>
+              {/* <div>
                 <input className="form-input" placeholder="" />
                 <div className="input-border"></div>
               </div> */}
-          </div>
+            </div>
 
-          <div className=" input-wrapper">
-            <div className="input-field">
-              <h2 className="my-2 text-input text-lg">Leader </h2>
+            <div className=" input-wrapper">
               <div className="input-field">
-                <input
-                  value={
-                    backendUser.msg.firstName + ' ' + backendUser.msg.lastName
-                  }
-                  // onChange={(e) => setTeamName(e.target.value)}
-                  className="form-input"
-                  // placeholder="Leader"
-                  disabled
-                />
-                <div className="input-border"></div>
+                <h2 className="my-2 text-input text-lg">Leader </h2>
+                <div className="input-field">
+                  <input
+                    value={
+                      backendUser.msg.firstName + ' ' + backendUser.msg.lastName
+                    }
+                    // onChange={(e) => setTeamName(e.target.value)}
+                    className="form-input"
+                    // placeholder="Leader"
+                    disabled
+                  />
+                  <div className="input-border"></div>
+                </div>
               </div>
-            </div>
-            {/* <div>
+              {/* <div>
                 <input className="form-input" placeholder="" />
                 <div className="input-border"></div>
               </div> */}
-          </div>
-          <div className=" input-wrapper">
-            <div className="input-field">
-              <h2 className="my-2 text-input text-lg">Leader Phone</h2>
-              <div className="input-field">
-                <input
-                  value={backendUser.msg.phoneNumber}
-                  // onChange={(e) => setTeamName(e.target.value)}
-                  className="form-input"
-                  // placeholder="Leader"
-                  disabled
-                />
-                <div className="input-border"></div>
-              </div>
             </div>
-            {/* <div>
+            <div className=" input-wrapper">
+              <div className="input-field">
+                <h2 className="my-2 text-input text-lg">Leader Phone</h2>
+                <div className="input-field">
+                  <input
+                    value={backendUser.msg.phoneNumber}
+                    // onChange={(e) => setTeamName(e.target.value)}
+                    className="form-input"
+                    // placeholder="Leader"
+                    disabled
+                  />
+                  <div className="input-border"></div>
+                </div>
+              </div>
+              {/* <div>
                 <input className="form-input" placeholder="" />
                 <div className="input-border"></div>
               </div> */}
-          </div>
-          {data && data.maxTeamSize != 1 && (
-            <TeamMember
-              members={members}
-              setMembers={setMembers}
-              memberCount={memberCount}
-              setMemberCount={setMemberCount}
-              username={username}
-              setUsername={setUsername}
-              maxMemberCount={data.maxTeamSize}
-              deleteMember={deleteMember}
-            />
-          )}
-          <div className="my-2" onClick={handleReg}>
-            <Button>Submit</Button>
+            </div>
+            {data && data.maxTeamSize != 1 && (
+              <TeamMember
+                members={members}
+                setMembers={setMembers}
+                memberCount={memberCount}
+                setMemberCount={setMemberCount}
+                username={username}
+                setUsername={setUsername}
+                maxMemberCount={data.maxTeamSize}
+                deleteMember={deleteMember}
+              />
+            )}
+            <div className="my-2" onClick={handleReg}>
+              <Button>Submit</Button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   )
 }
