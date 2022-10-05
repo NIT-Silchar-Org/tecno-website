@@ -111,7 +111,7 @@ function Event({ data }) {
                 <Button
                   onClick={() => {
                     setIsFormHidden(false)
-                    scrollToRef.current.scrollIntoView()
+                    scrollToRef.current?.scrollIntoView()
                   }}
                 >
                   Register
@@ -171,9 +171,7 @@ function Event({ data }) {
                 <h2 className="my-2 text-input text-lg">Leader </h2>
                 <div className="input-field">
                   <input
-                    value={
-                      backendUser.msg.firstName + ' ' + backendUser.msg.lastName
-                    }
+                    value={backendUser.msg.username}
                     // onChange={(e) => setTeamName(e.target.value)}
                     className="form-input"
                     // placeholder="Leader"
