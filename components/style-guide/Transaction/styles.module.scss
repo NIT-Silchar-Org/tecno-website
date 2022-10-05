@@ -1,0 +1,32 @@
+.EventListLi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+.eventName span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.eventName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.EarnCoin {
+  color: #2ae768;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+.LoseCoin {
+  color: #e72a2a;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}

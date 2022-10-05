@@ -45,7 +45,7 @@ const Module = ({ data, setSelectedItem, ind }) => {
   }, [inView, ind, setSelectedItem])
 
   return (
-    <div className={styles.container} ref={ref}>
+    <div className={styles.container} ref={ref} id={data.id}>
       <div className={styles.head}>
         <div className={styles.image_cnt}>
           <div className={styles.image}>

@@ -111,7 +111,7 @@ function Event({ data }) {
                 <Button
                   onClick={() => {
                     setIsFormHidden(false)
-                    scrollToRef.current.scrollIntoView()
+                    scrollToRef.current?.scrollIntoView()
                   }}
                 >
                   Register

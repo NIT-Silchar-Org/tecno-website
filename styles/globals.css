@@ -845,6 +845,7 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-left: 1rem;
 }
 
 .Attended {
@@ -853,6 +854,11 @@ h3 {
 
 .Tecnocoins {
   color: #FFFFFF;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 Image {
@@ -900,7 +906,7 @@ Image {
   line-height: 20px;
   text-align: center;
   color: #2AE768;
-
+  cursor: pointer;
 }
 
 .personalDetail .logout {
@@ -916,6 +922,7 @@ Image {
   line-height: 20px;
   text-align: center;
   color: #FF1B41;
+  cursor: pointer;
 }
 
 .TransactionDetail {
