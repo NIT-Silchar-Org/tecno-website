@@ -1002,6 +1002,10 @@ Image {
   margin-bottom: 5px;
 
 }
+.TransactionList{
+  overflow: auto;
+  height: 90%;
+}
 
 .EventListLi {
   display: flex;
@@ -1012,7 +1016,12 @@ Image {
   margin-bottom: 30px;
   padding-left: 20px;
 }
-
+.btns{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
 
 /* =======Profile PAGE Section Responsiveness(MOBILE VIEW)=========== */
 
@@ -1104,7 +1113,6 @@ Image {
   .profPhoto2 {
     z-index: 400;
     position: absolute;
-    top: 7%;
     width: 10.875rem;
     height: 10.875rem;
     /* left: 7.938rem; */
@@ -1112,7 +1120,7 @@ Image {
     left: 50%;
     transform: translateX(-50%);
     opacity: 10;
-
+    top: 50px;
   }
 
   .tecnoLogo {
@@ -1138,6 +1146,19 @@ Image {
   .attendedAlign {
   padding: 0 !important;
   }
+  .transHeading {
+  font-size: 1.6rem;
+}
+.btns{
+  margin-top: 1rem;
+  flex-direction: row;
+  gap: 10px;
+  align-items:center;
+  justify-content: space-between;
+}
+.TransactionList{
+  height: fit-content;
+}
 }
 
 /*=============== PROFILE PAGE CSS END HERE============== */

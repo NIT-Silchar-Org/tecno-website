@@ -4,28 +4,34 @@ import EventIcon from '../../../public/assests/profile/icon.png'
 import { useEffect } from 'react'
 import { fetchEventById } from '../../../utils/events_fetch'
 import styles from './styles.module.scss'
+import { format } from 'date-fns'
 
 const Transaction = ({ data }) => {
   const [eventName, setEventName] = useState('')
   const [coinChange, setCoinChange] = useState('')
   const [changeSign, setChangeSign] = useState('')
+  console.log(data)
   useEffect(() => {
-    let event = fetchEventById(data.eventId)
-    setEventName(event.msg.name)
-
-    if (data.reason === 'ATTENDANCE') {
-      setCoinChange('Earned')
-      setChangeSign('+')
+    var event
+    if (data.eventId == null) {
+      setEventName('Event')
+    } else {
+      event = fetchEventById(data.eventId)
+      setEventName(event.msg?.name)
     }
-    else {
+
+    if (data.reason === 'PURCHASE') {
       setCoinChange('Spent')
       setChangeSign('-')
+    } else {
+      setCoinChange('Earned')
+      setChangeSign('+')
     }
   }, [])
   return (
     <li className={styles.EventListLi}>
       <div className={styles.eventName}>
-        <div>
+        <div style={{marginTop: '5px'}}>
           <Image src={EventIcon} />
         </div>
         <div>
@@ -33,12 +39,12 @@ const Transaction = ({ data }) => {
             {eventName}
             <br />
           </span>
-          <span>{data.createdAt}</span>
+          <span>{format(new Date(data.createdAt), 'PP')}</span>
         </div>
       </div>
       <div
         className={`${
-          data.reason === 'ATTENDANCE' ? styles.EarnCoin : styles.LoseCoin
+          data.reason === 'PURCHASE' ? styles.LoseCoin : styles.EarnCoin
         }`}
       >
         <span>{`${changeSign} ${data.amount} ${coinChange}`}</span>

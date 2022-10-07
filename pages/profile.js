@@ -114,18 +114,20 @@ function Profile1() {
                   </li>
                   {/* <li className='personalDetailIcon'><Image src={Location} />&emsp;Address</li> */}
                 </ul>
-                <button
-                  className="reg"
-                  onClick={() => {
-                    router.push('/team')
-                  }}
-                >
-                  Registrations
-                </button>
-                <br />
-                <button className="logout" onClick={logout}>
-                  Log Out
-                </button>
+                <div className='btns'>
+                  <button
+                    className="reg"
+                    onClick={() => {
+                      router.push('/team')
+                    }}
+                  >
+                    Registrations
+                  </button>
+                  <button className="logout" onClick={logout}>
+                    Log Out
+                  </button>
+                </div>
+
                 <br />
                 {backendUser?.msg?.registrationId}
               </div>
@@ -248,7 +250,9 @@ function Profile1() {
               ) : (
                 <ul className="TransactionList">
                   {transactions.map((transaction) => {
-                    return <Transaction data={transaction} key={ transaction.id} />
+                    return (
+                      <Transaction data={transaction} key={transaction.id} />
+                    )
                   })}
                 </ul>
               )}
