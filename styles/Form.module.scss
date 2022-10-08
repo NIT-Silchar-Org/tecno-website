@@ -1,5 +1,9 @@
 @import './variables.scss';
 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h1 {
     font-size: 2.2rem;
   }
@@ -12,8 +16,11 @@
     font-size: 1.2rem;
     text-transform: uppercase;
   }
+  .img{
+    max-width: 32rem;
+  }
   margin: 0 auto;
-  max-width: 32rem;
+  max-width: 60rem;
   padding: 0 2rem;
   gap: 2.5rem;
   font-size: 1rem;
@@ -80,6 +87,20 @@
     font-weight: normal;
     .infoLabel {
       font-family: $babaPro;
+    }
+  }
+  .resp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    height: 40vh;
+    font-family: $lemonMilk;
+    width: 100%;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
     }
   }
 }
