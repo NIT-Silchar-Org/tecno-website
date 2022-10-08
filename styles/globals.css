@@ -391,6 +391,12 @@ body::-webkit-scrollbar-thumb:hover {
 
 }
 
+.btnDis{
+  color: white;
+  font-family: 'lemonMilk';
+  font-size: 1.2rem;
+  text-align: center;
+}
 
 .my-2 {
   margin-top: 2.4rem;

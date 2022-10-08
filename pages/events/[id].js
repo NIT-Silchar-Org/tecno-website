@@ -12,6 +12,7 @@ import HamBurger from '../../components/sections/Navbar/HamBurger'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { toast } from 'react-toastify'
+import {compareAsc} from 'date-fns'
 
 function Event({ data }) {
   const [isFormHidden, setIsFormHidden] = useState(true)
@@ -28,6 +29,7 @@ function Event({ data }) {
   const [username, setUsername] = useState('')
   const [memberCount, setMemberCount] = useState(1)
   const [members, setMembers] = useState([])
+  const [registrationState, setRegistrationState] = useState('Register')
 
   const { auth, backendUser, signup } = useAuth()
   const handleReg = async () => {
@@ -64,7 +66,14 @@ function Event({ data }) {
     setMembers(newMembers)
     setMemberCount(memberCount - 1)
   }
-
+  useEffect(() => {
+    const startDate = new Date(data.registrationStartTime)
+    const endDate = new Date(data.registrationEndTime)
+    const now = new Date()
+    if (compareAsc(now, startDate) === -1) setRegistrationState('Registration Not Started')
+    else if (compareAsc(now, endDate) === 1)
+      setRegistrationState('Registration Closed')
+  }, [data])
   return (
     <>
       <div className="justify-center bg-black w-full h-screen">
@@ -112,14 +121,14 @@ function Event({ data }) {
 
             <div className="my-2">
               {backendUser?.status < 300 ? (
-                <Button
+                registrationState === 'Register'? (<Button
                   onClick={() => {
                     setIsFormHidden(false)
                     scrollToRef.current?.scrollIntoView()
                   }}
                 >
-                  Register
-                </Button>
+                  {registrationState}
+                </Button>):(<div className="btnDis">{registrationState}</div>)
               ) : (
                 <Button onClick={signup}>Login</Button>
               )}
