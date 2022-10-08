@@ -33,6 +33,10 @@ function Event({ data }) {
 
   const { auth, backendUser, signup } = useAuth()
   const handleReg = async () => {
+    if (teamname.trim() == '') {
+      toast.error('Team Name is required')
+      return
+    }
     const token = await auth.currentUser.getIdToken()
     const body = {
       name: teamname,
