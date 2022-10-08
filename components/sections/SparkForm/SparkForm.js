@@ -1,42 +1,42 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileUpload } from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios'
 library.add(faFileUpload)
 import styles from '../../../styles/Form.module.scss'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { useRouter } from 'next/router'
-import tshirtSize from '../../../public/assests/spark/size-chart.jpeg'
+// import tshirtSize from '../../../public/assests/spark/size-chart.jpeg'
 import sparkTshirt from '../../../public/assests/spark/spark-tshirt.png'
 import Image from 'next/image'
 
-const UploadControl = ({ children, value, disabled, accept }) => {
-  const [fileName, setFileName] = useState()
-  const onChange = (e) => {
-    setFileName(e.target.value)
-  }
-  return (
-    <label htmlFor="contained-button-file" className="m-0 w-100">
-      <input
-        value={value}
-        accept={accept}
-        disabled={disabled}
-        style={{ display: 'none' }}
-        id="contained-button-file"
-        multiple
-        type="file"
-        onChange={disabled ? () => {} : onChange}
-        name="paymentReceiptImg"
-        required
-      />
-      {fileName ? <div className={styles.content}>{fileName}</div> : children}
-    </label>
-  )
-}
+// const UploadControl = ({ children, value, disabled, accept }) => {
+//   const [fileName, setFileName] = useState()
+//   const onChange = (e) => {
+//     setFileName(e.target.value)
+//   }
+//   return (
+//     <label htmlFor="contained-button-file" className="m-0 w-100">
+//       <input
+//         value={value}
+//         accept={accept}
+//         disabled={disabled}
+//         style={{ display: 'none' }}
+//         id="contained-button-file"
+//         multiple
+//         type="file"
+//         onChange={disabled ? () => {} : onChange}
+//         name="paymentReceiptImg"
+//         required
+//       />
+//       {fileName ? <div className={styles.content}>{fileName}</div> : children}
+//     </label>
+//   )
+// }
 export default function SparkForm() {
   const ref = useRef()
-  const [loading, setLoading] = useState(false)
-  const [err, setErr] = useState(false)
+  // const [loading, setLoading] = useState(false)
+  // const [err, setErr] = useState(false)
   useEffect(() => {
     setTimeout(() => {
       ref.current?.scrollIntoView({ behaviour: 'smooth' })
