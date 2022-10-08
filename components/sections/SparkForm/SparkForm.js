@@ -82,8 +82,8 @@ export default function SparkForm() {
       action="#"
     >
       <h1>Spark T-Shirt</h1>
-      <Image src={sparkTshirt} />
-      <div className={styles.formFields}>
+      <Image src={sparkTshirt} className={ styles.img} />
+      {/* <div className={styles.formFields}>
         <label htmlFor="name">Name *</label>
         <input type="text" name="name" id="name" required />
       </div>
@@ -144,10 +144,10 @@ export default function SparkForm() {
         <br />
         <span className={styles.infoLabel}>Price - for outside:</span> Rs. 500
         (including shipping)
-      </div>
-      <div className={styles.formFields}>
+      </div> */}
+      {/* <div className={styles.formFields}> */}
         {/* <input type="file" name="paymentProof" id="paymentProof" required /> */}
-        <div className={styles.btn}>
+        {/* <div className={styles.btn}>
           <UploadControl accept="image/*">
             <FontAwesomeIcon icon={['fa', 'file-upload']} />
             Payment Proof*
@@ -162,7 +162,8 @@ export default function SparkForm() {
 
       <button className={styles.btn} type="submit">
         {loading ? 'Loading...' : err ? 'Error Occured - Retry' : 'Submit'}
-      </button>
+      </button> */}
+      <div className={styles.resp}>No longer Accepting Responses!</div>
     </form>
   )
 }
