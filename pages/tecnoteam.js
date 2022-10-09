@@ -29,6 +29,7 @@ const TecnoTeam = ({ data }) => {
             setActive={setActive}
             active={active}
             modules={data}
+            isteampage={true}
           />
         </div>
         <div>

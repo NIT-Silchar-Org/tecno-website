@@ -3,7 +3,7 @@ import styles from "./About.module.scss"
 
 const About = () => {
     return (
-      <section className={styles.wrapper}>
+      <section id="about" className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles.title}>About Us</div>
           <div className={styles.body}>
@@ -13,7 +13,7 @@ const About = () => {
             event has left its mark as of the most prominent techfests across
             the country. The cauldron of enthusiasm and knowledge attracts
             various students, presenting the chance to let their minds run wild
-            with ideads, fostering the inventors of the future.
+            with ideas, fostering the inventors of the future.
           </div>
         </div>
       </section>

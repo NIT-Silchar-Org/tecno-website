@@ -103,9 +103,11 @@ const MainLanding = () => {
   useEffect(() => {
     if (heroInView) {
       window.addEventListener('mousewheel', handleAnimation)
+      window.addEventListener('touchmove', handleAnimation)
     }
     return () => {
       window.removeEventListener('mousewheel', handleAnimation)
+      window.removeEventListener('touchmove', handleAnimation)
     }
   }, [heroInView])
   useEffect(() => {
@@ -116,17 +118,18 @@ const MainLanding = () => {
       // Get sub-array of first n elements after shuffled
       const selected = shuffled.slice(0, 2)
       setActiveind(selected)
-      console.log(selected)
     }, 4000)
 
     return () => clearInterval(interval)
   }, [])
+
   return (
     <div
-      className={`${styles.container} ${!state.scrollable ? styles.static : ''
-        }`}
+      className={`${styles.container} ${
+        !state.scrollable ? styles.static : ''
+      }`}
     >
-      <div className={`${styles.hero}`} ref={ref}>
+      <div id="hero" className={`${styles.hero}`} ref={ref}>
         <div className={`${styles.bgEle} ${heroInView ? '' : styles.blank}`}>
           <LeftBg state={state.animation} />
         </div>
@@ -145,28 +148,28 @@ const MainLanding = () => {
           <div
             className={styles.ele}
             id={styles.eclipse}
-            style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.2}px)` }}
           >
             <Image src={eclipse} />
           </div>
           <div
             className={styles.sphere}
             id={styles.sp1}
-            style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.25}px)` }}
           >
             <Image src={sphere} />
           </div>
           <div
             className={styles.ele}
             id={styles.ball}
-            style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
           >
             <Image src={ball} />
           </div>
           <div
             className={styles.ele}
             id={styles.ring}
-            style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
+            style={{ transform: `translateY(-${offsetY * 0.35}px)` }}
           >
             <Image src={ring} />
           </div>

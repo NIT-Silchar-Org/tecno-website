@@ -6,15 +6,18 @@ $navbar-width: $navbar-height * 1.407;
     overflow: hidden;
     transform: translateX(-100%);
     transition: transform 500ms ease-in-out;
-    z-index: 50;
+    z-index: 500;
     background: url('../../../public/assests/Navbar/navbarbg-web.svg');
     width: $navbar-width;
     height: $navbar-height;
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1279px) {
       background: url('../../../public/assests/Navbar/navbarbg-mobile.svg');
       height: 100vh;
       width: 100vw;
+      display: flex;
+      flex-direction: column;
     }
+
 }
 
 .navbarshow {
@@ -22,12 +25,15 @@ $navbar-width: $navbar-height * 1.407;
     overflow: hidden;
     transform: translateX(0%);
     transition: transform 500ms ease-in-out;
-    z-index: 50;
+    z-index: 500;
     background: url('../../../public/assests/Navbar/navbarbg-web.svg');
     width: $navbar-width;
     height: $navbar-height;
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1279px) {
       background: url('../../../public/assests/Navbar/navbarbg-mobile.svg');
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       height: 100vh;
       width: 100vw;
     }
@@ -36,51 +42,50 @@ $navbar-width: $navbar-height * 1.407;
 .hambtn {
     position: fixed;
     overflow: hidden;
-    z-index: 51;
+    z-index: 501;
     margin-left: 2rem;
     margin-top: 2.4rem;
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1279px) {
       margin-left: 1.5rem;
       margin-top: 1.5rem;
     }
-
-  @media screen and (min-width: 3500px) {
+    @media screen and (min-width: 3500px) {
       margin-left: 5rem;
       margin-top: 5rem;
       transform: scale(2);
-  }
-}
-
-@media screen and (min-width: 1601px) {
-    .navitemcontainer {
-      position: absolute;
-      left: $navbar-width * 0.25;
-      top: $navbar-height * 0.05;
-      transform: rotate(30deg);
-  }
-}
-
-@media screen and (max-width: 1600px) {
-   .navitemcontainer {
-      margin-top: 10vh;
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .navitemcontainer {
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      transform: rotate(30deg) translateY(-60%);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+   .navitemcontainer {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+}
 
 @media screen and (min-width: 2500px) {
-    .navitemcontainer {
-      position: absolute;
-      left: $navbar-width * 0.32;
-      top: $navbar-height * 0.2;
-      transform: rotate(30deg) scale(1.2);
-    }
+  .navitemcontainer {
+    position: absolute;
+    left: $navbar-width * 0.32;
+    top: $navbar-height * 0.2;
+    transform: rotate(30deg) scale(1.2);
+  }
 }
 
 @media screen and (min-width: 3500px) {
-    .navitemcontainer {
-      position: absolute;
-      left: $navbar-width * 0.35;
-      top: $navbar-height * 0.3;
-      transform: rotate(30deg) scale(2);
-    }
+  .navitemcontainer {
+    position: absolute;
+    left: $navbar-width * 0.35;
+    top: $navbar-height * 0.3;
+    transform: rotate(30deg) scale(2);
+  }
 }

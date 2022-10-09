@@ -67,7 +67,7 @@
 }
 @media only screen and (max-width: 1300px) {
   .container {
-    width: 95%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -94,11 +94,12 @@
       .hamburger {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         width: 2rem;
         height: 2rem;
         margin: 2rem;
         // margin-top: 2.2rem;
+        pointer-events: all;
         cursor: pointer;
         display: block;
       }
@@ -126,4 +127,13 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+}
+
+.comingSoon {
+  color: white;
+  position: fixed;
+  top: 45vh;
+  font-family: $roadRage;
+  font-size: 2rem;
+  left: 35vw;
 }

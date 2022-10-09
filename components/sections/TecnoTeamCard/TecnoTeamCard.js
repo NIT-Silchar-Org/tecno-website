@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { FaFacebook, FaGithub,FaLinkedin } from 'react-icons/fa'
 import Link from 'next/link'
 const TecnoTeamCard = ({ data }) => {
+  console.log(data);
   return (
     <div className={styles.container}>
       <div className={styles.image}>

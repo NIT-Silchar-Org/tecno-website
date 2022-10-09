@@ -1,5 +1,6 @@
 name: deploy-prod
 on:
+  workflow_dispatch:
   push:
     branches:
       - prod
@@ -25,4 +26,4 @@ jobs:
           aws-region: ap-south-1
 
       - name: Deploy to S3 bucket
-        run: aws s3 sync out s3://tecno-website --delete
+        run: aws s3 sync out s3://tecno-website --delete --metadata Content-Type=text/html,Cache-Control=max-age=3600

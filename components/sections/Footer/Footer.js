@@ -6,7 +6,7 @@ import logo from '../../../public/assests/landingPage/logoOutline.svg'
 
 const Footer = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="footer" className={styles.wrapper}>
       <div className={styles.bg}>
         <div className={styles.st1}></div>
         <div className={styles.st2}></div>
@@ -21,16 +21,28 @@ const Footer = () => {
         <div className={styles.body}>
           <div className={styles.content}>
             <div className={styles.btn_cnt}>
-              <div className={styles.btn}>Download Brochure</div>
+              <div className={styles.btn}>
+                <a
+                  href="https://drive.google.com/file/d/1n0z-jPHsTJOfy4DNYKFALGZAV5lArNu-/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download Brochure
+                </a>
+              </div>
             </div>
-            <div className={styles.btn_cnt}>
-              <div className={styles.btn}>Become Our Campus Ambassador</div>
-            </div>
+            {/* <div className={styles.btn_cnt}>
+              <div className={styles.btn}>
+                <Link href="https://docs.google.com/forms/d/e/1FAIpQLScZu6nYeZqgvyaEr2sQmXcAUs2MKObQzpNWhCJtd-u-YD16bw/viewform?usp=sf_link">
+                  Become Our Campus Ambassador
+                </Link>
+              </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.foot}>
           <div className={styles.contact}>CONTACT US</div>
-          <div>user123@tecnoesis.org</div>
+          <div>team@tecnoesis.org</div>
         </div>
       </div>
     </div>
