@@ -1,0 +1,199 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem auto;
+  position: relative;
+  .head {
+    color: white;
+    font-family: $mokotoGlitch;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    .image_cnt {
+      margin-right: 1rem;
+      width: 3.5rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      -webkit-clip-path: polygon(
+        50% 0%,
+        100% 25%,
+        100% 75%,
+        50% 100%,
+        0% 75%,
+        0% 25%
+      );
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      background-image: linear-gradient(to bottom, #a73ee7, #00ebff);
+      .image {
+        width: 3.35rem;
+        height: 3.8rem;
+        border-radius: 20px;
+
+        -webkit-clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        clip-path: polygon(
+          50% 0%,
+          100% 25%,
+          100% 75%,
+          50% 100%,
+          0% 75%,
+          0% 25%
+        );
+        background-color: black;
+      }
+    }
+  }
+  .slider {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .carousel {
+      display: flex;
+      width: 85%;
+      margin: auto;
+      transform: translateX(-1rem);
+      overflow-x: auto;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      .carouselTray {
+        display: flex;
+        width: 100% !important;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+    .left {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      cursor: pointer;
+    }
+    .right {
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      margin-right: 2.8rem;
+      cursor: pointer;
+      right: 0;
+    }
+  }
+  .indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .dot {
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin: 0 0.5rem;
+    }
+    .active {
+      background-color: white;
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .container {
+    .head {
+      font-size: 4rem;
+    }
+    .slider {
+      .left {
+        margin-left: 4rem;
+        width: 4rem;
+        height: 4rem;
+      }
+      .right {
+        margin-right: 6rem;
+        width: 4rem;
+        height: 4rem;
+      }
+      .carousel {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .container {
+    .slider {
+      .left {
+        margin-left: 8rem;
+      }
+      .right {
+        margin-right: 10rem;
+      }
+      .carousel {
+        width: 67%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .container {
+    .head {
+      font-size: 2rem;
+    }
+    width: 100%;
+    .slider {
+      width: 100%;
+      margin: 0 auto;
+      .carousel {
+        width: 85%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .container {
+    .slider {
+      width: 90%;
+      .carousel {
+        width: 80%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    .head {
+      font-size: 1.35rem;
+    }
+    .slider {
+      width: 100vw;
+      .carousel {
+        width: 100%;
+        margin-left: 1rem;
+      }
+      .left {
+        display: none;
+      }
+      .right {
+        display: none;
+      }
+    }
+  }
+}

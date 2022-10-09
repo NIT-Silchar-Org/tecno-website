@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import styles from './Module.module.scss'
+import styles from './TecnoTeamModule.module.scss'
 import Image from 'next/image'
-import EventCard from '../EventCard/EventCard'
+// import EventCard from '../EventCard/EventCard'
+import TecnoTeamCard from '../TecnoTeamCard/TecnoTeamCard'
 import left from '../../../public/assests/modules/Left.svg'
 import right from '../../../public/assests/modules/Right.svg'
 import { useInView } from 'react-intersection-observer'
@@ -25,7 +26,7 @@ const events = [
 
 const len = events.length
 
-const Module = ({ data, setSelectedItem, ind }) => {
+const TecnoTeamModule = ({ data, setSelectedItem, ind }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const toggle = (mult) => {
     const index = activeIndex + 1 * mult
@@ -46,17 +47,8 @@ const Module = ({ data, setSelectedItem, ind }) => {
   return (
     <div className={styles.container} ref={ref}>
       <div className={styles.head}>
-        <div className={styles.image_cnt}>
-          <div className={styles.image}>
-            <Image
-              src="https://placehold.jp/150x150.png"
-              layout="fill"
-              objectFit="contain"
-              priority="true"
-            />
-          </div>
-        </div>
-        <div>{data?.name}</div>
+        
+        <div>{data?.type}</div>
       </div>
       <CarouselProvider
         className={styles.slider}
@@ -73,11 +65,11 @@ const Module = ({ data, setSelectedItem, ind }) => {
           <Image src={left} layout="fill" objectFit="contain" priority="true" />
         </ButtonBack>
         <Slider className={styles.carousel} classNameTray={styles.carouselTray}>
-          {data?.events?.map((event, index) => {
+          {data?.members?.map((event, index) => {
             return (
                 <Link href={`/events/${event?.id}`} key={index}>
                   <Slide key={index} index={index} style={{ padding: 0 }}>
-                      <EventCard data={event} />
+                      <TecnoTeamCard data={event} />
                   </Slide>
                 </Link>
             )
@@ -96,4 +88,4 @@ const Module = ({ data, setSelectedItem, ind }) => {
   )
 }
 
-export default Module
+export default TecnoTeamModule

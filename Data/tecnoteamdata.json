@@ -1,0 +1,64 @@
+[
+
+    {
+        "type":"Faculty",
+        "members":[
+            {
+                
+                "name":"Shivaji Bondhopadhyay",
+                "facebook":"https://github.com/",
+                "position":"Director",  
+                "posterImage":""
+            },
+            {
+               
+                "name":"Shivaji Bondhopadhyay",
+                "facebook":"https://github.com/"
+            },
+            {
+                
+                "name":"Shivaji Bondhopadhyay",
+                "facebook":"https://github.com/"
+            },
+            {
+            
+                "name":"Shivaji Bondhopadhyay",
+                "facebook":"https://github.com/"
+            },
+            {
+               
+                "name":"Shivaji Bondhopadhyay",
+                "facebook":"https://github.com/"
+            },
+            {
+            
+                "name":"Shivaji Bondhopadhyay",
+                "facebook":"https://github.com/"
+            }
+
+        ]
+    },
+    
+    {
+        "type":"Tech Team",
+        "members":[
+            {
+                "name":"Aditya Agarwal",
+                "github":"https://github.com/",
+                "facebook":"https://github.com/"
+            },
+            {
+                "name":"Kavi Suri",
+                "github":"https://github.com/",
+                "facebook":"https://github.com/"
+            },
+            {
+                "name":"Kavi Suri",
+                "github":"https://github.com/",
+                "facebook":"https://github.com/"
+            }
+        ]
+
+    }
+
+]

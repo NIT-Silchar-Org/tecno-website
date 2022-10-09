@@ -4,6 +4,7 @@ import Image from 'next/image'
 // import logo from '../../../public/assests/modules/Logo.svg'
 // import slider from '../../../public/assests/modules/slider.svg'
 import bg from '../../../public/assests/modules/Vector14.svg'
+import TecnoTeamModule from '../TecnoTeamModule/TecnoTeamModule'
 // import LoginButton from '../../AuthLayer/LoginButton'
 // import LogoHamburger from '../Navbar/LogoHamburger'
 // const modules = [
@@ -20,7 +21,7 @@ import bg from '../../../public/assests/modules/Vector14.svg'
 //   'empresaario',
 // ]
 
-const Modules = ({ setSelectedItem, setActive, active, modules }) => {
+const Modules = ({ setSelectedItem, setActive, active, modules, isteampage }) => {
   return (
     <div className={styles.container} onClick={() => setActive(false)}>
       <div className={styles.head}>
@@ -43,11 +44,21 @@ const Modules = ({ setSelectedItem, setActive, active, modules }) => {
         {modules.map((module, index) => {
           return (
             <section id={module} key={index}>
-              <Module
+              {isteampage ? (
+                <TecnoTeamModule
                 data={module}
                 setSelectedItem={setSelectedItem}
                 ind={index}
+                // isteampage={true}
               />
+              ):(
+                <Module
+                data={module}
+                setSelectedItem={setSelectedItem}
+                ind={index}
+                // isteampage={true}
+              />
+              )}
             </section>
           )
         })}
