@@ -74,6 +74,7 @@ function Event({ data }) {
     else if (compareAsc(now, endDate) === 1)
       setRegistrationState('Registration Closed')
   }, [data])
+  const hideBtn = data.module.thirdPartyURL.length === 0;
   return (
     <>
       <div className="justify-center bg-black w-full h-screen">
@@ -119,7 +120,8 @@ function Event({ data }) {
               </p>
             </div>
 
-            <div className="my-2">
+            {
+              !hideBtn?<div className="my-2">
               {backendUser?.status < 300 ? (
                 registrationState === 'Register'? (<Button
                   onClick={() => {
@@ -132,7 +134,8 @@ function Event({ data }) {
               ) : (
                 <Button onClick={signup}>Login</Button>
               )}
-            </div>
+            </div>:null
+            }
           </div>
         </div>
 
