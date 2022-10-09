@@ -1,7 +1,14 @@
 import '../styles/globals.css'
 import {AuthProvider} from '../providers/authContext'
 const unprotectedRoutes = [
-  '/login', '/signup', '/', '/register', '/modules'
+  '/login',
+  '/signup',
+  '/',
+  '/register',
+  '/modules',
+  '/events',
+  '/spark/form',
+  '/tecnoteam'
 ]
 import {useRouter} from 'next/router'
 import ProtectedRoute from '../components/AuthLayer/ProtectedRoute'
