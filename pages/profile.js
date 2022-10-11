@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 // import UserIcon from '../public/assests/profile/user.png'
-// import EventIcon from '../public/assests/profile/icon.png'
+import EventIcon from "../public/assests/profile/EventIcon.svg"
 import Tecnologo from '../public/assests/profile/Tecnoesis Logo.png'
 import TecnoCoin from '../public/assests/profile/Tecno Coin.svg'
 import Name from '../public/assests/profile/nameIcon.png'
@@ -16,11 +16,27 @@ import HamBurger from '../components/sections/Navbar/HamBurger'
 // import axios from 'axios'
 // import {  useState } from 'react'
 import { useAuth } from '../providers/authContext'
+import { getTransactions } from '../utils/tecnoCoins'
+import Transaction from '../components/style-guide/Transaction/Transaction'
 function Profile1() {
-  const auth = useAuth()
-  const { backendUser, logout } = auth
+  const { auth, backendUser, logout } = useAuth()
   const router = useRouter()
-
+  const [transactions, setTransactions] = useState([])
+  const [noOfEvents, setNoOfEvents] = useState(0)
+  useEffect(() => {
+    auth.currentUser.getIdToken().then((token) => {
+      getTransactions(token).then((resp) => {
+        setTransactions(resp.data.msg)
+        // console.log(transactions)
+      }).then(() => {
+        let num = 0;
+        transactions.forEach((transaction) => { 
+          if (transaction.reason === 'ATTENDANCE') num++;
+        })
+        setNoOfEvents(num)
+      })
+    })
+  }, [auth, backendUser])
   // useEffect(() => {
 
   //   getToken()
@@ -58,16 +74,26 @@ function Profile1() {
                 </div>
                 <div className="eventDetail">
                   <div className="Tecnocoins">
+                    <Image src={EventIcon} />
+                    <div className="attendedAlign">Attended</div>
+                    <div
+                      className="attendedAlign"
+                      style={{ fontWeight: '800' }}
+                    >
+                      {/* Coming Soon */}
+                      {`${noOfEvents} Events`}
+                    </div>
+                  </div>
+                  <div className="Tecnocoins">
                     <Image src={TecnoCoin} />
-                    <br />
-                    <span className="attendedAlign">
-                      Tecno Coins
-                      <br />
-                    </span>
-                    <span className="attendedAlign">
-                      Coming Soon
-                      <br />
-                    </span>
+                    <div className="attendedAlign">Earned</div>
+                    <div
+                      className="attendedAlign"
+                      style={{ fontWeight: '800' }}
+                    >
+                      {/* Coming Soon */}
+                      {`${backendUser?.msg?.balance} Coins`}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -88,18 +114,20 @@ function Profile1() {
                   </li>
                   {/* <li className='personalDetailIcon'><Image src={Location} />&emsp;Address</li> */}
                 </ul>
-                <button
-                  className="reg"
-                  onClick={() => {
-                    router.push('/team')
-                  }}
-                >
-                  Registrations
-                </button>
-                <br />
-                <button className="logout" onClick={logout}>
-                  Log Out
-                </button>
+                <div className='btns'>
+                  <button
+                    className="reg"
+                    onClick={() => {
+                      router.push('/team')
+                    }}
+                  >
+                    Registrations
+                  </button>
+                  <button className="logout" onClick={logout}>
+                    Log Out
+                  </button>
+                </div>
+
                 <br />
                 {backendUser?.msg?.registrationId}
               </div>
@@ -217,7 +245,17 @@ function Profile1() {
               <h2 className="transHeading">Transactions</h2>
               <hr />
               {/* <br /> */}
-              <div className="transcomesoon">Coming Soon</div>
+              {transactions.length === 0 ? (
+                <div className="transcomesoon">No transactions to show!</div>
+              ) : (
+                <ul className="TransactionList">
+                  {transactions.map((transaction) => {
+                    return (
+                      <Transaction data={transaction} key={transaction.id} />
+                    )
+                  })}
+                </ul>
+              )}
               {/* <ul className="TransactionList">
                 <li className="EventListLi">
                   <div className="eventName">

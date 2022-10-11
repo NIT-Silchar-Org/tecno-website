@@ -16,6 +16,7 @@ const EventCard = ({ data }) => {
               layout="fill"
               objectFit="cover"
               priority="true"
+              objectPosition="center"
             />
           </div>
           <div className={styles.overlay}>{data?.name}</div>
