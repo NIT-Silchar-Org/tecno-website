@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Sidebar.module.scss'
 import svg2 from '../../../public/assests/modules/Vector15.svg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 // const [active, setActive] = useState(true);
 
@@ -51,7 +52,7 @@ const Sidebar = ({
                   }`}
                   onClick={() => setSelectedItem(index)}
                 >
-                  {item.name}
+                  <Link href={`#${item.id}`}>{item.name}</Link>
                 </div>
               </div>
             )
