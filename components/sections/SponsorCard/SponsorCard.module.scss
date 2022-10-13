@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+.cardContainer{
+  display: flex;
+  flex-direction: column; 
+  padding: 0.25rem 2rem;
+  margin: 2rem; 
+  transition-duration: 200ms; 
+  justify-content: center; 
+  align-items: center; 
+  width: 16rem; 
+  height: 10rem; 
+  border-radius: 0.5rem; 
+  background-color: #1F2937; 
+  opacity: 0.75;
+}
+
+.cardContainer:hover{
+  box-shadow: 0 6px 20px gray;
+}
+
+.imgContainer{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 6rem;
+  width: 100%;
+}
+
+.SponsorText{
+  font-size: 0.8rem;
+  font-family: $babaPro;
+}

@@ -20,6 +20,7 @@ import Vwarz from '../../style-guide/vwarzBanner/Vwarz'
 import Spark from '../../style-guide/sparkBanner/Spark'
 import Tecno from '../../style-guide/tecnoBanner/Tecno'
 import { useInView } from 'react-intersection-observer'
+import Sponsers from '../Sponsors/Sponsors'
 
 /*
 
@@ -194,6 +195,7 @@ const MainLanding = () => {
           <AboutNITS />
           <MainModule />
           <Slide />
+          <Sponsers />
           <Footer />
         </div>
       </div>
