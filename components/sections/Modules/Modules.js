@@ -32,7 +32,13 @@ const Modules = ({ setSelectedItem, setActive, active, modules }) => {
         <div className={styles.text}>Modules</div>
       </div>
       <div className={styles.bg}>
-        <Image src={bg} layout="fill" objectFit="contain" priority="true" objectPosition="center"/>
+        <Image
+          src={bg}
+          layout="fill"
+          objectFit="contain"
+          priority="true"
+          objectPosition="center"
+        />
       </div>
       <div>
         {modules.length === 0 && (

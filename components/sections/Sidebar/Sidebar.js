@@ -46,14 +46,16 @@ const Sidebar = ({
           {modules.map((item, index) => {
             return (
               <div className={styles.item_cnt} key={index}>
-                <div
-                  className={`${styles.item} ${
-                    selectedItem === index ? styles.selected : ''
-                  }`}
-                  onClick={() => setSelectedItem(index)}
-                >
-                  <Link href={`#${item.id}`}>{item.name}</Link>
-                </div>
+                <Link href={`#${item.id}`}>
+                  <div
+                    className={`${styles.item} ${
+                      selectedItem === index ? styles.selected : ''
+                    }`}
+                    onClick={() => setSelectedItem(index)}
+                  >
+                    {item.name}
+                  </div>
+                </Link>
               </div>
             )
           })}

@@ -39,9 +39,9 @@ const Module = ({ data, setSelectedItem, ind }) => {
     threshold: 1,
   })
 
-  console.log(data);
+  // console.log(data);
   useEffect(() => {
-    if (inView) setSelectedItem(ind)
+    // if (inView) setSelectedItem(ind)
   }, [inView, ind, setSelectedItem])
 
   return (
