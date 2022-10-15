@@ -49,13 +49,7 @@ const Module = ({ data, setSelectedItem, ind }) => {
       <div className={styles.head}>
         <div className={styles.image_cnt}>
           <div className={styles.image}>
-            <Image
-              src={data?.iconImage}
-              layout="fill"
-              objectFit="contain"
-              priority="true"
-              objectPosition="center"
-            />
+            <img src={data?.iconImage} className={styles.logo} />
           </div>
         </div>
         <div>{data?.name}</div>
