@@ -1,0 +1,43 @@
+@import "../../../styles/variables.scss";
+
+.sponsorContainer{
+  position: relative;
+  display: flex; 
+  background-color: transparent; 
+  color: #ffffff; 
+  font-size: 1.5rem;
+  line-height: 2rem; 
+  font-weight: 100; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100vw; 
+  min-height: 100vh; 
+  overflow: hidden;
+
+  @media (min-width: 768px) { 
+    padding: 3rem; 
+    color: 2.6rem;
+  }
+}
+
+.sponsorTitle{
+  display: flex; 
+  padding-bottom: 1.25rem; 
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  font-size: 2.4rem;
+  font-family: $lemonMilk;
+
+  @media (min-width: 768px) { 
+    padding: 2rem; 
+  }
+}
+
+.sponsorCarouselContainer{
+  display: flex; 
+  align-items: center; 
+}
