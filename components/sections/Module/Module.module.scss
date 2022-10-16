@@ -132,6 +132,13 @@
   object-fit: contain;
   object-position: center center;
 }
+
+.titlehead {
+  position: relative;
+  top: 0.15em;
+  left: 0px;
+}
+
 @media only screen and (min-width: 1700px) {
   .container {
     .head {

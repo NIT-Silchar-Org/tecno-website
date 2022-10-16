@@ -52,7 +52,7 @@ const Module = ({ data, setSelectedItem, ind }) => {
             <img src={data?.iconImage} className={styles.logo} />
           </div>
         </div>
-        <div>{data?.name}</div>
+        <div className={styles.titlehead}>{data?.name}</div>
       </div>
       <CarouselProvider
         className={styles.slider}
