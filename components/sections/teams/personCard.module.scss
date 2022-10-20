@@ -1,6 +1,13 @@
 .membercontainer {
   width: 300px;
   height: 300px;
+  transition: 0.2s ease-in;
+  border-radius: 10px;
+}
+
+.membercontainer:hover {
+  border: 1px solid;
+  box-shadow: 0 0 20px purple;
 }
 
 .imagecnt {
