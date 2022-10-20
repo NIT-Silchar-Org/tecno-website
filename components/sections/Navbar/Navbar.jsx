@@ -12,8 +12,8 @@ const navLinks = [
   { text: 'MODULES', route: '/modules' },
   { text: 'ABOUT', route: '/#about' },
   { text: 'MY REGISTRATIONS', route: '/team' },
-  { text: 'GALLERY', route: '/#gallery' },
   { text: 'CONTACT US', route: '/#footer' },
+  { text: 'ORGANIZING TEAM', route: '/tecnoteam' },
 ]
 
 export default function Navbar(props) {
