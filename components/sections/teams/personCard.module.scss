@@ -1,0 +1,62 @@
+.membercontainer {
+  width: 300px;
+  height: 300px;
+}
+
+.imagecnt {
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.image {
+  position: relative;
+  transition: 0.2s ease-in;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.image:hover {
+  opacity: 0.6;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  padding-top: 2px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.memberposition {
+  font-family: lemonMilk;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.socialcnt {
+  position: absolute;
+}
+
+.name {
+  text-align: center;
+  color: aliceblue;
+  font-family: lemonMilk;
+}

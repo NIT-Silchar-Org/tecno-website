@@ -1,425 +1,429 @@
 [
-    {
-        "type":"Faculty",
-        "members":[
-            {
-                "name":"Shivaji Bondhopadhyay",
-                "facebook":"https://www.facebook.com/director.nitsilchar/",
-                "position":"Director",  
-                "posterImage":"public/images/Sivaji.jpg"
-            },
-            {
-                "name":"Dr. Pranjit Barman",
-                "facebook":"https://www.facebook.com/pranjit.barman.50",
-                "position":"Dean SW",
-                "posterImage":""
-            },
-            {                
-                "name":"Dr. Naresh Babu Muppalaneni",
-                "linkedin":"https://www.linkedin.com/in/dr-naresh-babu-muppalaneni-105a3b168",
-                "position":"Faculty Advisor",
-                "posterImage":""
-            }
-        ]
-    },
-    {
-        "type":"Convenor",
-        "members":[
-            {
-                "name":"Anindya Sundar Saikia",
-                "position":"Vice-President",
-                "linkedin":"https://www.linkedin.com/in/anindya-sundar-saikia-963877192/",
-                "facebook":"https://www.facebook.com/anindya.saikia.3",
-                "posterImage":"public/images/anindya.jpg"
-            },
-            {
-                "name":"Hemdutt Mishra",
-                "position":"General Secretary",
-                "linkedin":"https://www.linkedin.com/in/hem-dutt-mishra-2bbb4a1b5",
-                "facebook":"https://www.facebook.com/profile.php?id=100037969845038",
-                "posterImage":"public/images/hemdutt.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Chief Coordinator",
-        "members":[
-            {
-                "name":"Prateek Vij",
-                "position":"General Secretary Technical",
-                "linkedin":"https://www.linkedin.com/in/prateek-vij-631299112",
-                "facebook":"https://www.facebook.com/BeLikePV",
-                "posterImage":"public/images/Prateek.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Executive Head",
-        "members":[
-            {
-                "name":"Mayur Mulchandani",
-                "position":"Executive Head",
-                "linkedin":"https://www.linkedin.com/in/mayur-mulchandani-898973198",
-                "facebook":"https://www.facebook.com/profile.php?id=100009396306613",
-                "posterImage":"public/images/Mayur.jpg"
-            },
-            {
-                "name":"Manav Sanghi",
-                "position":"Executive Head",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/manav.sanghi",
-                "posterImage":"public/images/manav.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Technical Head",
-        "members":[
-            {
-                "name":"Kavii Suri",
-                "position":"Technical Head",
-                "github":"https://github.com/KaviiSuri",
-                "linkedin":"https://www.linkedin.com/mwlite/in/kavii-suri-a23286194",
-                "posterImage":"public/images/kavii.jpg"
-            }
-        ]
-
-    },
-    {
-        "type":"Publicity Head",
-        "members":[
-            {
-                "name":"Sourabh Shah",
-                "position":"Publicity Head",
-                "github":"https://github.com/SRV1030",
-                "facebook":"https://www.facebook.com/sourab579",
-                "linkedin":"https://www.linkedin.com/in/sourabh-shah-1b6225192",
-                "posterImage":"public/images/Sourabh.jpg"
-            },
-            {
-                "name":"Abhishek Bharadwaz",
-                "position":"Publicity Head",
-                "github":"https://github.com/4Marsha1",
-                "linkedin":"https://www.linkedin.com/in/abhishek-bharadwaz",
-                "facebook":"https://www.facebook.com/bharadwaz.abhishek",
-                "posterImage":"public/images/Abhishek.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Infra Head",
-        "members":[
-            {
-                "name":"Saurav Das",
-                "position":"Infra Head",
-                "github":"https://github.com/Saurav1905",
-                "linkedin":"",
-                "facebook":"",
-                "posterImage":"public/images/Saurav.png"
-            },
-            {
-                "name":"Aayush Gupta",
-                "position":"Infra Head",
-                "github":"",
-                "linkedin":"https://www.linkedin.com/in/aayush-gupta-1aa86912b",
-                "facebook":"",
-                "posterImage":""
-            },
-            {
-                "name":"Abhishek Barman",
-                "position":"Infra Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/profile.php?id=100035040184791",
-                "posterImage":"public/images/AbhishekBar.jpg"
-            },
-            {
-                "name":"Mahesh Raj Adduri",
-                "position":"Infra Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/profile.php?id=100006701832969",
-                "posterImage":"public/images/MAHESH.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Marketing Head",
-        "members":[
-            {
-                "name":"Swaraj Pal Kesari ",
-                "position":"Marketing Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/swarajpalkesari",
-                "posterImage":"public/images/Swaraj.jpg"
-            }
-        ]
-    },
-    {
-        "type":"PR and Collaboration Head",
-        "members":[
-            {
-                "name":"Nihar Jyoti Basisth",
-                "position":"PR and Collaboration Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/nihar.basisth.7",
-                "posterImage":"public/images/nihar.jpg"
-            },
-            {
-                "name":"Afsana Yasmin",
-                "position":"PR and Collaboration Head",
-                "github":"https://github.com/afsana15",
-                "linkedin":"https://www.linkedin.com/in/afsanayasmin1502 ",
-                "facebook":"https://www.facebook.com/afsanayasmin.37",
-                "posterImage":"public/images/Afsana.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Web Head",
-        "members":[
-            {
-                "name":"Aditya Agarwal",
-                "position":"Developer Head",
-                "github":"https://github.com/aditya2712",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/profile.php?id=100009177385701",
-                "posterImage":"public/images/Aditya.jpg"
-            }
-        ]
-    },
-    {
-        "type":"App Head",
-        "members":[
-            {
-                "name":"Jyotimoy Kashyap",
-                "position":"Developer Head",
-                "github":"",
-                "linkedin":"https://www.linkedin.com/in/jyotimoykashyap/",
-                "facebook":"",
-                "posterImage":"public/images/Jyotimoy.jpg"
-            },
-            {
-                "name":"Apoorv Aadarsh",
-                "position":"Developer Head",
-                "github":"",
-                "linkedin":"https://www.linkedin.com/in/apoorvaadarsh",
-                "facebook":"",
-                "posterImage":"public/images/Apoorv.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Graphics Head",
-        "members":[
-            {
-                "name":"Soumya Ranjan Mohapatro",
-                "position":"Graphics Head",
-                "github":"",
-                "linkedin":"https://www.linkedin.com/in/soumyarmohapatro",
-                "facebook":"https://www.facebook.com/soumyaranjan.mohapatro.3",
-                "posterImage":"public/images/Soumya.jpg"
-            },
-            {
-                "name":"Rishav Anand",
-                "position":"Graphics Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/profile.php?id=100010267725162",
-                "posterImage":"public/images/Rishav.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Event Coordination Head",
-        "members":[
-            {
-                "name":"Lingalla Malavika",
-                "position":"Event Coordination Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/lingallamalavika",
-                "posterImage":"public/images/Malavika.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Hospitality Head",
-        "members":[
-            {
-                "name":"Arjun Kumar",
-                "position":"Hospitality Head",
-                "github":"https://github.com/arjunsah21",
-                "linkedin":"https://www.linkedin.com/in/arjunsah21",
-                "facebook":"https://www.facebook.com/arjunsah21",
-                "posterImage":"public/images/Arjun.jpg"
-            },
-            {
-                "name":"Bharat Gaur",
-                "position":"Hospitality Head",
-                "github":"",
-                "linkedin":"https://www.linkedin.com/in/bharat-gaur-212325200",
-                "facebook":"",
-                "posterImage":"public/images/Bharat.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Decoration Head",
-        "members":[
-            {
-                "name":"Kishore Kumar Meena",
-                "position":"Decoration Head",
-                "github":"https://github.com/kishorekmeena",
-                "linkedin":"https://www.linkedin.com/in/kishore-kumar-meena-1264321b7",
-                "facebook":"https://www.facebook.com/profile.php?id=100022522043070",
-                "posterImage":"public/images/kk.jpg"
-            },
-            {
-                "name":"Digant Dixit",
-                "position":"Decoration Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"",
-                "posterImage":"public/images/Digant.jpg"
-            },
-            {
-                "name":"Debanga Choudhury",
-                "position":"Decoration Head",
-                "github":"https://github.com/Debanga09",
-                "linkedin":"",
-                "facebook":"https://www.facebook.com/debanga.choudhury",
-                "posterImage":"public/images/Debanga.jpg"
-            },
-            {
-                "name":"Rahul Bora",
-                "position":"Decoration Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"",
-                "posterImage":"public/images/Rahul.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Content Head",
-        "members":[
-            {
-                "name":"Sai Lahari Jayareddygari",
-                "position":"Content Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"",
-                "posterImage":"public/images/Sai.jpg"
-            },
-            {
-                "name":"Afsana Yasmin",
-                "position":"PR and Collaboration Head",
-                "github":"https://github.com/afsana15",
-                "linkedin":"https://www.linkedin.com/in/afsanayasmin1502 ",
-                "facebook":"https://www.facebook.com/afsanayasmin.37",
-                "posterImage":"public/images/Afsana.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Logistics Head",
-        "members":[
-            {
-                "name":"Diksheet Agarwal",
-                "position":"Logistics Head",
-                "github":"https://github.com/DiksheetAgarwal",
-                "linkedin":"https://www.linkedin.com/in/diksheet-agarwal-035460199",
-                "facebook":"https://www.facebook.com/diksheet.agarwal.3",
-                "posterImage":"public/images/Diksheet.jpg"
-            },
-            {
-                "name":"Banoth Pavan",
-                "position":"Logistics Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"",
-                "posterImage":"public/images/Pavan.jpg"
-            },
-            {
-                "name":"Satyik Pritam Yogi",
-                "position":"Logistics Head",
-                "github":"https://github.com/satyik",
-                "linkedin":"https://www.linkedin.com/in/satyik-pritam-yogi-a6a49019a",
-                "facebook":"https://www.facebook.com/satyikpritam.yogi",
-                "posterImage":"public/images/Satyik.jpg"
-            }
-        ]
-    },
-    {
-        "type":"Module Head",
-        "members":[
-            {
-                "name":"Nilotpal Roy",
-                "position":"Convenor, Spark",
-                "github":"",
-                "linkedin":"linkedin.com/in/n---roy",
-                "facebook":"facebook.com/nabanibesh.roy",
-                "posterImage":"public/images/Nil.jpg"
-            },
-            {
-                "name":"Yash Tripathi",
-                "position":"Robotron Module Head",
-                "github":"",
-                "linkedin":"https://www.linkedin.com/in/yash-tripathi-866b631b7/",
-                "facebook":"",
-                "posterImage":"public/images/yash.jpg"
-            },
-            {
-                "name":"Naman Tyagi",
-                "position":"Robotron Module Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"",
-                "posterImage":"public/images/Naman.jpg"
-            },
-            {
-                "name":"Aadi Verma",
-                "position":"Empresario Module Head",
-                "github":"https://github.com/Aadi2509",
-                "linkedin":"https://www.linkedin.com/in/aadi-verma-429453199",
-                "facebook":"https://www.facebook.com/aadi.verma.96780671",
-                "posterImage":"public/images/aadi.jpg"
-            },
-            {
-                "name":"Abhinav Kumar Gupta",
-                "position":"Conferenza Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"",
-                "posterImage":"public/images/abhinav.jpg"
-            },
-            {
-                "name":"Vishwajeet Niranjan Kant",
-                "position":"Module Head",
-                "github":"",
-                "linkedin":"",
-                "facebook":"",
-                "posterImage":"public/images/Vishwajeet.jpg"
-            },
-            {
-                "name":"Bhishma Patle",
-                "position":"Module Head",
-                "github":"",
-                "linkedin":"https://www.linkedin.com/in/bhishmapatle",
-                "facebook":"",
-                "posterImage":"public/images/Bhishma.jpg"
-            },
-            {
-                "name":"Harsh Agarwala",
-                "position":"Module Head",
-                "github":"",
-                "linkedin":"https://www.linkedin.com/in/harsh-agarwala-5352a71a0/",
-                "facebook":"",
-                "posterImage":"public/images/Harsh.jpg"
-            }
-        ]
-    }
+  {
+    "type": "Chief Patron",
+    "members": [
+      {
+        "name": "Shivaji Bondhopadhyay",
+        "facebook": "https://www.facebook.com/director.nitsilchar/",
+        "position": "Director",
+        "posterImage": "/images/Sivaji.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Patrons",
+    "members": [
+      {
+        "name": "Dr. Pranjit Barman",
+        "facebook": "https://www.facebook.com/pranjit.barman.50",
+        "position": "Dean SW",
+        "posterImage": "/images/Pranjit.jpg"
+      },
+      {
+        "name": "Dr. Naresh Babu Muppalaneni",
+        "linkedin": "https://www.linkedin.com/in/dr-naresh-babu-muppalaneni-105a3b168",
+        "position": "Faculty Advisor",
+        "posterImage": "/images/naresh.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Convenor",
+    "members": [
+      {
+        "name": "Anindya Sundar Saikia",
+        "position": "Vice-President",
+        "linkedin": "https://www.linkedin.com/in/anindya-sundar-saikia-963877192/",
+        "facebook": "https://www.facebook.com/anindya.saikia.3",
+        "posterImage": "/images/anindya.jpg"
+      },
+      {
+        "name": "Hemdutt Mishra",
+        "position": "General Secretary",
+        "linkedin": "https://www.linkedin.com/in/hem-dutt-mishra-2bbb4a1b5",
+        "facebook": "https://www.facebook.com/profile.php?id=100037969845038",
+        "posterImage": "/images/hemdutt.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Chief Coordinator",
+    "members": [
+      {
+        "name": "Prateek Vij",
+        "position": "General Secretary Technical",
+        "linkedin": "https://www.linkedin.com/in/prateek-vij-631299112",
+        "facebook": "https://www.facebook.com/BeLikePV",
+        "posterImage": "/images/Prateek.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Executive Head",
+    "members": [
+      {
+        "name": "Mayur Mulchandani",
+        "position": "Executive Head",
+        "linkedin": "https://www.linkedin.com/in/mayur-mulchandani-898973198",
+        "facebook": "https://www.facebook.com/profile.php?id=100009396306613",
+        "posterImage": "/images/Mayur.jpg"
+      },
+      {
+        "name": "Manav Sanghi",
+        "position": "Executive Head",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/manav.sanghi",
+        "posterImage": "/images/manav.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Technical Head",
+    "members": [
+      {
+        "name": "Kavii Suri",
+        "position": "Technical Head",
+        "github": "https://github.com/KaviiSuri",
+        "linkedin": "https://www.linkedin.com/mwlite/in/kavii-suri-a23286194",
+        "posterImage": "/images/kavii.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Publicity Head",
+    "members": [
+      {
+        "name": "Sourabh Shah",
+        "position": "Publicity Head",
+        "github": "https://github.com/SRV1030",
+        "facebook": "https://www.facebook.com/sourab579",
+        "linkedin": "https://www.linkedin.com/in/sourabh-shah-1b6225192",
+        "posterImage": "/images/Sourabh.jpg"
+      },
+      {
+        "name": "Abhishek Bharadwaz",
+        "position": "Publicity Head",
+        "github": "https://github.com/4Marsha1",
+        "linkedin": "https://www.linkedin.com/in/abhishek-bharadwaz",
+        "facebook": "https://www.facebook.com/bharadwaz.abhishek",
+        "posterImage": "/images/Abhishek.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Infra Head",
+    "members": [
+      {
+        "name": "Saurav Das",
+        "position": "Infra Head",
+        "github": "https://github.com/Saurav1905",
+        "linkedin": "",
+        "facebook": "",
+        "posterImage": "/images/Saurav.png"
+      },
+      {
+        "name": "Aayush Gupta",
+        "position": "Infra Head",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/aayush-gupta-1aa86912b",
+        "facebook": "",
+        "posterImage": "/images/aayush.jpg"
+      },
+      {
+        "name": "Abhishek Barman",
+        "position": "Infra Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/profile.php?id=100035040184791",
+        "posterImage": "/images/AbhishekBar.jpg"
+      },
+      {
+        "name": "Mahesh Raj Adduri",
+        "position": "Infra Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/profile.php?id=100006701832969",
+        "posterImage": "/images/MAHESH.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Marketing Head",
+    "members": [
+      {
+        "name": "Swaraj Pal Kesari ",
+        "position": "Marketing Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/swarajpalkesari",
+        "posterImage": "/images/Swaraj.jpg"
+      }
+    ]
+  },
+  {
+    "type": "PR and Collaboration Head",
+    "members": [
+      {
+        "name": "Nihar Jyoti Basisth",
+        "position": "PR and Collaboration Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/nihar.basisth.7",
+        "posterImage": "/images/nihar.jpg"
+      },
+      {
+        "name": "Afsana Yasmin",
+        "position": "PR and Collaboration Head",
+        "github": "https://github.com/afsana15",
+        "linkedin": "https://www.linkedin.com/in/afsanayasmin1502 ",
+        "facebook": "https://www.facebook.com/afsanayasmin.37",
+        "posterImage": "/images/Afsana.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Web Head",
+    "members": [
+      {
+        "name": "Aditya Agarwal",
+        "position": "Developer Head",
+        "github": "https://github.com/aditya2712",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/profile.php?id=100009177385701",
+        "posterImage": "/images/Aditya.jpg"
+      }
+    ]
+  },
+  {
+    "type": "App Head",
+    "members": [
+      {
+        "name": "Jyotimoy Kashyap",
+        "position": "Developer Head",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/jyotimoykashyap/",
+        "facebook": "",
+        "posterImage": "/images/Jyotimoy.jpg"
+      },
+      {
+        "name": "Apoorv Aadarsh",
+        "position": "Developer Head",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/apoorvaadarsh",
+        "facebook": "",
+        "posterImage": "/images/Apoorv.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Graphics Head",
+    "members": [
+      {
+        "name": "Soumya Ranjan Mohapatro",
+        "position": "Graphics Head",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/soumyarmohapatro",
+        "facebook": "https://www.facebook.com/soumyaranjan.mohapatro.3",
+        "posterImage": "/images/Soumya.jpg"
+      },
+      {
+        "name": "Rishav Anand",
+        "position": "Graphics Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/profile.php?id=100010267725162",
+        "posterImage": "/images/Rishav.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Event Coordination Head",
+    "members": [
+      {
+        "name": "Lingalla Malavika",
+        "position": "Event Coordination Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/lingallamalavika",
+        "posterImage": "/images/Malavika.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Hospitality Head",
+    "members": [
+      {
+        "name": "Arjun Kumar",
+        "position": "Hospitality Head",
+        "github": "https://github.com/arjunsah21",
+        "linkedin": "https://www.linkedin.com/in/arjunsah21",
+        "facebook": "https://www.facebook.com/arjunsah21",
+        "posterImage": "/images/Arjun.png"
+      },
+      {
+        "name": "Bharat Gaur",
+        "position": "Hospitality Head",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/bharat-gaur-212325200",
+        "facebook": "",
+        "posterImage": "/images/Bharat.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Decoration Head",
+    "members": [
+      {
+        "name": "Kishore Kumar Meena",
+        "position": "Decoration Head",
+        "github": "https://github.com/kishorekmeena",
+        "linkedin": "https://www.linkedin.com/in/kishore-kumar-meena-1264321b7",
+        "facebook": "https://www.facebook.com/profile.php?id=100022522043070",
+        "posterImage": "/images/kk.jpg"
+      },
+      {
+        "name": "Digant Dixit",
+        "position": "Decoration Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "",
+        "posterImage": "/images/Digant.jpg"
+      },
+      {
+        "name": "Debanga Choudhury",
+        "position": "Decoration Head",
+        "github": "https://github.com/Debanga09",
+        "linkedin": "",
+        "facebook": "https://www.facebook.com/debanga.choudhury",
+        "posterImage": "/images/Debanga.jpg"
+      },
+      {
+        "name": "Rahul Bora",
+        "position": "Decoration Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "",
+        "posterImage": "/images/Rahul.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Content Head",
+    "members": [
+      {
+        "name": "Sai Lahari Jayareddygari",
+        "position": "Content Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "",
+        "posterImage": "/images/Sai.jpg"
+      },
+      {
+        "name": "Afsana Yasmin",
+        "position": "PR and Collaboration Head",
+        "github": "https://github.com/afsana15",
+        "linkedin": "https://www.linkedin.com/in/afsanayasmin1502 ",
+        "facebook": "https://www.facebook.com/afsanayasmin.37",
+        "posterImage": "/images/Afsana.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Logistics Head",
+    "members": [
+      {
+        "name": "Diksheet Agarwal",
+        "position": "Logistics Head",
+        "github": "https://github.com/DiksheetAgarwal",
+        "linkedin": "https://www.linkedin.com/in/diksheet-agarwal-035460199",
+        "facebook": "https://www.facebook.com/diksheet.agarwal.3",
+        "posterImage": "/images/Diksheet.jpg"
+      },
+      {
+        "name": "Banoth Pavan",
+        "position": "Logistics Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "",
+        "posterImage": "/images/Pavan.jpg"
+      },
+      {
+        "name": "Satyik Pritam Yogi",
+        "position": "Logistics Head",
+        "github": "https://github.com/satyik",
+        "linkedin": "https://www.linkedin.com/in/satyik-pritam-yogi-a6a49019a",
+        "facebook": "https://www.facebook.com/satyikpritam.yogi",
+        "posterImage": "/images/Satyik.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Module Head",
+    "members": [
+      {
+        "name": "Nilotpal Roy",
+        "position": "Convenor, Spark",
+        "github": "",
+        "linkedin": "linkedin.com/in/n---roy",
+        "facebook": "facebook.com/nabanibesh.roy",
+        "posterImage": "/images/Nil.jpg"
+      },
+      {
+        "name": "Yash Tripathi",
+        "position": "Robotron Module Head",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/yash-tripathi-866b631b7/",
+        "facebook": "",
+        "posterImage": "/images/yash.jpg"
+      },
+      {
+        "name": "Naman Tyagi",
+        "position": "Robotron Module Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "",
+        "posterImage": "/images/Naman.jpg"
+      },
+      {
+        "name": "Aadi Verma",
+        "position": "Empresario Module Head",
+        "github": "https://github.com/Aadi2509",
+        "linkedin": "https://www.linkedin.com/in/aadi-verma-429453199",
+        "facebook": "https://www.facebook.com/aadi.verma.96780671",
+        "posterImage": "/images/aadi.jpg"
+      },
+      {
+        "name": "Abhinav Kumar Gupta",
+        "position": "Conferenza Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "",
+        "posterImage": "/images/abhinav.jpg"
+      },
+      {
+        "name": "Vishwajeet Niranjan Kant",
+        "position": "Module Head",
+        "github": "",
+        "linkedin": "",
+        "facebook": "",
+        "posterImage": "/images/Vishwajeet.jpg"
+      },
+      {
+        "name": "Bhishma Patle",
+        "position": "Module Head",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/bhishmapatle",
+        "facebook": "",
+        "posterImage": "/images/Bhishma.jpg"
+      },
+      {
+        "name": "Harsh Agarwala",
+        "position": "Module Head",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/harsh-agarwala-5352a71a0/",
+        "facebook": "",
+        "posterImage": "/images/Harsh.jpg"
+      }
+    ]
+  }
 ]
