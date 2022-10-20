@@ -9,13 +9,23 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faFacebook, faLinkedin, faTwitter, faInstagram, faGithub)
+import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faFacebook, faLinkedin, faTwitter, faInstagram, faGithub, faGlobe)
 
 const SocialHandles = ({ position, handles }) => {
   return (
     <div className={styles.container}>
       <div className={styles.memberposition}>{position}</div>
       <div className={styles.socialhandles}>
+        {handles.web && (
+          <a href={handles.web} target="_blank" rel="noreferrer">
+            <FontAwesomeIcon
+              className={styles.socialicon}
+              icon={['fa', 'globe']}
+            />
+          </a>
+        )}
         {handles.facebook && (
           <a href={handles.facebook} target="_blank" rel="noreferrer">
             <FontAwesomeIcon
