@@ -6,8 +6,9 @@
 }
 
 .membercontainer:hover {
-  border: 1px solid;
   box-shadow: 0 0 20px purple;
+  box-shadow: 0 0 0.001vw #1041ff, 0 0 0.3vw #1041ff, 0 0 1vw #1041ff,
+    0 0 1vw #1041ff, 0 0 0.4vw #8bfdfe;
 }
 
 .imagecnt {
@@ -34,6 +35,7 @@
   left: 0;
   right: 0;
   padding-top: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
