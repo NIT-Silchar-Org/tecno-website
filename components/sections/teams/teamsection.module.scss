@@ -1,0 +1,34 @@
+.head {
+  padding-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: lemonMilk;
+  color: aliceblue;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+
+  // text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+  //   0 0 10vw #fa1c16, 0 0 0.4vw #fed128;
+  // color: #fed128;
+
+  text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+    0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe;
+  color: #28d7fe;
+}
+
+.teamsection {
+  width: 100vw;
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blank {
+  height: 10vh;
+  width: 100vw;
+}
