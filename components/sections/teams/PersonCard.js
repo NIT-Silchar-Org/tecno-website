@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './personCard.module.scss'
 import SocialHandles from './socialhandles'
-import Image from 'next/image'
 
 const personCard = ({ members }) => {
   return (

@@ -1,8 +1,5 @@
-import { useEffect, useState } from 'react'
 import styles from '../teams/teamsection.module.scss'
 import PersonCard from '../teams/PersonCard'
-import Image from 'next/image'
-import Link from 'next/link'
 
 const TeamSection = ({ teamdata }) => {
   //   console.log(teamdata)
