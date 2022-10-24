@@ -95,14 +95,6 @@
     "type": "Publicity Head",
     "members": [
       {
-        "name": "Sourabh Shah",
-        "position": "Publicity Head",
-        "github": "https://github.com/SRV1030",
-        "facebook": "https://www.facebook.com/sourab579",
-        "linkedin": "https://www.linkedin.com/in/sourabh-shah-1b6225192",
-        "posterImage": "/images/Sourabh.jpg"
-      },
-      {
         "name": "Abhishek Bharadwaz",
         "position": "Publicity Head",
         "github": "https://github.com/4Marsha1",
@@ -116,36 +108,12 @@
     "type": "Infra Head",
     "members": [
       {
-        "name": "Saurav Das",
-        "position": "Infra Head",
-        "github": "https://github.com/Saurav1905",
-        "linkedin": "",
-        "facebook": "",
-        "posterImage": "/images/Saurav.png"
-      },
-      {
         "name": "Aayush Gupta",
         "position": "Infra Head",
         "github": "",
         "linkedin": "https://www.linkedin.com/in/aayush-gupta-1aa86912b",
         "facebook": "",
         "posterImage": "/images/aayush.jpg"
-      },
-      {
-        "name": "Abhishek Barman",
-        "position": "Infra Head",
-        "github": "",
-        "linkedin": "",
-        "facebook": "https://www.facebook.com/profile.php?id=100035040184791",
-        "posterImage": "/images/AbhishekBar.jpg"
-      },
-      {
-        "name": "Mahesh Raj Adduri",
-        "position": "Infra Head",
-        "github": "",
-        "linkedin": "",
-        "facebook": "https://www.facebook.com/profile.php?id=100006701832969",
-        "posterImage": "/images/MAHESH.jpg"
       }
     ]
   },
@@ -172,14 +140,6 @@
         "linkedin": "",
         "facebook": "https://www.facebook.com/nihar.basisth.7",
         "posterImage": "/images/nihar.jpg"
-      },
-      {
-        "name": "Afsana Yasmin",
-        "position": "PR and Collaboration Head",
-        "github": "https://github.com/afsana15",
-        "linkedin": "https://www.linkedin.com/in/afsanayasmin1502 ",
-        "facebook": "https://www.facebook.com/afsanayasmin.37",
-        "posterImage": "/images/Afsana.jpg"
       }
     ]
   },
@@ -269,6 +229,12 @@
         "linkedin": "https://www.linkedin.com/in/bharat-gaur-212325200",
         "facebook": "",
         "posterImage": "/images/Bharat.jpg"
+      },
+      {
+        "name": "Sonali Kanu",
+        "position": "Hospitality Head",
+        "facebook": "https://www.facebook.com/sonalikanu.999",
+        "posterImage": "/images/Sonali.jpeg"
       }
     ]
   },
@@ -319,14 +285,6 @@
         "linkedin": "",
         "facebook": "",
         "posterImage": "/images/Sai.jpg"
-      },
-      {
-        "name": "Afsana Yasmin",
-        "position": "PR and Collaboration Head",
-        "github": "https://github.com/afsana15",
-        "linkedin": "https://www.linkedin.com/in/afsanayasmin1502 ",
-        "facebook": "https://www.facebook.com/afsanayasmin.37",
-        "posterImage": "/images/Afsana.jpg"
       }
     ]
   },
@@ -340,36 +298,12 @@
         "linkedin": "https://www.linkedin.com/in/diksheet-agarwal-035460199",
         "facebook": "https://www.facebook.com/diksheet.agarwal.3",
         "posterImage": "/images/Diksheet.jpg"
-      },
-      {
-        "name": "Banoth Pavan",
-        "position": "Logistics Head",
-        "github": "",
-        "linkedin": "",
-        "facebook": "",
-        "posterImage": "/images/Pavan.jpg"
-      },
-      {
-        "name": "Satyik Pritam Yogi",
-        "position": "Logistics Head",
-        "github": "https://github.com/satyik",
-        "linkedin": "https://www.linkedin.com/in/satyik-pritam-yogi-a6a49019a",
-        "facebook": "https://www.facebook.com/satyikpritam.yogi",
-        "posterImage": "/images/Satyik.jpg"
       }
     ]
   },
   {
     "type": "Module Head",
     "members": [
-      {
-        "name": "Nilotpal Roy",
-        "position": "Convenor, Spark",
-        "github": "",
-        "linkedin": "linkedin.com/in/n---roy",
-        "facebook": "facebook.com/nabanibesh.roy",
-        "posterImage": "/images/Nil.jpg"
-      },
       {
         "name": "Yash Tripathi",
         "position": "Robotron Module Head",
