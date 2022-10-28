@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import MTV from "../../../public/assests/Sponsors/MTVNewTriColor.png"
 import IEEE from "../../../public/assests/Sponsors/IEEE.png"
 import cdac from "../../../public/assests/Sponsors/cdac.png"
+import zerbronics from "../../../public/assests/Sponsors/zebronics.png"
+
 
 import Carousel from '../Carousel/Carousel';
 import styles from "./Sponsors.module.scss";
@@ -14,6 +16,7 @@ const Sponsers = () => {
     {imgSrc: MTV, imghref: "", text: ""},
     {imgSrc: IEEE, imghref: "", text: ""},
     {imgSrc: cdac, imghref: "", text: ""},
+    {imgSrc: zerbronics, imghref: "", text: ""},
   ]
 
   const [carouselSizes,setCarouselSizes] = useState ({
